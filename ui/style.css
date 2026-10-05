@@ -1,0 +1,39 @@
+/* Base rules copied from the Stitch prototypes, plus what a live page needs on top. */
+html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #0e0e0e; }
+body { overscroll-behavior: none; }
+::-webkit-scrollbar { display: none; }
+
+/* Streamlit renders components with scrolling="no", so the page scrolls inside this box. */
+#scroller { height: 100vh; overflow-y: auto; overflow-x: hidden; scrollbar-width: none; scroll-behavior: auto; }
+
+.font-tabular { font-variant-numeric: tabular-nums; }
+input[type="number"] { -moz-appearance: textfield; }
+select option { background: #1A1A1A; color: #e5e2e1; }
+textarea { min-height: 160px; }
+
+/* PRD 6.7 motion */
+@keyframes ri-fade-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes ri-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+@keyframes ri-indeterminate { 0% { left: -35%; width: 35%; } 100% { left: 100%; width: 35%; } }
+.ri-enter { opacity: 0; animation: ri-fade-up 600ms ease-out forwards; }
+.ri-float { animation: ri-float 2.4s ease-in-out infinite; }
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity 600ms ease-out, transform 600ms ease-out; }
+.reveal.is-in { opacity: 1; transform: none; }
+.ri-bar { transition: width 400ms ease-out; }
+.ri-indeterminate { position: absolute; top: 0; bottom: 0; background: #ffffff; border-radius: 9999px; animation: ri-indeterminate 1.2s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .ri-enter, .reveal { opacity: 1 !important; transform: none !important; }
+}
+
+/* Tooltip for the aspect chart and the info icon (Level 3 floating surface in DESIGN.md) */
+.ri-tip { position: absolute; z-index: 30; pointer-events: none; white-space: nowrap; opacity: 0; transition: opacity 150ms;
+  background: rgba(17, 17, 17, 0.75); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 6px; padding: 6px 10px; }
+.group:hover > .ri-tip, .group:focus-within > .ri-tip { opacity: 1; }
+.ri-tip { max-width: min(480px, calc(100vw - 32px)); white-space: normal; }
+@media (hover: none), (max-width: 639px) { .ri-tip { display: none; } }
+
+.line-clamp-1 { display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+.line-clamp-3 { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }

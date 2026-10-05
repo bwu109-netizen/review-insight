@@ -1,0 +1,14 @@
+[theme]
+base = "dark"
+backgroundColor = "#0e0e0e"
+secondaryBackgroundColor = "#111111"
+textColor = "#e5e2e1"
+primaryColor = "#f5f5f5"
+
+[server]
+# reviews are read in the browser and sent to Python once per analysis
+maxMessageSize = 300
+
+[client]
+toolbarMode = "minimal"
+showErrorDetails = false

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Review Insight</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-focus":"rgba(255, 255, 255, 0.24)","outline":"#8e9192","secondary-fixed":"#e3e2e2","primary":"#ffffff","surface":"#131313","surface-container-low":"#1c1b1b","on-secondary-fixed":"#1b1c1c","data-negative":"#E5675A","surface-container-high":"#2a2a2a","on-secondary":"#303031","on-primary-fixed-variant":"#454747","on-error-container":"#ffdad6","on-surface-variant":"#c4c7c8","inverse-on-surface":"#313030","on-secondary-container":"#b5b5b5","tertiary-fixed-dim":"#81d8ab","primary-fixed-dim":"#c6c6c7","background":"#131313","on-surface":"#e5e2e1","on-background":"#e5e2e1","on-primary-container":"#636565","error-container":"#93000a","on-tertiary-fixed":"#002113","surface-variant":"#353534","on-tertiary":"#003823","error":"#ffb4ab","border-hairline":"rgba(255, 255, 255, 0.08)","secondary-fixed-dim":"#c7c6c6","surface-tint":"#c6c6c7","secondary":"#c7c6c6","inverse-primary":"#5d5f5f","on-error":"#690005","tertiary-fixed":"#9df5c5","surface-container-highest":"#353534","surface-bright":"#3a3939","text-tertiary":"#5C5C5C","tertiary-container":"#9df5c5","on-primary-fixed":"#1a1c1c","surface-dim":"#131313","on-primary":"#2f3131","surface-card":"#111111","surface-container-lowest":"#0e0e0e","outline-variant":"#444748","surface-container":"#201f1f","on-tertiary-fixed-variant":"#005235","surface-interactive":"#1A1A1A","primary-fixed":"#e2e2e2","on-secondary-fixed-variant":"#464747","inverse-surface":"#e5e2e1","primary-container":"#e2e2e2","secondary-container":"#464747","on-tertiary-container":"#10734d","tertiary":"#ffffff","data-warning":"#E0B04A"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","margin-mobile":"1.25rem","space-xl":"2.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","gutter-mobile":"1rem","margin":"2rem","gutter":"1.5rem"},fontFamily:{"label-pill":["Geist"],"headline-xl-mobile":["Geist"],"headline-md":["Geist"],"code-md":["JetBrains Mono"],"body-md":["Geist"],"headline-xl":["Geist"],"body-sm":["Geist"],"body-lg":["Geist"],"stat-xl-mobile":["Geist"],"headline-lg":["Geist"],"eyebrow-mono":["JetBrains Mono"],"headline-sm":["Geist"],"stat-xl":["Geist"]},fontSize:{"label-pill":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"300"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.025em","fontWeight":"300"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"stat-xl-mobile":["44px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"300"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"400"}],"eyebrow-mono":["11px",{"lineHeight":"14px","letterSpacing":"0.14em","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"500"}],"stat-xl":["64px",{"lineHeight":"72px","letterSpacing":"-0.03em","fontWeight":"300"}]}}}};</script></head><body class="bg-surface-container-lowest text-on-surface font-body-md min-h-screen relative selection:bg-primary selection:text-surface-container-lowest"><div class="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.06)_0%,rgba(14,14,14,0)_70%)]"></div><div class="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:24px_24px]"></div><div class="fixed top-0 left-0 right-0 z-50 flex justify-center px-space-md pointer-events-none"><header class="pointer-events-auto mt-4 w-full max-w-[720px] h-12 bg-surface-card/80 backdrop-blur-xl border border-border-hairline rounded-full px-6 flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center gap-2 group" data-path="overview" href="#"><div class="w-5 h-5 rounded-full border border-border-focus flex items-center justify-center transition-colors group-hover:border-primary"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div></div><span class="font-label-pill text-label-pill text-primary tracking-tight">Review Insight</span></a><nav class="hidden sm:flex items-center gap-space-lg" data-active-classes="text-primary font-body-sm"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="how-it-works" href="#">How it works</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="examples" href="#">Examples</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="github" href="#">GitHub</a></nav><div class="flex items-center gap-space-md"><span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary select-none cursor-pointer hover:text-primary transition-colors">EN | 中</span><a class="bg-primary text-on-primary font-label-pill text-label-pill px-3.5 py-1.5 rounded-full hover:bg-primary/90 transition-opacity flex items-center justify-center" data-path="analyze-reviews" href="#">Analyze reviews</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header></div><main class="relative z-10 w-full pt-20 pb-space-xl px-space-md max-w-7xl mx-auto"><div class="flex flex-col w-full">
+<!-- Warning Banner: Quota Cutoff -->
+<div class="bg-surface-card border-l-2 border-data-warning border-y border-r border-border-hairline rounded-r-xl p-4 mb-space-xl flex flex-col md:flex-row md:items-center md:justify-between gap-4 shadow-sm">
+<div class="flex flex-wrap items-center gap-3">
+<span class="w-2 h-2 rounded-full bg-data-warning animate-pulse shrink-0"></span>
+<span class="font-code-md text-code-md text-primary">The run stopped early, so these results cover 1,240 of 2,000 reviews.</span>
+<span class="font-eyebrow-mono text-eyebrow-mono text-data-warning bg-data-warning/10 px-2 py-0.5 rounded tracking-wider">REASON: DAILY QUOTA REACHED (429)</span>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<button class="font-eyebrow-mono text-code-md text-primary underline underline-offset-4 hover:text-on-surface-variant transition-colors flex items-center gap-1.5 cursor-pointer" onclick="document.getElementById('key-modal').classList.remove('hidden')">
+<span>Resume run with new key</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- R1 Summary Header Area -->
+<section class="flex flex-col gap-space-lg mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-space-lg border-b border-border-hairline">
+<div class="flex flex-col gap-2 max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="font-eyebrow-mono text-eyebrow-mono text-data-warning bg-data-warning/10 px-2 py-0.5 rounded tracking-widest uppercase">01 · Partial Results</span>
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary">SESSION: #REV-8841-B</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl tracking-tight leading-tight">
+<span class="text-primary">Fruit, 1,240 reviews.</span>
+<span class="text-text-tertiary">Here's what to fix first.</span>
+</h1>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-2 shrink-0">
+<button class="bg-primary text-on-primary font-label-pill text-label-pill px-4 py-2 rounded-full hover:bg-primary/90 transition-opacity flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download Partial CSV</span>
+</button>
+<button class="bg-surface-card text-primary font-label-pill text-label-pill px-4 py-2 rounded-full border border-border-hairline hover:bg-surface-interactive hover:border-border-focus transition-all flex items-center gap-1.5" onclick="navigator.clipboard?.writeText('Fruit batch (1,240 partial): 26% negative overall, 21 hidden issues found. Fix first: spoiled arrival.'); alert('Brief copied to clipboard');">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span>Copy brief</span>
+</button>
+<a class="bg-surface-card text-on-surface-variant font-label-pill text-label-pill px-4 py-2 rounded-full border border-border-hairline hover:text-primary hover:border-border-focus transition-all flex items-center gap-1.5" href="#">
+<span class="material-symbols-outlined text-[16px]">add_circle</span>
+<span>New analysis</span>
+</a>
+</div>
+</div>
+<!-- Metric Stat Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<div class="bg-surface-card border border-border-hairline rounded-xl p-space-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[64px] text-primary">analytics</span>
+</div>
+<div class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase tracking-wider mb-2 flex items-center justify-between">
+<span>REVIEWS LABELED</span>
+<span class="text-data-warning font-code-md">62.0%</span>
+</div>
+<div class="flex items-baseline gap-2 mb-3">
+<span class="font-stat-xl text-stat-xl text-primary font-light">1,240</span>
+<span class="font-headline-md text-headline-md text-text-tertiary font-light">/ 2,000</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden">
+<div class="bg-data-warning h-full rounded-full" style="width: 62%"></div>
+</div>
+<p class="font-code-md text-code-md text-text-tertiary mt-3">760 remaining in batch queue</p>
+</div>
+<div class="bg-surface-card border border-border-hairline rounded-xl p-space-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[64px] text-data-negative">thumb_down</span>
+</div>
+<div class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase tracking-wider mb-2 flex items-center justify-between">
+<span>NEGATIVE OVERALL</span>
+<span class="text-data-negative font-code-md text-xs">▲ +4.2% VS BENCHMARK</span>
+</div>
+<div class="flex items-baseline gap-2 mb-3">
+<span class="font-stat-xl text-stat-xl text-data-negative font-light">26%</span>
+<span class="font-body-md text-body-md text-text-tertiary">322 critical units</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden flex">
+<div class="bg-data-negative h-full" style="width: 26%"></div>
+<div class="bg-border-focus h-full" style="width: 14%"></div>
+<div class="bg-surface-container-high h-full" style="width: 60%"></div>
+</div>
+<p class="font-code-md text-code-md text-text-tertiary mt-3">Exceeds tolerance limit (18%)</p>
+</div>
+<div class="bg-surface-card border border-border-hairline rounded-xl p-space-lg relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[64px] text-primary">visibility_off</span>
+</div>
+<div class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase tracking-wider mb-2 flex items-center justify-between">
+<span>HIDDEN ISSUES</span>
+<span class="text-primary font-code-md text-xs">UNSTATED 1★ / 2★</span>
+</div>
+<div class="flex items-baseline gap-2 mb-3">
+<span class="font-stat-xl text-stat-xl text-primary font-light">21</span>
+<span class="font-body-md text-body-md text-text-tertiary">patterns isolated</span>
+</div>
+<div class="w-full bg-surface-container h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full" style="width: 78%"></div>
+</div>
+<p class="font-code-md text-code-md text-text-tertiary mt-3">Synthesized from customer descriptions</p>
+</div>
+</div>
+</section>
+<!-- R2 Fix First Priority Cards -->
+<section class="flex flex-col gap-4 mb-space-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase tracking-widest">02 · PRIORITY INTERVENTIONS</span>
+<span class="w-1.5 h-1.5 rounded-full bg-data-negative"></span>
+</div>
+<span class="font-code-md text-code-md text-text-tertiary">Ranked by churn contribution</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+<!-- Priority 1 -->
+<div class="bg-surface-card border border-border-hairline rounded-xl p-space-lg flex flex-col justify-between hover:border-border-focus transition-all group">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="bg-data-negative/10 border border-data-negative/20 text-data-negative font-eyebrow-mono text-eyebrow-mono px-2 py-0.5 rounded">PRIORITY 1</span>
+<span class="font-code-md text-code-md text-data-negative">18 complaints</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-data-negative transition-colors">Fruit arrives spoiled</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+              Recurring cold-chain failure causing bruised skin and ferment smell on day 1 upon unboxing.
+            </p>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-border-hairline flex flex-col gap-2">
+<div class="flex items-center justify-between font-eyebrow-mono text-eyebrow-mono text-text-tertiary">
+<span>SAMPLE SHARE</span>
+<span class="text-primary">1.45% of partial</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px] text-text-tertiary">route</span>
+<span class="font-code-md text-code-md text-on-surface-variant truncate">Action: Audit carrier ambient temp</span>
+</div>
+</div>
+</div>
+<!-- Priority 2 -->
+<div class="bg-surface-card border border-border-hairline rounded-xl p-space-lg flex flex-col justify-between hover:border-border-focus transition-all group">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="bg-surface-container border border-border-hairline text-on-surface font-eyebrow-mono text-eyebrow-mono px-2 py-0.5 rounded">PRIORITY 2</span>
+<span class="font-code-md text-code-md text-on-surface">11 complaints</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-fixed-dim transition-colors">Underweight fruit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+              Customers weighing cartons report 15-20% deficit under declared net weight label.
+            </p>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-border-hairline flex flex-col gap-2">
+<div class="flex items-center justify-between font-eyebrow-mono text-eyebrow-mono text-text-tertiary">
+<span>SAMPLE SHARE</span>
+<span class="text-primary">0.89% of partial</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px] text-text-tertiary">scale</span>
+<span class="font-code-md text-code-md text-on-surface-variant truncate">Action: Recalibrate packing scales</span>
+</div>
+</div>
+</div>
+<!-- Priority 3 -->
+<div class="bg-surface-card border border-border-hairline rounded-xl p-space-lg flex flex-col justify-between hover:border-border-focus transition-all group">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="bg-surface-container border border-border-hairline text-on-surface font-eyebrow-mono text-eyebrow-mono px-2 py-0.5 rounded">PRIORITY 3</span>
+<span class="font-code-md text-code-md text-on-surface">9 complaints</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-primary-fixed-dim transition-colors">Outer box damaged</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1.5 leading-relaxed">
+              Single-wall corrugate collapses under standard pallet stacking forces during last-mile transit.
+            </p>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-border-hairline flex flex-col gap-2">
+<div class="flex items-center justify-between font-eyebrow-mono text-eyebrow-mono text-text-tertiary">
+<span>SAMPLE SHARE</span>
+<span class="text-primary">0.72% of partial</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px] text-text-tertiary">inventory_2</span>
+<span class="font-code-md text-code-md text-on-surface-variant truncate">Action: Switch to double-wall fluting</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- R4 Aspect Bar Chart: Diverging distribution for 1,240 reviews -->
+<section class="bg-surface-card border border-border-hairline rounded-xl p-space-lg mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-space-md border-b border-border-hairline mb-6">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase tracking-widest">03 · ASPECT SENTIMENT BREAKDOWN</span>
+<span class="font-eyebrow-mono text-eyebrow-mono text-data-warning bg-data-warning/10 px-2 py-0.5 rounded">1,240 SAMPLE</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Diverging Aspect Distribution</h2>
+</div>
+<!-- Chart Legend -->
+<div class="flex items-center gap-4 font-eyebrow-mono text-eyebrow-mono">
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-sm bg-data-negative"></div>
+<span class="text-text-tertiary">NEGATIVE</span>
+</div>
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-sm bg-surface-container-high"></div>
+<span class="text-text-tertiary">NEUTRAL</span>
+</div>
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-sm bg-primary"></div>
+<span class="text-text-tertiary">POSITIVE</span>
+</div>
+</div>
+</div>
+<!-- Diverging Chart Rows -->
+<div class="flex flex-col gap-5">
+<!-- Freshness & Ripeness -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-primary font-medium flex items-center gap-2">
+            Freshness & Ripeness
+            <span class="font-eyebrow-mono text-eyebrow-mono text-data-negative font-normal">38% neg</span>
+</span>
+<span class="font-code-md text-code-md text-text-tertiary">471 mentions</span>
+</div>
+<div class="w-full h-5 bg-surface-container-low rounded flex overflow-hidden">
+<div class="bg-data-negative h-full flex items-center justify-end pr-2 font-eyebrow-mono text-[10px] text-surface-container-lowest font-bold" style="width: 38%">38%</div>
+<div class="bg-surface-container-high h-full" style="width: 14%"></div>
+<div class="bg-primary h-full flex items-center pl-2 font-eyebrow-mono text-[10px] text-surface-container-lowest font-bold" style="width: 48%">48%</div>
+</div>
+</div>
+<!-- Packaging Integrity -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-primary font-medium flex items-center gap-2">
+            Packaging & Protection
+            <span class="font-eyebrow-mono text-eyebrow-mono text-data-negative font-normal">31% neg</span>
+</span>
+<span class="font-code-md text-code-md text-text-tertiary">384 mentions</span>
+</div>
+<div class="w-full h-5 bg-surface-container-low rounded flex overflow-hidden">
+<div class="bg-data-negative h-full flex items-center justify-end pr-2 font-eyebrow-mono text-[10px] text-surface-container-lowest font-bold" style="width: 31%">31%</div>
+<div class="bg-surface-container-high h-full" style="width: 19%"></div>
+<div class="bg-primary h-full flex items-center pl-2 font-eyebrow-mono text-[10px] text-surface-container-lowest font-bold" style="width: 50%">50%</div>
+</div>
+</div>
+<!-- Net Weight Accuracy -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-primary font-medium flex items-center gap-2">
+            Weight Accuracy
+            <span class="font-eyebrow-mono text-eyebrow-mono text-data-negative font-normal">24% neg</span>
+</span>
+<span class="font-code-md text-code-md text-text-tertiary">298 mentions</span>
+</div>
+<div class="w-full h-5 bg-surface-container-low rounded flex overflow-hidden">
+<div class="bg-data-negative h-full flex items-center justify-end pr-2 font-eyebrow-mono text-[10px] text-surface-container-lowest font-bold" style="width: 24%">24%</div>
+<div class="bg-surface-container-high h-full" style="width: 26%"></div>
+<div class="bg-primary h-full flex items-center pl-2 font-eyebrow-mono text-[10px] text-surface-container-lowest font-bold" style="width: 50%">50%</div>
+</div>
+</div>
+<!-- Taste & Sugar Profile -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-primary font-medium flex items-center gap-2">
+            Taste & Flavor (Brix)
+            <span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary font-normal">14% neg</span>
+</span>
+<span class="font-code-md text-code-md text-text-tertiary">512 mentions</span>
+</div>
+<div class="w-full h-5 bg-surface-container-low rounded flex overflow-hidden">
+<div class="bg-data-negative h-full flex items-center justify-end pr-2 font-eyebrow-mono text-[10px] text-surface-container-lowest font-bold" style="width: 14%">14%</div>
+<div class="bg-surface-container-high h-full" style="width: 11%"></div>
+<div class="bg-primary h-full flex items-center pl-2 font-eyebrow-mono text-[10px] text-surface-container-lowest font-bold" style="width: 75%">75%</div>
+</div>
+</div>
+<!-- Delivery Promptness -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-body-sm text-body-sm">
+<span class="text-primary font-medium flex items-center gap-2">
+            Delivery & Carrier Speed
+            <span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary font-normal">11% neg</span>
+</span>
+<span class="font-code-md text-code-md text-text-tertiary">203 mentions</span>
+</div>
+<div class="w-full h-5 bg-surface-container-low rounded flex overflow-hidden">
+<div class="bg-data-negative h-full flex items-center justify-end pr-2 font-eyebrow-mono text-[10px] text-surface-container-lowest font-bold" style="width: 11%">11%</div>
+<div class="bg-surface-container-high h-full" style="width: 15%"></div>
+<div class="bg-primary h-full flex items-center pl-2 font-eyebrow-mono text-[10px] text-surface-container-lowest font-bold" style="width: 74%">74%</div>
+</div>
+</div>
+</div>
+<!-- Divergence Axis Guideline -->
+<div class="mt-4 pt-3 border-t border-border-hairline flex justify-between font-eyebrow-mono text-[10px] text-text-tertiary">
+<span>100% DISAPPROVAL</span>
+<span>EQUILIBRIUM (0)</span>
+<span>100% APPROVAL</span>
+</div>
+</section>
+<!-- R6 Review Table -->
+<section class="bg-surface-card border border-border-hairline rounded-xl p-space-lg">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-space-md border-b border-border-hairline mb-4">
+<div class="flex flex-wrap items-center gap-3">
+<div class="flex items-center gap-2">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase tracking-widest">04 · RAW EXTRACT LOG</span>
+</div>
+<div class="inline-flex items-center gap-1.5 bg-data-warning/10 border border-data-warning/30 px-2.5 py-0.5 rounded-full font-eyebrow-mono text-eyebrow-mono text-data-warning">
+<span class="w-1.5 h-1.5 rounded-full bg-data-warning"></span>
+<span>Partial Batch (1,240 rows)</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-[16px] text-text-tertiary">search</span>
+<input class="bg-surface-interactive border border-border-hairline rounded-full pl-8 pr-3 py-1 font-body-sm text-body-sm text-primary placeholder-text-tertiary focus:border-border-focus focus:outline-none w-56" placeholder="Filter indexed comments..." type="text"/>
+</div>
+<button class="bg-surface-interactive text-on-surface-variant hover:text-primary border border-border-hairline rounded-full px-3 py-1 font-eyebrow-mono text-eyebrow-mono flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+<span>Filter</span>
+</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-border-hairline font-eyebrow-mono text-eyebrow-mono text-text-tertiary">
+<th class="py-3 px-3">ID / DATE</th>
+<th class="py-3 px-3">RATING</th>
+<th class="py-3 px-3">PRIMARY ISSUE</th>
+<th class="py-3 px-3">CUSTOMER REVIEW SNIPPET</th>
+<th class="py-3 px-3 text-right">EXTRACTED INTENT</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-hairline font-body-sm text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-interactive/50 transition-colors">
+<td class="py-3.5 px-3 font-code-md text-code-md text-text-tertiary whitespace-nowrap">
+              #1240 <span class="text-[11px] block">TODAY 14:22</span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center text-data-negative font-code-md text-code-md">★ 1.0</span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="bg-data-negative/10 text-data-negative border border-data-negative/20 text-eyebrow-mono px-2 py-0.5 rounded">SPOILED ARRIVAL</span>
+</td>
+<td class="py-3.5 px-3 text-on-surface max-w-md">
+<p class="truncate text-primary">"Strawberries were already liquefied on the bottom layer. Box smelled like wine before I opened it."</p>
+</td>
+<td class="py-3.5 px-3 text-right whitespace-nowrap">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary">REFUND CLAIM</span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-interactive/50 transition-colors">
+<td class="py-3.5 px-3 font-code-md text-code-md text-text-tertiary whitespace-nowrap">
+              #1239 <span class="text-[11px] block">TODAY 14:21</span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center text-data-negative font-code-md text-code-md">★ 2.0</span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="bg-surface-container text-on-surface border border-border-hairline text-eyebrow-mono px-2 py-0.5 rounded">UNDERWEIGHT</span>
+</td>
+<td class="py-3.5 px-3 text-on-surface max-w-md">
+<p class="truncate text-on-surface">"Package says 2.0kg net weight. Kitchen scale measured barely 1,640 grams including packaging."</p>
+</td>
+<td class="py-3.5 px-3 text-right whitespace-nowrap">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary">LABEL DEFICIT</span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-interactive/50 transition-colors">
+<td class="py-3.5 px-3 font-code-md text-code-md text-text-tertiary whitespace-nowrap">
+              #1238 <span class="text-[11px] block">TODAY 14:19</span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center text-data-negative font-code-md text-code-md">★ 1.0</span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="bg-surface-container text-on-surface border border-border-hairline text-eyebrow-mono px-2 py-0.5 rounded">BOX DAMAGED</span>
+</td>
+<td class="py-3.5 px-3 text-on-surface max-w-md">
+<p class="truncate text-on-surface">"Courier handed me a soaked, crushed carton. Cardboard gave out completely during transit."</p>
+</td>
+<td class="py-3.5 px-3 text-right whitespace-nowrap">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary">CARRIER DAMAGE</span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-interactive/50 transition-colors">
+<td class="py-3.5 px-3 font-code-md text-code-md text-text-tertiary whitespace-nowrap">
+              #1237 <span class="text-[11px] block">TODAY 14:18</span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="inline-flex items-center text-primary font-code-md text-code-md">★ 5.0</span>
+</td>
+<td class="py-3.5 px-3 whitespace-nowrap">
+<span class="bg-surface-container-high text-primary border border-border-hairline text-eyebrow-mono px-2 py-0.5 rounded">SWEETNESS</span>
+</td>
+<td class="py-3.5 px-3 text-on-surface max-w-md">
+<p class="truncate text-text-tertiary">"Super crisp and very sweet. Best batch this season."</p>
+</td>
+<td class="py-3.5 px-3 text-right whitespace-nowrap">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary">SATISFIED</span>
+</td>
+</tr>
+<!-- Row 5 (Cutoff row indicator) -->
+<tr class="bg-data-warning/5 border-t border-data-warning/20">
+<td class="py-4 px-3 text-center" colspan="5">
+<div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+<span class="material-symbols-outlined text-[18px] text-data-warning">pause_circle</span>
+<span class="font-code-md text-code-md text-primary">Stream interrupted at record #1,240 (Remaining 760 records pending quota replenishment)</span>
+<button class="font-eyebrow-mono text-eyebrow-mono text-data-warning underline underline-offset-4 hover:text-white cursor-pointer ml-2" onclick="document.getElementById('key-modal').classList.remove('hidden')">
+                  RESUME BATCH NOW →
+                </button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="mt-4 pt-3 border-t border-border-hairline flex flex-col sm:flex-row items-center justify-between gap-3 font-eyebrow-mono text-eyebrow-mono text-text-tertiary">
+<span>SHOWING 1 - 4 OF 1,240 LABELED ROWS</span>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded border border-border-hairline bg-surface text-primary disabled:opacity-40" disabled="">PREV</button>
+<button class="px-2.5 py-1 rounded border border-border-hairline bg-surface-interactive text-primary">1</button>
+<button class="px-2.5 py-1 rounded border border-border-hairline bg-surface text-text-tertiary hover:text-primary">2</button>
+<button class="px-2.5 py-1 rounded border border-border-hairline bg-surface text-text-tertiary hover:text-primary">3</button>
+<span class="px-1">...</span>
+<button class="px-2.5 py-1 rounded border border-border-hairline bg-surface text-text-tertiary hover:text-primary">310</button>
+<button class="px-2.5 py-1 rounded border border-border-hairline bg-surface text-primary hover:bg-surface-interactive">NEXT</button>
+</div>
+</div>
+</section>
+<!-- Key Resumption Modal (Interactive Overlay) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-surface-container-lowest/80 backdrop-blur-md" id="key-modal">
+<div class="bg-surface-card border border-border-focus rounded-xl max-w-md w-full p-6 shadow-2xl flex flex-col gap-5">
+<div class="flex items-center justify-between border-b border-border-hairline pb-3">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-data-warning"></span>
+<span class="font-eyebrow-mono text-eyebrow-mono text-primary uppercase">Resume Processing</span>
+</div>
+<button class="text-text-tertiary hover:text-primary cursor-pointer" onclick="document.getElementById('key-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-2">
+<h4 class="font-headline-sm text-headline-sm text-primary">Provide API Key to Continue</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Your initial quota was exhausted at review 1,240. Supply an alternative Claude or OpenAI key to process the remaining 760 reviews without restarting.
+        </p>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase">NEW API KEY</label>
+<input class="bg-surface-interactive border border-border-hairline rounded-lg px-3 py-2 font-code-md text-code-md text-primary focus:border-border-focus focus:outline-none w-full" placeholder="sk-ant-api03-..." type="password"/>
+<span class="font-code-md text-[11px] text-text-tertiary">Keys are used ephemerally in memory and never persisted.</span>
+</div>
+<div class="flex items-center justify-end gap-2 pt-2">
+<button class="bg-surface-card text-on-surface-variant font-label-pill text-label-pill px-4 py-2 rounded-full border border-border-hairline hover:text-primary hover:border-border-focus transition-all" onclick="document.getElementById('key-modal').classList.add('hidden')">
+          Cancel
+        </button>
+<button class="bg-primary text-on-primary font-label-pill text-label-pill px-4 py-2 rounded-full hover:bg-primary/90 transition-opacity" onclick="alert('Batch resumed with updated credentials.'); document.getElementById('key-modal').classList.add('hidden');">
+          Resume Remaining 760
+        </button>
+</div>
+</div>
+</div>
+</div></main><footer class="relative z-10 w-full border-t border-border-hairline bg-surface-container-lowest/80 backdrop-blur-md py-8"><div class="max-w-7xl mx-auto px-space-md text-center font-eyebrow-mono text-eyebrow-mono text-text-tertiary flex flex-wrap justify-center items-center gap-2"><span><a class="hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How it works</a></span><span class="opacity-40">·</span><span><a class="hover:text-on-surface transition-colors" data-path="github" href="#">GitHub</a></span><span class="opacity-40">·</span><span><a class="hover:text-on-surface transition-colors" data-path="claude-integration" href="#">Use in Claude (no API key)</a></span><span class="opacity-40">·</span><span class="text-on-surface-variant">Built by Boxiao Wu</span></div></footer></body></html>

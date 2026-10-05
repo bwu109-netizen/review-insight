@@ -2,10 +2,9 @@
 
 Run locally:  streamlit run app.py
 The two built-in datasets are precomputed (data/app/), so browsing needs no API key.
-"Analyze your own reviews" calls the LLM and needs a Gemini key.
+The main page (ui/ + src/web_app.py) analyzes uploaded reviews with the visitor's own API key.
 """
 import json
-import os
 import sys
 from pathlib import Path
 
@@ -36,20 +35,6 @@ T = {
               "分给对应团队的待办清单。已在 900 条京东评论上验证：与人工标签一致率 89%（AI 明确判好评或差评时为 98%）。"},
     "github": {"en": "Method, examples and full evaluation on GitHub", "zh": "方法、示例和完整评估见 GitHub"},
     "examples_link": {"en": "View example results", "zh": "查看示例结果"},
-    "cu_provider": {"en": "AI provider", "zh": "AI 服务商"},
-    "cu_model": {"en": "Model", "zh": "模型"},
-    "cu_model_ph": {"en": "model name from your provider's console", "zh": "填你在服务商后台看到的模型名"},
-    "cu_base": {"en": "Base URL (OpenAI-compatible)", "zh": "Base URL（OpenAI 兼容接口）"},
-    "cu_key_any": {"en": "API key", "zh": "API key"},
-    "cu_key_free": {"en": "API key (optional: this app has a free Gemini key configured)",
-                    "zh": "API key（可不填：本网页已配置免费的 Gemini key）"},
-    "cu_key_get": {"en": "Get a key: {u}", "zh": "申请 key：{u}"},
-    "cu_privacy": {"en": "Your key is only used for this session and is not stored.",
-                   "zh": "你的 key 只在本次使用，不会被保存。"},
-    "cu_need": {"en": "Fill in a category, add some reviews, and provide an API key to start.",
-                "zh": "填写品类、添加评论并提供 API key 后即可开始。"},
-    "cu_brief_fail": {"en": "Labels are ready, but the ops brief could not be generated: {e}",
-                      "zh": "标注已完成，但运营简报生成失败：{e}"},
     "market": {"en": "Market", "zh": "市场"},
     "m_jd": {"en": "Domestic: JD.com (Chinese)", "zh": "国内：京东（中文）"},
     "m_amz": {"en": "Overseas: Amazon US (English)", "zh": "海外：美国亚马逊（英文）"},
@@ -149,58 +134,6 @@ T = {
                        "part of the evaluation.",
                  "zh": "很多不一致是 AI 对好坏参半的评论给了“中性”，还有一些是原始数据标错了（比如抱怨快递员态度差的评论被标成好评）。"
                        "逐条读这些分歧也是评估的一部分。"},
-    "custom_intro": {
-        "en": "Upload reviews exported from a seller back-end (Taobao/Tmall Qianniu, JD Jingmai, Douyin Doudian, "
-              "TikTok Shop, Amazon...) or paste comments copied from RedNote / WeChat Channels. Up to 2,000 reviews per run, or 10,000 with a paid API; larger files are randomly sampled.",
-        "zh": "上传从商家后台导出的评价（淘宝/天猫千牛、京东京麦、抖店、TikTok Shop、亚马逊等），或直接粘贴小红书、视频号的评论。"
-              "每次最多分析 2,000 条，用付费 API 可到 10,000 条，超过会随机抽样。"},
-    "cu_cat": {"en": "Product category", "zh": "商品品类"},
-    "cu_cat_ph": {"en": "e.g. fruit, desk, laptop", "zh": "例如：水果、桌子、笔记本电脑"},
-    "cu_platform": {"en": "Platform", "zh": "平台"},
-    "cu_file": {"en": "CSV or Excel file", "zh": "CSV 或 Excel 文件"},
-    "cu_col": {"en": "Which column has the review text?", "zh": "评论内容在哪一列？"},
-    "cu_paste": {"en": "...or paste reviews, one per line", "zh": "……或直接粘贴评论，每行一条"},
-    "cu_key": {"en": "Gemini API key (only needed if this app has none configured)",
-               "zh": "Gemini API key（仅在本网页未配置时需要）"},
-    "cu_go": {"en": "Analyze", "zh": "开始分析"},
-    "cu_spin": {"en": "Analyzing {n} reviews...", "zh": "正在分析 {n} 条评论……"},
-    "cu_count": {"en": "{n} reviews loaded. Estimated time: about {m} min.",
-                 "zh": "已读入 {n} 条评论，预计用时约 {m} 分钟。"},
-    "cu_cut": {"en": "{n} reviews uploaded. A random sample of {max} will be analyzed, which is enough to estimate "
-                     "each issue's share within about ±2%. To label every review, run the command-line pipeline (see GitHub).",
-               "zh": "共上传 {n} 条，将随机抽取 {max} 条分析，估算各问题占比的误差约 ±2%。"
-                     "如需全量标注，可用命令行版本在本地跑（见 GitHub）。"},
-    "cu_tax": {"en": "Choosing aspects for this category...", "zh": "正在为这个品类生成分析维度……"},
-    "cu_none": {"en": "(none)", "zh": "（无）"},
-    "cu_rating_col": {"en": "Star rating column (optional)", "zh": "评分列（可选）"},
-    "cu_date_col": {"en": "Date column (optional)", "zh": "日期列（可选）"},
-    "cu_how_many": {"en": "{n} reviews uploaded. How many to analyze?", "zh": "共上传 {n} 条评论，分析多少条？"},
-    "cu_opt_sample": {"en": "Random sample of {s} (recommended, about {m} min; shares within about ±2%)",
-                      "zh": "随机抽 {s} 条（推荐，约 {m} 分钟，占比误差约 ±2%）"},
-    "cu_opt_all": {"en": "All {n} (about {m} min; better for rare issues and per-product or per-month breakdowns)",
-                   "zh": "全部 {n} 条（约 {m} 分钟，适合找少见问题、按商品或月份细分）"},
-    "cu_opt_max": {"en": "Random sample of {n}, the maximum (about {m} min)", "zh": "随机抽 {n} 条，上限（约 {m} 分钟）"},
-    "cu_over_limit": {"en": "The web app labels at most {lim} reviews per run. To label every review, use the "
-                            "command-line pipeline on GitHub (any size, can be stopped and resumed).",
-                      "zh": "网页版每次最多 {lim} 条。如需全部标注，请用 GitHub 上的命令行版本（不限量，可断点续跑）。"},
-    "cu_tier_free": {"en": "{n} reviews uploaded. With Gemini's free tier, a random sample of {s} will be analyzed "
-                           "(shares within about ±2%). To analyze up to {lim}, choose a paid provider such as DeepSeek.",
-                     "zh": "共上传 {n} 条。Gemini 免费额度下将随机抽 {s} 条分析（占比误差约 ±2%）。"
-                           "如需分析最多 {lim} 条，请换用 DeepSeek 等付费接口。"},
-    "cu_partial": {"en": "The run stopped early, so these results cover {d} of {n} reviews. Reason: {e}",
-                   "zh": "分析中途停止，以下结果只包含 {n} 条中的 {d} 条。原因：{e}"},
-    "cu_scope_all": {"en": "Analyzed all {n} reviews.", "zh": "已分析全部 {n} 条评论。"},
-    "cu_scope_sample": {"en": "Analyzed a random sample of {n} out of {total} reviews",
-                        "zh": "从 {total} 条评论中随机抽取 {n} 条分析"},
-    "cu_scope_strat": {"en": ", keeping each star level and month (where available) at its real share.",
-                       "zh": "，各星级、月份（如有）按实际比例抽取。"},
-    "cu_prog": {"en": "Labeled {d} / {n} reviews", "zh": "已标注 {d} / {n} 条"},
-    "cu_brief_spin": {"en": "Writing the ops brief...", "zh": "正在写运营简报……"},
-    "cu_keep_open": {"en": "Keep this tab open until it finishes.", "zh": "完成前请不要关闭页面。"},
-    "cu_aspects": {"en": "AI-generated aspects: ", "zh": "AI 生成的维度："},
-    "cu_dl": {"en": "Download labeled reviews (CSV)", "zh": "下载标注结果（CSV）"},
-    "cu_nokey": {"en": "No API key configured. Get a free one at aistudio.google.com.",
-                 "zh": "未配置 API key，可在 aistudio.google.com 免费申请。"},
     "sent_positive": {"en": "positive", "zh": "好评"},
     "sent_neutral": {"en": "neutral", "zh": "中性"},
     "sent_negative": {"en": "negative", "zh": "差评"},
@@ -493,193 +426,20 @@ def accuracy_tab(dataset, data):
             st.dataframe(data["errors"], hide_index=True, width="stretch", height=360)
 
 
-def server_gemini_key() -> str:
-    key = os.getenv("GEMINI_API_KEY", "")
-    try:
-        key = key or st.secrets.get("GEMINI_API_KEY", "")
-    except Exception:  # noqa: BLE001  (no secrets file locally)
-        pass
-    return key
-
-
-RATING_HINTS = ("评分", "星级", "打分", "rating", "score", "star")
-DATE_HINTS = ("时间", "日期", "date", "time")
-
-
-def read_upload(up) -> pd.DataFrame:
-    if up.name.endswith("xlsx"):
-        return pd.read_excel(up)
-    try:
-        return pd.read_csv(up, encoding="utf-8-sig")
-    except UnicodeDecodeError:  # Chinese seller back-ends often export GBK
-        up.seek(0)
-        return pd.read_csv(up, encoding="gb18030")
-
-
-def guess_col(df: pd.DataFrame, hints) -> int:
-    """Index into [none] + columns of the first column whose name matches a hint."""
-    for i, c in enumerate(df.columns):
-        if any(h in str(c).lower() for h in hints):
-            return i + 1
-    return 0
-
-
-def custom_tab():
-    from llm_client import PROVIDERS, LLMError, make_client
-    import custom
-
-    st.markdown(t("custom_intro"))
-    c1, c2 = st.columns(2)
-    category = c1.text_input(t("cu_cat"), placeholder=t("cu_cat_ph"))
-    platform = c2.selectbox(t("cu_platform"), PLATFORMS[st.session_state.lang])
-    up = st.file_uploader(t("cu_file"), type=["csv", "xlsx"])
-    texts, ratings, strata = [], [], []
-    if up is not None:
-        df = read_upload(up)
-        text_guess = max(range(len(df.columns)), key=lambda i: df.iloc[:, i].astype(str).str.len().mean())
-        col = st.selectbox(t("cu_col"), df.columns, index=text_guess)
-        none = t("cu_none")
-        o1, o2 = st.columns(2)
-        rcol = o1.selectbox(t("cu_rating_col"), [none] + list(df.columns), index=guess_col(df, RATING_HINTS))
-        dcol = o2.selectbox(t("cu_date_col"), [none] + list(df.columns), index=guess_col(df, DATE_HINTS))
-        texts = df[col].astype("string").fillna("").tolist()
-        ratings = (pd.to_numeric(df[rcol], errors="coerce") if rcol != none
-                   else pd.Series([float("nan")] * len(df))).tolist()
-        # sampling keeps each star level and month at its real share
-        key_parts = []
-        if rcol != none:
-            key_parts.append(pd.to_numeric(df[rcol], errors="coerce").round().astype("string").fillna("?"))
-        if dcol != none:
-            key_parts.append(pd.to_datetime(df[dcol], errors="coerce").dt.strftime("%Y-%m").fillna("?"))
-        strata = (key_parts[0] if len(key_parts) == 1 else key_parts[0] + "|" + key_parts[1]).tolist() \
-            if key_parts else [""] * len(df)
-    pasted = st.text_area(t("cu_paste"), height=150)
-    if pasted.strip():
-        lines = [x for x in pasted.splitlines() if x.strip()]
-        texts += lines
-        ratings += [float("nan")] * len(lines)
-        strata += ["?" if up is not None else ""] * len(lines)
-
-    # ---- AI provider: every visitor can bring their own
-    p1, p2 = st.columns(2)
-    provider = p1.selectbox(t("cu_provider"), list(PROVIDERS), format_func=lambda k: PROVIDERS[k]["label"])
-    preset = PROVIDERS[provider]
-    model = p2.text_input(t("cu_model"), value=preset.get("model", ""), placeholder=t("cu_model_ph"),
-                          key=f"model_{provider}")
-    base_url = ""
-    if provider == "custom":
-        base_url = st.text_input(t("cu_base"), placeholder="https://.../v1")
-    free_key = server_gemini_key() if provider == "gemini" else ""
-    user_key = st.text_input(t("cu_key_free") if free_key else t("cu_key_any"), type="password",
-                             key=f"key_{provider}")
-    key = user_key or free_key
-    notes = [t("cu_privacy")]
-    if preset.get("key_url"):
-        notes.insert(0, t("cu_key_get", u=preset["key_url"]))
-    st.caption("  ".join(notes))
-
-    # ---- how many reviews to analyze: tiered by provider
-    kind = custom.provider_kind("gemini" if preset["kind"] == "gemini" else provider)
-    limit = custom.limit_for(kind)
-    n_valid = len(custom.clean_reviews(texts)) if texts else 0
-    n_use = n_valid
-    if n_valid > custom.SAMPLE_SIZE:
-        mins = lambda n: max(1, round(custom.estimate_minutes(n, kind)))  # noqa: E731
-        if kind == "gemini":
-            n_use = custom.SAMPLE_SIZE
-            st.info(t("cu_tier_free", n=f"{n_valid:,}", s=f"{custom.SAMPLE_SIZE:,}", lim=f"{custom.LIMITS['default']:,}"))
-        else:
-            n_all = min(n_valid, limit)
-            opts = {custom.SAMPLE_SIZE: t("cu_opt_sample", s=f"{custom.SAMPLE_SIZE:,}", m=mins(custom.SAMPLE_SIZE)),
-                    n_all: (t("cu_opt_all", n=f"{n_all:,}", m=mins(n_all)) if n_all == n_valid
-                            else t("cu_opt_max", n=f"{n_all:,}", m=mins(n_all)))}
-            n_use = st.radio(t("cu_how_many", n=f"{n_valid:,}"), list(opts), format_func=opts.get)
-            if n_valid > limit:
-                st.caption(t("cu_over_limit", lim=f"{limit:,}"))
-    if n_valid:
-        m = custom.estimate_minutes(n_use, kind)
-        st.caption(t("cu_count", n=f"{n_use:,}", m=max(1, round(m))) + (" " + t("cu_keep_open") if m > 1.5 else ""))
-
-    ready = bool(n_valid and category and key and model.strip() and (provider != "custom" or base_url))
-    if st.button(t("cu_go"), type="primary", disabled=not ready):
-        st.session_state.pop("cu_result", None)
-        sample = custom.to_sample(texts, category, platform, max_n=n_use, ratings=ratings, strata=strata)
-        bar = st.progress(0.0, text=t("cu_tax"))
-
-        def on_progress(done, total):
-            bar.progress(min(done / max(total, 1), 1.0), text=t("cu_prog", d=f"{done:,}", n=f"{total:,}"))
-
-        try:
-            client = make_client(provider, key, model, base_url)
-            tax, R, A, G, run_err = custom.run_custom(client, sample, category, progress=on_progress)
-        except (LLMError, RuntimeError) as e:
-            bar.empty()
-            st.error(str(e))
-            return
-        brief, brief_err = None, None
-        if not run_err:
-            bar.progress(1.0, text=t("cu_brief_spin"))
-            try:
-                brief = custom.make_brief(client, R, A, tax, st.session_state.lang)
-            except Exception as e:  # noqa: BLE001  (labels are still useful without a brief)
-                brief_err = str(e)
-        bar.empty()
-        # kept in the session so results survive reruns (download button, language toggle)
-        st.session_state.cu_result = dict(tax=tax, R=R, A=A, brief=brief, brief_err=brief_err, run_err=run_err,
-                                          category=category, n_sample=len(sample), **sample.attrs)
-    elif not ready and "cu_result" not in st.session_state:
-        st.caption(t("cu_need"))
-
-    if "cu_result" in st.session_state:
-        show_custom_result(st.session_state.cu_result)
-
-
-def show_custom_result(res):
-    tax, R = res["tax"], res["R"]
-    A = localize_aspects(res["A"])
-    if res["run_err"]:
-        st.warning(t("cu_partial", d=f"{len(R):,}", n=f"{res['n_sample']:,}", e=res["run_err"]))
-    scope = t("cu_scope_all", n=f"{len(R):,}")
-    if res.get("sampled"):
-        scope = t("cu_scope_sample", n=f"{res['n_sample']:,}", total=f"{res['n_total']:,}") + \
-            (t("cu_scope_strat") if res.get("stratified") else "")
-    st.success(t("cu_aspects") + ", ".join(
-        (a.get("label_zh") or a["label_en"]) if zh() else a["label_en"] for a in tax["aspects"]))
-    st.caption(scope)
-    c1, c2, c3 = st.columns(3)
-    c1.metric(t("k_reviews"), f"{len(R):,}")
-    c2.metric(t("k_ai_neg"), f"{R.ai_negative.mean():.0%}")
-    c3.metric(t("k_hidden"), int(R.hidden_issue.sum()), help=t("k_hidden_help"))
-    st.subheader(t("h_aspects"))
-    aspect_chart(A)
-    st.subheader(t("h_fix"))
-    fix_first(A, R)
-    if res["brief"]:
-        st.subheader(f"{t('h_brief')}: {res['brief'].get('name', res['category'])}")
-        brief_view(res["brief"])
-    elif res["brief_err"]:
-        st.warning(t("cu_brief_fail", e=res["brief_err"]))
-    st.subheader(t("h_hidden"))
-    hidden_issues(R, A)
-    st.download_button(t("cu_dl"), R.to_csv(index=False).encode("utf-8-sig"), file_name="labeled_reviews.csv")
-
-
 # ------------------------------------------------------------------ layout
 GITHUB_URL = "https://github.com/bwu109-netizen/review-insight"
 
-head, toggle = st.columns([5, 1])
-with toggle:
-    st.radio("Language / 语言", ["en", "zh"], key="lang", horizontal=True,
-             format_func=lambda x: "English" if x == "en" else "中文", label_visibility="collapsed")
-with head:
-    st.title("Review Insight")
-st.caption(t("subtitle"))
-if "GITHUB_USER" not in GITHUB_URL:
-    st.markdown(f"**[{t('examples_link')} →]({GITHUB_URL}#examples)**  ·  [{t('github')}]({GITHUB_URL})")
-
-# The built-in JD.com / Amazon examples are documented in the README. They stay reachable
-# at ?examples=1 (used to take the README screenshots), but are not part of the main page.
+# The main page is the Stitch-style front end (ui/ + src/web_app.py). The built-in JD.com / Amazon
+# examples are documented in the README and stay reachable at ?examples=1 (used for the README screenshots).
 if st.query_params.get("examples") == "1":
+    head, toggle = st.columns([5, 1])
+    with toggle:
+        st.radio("Language / 语言", ["en", "zh"], key="lang", horizontal=True,
+                 format_func=lambda x: "English" if x == "en" else "中文", label_visibility="collapsed")
+    with head:
+        st.title("Review Insight")
+    st.caption(t("subtitle"))
+    st.markdown(f"**[{t('examples_link')} →]({GITHUB_URL}#examples)**  ·  [{t('github')}]({GITHUB_URL})")
     market = st.radio(t("market"), ["jd", "amazon_tea"], horizontal=True,
                       format_func=lambda m: {"jd": t("m_jd"), "amazon_tea": t("m_amz")}[m])
     data = load(market)
@@ -694,4 +454,6 @@ if st.query_params.get("examples") == "1":
         with t3:
             st.markdown(METHOD[st.session_state.lang])
 else:
-    custom_tab()
+    import web_app
+
+    web_app.main()

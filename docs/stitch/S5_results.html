@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>Review Insight</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"border-focus":"rgba(255, 255, 255, 0.24)","outline":"#8e9192","secondary-fixed":"#e3e2e2","primary":"#ffffff","surface":"#131313","surface-container-low":"#1c1b1b","on-secondary-fixed":"#1b1c1c","data-negative":"#E5675A","surface-container-high":"#2a2a2a","on-secondary":"#303031","on-primary-fixed-variant":"#454747","on-error-container":"#ffdad6","on-surface-variant":"#c4c7c8","inverse-on-surface":"#313030","on-secondary-container":"#b5b5b5","tertiary-fixed-dim":"#81d8ab","primary-fixed-dim":"#c6c6c7","background":"#131313","on-surface":"#e5e2e1","on-background":"#e5e2e1","on-primary-container":"#636565","error-container":"#93000a","on-tertiary-fixed":"#002113","surface-variant":"#353534","on-tertiary":"#003823","error":"#ffb4ab","border-hairline":"rgba(255, 255, 255, 0.08)","secondary-fixed-dim":"#c7c6c6","surface-tint":"#c6c6c7","secondary":"#c7c6c6","inverse-primary":"#5d5f5f","on-error":"#690005","tertiary-fixed":"#9df5c5","surface-container-highest":"#353534","surface-bright":"#3a3939","text-tertiary":"#5C5C5C","tertiary-container":"#9df5c5","on-primary-fixed":"#1a1c1c","surface-dim":"#131313","on-primary":"#2f3131","surface-card":"#111111","surface-container-lowest":"#0e0e0e","outline-variant":"#444748","surface-container":"#201f1f","on-tertiary-fixed-variant":"#005235","surface-interactive":"#1A1A1A","primary-fixed":"#e2e2e2","on-secondary-fixed-variant":"#464747","inverse-surface":"#e5e2e1","primary-container":"#e2e2e2","secondary-container":"#464747","on-tertiary-container":"#10734d","tertiary":"#ffffff","data-warning":"#E0B04A"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-lg":"1.5rem","margin-mobile":"1.25rem","space-xl":"2.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","gutter-mobile":"1rem","margin":"2rem","gutter":"1.5rem"},fontFamily:{"label-pill":["Geist"],"headline-xl-mobile":["Geist"],"headline-md":["Geist"],"code-md":["JetBrains Mono"],"body-md":["Geist"],"headline-xl":["Geist"],"body-sm":["Geist"],"body-lg":["Geist"],"stat-xl-mobile":["Geist"],"headline-lg":["Geist"],"eyebrow-mono":["JetBrains Mono"],"headline-sm":["Geist"],"stat-xl":["Geist"]},fontSize:{"label-pill":["13px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"300"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"400"}],"code-md":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.025em","fontWeight":"300"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"stat-xl-mobile":["44px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"300"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"400"}],"eyebrow-mono":["11px",{"lineHeight":"14px","letterSpacing":"0.14em","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"500"}],"stat-xl":["64px",{"lineHeight":"72px","letterSpacing":"-0.03em","fontWeight":"300"}]}}}};</script></head><body class="bg-surface-container-lowest text-on-surface font-body-md min-h-screen relative selection:bg-primary selection:text-surface-container-lowest"><div class="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.06)_0%,rgba(14,14,14,0)_70%)]"></div><div class="pointer-events-none fixed inset-0 z-0 bg-[radial-gradient(rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:24px_24px]"></div><div class="fixed top-0 left-0 right-0 z-50 flex justify-center px-space-md pointer-events-none"><header class="pointer-events-auto mt-4 w-full max-w-[720px] h-12 bg-surface-card/80 backdrop-blur-xl border border-border-hairline rounded-full px-6 flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><a class="flex items-center gap-2 group" data-path="overview" href="#"><div class="w-5 h-5 rounded-full border border-border-focus flex items-center justify-center transition-colors group-hover:border-primary"><div class="w-1.5 h-1.5 rounded-full bg-primary"></div></div><span class="font-label-pill text-label-pill text-primary tracking-tight">Review Insight</span></a><nav class="hidden sm:flex items-center gap-space-lg" data-active-classes="text-primary font-body-sm"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="how-it-works" href="#">How it works</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="examples" href="#">Examples</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="github" href="#">GitHub</a></nav><div class="flex items-center gap-space-md"><span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary select-none cursor-pointer hover:text-primary transition-colors">EN | 中</span><a class="bg-primary text-on-primary font-label-pill text-label-pill px-3.5 py-1.5 rounded-full hover:bg-primary/90 transition-opacity flex items-center justify-center" data-path="analyze-reviews" href="#">Analyze reviews</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header></div><main class="relative z-10 w-full pt-20 pb-space-xl px-space-md max-w-7xl mx-auto"><div class="flex flex-col w-full">
+<div class="max-w-[960px] w-full mx-auto py-12 px-4">
+<!-- R1: RESULTS SUMMARY HEADER -->
+<header class="flex flex-col gap-6">
+<div class="flex flex-col md:flex-row md:items-start md:justify-between gap-6">
+<div class="space-y-1.5 max-w-2xl">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-eyebrow-mono text-eyebrow-mono text-on-surface-variant uppercase tracking-widest">Results · Run #4092</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg tracking-tight">
+<span class="text-primary font-light">Fruit, 2,000 reviews.</span>
+<span class="text-outline font-light">Here's what to fix first.</span>
+</h1>
+<p class="font-eyebrow-mono text-[11px] text-text-tertiary">
+            Analyzed a random sample of 2,000 out of 12,000 reviews, keeping each star level and month at its real share.
+          </p>
+</div>
+<!-- Top Actions -->
+<div class="flex flex-wrap items-center gap-2.5 shrink-0 pt-1">
+<button class="bg-surface-card hover:bg-surface-interactive text-on-surface text-label-pill font-label-pill px-4 py-2 rounded-full border border-border-hairline hover:border-border-focus transition-all flex items-center gap-1.5" id="btn-copy-brief">
+<span class="material-symbols-outlined text-[15px] text-on-surface-variant">content_copy</span>
+<span>Copy brief</span>
+</button>
+<button class="bg-primary hover:bg-primary/90 text-surface-container-lowest text-label-pill font-label-pill px-4 py-2 rounded-full transition-opacity flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[15px]">download</span>
+<span>Download CSV</span>
+</button>
+<a class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary hover:text-primary transition-colors flex items-center gap-1 px-2 py-1" data-path="analyze-reviews" href="#">
+<span>New analysis</span>
+<span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- M1b 3 Stat Metrics -->
+<div class="border-y border-border-hairline py-8 my-4 grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-border-hairline">
+<div class="px-6 py-4 md:py-0 text-center flex flex-col justify-center items-center">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase mb-1">Reviews Analyzed</span>
+<div class="font-stat-xl text-stat-xl text-primary font-light tracking-tight flex items-baseline justify-center">
+<span>2,000</span>
+</div>
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary mt-1">95% CI ±1.8%</span>
+</div>
+<div class="px-6 py-4 md:py-0 text-center flex flex-col justify-center items-center">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase mb-1">Negative Overall</span>
+<div class="font-stat-xl text-stat-xl text-data-negative font-light tracking-tight flex items-baseline justify-center">
+<span>24%</span>
+</div>
+<span class="font-eyebrow-mono text-[10px] text-data-negative/80 mt-1">480 negative ratings</span>
+</div>
+<div class="px-6 py-4 md:py-0 text-center flex flex-col justify-center items-center group relative cursor-help">
+<div class="flex items-center gap-1">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase mb-1">Hidden Issues</span>
+<span class="material-symbols-outlined text-[13px] text-text-tertiary mb-1">info</span>
+</div>
+<div class="font-stat-xl text-stat-xl text-primary font-light tracking-tight flex items-baseline justify-center">
+<span>37</span>
+</div>
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary mt-1">Flagged in 5★ ratings</span>
+</div>
+</div>
+</header>
+<!-- R2: PRIORITY ACTION ITEMS (FIX FIRST) -->
+<section class="mt-10">
+<div class="flex items-center justify-between mb-4">
+<h2 class="font-eyebrow-mono text-eyebrow-mono uppercase tracking-wider text-text-tertiary flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-data-negative rounded-sm"></span>
+          Priority Action Items · Fix First
+        </h2>
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary">Impact Rank 1-3</span>
+</div>
+<div class="space-y-4">
+<!-- Card 1 -->
+<article class="bg-surface-card border border-border-hairline rounded-xl p-6 hover:border-border-focus transition-all group">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-border-hairline/60">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-primary font-normal">1 · Fruit arrives spoiled</span>
+<span class="bg-surface-interactive border border-border-hairline text-[11px] font-eyebrow-mono px-2.5 py-0.5 rounded-full text-on-surface-variant">TEAM: Supply Chain / QC</span>
+</div>
+<span class="font-eyebrow-mono text-eyebrow-mono text-data-negative tracking-wide font-medium bg-data-negative/10 px-2 py-0.5 rounded">23 COMPLAINTS · 11% OF REVIEWS</span>
+</div>
+<blockquote class="border-l-2 border-primary/40 pl-4 py-1.5 text-body-md text-on-surface italic my-4 bg-surface-container-lowest/50 rounded-r">
+            “打开包装三个火龙果均已坏成这样，完全没办法吃”
+          </blockquote>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-primary font-medium">Next step:</span> Add a QC inspection before shipping; switch to refrigerated cold chain for summer deliveries.
+            </p>
+<button class="shrink-0 font-eyebrow-mono text-eyebrow-mono text-on-surface-variant group-hover:text-primary transition-colors flex items-center gap-1 hover:underline">
+<span>See all 23 quotes</span>
+<span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="bg-surface-card border border-border-hairline rounded-xl p-6 hover:border-border-focus transition-all group">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-border-hairline/60">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-primary font-normal">2 · Underweight / Missing items</span>
+<span class="bg-surface-interactive border border-border-hairline text-[11px] font-eyebrow-mono px-2.5 py-0.5 rounded-full text-on-surface-variant">TEAM: Warehouse & Packing</span>
+</div>
+<span class="font-eyebrow-mono text-eyebrow-mono text-data-negative tracking-wide font-medium bg-data-negative/10 px-2 py-0.5 rounded">16 COMPLAINTS · 8% OF REVIEWS</span>
+</div>
+<blockquote class="border-l-2 border-primary/40 pl-4 py-1.5 text-body-md text-on-surface italic my-4 bg-surface-container-lowest/50 rounded-r">
+            “标称5斤装，连箱称只有4.1斤，缺斤短两严重”
+          </blockquote>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-primary font-medium">Next step:</span> Implement weight-check sensor gate before sealing shipping carton.
+            </p>
+<button class="shrink-0 font-eyebrow-mono text-eyebrow-mono text-on-surface-variant group-hover:text-primary transition-colors flex items-center gap-1 hover:underline">
+<span>See all 16 quotes</span>
+<span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</button>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="bg-surface-card border border-border-hairline rounded-xl p-6 hover:border-border-focus transition-all group">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-border-hairline/60">
+<div class="flex items-center gap-3">
+<span class="font-headline-sm text-headline-sm text-primary font-normal">3 · Crushed fruit due to soft carton</span>
+<span class="bg-surface-interactive border border-border-hairline text-[11px] font-eyebrow-mono px-2.5 py-0.5 rounded-full text-on-surface-variant">TEAM: Packaging Design</span>
+</div>
+<span class="font-eyebrow-mono text-eyebrow-mono text-data-negative tracking-wide font-medium bg-data-negative/10 px-2 py-0.5 rounded">14 COMPLAINTS · 7% OF REVIEWS</span>
+</div>
+<blockquote class="border-l-2 border-primary/40 pl-4 py-1.5 text-body-md text-on-surface italic my-4 bg-surface-container-lowest/50 rounded-r">
+            “箱子全压扁了，底层的桃子全成果泥”
+          </blockquote>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="text-primary font-medium">Next step:</span> Upgrade to 5-ply corrugated carton with internal honeycomb divider.
+            </p>
+<button class="shrink-0 font-eyebrow-mono text-eyebrow-mono text-on-surface-variant group-hover:text-primary transition-colors flex items-center gap-1 hover:underline">
+<span>See all 14 quotes</span>
+<span class="material-symbols-outlined text-[13px]">arrow_forward</span>
+</button>
+</div>
+</article>
+</div>
+</section>
+<!-- R3: EXECUTIVE SUMMARY & KEEP DOING -->
+<section class="my-10 grid grid-cols-1 md:grid-cols-2 gap-6 p-6 bg-surface-card border border-border-hairline rounded-xl">
+<div class="flex flex-col justify-between">
+<div>
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase tracking-widest block mb-2">01 · Executive Summary</span>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            Overall customer sentiment is positive (<span class="text-primary font-medium">76%</span>), driven by sweetness and rapid delivery. However, spoilage and underweight shipments are driving <span class="text-data-negative font-medium">62%</span> of negative refund requests and damaging unit economics.
+          </p>
+</div>
+<div class="mt-4 pt-4 border-t border-border-hairline flex items-center gap-3">
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary">CONFIDENCE: HIGH</span>
+<span class="text-text-tertiary text-[10px]">·</span>
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary">COVERAGE: 99.4% OF TOKEN CORPUS</span>
+</div>
+</div>
+<div class="border-t md:border-t-0 md:border-l border-border-hairline pt-6 md:pt-0 md:pl-6 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-2">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-eyebrow-mono text-eyebrow-mono text-tertiary-fixed-dim uppercase tracking-widest">02 · Keep Doing (Strengths)</span>
+</div>
+<ul class="space-y-3 font-body-sm text-body-sm text-on-surface">
+<li class="flex items-start gap-2.5">
+<span class="text-tertiary-fixed-dim shrink-0 text-sm mt-0.5">●</span>
+<span>Fruit sweetness and natural flavor praised in <span class="text-primary font-medium">512 reviews</span> (unprompted repurchase driver).</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="text-tertiary-fixed-dim shrink-0 text-sm mt-0.5">●</span>
+<span>Next-day cold delivery speed cited as main reason for brand loyalty against competing offline grocers.</span>
+</li>
+</ul>
+</div>
+<div class="mt-4 pt-4 border-t border-border-hairline flex items-center justify-between">
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary">POSITIVE RATIO: 3.16 : 1</span>
+<span class="font-eyebrow-mono text-[10px] text-tertiary-fixed-dim hover:underline cursor-pointer">View positive drivers →</span>
+</div>
+</div>
+</section>
+<!-- R4: DIVERGING ASPECT BAR CHART -->
+<section class="my-12">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between pb-3 mb-6 border-b border-border-hairline">
+<div>
+<h2 class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase tracking-wider">
+            Aspect Frequency & Sentiment (Diverging Chart)
+          </h2>
+<p class="font-eyebrow-mono text-[11px] text-outline mt-1">
+            Left: Complaints (<span class="text-data-negative font-medium">Coral #E5675A</span>) │ Center axis │ Right: Praise (<span class="text-tertiary-fixed-dim font-medium">Emerald #5FB58A</span>)
+          </p>
+</div>
+<span class="font-eyebrow-mono text-[11px] text-text-tertiary mt-2 sm:mt-0">Max Scale: 600 mentions</span>
+</div>
+<!-- Chart Matrix -->
+<div class="bg-surface-card border border-border-hairline rounded-xl p-6 space-y-4">
+<!-- Row 1 -->
+<div class="grid grid-cols-12 items-center gap-2 text-xs">
+<div class="col-span-3 sm:col-span-2 font-body-sm text-body-sm text-on-surface truncate">Freshness & Spoilage</div>
+<div class="col-span-9 sm:col-span-10 grid grid-cols-2 gap-0 relative items-center h-8 bg-surface-container-lowest/60 rounded px-2">
+<!-- Center Line -->
+<div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-border-focus z-10"></div>
+<!-- Left bar (complaint) -->
+<div class="flex justify-end items-center pr-2 h-full">
+<div class="flex items-center gap-1.5 justify-end w-full">
+<span class="font-eyebrow-mono text-[10px] text-data-negative shrink-0">230</span>
+<div class="bg-data-negative h-4 rounded-l transition-all" style="width: 38.3%;"></div>
+</div>
+</div>
+<!-- Right bar (praise) -->
+<div class="flex justify-start items-center pl-2 h-full">
+<div class="flex items-center gap-1.5 w-full">
+<div class="bg-tertiary-fixed-dim h-4 rounded-r transition-all" style="width: 23.3%;"></div>
+<span class="font-eyebrow-mono text-[10px] text-tertiary-fixed-dim shrink-0">140</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-12 items-center gap-2 text-xs">
+<div class="col-span-3 sm:col-span-2 font-body-sm text-body-sm text-on-surface truncate">Taste & Sweetness</div>
+<div class="col-span-9 sm:col-span-10 grid grid-cols-2 gap-0 relative items-center h-8 bg-surface-container-lowest/60 rounded px-2">
+<div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-border-focus z-10"></div>
+<div class="flex justify-end items-center pr-2 h-full">
+<div class="flex items-center gap-1.5 justify-end w-full">
+<span class="font-eyebrow-mono text-[10px] text-data-negative shrink-0">45</span>
+<div class="bg-data-negative h-4 rounded-l transition-all" style="width: 7.5%;"></div>
+</div>
+</div>
+<div class="flex justify-start items-center pl-2 h-full">
+<div class="flex items-center gap-1.5 w-full">
+<div class="bg-tertiary-fixed-dim h-4 rounded-r transition-all" style="width: 85.3%;"></div>
+<span class="font-eyebrow-mono text-[10px] text-tertiary-fixed-dim shrink-0 font-medium">512</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-12 items-center gap-2 text-xs">
+<div class="col-span-3 sm:col-span-2 font-body-sm text-body-sm text-on-surface truncate">Weight & Quantity</div>
+<div class="col-span-9 sm:col-span-10 grid grid-cols-2 gap-0 relative items-center h-8 bg-surface-container-lowest/60 rounded px-2">
+<div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-border-focus z-10"></div>
+<div class="flex justify-end items-center pr-2 h-full">
+<div class="flex items-center gap-1.5 justify-end w-full">
+<span class="font-eyebrow-mono text-[10px] text-data-negative shrink-0">160</span>
+<div class="bg-data-negative h-4 rounded-l transition-all" style="width: 26.6%;"></div>
+</div>
+</div>
+<div class="flex justify-start items-center pl-2 h-full">
+<div class="flex items-center gap-1.5 w-full">
+<div class="bg-tertiary-fixed-dim h-4 rounded-r transition-all" style="width: 15.0%;"></div>
+<span class="font-eyebrow-mono text-[10px] text-tertiary-fixed-dim shrink-0">90</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="grid grid-cols-12 items-center gap-2 text-xs">
+<div class="col-span-3 sm:col-span-2 font-body-sm text-body-sm text-on-surface truncate">Protective Packaging</div>
+<div class="col-span-9 sm:col-span-10 grid grid-cols-2 gap-0 relative items-center h-8 bg-surface-container-lowest/60 rounded px-2">
+<div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-border-focus z-10"></div>
+<div class="flex justify-end items-center pr-2 h-full">
+<div class="flex items-center gap-1.5 justify-end w-full">
+<span class="font-eyebrow-mono text-[10px] text-data-negative shrink-0">140</span>
+<div class="bg-data-negative h-4 rounded-l transition-all" style="width: 23.3%;"></div>
+</div>
+</div>
+<div class="flex justify-start items-center pl-2 h-full">
+<div class="flex items-center gap-1.5 w-full">
+<div class="bg-tertiary-fixed-dim h-4 rounded-r transition-all" style="width: 30.0%;"></div>
+<span class="font-eyebrow-mono text-[10px] text-tertiary-fixed-dim shrink-0">180</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 5 -->
+<div class="grid grid-cols-12 items-center gap-2 text-xs">
+<div class="col-span-3 sm:col-span-2 font-body-sm text-body-sm text-on-surface truncate">Logistics Speed</div>
+<div class="col-span-9 sm:col-span-10 grid grid-cols-2 gap-0 relative items-center h-8 bg-surface-container-lowest/60 rounded px-2">
+<div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-border-focus z-10"></div>
+<div class="flex justify-end items-center pr-2 h-full">
+<div class="flex items-center gap-1.5 justify-end w-full">
+<span class="font-eyebrow-mono text-[10px] text-data-negative shrink-0">60</span>
+<div class="bg-data-negative h-4 rounded-l transition-all" style="width: 10.0%;"></div>
+</div>
+</div>
+<div class="flex justify-start items-center pl-2 h-full">
+<div class="flex items-center gap-1.5 w-full">
+<div class="bg-tertiary-fixed-dim h-4 rounded-r transition-all" style="width: 70.0%;"></div>
+<span class="font-eyebrow-mono text-[10px] text-tertiary-fixed-dim shrink-0">420</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Row 6 -->
+<div class="grid grid-cols-12 items-center gap-2 text-xs">
+<div class="col-span-3 sm:col-span-2 font-body-sm text-body-sm text-on-surface truncate">Price & Value</div>
+<div class="col-span-9 sm:col-span-10 grid grid-cols-2 gap-0 relative items-center h-8 bg-surface-container-lowest/60 rounded px-2">
+<div class="absolute left-1/2 top-0 bottom-0 w-[1px] bg-border-focus z-10"></div>
+<div class="flex justify-end items-center pr-2 h-full">
+<div class="flex items-center gap-1.5 justify-end w-full">
+<span class="font-eyebrow-mono text-[10px] text-data-negative shrink-0">85</span>
+<div class="bg-data-negative h-4 rounded-l transition-all" style="width: 14.1%;"></div>
+</div>
+</div>
+<div class="flex justify-start items-center pl-2 h-full">
+<div class="flex items-center gap-1.5 w-full">
+<div class="bg-tertiary-fixed-dim h-4 rounded-r transition-all" style="width: 35.0%;"></div>
+<span class="font-eyebrow-mono text-[10px] text-tertiary-fixed-dim shrink-0">210</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- R5: HIDDEN ISSUES IN SATISFIED REVIEWS -->
+<section class="my-12">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between mb-4">
+<div>
+<h2 class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase tracking-wider flex items-center gap-2">
+<span class="material-symbols-outlined text-[14px] text-data-warning">visibility</span>
+            Hidden Issues in Satisfied Reviews
+          </h2>
+<p class="font-eyebrow-mono text-[11px] text-outline mt-1">
+            Customers who gave 5 stars overall but mentioned concrete friction points.
+          </p>
+</div>
+<span class="font-eyebrow-mono text-[11px] text-text-tertiary">37 Total Silent Churn Risks</span>
+</div>
+<div class="bg-surface-card border border-border-hairline rounded-xl divide-y divide-border-hairline">
+<!-- Row 1 -->
+<div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-interactive/60 transition-colors">
+<div class="flex items-center gap-3">
+<span class="bg-surface-container border border-border-hairline text-[11px] font-eyebrow-mono text-outline px-2 py-0.5 rounded-full shrink-0">Packaging</span>
+<span class="font-body-sm text-body-sm text-on-surface">「茶很好喝，但是100包只到了90包」</span>
+</div>
+<div class="flex items-center gap-3 shrink-0 self-end sm:self-auto">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary">Quantity mismatch</span>
+<span class="font-eyebrow-mono text-[11px] text-data-warning flex items-center gap-0.5">
+              ★★★★★ <span class="text-on-surface-variant ml-1">5.0</span>
+</span>
+</div>
+</div>
+<!-- Row 2 -->
+<div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-interactive/60 transition-colors">
+<div class="flex items-center gap-3">
+<span class="bg-surface-container border border-border-hairline text-[11px] font-eyebrow-mono text-outline px-2 py-0.5 rounded-full shrink-0">Freshness</span>
+<span class="font-body-sm text-body-sm text-on-surface">「总体新鲜，不过有一只微烂，自己削掉了」</span>
+</div>
+<div class="flex items-center gap-3 shrink-0 self-end sm:self-auto">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary">Mild decay</span>
+<span class="font-eyebrow-mono text-[11px] text-data-warning flex items-center gap-0.5">
+              ★★★★★ <span class="text-on-surface-variant ml-1">5.0</span>
+</span>
+</div>
+</div>
+<!-- Row 3 -->
+<div class="p-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-interactive/60 transition-colors">
+<div class="flex items-center gap-3">
+<span class="bg-surface-container border border-border-hairline text-[11px] font-eyebrow-mono text-outline px-2 py-0.5 rounded-full shrink-0">Logistics</span>
+<span class="font-body-sm text-body-sm text-on-surface">「水果很甜很脆，就是快递没打电话直接扔驿站」</span>
+</div>
+<div class="flex items-center gap-3 shrink-0 self-end sm:self-auto">
+<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary">Drop-off failure</span>
+<span class="font-eyebrow-mono text-[11px] text-data-warning flex items-center gap-0.5">
+              ★★★★★ <span class="text-on-surface-variant ml-1">5.0</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- R6: LABELED REVIEWS TABLE -->
+<section class="mt-12">
+<div class="bg-surface-card border border-border-hairline rounded-xl overflow-hidden">
+<!-- Filter Toolbar -->
+<div class="p-4 border-b border-border-hairline flex flex-col md:flex-row md:items-center justify-between gap-4 bg-surface-container-lowest/40">
+<div class="flex flex-wrap items-center gap-3">
+<!-- Search -->
+<div class="relative min-w-[200px] max-w-xs">
+<span class="material-symbols-outlined absolute left-2.5 top-1/2 -translate-y-1/2 text-text-tertiary text-[16px]">search</span>
+<input class="w-full bg-surface border border-border-hairline rounded-md pl-8 pr-3 py-1.5 font-body-sm text-body-sm text-on-surface placeholder:text-text-tertiary focus:border-border-focus focus:outline-none transition-colors" placeholder="Filter review verbatim..." type="text"/>
+</div>
+<!-- Sentiment Pills Filter -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-full border border-border-hairline">
+<button class="font-eyebrow-mono text-[11px] px-2.5 py-1 rounded-full text-text-tertiary hover:text-on-surface transition-colors">All</button>
+<button class="font-eyebrow-mono text-[11px] px-2.5 py-1 rounded-full bg-data-negative/20 border border-data-negative/30 text-data-negative font-medium transition-colors">Negative (480)</button>
+<button class="font-eyebrow-mono text-[11px] px-2.5 py-1 rounded-full text-text-tertiary hover:text-on-surface transition-colors">Positive (1,420)</button>
+<button class="font-eyebrow-mono text-[11px] px-2.5 py-1 rounded-full text-text-tertiary hover:text-on-surface transition-colors">Neutral (100)</button>
+</div>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-3 font-eyebrow-mono text-[11px] text-text-tertiary">
+<span>SHOWING 112 OF 2,000</span>
+<button class="text-on-surface hover:underline flex items-center gap-0.5">
+<span>Sort: Severity</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Table Component -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-border-hairline text-text-tertiary font-eyebrow-mono text-[10px] uppercase tracking-wider bg-surface-container-lowest/20">
+<th class="py-3 px-4 w-5/12 font-medium">Review Text</th>
+<th class="py-3 px-4 w-1/12 font-medium">Sentiment</th>
+<th class="py-3 px-4 w-2/12 font-medium">Aspect Tags</th>
+<th class="py-3 px-4 w-2/12 font-medium">Root Cause</th>
+<th class="py-3 px-4 w-2/12 font-medium text-right">Repurchase?</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-border-hairline/60 font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-interactive/40 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-on-surface">「打开包装三个火龙果均已坏成这样，完全没办法吃，客服还要拍照扯皮」</span>
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary mt-0.5">Order #59201 · 2024-05-12</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-1.5 font-eyebrow-mono text-[11px] text-data-negative">
+<span class="w-1.5 h-1.5 rounded-full bg-data-negative"></span>
+<span>Negative</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="font-eyebrow-mono text-[10px] bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Freshness</span>
+<span class="font-eyebrow-mono text-[10px] bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">CS</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-eyebrow-mono text-[11px] text-outline">Ambient transit rot</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<span class="font-eyebrow-mono text-[11px] text-data-negative">Definite Churn</span>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-interactive/40 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-on-surface">「标称5斤装，连箱称只有4.1斤，缺斤短两严重，而且个头参差不齐」</span>
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary mt-0.5">Order #59188 · 2024-05-11</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-1.5 font-eyebrow-mono text-[11px] text-data-negative">
+<span class="w-1.5 h-1.5 rounded-full bg-data-negative"></span>
+<span>Negative</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="font-eyebrow-mono text-[10px] bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Weight</span>
+<span class="font-eyebrow-mono text-[10px] bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Grading</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-eyebrow-mono text-[11px] text-outline">Calibration skip</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<span class="font-eyebrow-mono text-[11px] text-data-negative">Unlikely</span>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-interactive/40 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-on-surface">「箱子全压扁了，底层的桃子全成果泥，外面连个易碎标志都没有贴」</span>
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary mt-0.5">Order #58921 · 2024-05-10</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-1.5 font-eyebrow-mono text-[11px] text-data-negative">
+<span class="w-1.5 h-1.5 rounded-full bg-data-negative"></span>
+<span>Negative</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="font-eyebrow-mono text-[10px] bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Packaging</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-eyebrow-mono text-[11px] text-outline">Crush resistance 3-ply</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<span class="font-eyebrow-mono text-[11px] text-data-negative">Definite Churn</span>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-interactive/40 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="text-on-surface">「苹果很甜很大，水分很足，就是箱子角磕碰了一下，里面果实还好」</span>
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary mt-0.5">Order #58804 · 2024-05-09</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-1.5 font-eyebrow-mono text-[11px] text-tertiary-fixed-dim">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span>Positive</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-wrap gap-1">
+<span class="font-eyebrow-mono text-[10px] bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Taste</span>
+<span class="font-eyebrow-mono text-[10px] bg-surface-container px-2 py-0.5 rounded text-on-surface-variant">Packaging</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="font-eyebrow-mono text-[11px] text-outline">Corner denting</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<span class="font-eyebrow-mono text-[11px] text-tertiary-fixed-dim">Repurchasing</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="px-4 py-3 border-t border-border-hairline flex items-center justify-between text-xs font-eyebrow-mono text-text-tertiary bg-surface-container-lowest/30">
+<span>Page 1 of 12</span>
+<div class="flex items-center gap-2">
+<button class="px-2 py-1 bg-surface border border-border-hairline rounded hover:text-on-surface disabled:opacity-40" disabled="">Previous</button>
+<button class="px-2 py-1 bg-surface border border-border-hairline rounded hover:text-on-surface">Next</button>
+</div>
+</div>
+</div>
+</section>
+<!-- R7: ASPECTS TAXONOMY COLLAPSIBLE ACCORDION -->
+<section class="mt-8 pt-4 border-t border-border-hairline">
+<details class="group select-none" id="accordion-aspects">
+<summary class="flex items-center justify-between cursor-pointer list-none py-2 text-text-tertiary hover:text-on-surface transition-colors">
+<span class="font-eyebrow-mono text-eyebrow-mono uppercase tracking-wider flex items-center gap-2">
+<span>Aspects chosen by AI for this category (8)</span>
+<span class="text-[10px] bg-surface-container px-2 py-0.2 rounded text-outline">Category: Fresh Fruit</span>
+</span>
+<span class="material-symbols-outlined text-[16px] transition-transform duration-200 group-open:rotate-180">expand_more</span>
+</summary>
+<div class="pt-4 pb-2 grid grid-cols-2 sm:grid-cols-4 gap-3">
+<div class="p-3 bg-surface-card border border-border-hairline rounded-lg">
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary uppercase block">01 · Physical State</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-1 block">Freshness & Spoilage</span>
+<span class="font-eyebrow-mono text-[10px] text-outline mt-0.5 block">Keywords: 烂, 发霉, 变质</span>
+</div>
+<div class="p-3 bg-surface-card border border-border-hairline rounded-lg">
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary uppercase block">02 · Sensory</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-1 block">Taste & Sweetness</span>
+<span class="font-eyebrow-mono text-[10px] text-outline mt-0.5 block">Keywords: 甜, 口感, 多汁</span>
+</div>
+<div class="p-3 bg-surface-card border border-border-hairline rounded-lg">
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary uppercase block">03 · Fulfillment</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-1 block">Weight & Quantity</span>
+<span class="font-eyebrow-mono text-[10px] text-outline mt-0.5 block">Keywords: 缺斤少两, 称重, 净重</span>
+</div>
+<div class="p-3 bg-surface-card border border-border-hairline rounded-lg">
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary uppercase block">04 · Integrity</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-1 block">Protective Packaging</span>
+<span class="font-eyebrow-mono text-[10px] text-outline mt-0.5 block">Keywords: 纸箱, 气泡柱, 压扁</span>
+</div>
+<div class="p-3 bg-surface-card border border-border-hairline rounded-lg">
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary uppercase block">05 · Courier</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-1 block">Logistics Speed</span>
+<span class="font-eyebrow-mono text-[10px] text-outline mt-0.5 block">Keywords: 隔日达, 顺丰, 慢</span>
+</div>
+<div class="p-3 bg-surface-card border border-border-hairline rounded-lg">
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary uppercase block">06 · Commercial</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-1 block">Price & Value</span>
+<span class="font-eyebrow-mono text-[10px] text-outline mt-0.5 block">Keywords: 性价比, 划算, 偏贵</span>
+</div>
+<div class="p-3 bg-surface-card border border-border-hairline rounded-lg">
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary uppercase block">07 · Post-Sale</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-1 block">Customer Service</span>
+<span class="font-eyebrow-mono text-[10px] text-outline mt-0.5 block">Keywords: 客服, 售后, 补发</span>
+</div>
+<div class="p-3 bg-surface-card border border-border-hairline rounded-lg">
+<span class="font-eyebrow-mono text-[10px] text-text-tertiary uppercase block">08 · Specification</span>
+<span class="font-body-sm text-body-sm text-on-surface mt-1 block">Fruit Calibration / Size</span>
+<span class="font-eyebrow-mono text-[10px] text-outline mt-0.5 block">Keywords: 单果克重, 大小均匀</span>
+</div>
+</div>
+</details>
+</section>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for brief copying
+  const copyBtn = document.getElementById('btn-copy-brief');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      const originalHtml = copyBtn.innerHTML;
+      copyBtn.innerHTML = `
+        <span class="material-symbols-outlined text-[15px] text-tertiary-fixed-dim">check</span>
+        <span class="text-tertiary-fixed-dim">Brief Copied!</span>
+      `;
+      setTimeout(() => {
+        copyBtn.innerHTML = originalHtml;
+      }, 2000);
+    });
+  }
+</script></main><footer class="relative z-10 w-full border-t border-border-hairline bg-surface-container-lowest/80 backdrop-blur-md py-8"><div class="max-w-7xl mx-auto px-space-md text-center font-eyebrow-mono text-eyebrow-mono text-text-tertiary flex flex-wrap justify-center items-center gap-2"><span><a class="hover:text-on-surface transition-colors" data-path="how-it-works" href="#">How it works</a></span><span class="opacity-40">·</span><span><a class="hover:text-on-surface transition-colors" data-path="github" href="#">GitHub</a></span><span class="opacity-40">·</span><span><a class="hover:text-on-surface transition-colors" data-path="claude-integration" href="#">Use in Claude (no API key)</a></span><span class="opacity-40">·</span><span class="text-on-surface-variant">Built by Boxiao Wu</span></div></footer></body></html>
