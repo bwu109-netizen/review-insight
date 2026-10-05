@@ -23,7 +23,9 @@ I worked in e-commerce and content operations for tea brands on Chinese platform
 1. Type the product category, e.g. `水果`, `desk`, `笔记本电脑`.
 2. Pick the platform the reviews came from (Taobao/Tmall, JD.com, Douyin, RedNote, WeChat Channels, TikTok Shop, Amazon...).
 3. Upload the review export from the seller back-end (CSV or Excel, then choose the text column), or paste reviews one per line.
-4. Choose an AI provider, paste your API key, and click **Analyze**. Up to 100 reviews per run.
+4. Choose an AI provider, paste your API key, and click **Analyze**. Up to 2,000 reviews per run, with a progress bar and a time estimate (a few minutes on Gemini's free tier).
+
+Popular listings have tens of thousands of reviews. Above 2,000 the app analyzes a random sample (not the first rows, since exports are usually sorted by date). A random sample of 2,000 estimates each issue's share within about ±2%, and an issue that shows up in 1% of reviews still appears around 20 times. To label every review, use the command-line pipeline below, which can be stopped and resumed.
 
 You get the aspects the AI chose for that category, a complaints-vs-praise chart, a "fix first" table with owner teams and real quotes, an ops brief, hidden issues inside satisfied reviews, and a CSV of every labeled review.
 

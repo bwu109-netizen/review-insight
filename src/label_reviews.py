@@ -13,7 +13,9 @@ from __future__ import annotations
 
 import argparse
 import json
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import pandas as pd
@@ -75,45 +77,68 @@ def load_done_ids(path: Path) -> set[int]:
 
 
 def run(client, sample: pd.DataFrame, dataset: str, batch_size: int, rpm: float,
-        out_path: Path | None = None, taxonomies: dict | None = None) -> int:
+        out_path: Path | None = None, taxonomies: dict | None = None,
+        workers: int = 1, progress=None) -> int:
+    """Label every review not yet in out_path. `workers` > 1 sends several batches at once
+    (still capped at `rpm` requests per minute). `progress(done, total)` is called after each batch."""
     out_path = out_path or config.labels_file(dataset)
     meta = config.DATASETS.get(dataset, {"language": "en"})
     done = load_done_ids(out_path)
     todo = sample[~sample.review_id.isin(done)]
     print(f"{len(done)} already labeled, {len(todo)} to go, provider={client.name}")
+
+    jobs = []  # (category, allowed aspects, system prompt, batch)
+    for cat, group in todo.groupby("category", sort=False):
+        tax = (taxonomies or {}).get(cat) or load_taxonomy(dataset, cat)
+        allowed = set(aspect_keys(tax))
+        system = build_system_prompt(tax, meta["language"], has_rating=group.rating.notna().any())
+        for start in range(0, len(group), batch_size):
+            jobs.append((cat, allowed, system, group.iloc[start:start + batch_size]))
+
     gap = 60.0 / rpm if rpm > 0 else 0
-    written = 0
-    with open(out_path, "a") as out:
-        for cat, group in todo.groupby("category", sort=False):
-            tax = (taxonomies or {}).get(cat) or load_taxonomy(dataset, cat)
-            allowed = set(aspect_keys(tax))
-            system = build_system_prompt(tax, meta["language"], has_rating=group.rating.notna().any())
-            for start in range(0, len(group), batch_size):
-                batch = group.iloc[start:start + batch_size]
-                t0 = time.time()
-                try:
-                    resp = client.complete_json(system, build_user_prompt(batch))
-                except LLMError as e:
-                    print(f"  [{cat}] batch failed: {e}")
-                    if "HTTP 4" in str(e) and "429" not in str(e):
-                        raise  # key or model problem: stop and fix .env
-                    continue
-                wanted = set(batch.review_id.astype(int))
-                for raw in resp.get("results", []):
-                    row = validate(raw, allowed)
-                    if row and row["review_id"] in wanted:
-                        row["category"] = cat
-                        row["provider"] = client.name
-                        row["model"] = getattr(client, "model", "")
-                        out.write(json.dumps(row, ensure_ascii=False) + "\n")
-                        wanted.discard(row["review_id"])
-                        written += 1
-                out.flush()
-                missing = f", {len(wanted)} missing (re-run to retry)" if wanted else ""
-                print(f"  [{cat}] +{len(batch) - len(wanted)}{missing}")
-                sleep = gap - (time.time() - t0)
-                if sleep > 0:
-                    time.sleep(sleep)
+    lock, next_slot = threading.Lock(), [time.time()]
+
+    def call(job):
+        _, _, system, batch = job
+        with lock:  # simple rate limiter shared by all workers
+            wait = next_slot[0] - time.time()
+            next_slot[0] = max(next_slot[0], time.time()) + gap
+        if wait > 0:
+            time.sleep(wait)
+        return client.complete_json(system, build_user_prompt(batch))
+
+    written, finished, total = 0, 0, len(todo)
+    with open(out_path, "a") as out, ThreadPoolExecutor(max(1, workers)) as pool:
+        futures = {pool.submit(call, job): job for job in jobs}
+        for fut in as_completed(futures):
+            cat, allowed, _, batch = futures[fut]
+            finished += len(batch)
+            try:
+                resp = fut.result()
+            except LLMError as e:
+                print(f"  [{cat}] batch failed: {e}")
+                if "HTTP 4" in str(e) and "429" not in str(e):
+                    for f in futures:
+                        f.cancel()
+                    raise  # key or model problem: stop and fix it
+                if progress:
+                    progress(finished, total)
+                continue
+            wanted = set(batch.review_id.astype(int))
+            for raw in resp.get("results", []):
+                row = validate(raw, allowed)
+                if row and row["review_id"] in wanted:
+                    row["category"] = cat
+                    row["provider"] = client.name
+                    row["model"] = getattr(client, "model", "")
+                    out.write(json.dumps(row, ensure_ascii=False) + "\n")
+                    wanted.discard(row["review_id"])
+                    written += 1
+            out.flush()
+            missing = f", {len(wanted)} missing (re-run to retry)" if wanted else ""
+            print(f"  [{cat}] +{len(batch) - len(wanted)}{missing}")
+            if progress:
+                progress(finished, total)
     return written
 
 

@@ -151,9 +151,9 @@ T = {
                        "逐条读这些分歧也是评估的一部分。"},
     "custom_intro": {
         "en": "Upload reviews exported from a seller back-end (Taobao/Tmall Qianniu, JD Jingmai, Douyin Doudian, "
-              "TikTok Shop, Amazon...) or paste comments copied from RedNote / WeChat Channels. Up to 100 reviews per run.",
+              "TikTok Shop, Amazon...) or paste comments copied from RedNote / WeChat Channels. Up to 2,000 reviews per run; larger files are randomly sampled.",
         "zh": "上传从商家后台导出的评价（淘宝/天猫千牛、京东京麦、抖店、TikTok Shop、亚马逊等），或直接粘贴小红书、视频号的评论。"
-              "每次最多 100 条。"},
+              "每次最多分析 2,000 条，超过会随机抽样。"},
     "cu_cat": {"en": "Product category", "zh": "商品品类"},
     "cu_cat_ph": {"en": "e.g. fruit, desk, laptop", "zh": "例如：水果、桌子、笔记本电脑"},
     "cu_platform": {"en": "Platform", "zh": "平台"},
@@ -164,6 +164,16 @@ T = {
                "zh": "Gemini API key（仅在本网页未配置时需要）"},
     "cu_go": {"en": "Analyze", "zh": "开始分析"},
     "cu_spin": {"en": "Analyzing {n} reviews...", "zh": "正在分析 {n} 条评论……"},
+    "cu_count": {"en": "{n} reviews loaded. Estimated time: about {m} min.",
+                 "zh": "已读入 {n} 条评论，预计用时约 {m} 分钟。"},
+    "cu_cut": {"en": "{n} reviews uploaded. A random sample of {max} will be analyzed, which is enough to estimate "
+                     "each issue's share within about ±2%. To label every review, run the command-line pipeline (see GitHub).",
+               "zh": "共上传 {n} 条，将随机抽取 {max} 条分析，估算各问题占比的误差约 ±2%。"
+                     "如需全量标注，可用命令行版本在本地跑（见 GitHub）。"},
+    "cu_tax": {"en": "Choosing aspects for this category...", "zh": "正在为这个品类生成分析维度……"},
+    "cu_prog": {"en": "Labeled {d} / {n} reviews", "zh": "已标注 {d} / {n} 条"},
+    "cu_brief_spin": {"en": "Writing the ops brief...", "zh": "正在写运营简报……"},
+    "cu_keep_open": {"en": "Keep this tab open until it finishes.", "zh": "完成前请不要关闭页面。"},
     "cu_aspects": {"en": "AI-generated aspects: ", "zh": "AI 生成的维度："},
     "cu_dl": {"en": "Download labeled reviews (CSV)", "zh": "下载标注结果（CSV）"},
     "cu_nokey": {"en": "No API key configured. Get a free one at aistudio.google.com.",
@@ -504,22 +514,38 @@ def custom_tab():
         notes.insert(0, t("cu_key_get", u=preset["key_url"]))
     st.caption("  ".join(notes))
 
+    import custom
+    n_texts = sum(1 for x in texts if isinstance(x, str) and len(x.strip()) >= 2)
+    if n_texts:
+        n_use = min(n_texts, custom.MAX_REVIEWS)
+        kind = "gemini" if preset["kind"] == "gemini" else "default"
+        mins = custom.estimate_minutes(n_use, kind)
+        st.caption(t("cu_count", n=f"{n_use:,}", m=max(1, round(mins))) + (" " + t("cu_keep_open") if mins > 1.5 else ""))
+        if n_texts > custom.MAX_REVIEWS:
+            st.warning(t("cu_cut", n=f"{n_texts:,}", max=f"{custom.MAX_REVIEWS:,}"))
+
     ready = bool(texts and category and key and model.strip() and (provider != "custom" or base_url))
     if st.button(t("cu_go"), type="primary", disabled=not ready):
-        import custom
         sample = custom.to_sample(texts, category, platform)
-        with st.spinner(t("cu_spin", n=len(sample))):
-            try:
-                client = make_client(provider, key, model, base_url)
-                tax, R, A, G = custom.run_custom(client, sample, category)
-            except (LLMError, RuntimeError) as e:
-                st.error(str(e))
-                return
-            brief, brief_err = None, None
-            try:
-                brief = custom.make_brief(client, R, A, tax, st.session_state.lang)
-            except Exception as e:  # noqa: BLE001  (labels are still useful without a brief)
-                brief_err = str(e)
+        bar = st.progress(0.0, text=t("cu_tax"))
+
+        def on_progress(done, total):
+            bar.progress(min(done / max(total, 1), 1.0), text=t("cu_prog", d=done, n=total))
+
+        try:
+            client = make_client(provider, key, model, base_url)
+            tax, R, A, G = custom.run_custom(client, sample, category, progress=on_progress)
+        except (LLMError, RuntimeError) as e:
+            bar.empty()
+            st.error(str(e))
+            return
+        bar.progress(1.0, text=t("cu_brief_spin"))
+        brief, brief_err = None, None
+        try:
+            brief = custom.make_brief(client, R, A, tax, st.session_state.lang)
+        except Exception as e:  # noqa: BLE001  (labels are still useful without a brief)
+            brief_err = str(e)
+        bar.empty()
         A = localize_aspects(A)
         st.success(t("cu_aspects") + ", ".join(
             (a.get("label_zh") or a["label_en"]) if zh() else a["label_en"] for a in tax["aspects"]))
