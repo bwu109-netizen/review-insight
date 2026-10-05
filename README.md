@@ -2,7 +2,7 @@
 
 An LLM tool that reads e-commerce reviews for any product category, decides which aspects matter for that category, and turns complaints into a ranked to-do list for the team that owns each problem. Tested on 900 Chinese JD.com reviews against human labels (89% agreement, 98% when the AI commits to positive or negative), and also run on US Amazon reviews.
 
-> Live demo: _coming soon_ (English by default, 中文 on the toggle)
+> **Live demo: [boxiao-review-insight.streamlit.app](https://boxiao-review-insight.streamlit.app)** (English by default, 中文 on the toggle; bring your own API key)
 
 ## Why I built it
 
