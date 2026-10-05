@@ -1,6 +1,6 @@
 # Pinned to the versions tested on my Mac, so the hosted demo behaves the same
 pandas==2.3.3
-pyarrow==21.0.0
+pyarrow>=21  # not pinned: needs a prebuilt wheel for the server's Python version
 requests==2.32.5
 python-dotenv==1.2.1
 tqdm>=4.66
