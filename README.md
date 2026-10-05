@@ -4,6 +4,8 @@ An LLM tool that reads e-commerce reviews for any product category, decides whic
 
 > **Live demo: [boxiao-review-insight.streamlit.app](https://boxiao-review-insight.streamlit.app)** (English by default, 中文 on the toggle; bring your own API key)
 
+![Review Insight home page](docs/img/web_home.png)
+
 ## Why I built it
 
 I worked in e-commerce and content operations for tea brands on Chinese platforms. Seller back-ends (Taobao Qianniu, JD Jingmai, Douyin Doudian) let you export every review, but nobody has time to read thousands of them. The useful signals, like stale batches, broken packaging, or "only 90 of the 100 bags arrived", stay buried, sometimes inside 5-star reviews. I wanted to see if a low-cost LLM could do that reading reliably, and how to check whether it actually does.
@@ -43,6 +45,8 @@ Three ways to use it, for three kinds of users:
 | More than 10,000 | use the command-line pipeline below (any size, can be stopped and resumed) | |
 
 Why 2,000 is the default: a random sample of 2,000 estimates each issue's share within about ±2% (10,000 gets that to about ±1%). Labeling everything pays off when you hunt for rare issues or split results by product or month. Samples are random, not the first rows, because exports are usually sorted by date. If you pick a star-rating or date column, the sample keeps each star level and month at its real share. If a run stops partway (for example the API's daily quota runs out), the reviews already labeled are still shown and downloadable.
+
+![Results for 80 JD.com fruit reviews](docs/img/web_results.png)
 
 You get the result first: the three things to fix first, each with its owner team, complaint count, real quotes and a next step. Below that are a short summary, what to keep doing, a complaints-vs-praise chart by aspect (click an aspect to filter the reviews), hidden issues inside satisfied reviews, a searchable table of every labeled review, and the aspects the AI chose. **Copy brief** copies the summary as plain text for a team chat; **Download CSV** saves every labeled review (UTF-8, opens in Excel).
 
