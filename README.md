@@ -31,8 +31,8 @@ Three ways to use it, for three kinds of users:
 
 1. Type the product category, e.g. `水果`, `desk`, `笔记本电脑`.
 2. Pick the platform the reviews came from (Taobao/Tmall, JD.com, Douyin, RedNote, WeChat Channels, TikTok Shop, Amazon...).
-3. Upload the review export from the seller back-end (CSV or Excel; GBK exports work too). Choose the text column and, optionally, the star-rating and date columns. Or paste reviews one per line.
-4. Choose an AI provider, paste your API key, and click **Analyze**. A progress bar and a time estimate show while it runs.
+3. Upload the review export from the seller back-end (CSV or Excel; GBK exports work too). The review text, star-rating and date columns are detected automatically and can be changed. Or paste reviews one per line.
+4. Choose an AI provider, paste your API key, and click **Analyze**. The page shows each stage (choosing aspects, labeling, writing the brief) with a progress bar and the time left. **Stop and show results so far** ends the run early and keeps what is already labeled.
 
 **How many reviews per run.** Popular listings have tens of thousands of reviews, so the app works in tiers:
 
@@ -44,7 +44,9 @@ Three ways to use it, for three kinds of users:
 
 Why 2,000 is the default: a random sample of 2,000 estimates each issue's share within about ±2% (10,000 gets that to about ±1%). Labeling everything pays off when you hunt for rare issues or split results by product or month. Samples are random, not the first rows, because exports are usually sorted by date. If you pick a star-rating or date column, the sample keeps each star level and month at its real share. If a run stops partway (for example the API's daily quota runs out), the reviews already labeled are still shown and downloadable.
 
-You get the aspects the AI chose for that category, a complaints-vs-praise chart, a "fix first" table with owner teams and real quotes, an ops brief, hidden issues inside satisfied reviews, and a CSV of every labeled review.
+You get the result first: the three things to fix first, each with its owner team, complaint count, real quotes and a next step. Below that are a short summary, what to keep doing, a complaints-vs-praise chart by aspect (click an aspect to filter the reviews), hidden issues inside satisfied reviews, a searchable table of every labeled review, and the aspects the AI chose. **Copy brief** copies the summary as plain text for a team chat; **Download CSV** saves every labeled review (UTF-8, opens in Excel).
+
+The page design was prototyped in Google Stitch from a written spec ([docs/PRD.md](docs/PRD.md), prototypes in [docs/stitch/](docs/stitch)) and built as a Streamlit custom component ([ui/](ui)), so the analysis code stays in Python.
 
 ## Examples
 

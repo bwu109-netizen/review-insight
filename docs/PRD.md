@@ -5,7 +5,7 @@
 | 产品 | Review Insight：任意品类的电商评论 AI 分析工具 |
 | 线上地址 | https://boxiao-review-insight.streamlit.app |
 | 代码 | https://github.com/bwu109-netizen/review-insight |
-| 文档版本 | v1.1，2026-10-05（改为深色、电影感风格；强调色近黑，默认英文） |
+| 文档版本 | v1.2，2026-10-05（v1.1 改为深色、电影感风格；v1.2 记录实际实现方式） |
 | 风格参考 | [Oliviera - AI Automation SaaS Landing Page](https://dribbble.com/shots/27784786-Oliviera-AI-Automation-SaaS-Landing-Page-Animation)（Dribbble，Bayu Aji Sadewa for Korsa） |
 | 作者 | 吴博潇（Boxiao Wu） |
 | 用途 | 交给 Stitch 生成原型图；作为前端改版的验收依据 |
@@ -208,7 +208,7 @@ flowchart TD
 #### M2 步骤 1：评论来源
 
 - **目的**：拿到要分析的评论和基本信息。
-- **工具区开头**：一个居中小标题，眉标 ANALYZE / 开始分析，主标题 EN **Three steps.** <span style="color:gray">About two minutes.</span> / 中 **三步设置，**<span style="color:gray">约两分钟出结果。</span>
+- **工具区开头**：一个居中小标题，眉标 ANALYZE / 开始分析，主标题 EN **Three steps.** <span style="color:gray">Results in minutes.</span> / 中 **三步设置，**<span style="color:gray">几分钟出结果。</span>
 - **结构**：步骤标题「01 · REVIEWS / 01 · 评论」（编号和标签用等宽字体）+ 表单。整个步骤放在一个深灰卡片里（#111111，1px 白色 8% 边框，圆角 16px，内边距 32px）。
 
 | 字段 | 控件 | 必填 | 说明 |
@@ -244,6 +244,7 @@ flowchart TD
 
 #### M4 步骤 3：分析规模（条件出现）
 
+- **结构**：步骤标题「03 · SCALE / 03 · 分析规模」，卡片样式同 M2。
 - **出现条件**：有效评论超过 2,000 条。否则整个模块不显示，直接分析全部。
 - **内容按服务商分两种**：
 
@@ -294,13 +295,14 @@ flowchart TD
 #### R1 结果摘要条
 
 - **内容**：
+  - 区块标题（两色，同参考图）：眉标 RESULTS / 结果；主标题 EN **Fruit, 2,000 reviews.** <span style="color:gray">Here's what to fix first.</span> / 中 **水果，2,000 条评论。**<span style="color:gray">先改这几件事。</span>
   - 一行范围说明：Analyzed a random sample of 2,000 out of 12,000 reviews, keeping each star level and month at its real share. / 从 12,000 条评论中随机抽取 2,000 条分析，各星级、月份按实际比例抽取。（未抽样时：Analyzed all 380 reviews / 已分析全部 380 条评论）
-  - 三个数字卡（等宽并排）：
+  - 三个指标（与 M1b 同样式：等宽小标签 + 大号细体数字，列间 1px 竖线）：
     - Reviews analyzed / 分析评论数：2,000
     - Negative overall / AI 判为差评：24%
     - Hidden issues / 隐藏问题：37（带 ⓘ 提示：整体满意、但仍提到具体问题的评论）
   - 右侧操作：Download CSV / 下载 CSV · Copy brief / 复制简报 · New analysis / 重新分析
-- **部分完成时**：摘要条上方加黄色提示条：The run stopped early, so these results cover 1,240 of 2,000 reviews. Reason: daily quota used up. / 分析中途停止，以下结果只包含 2,000 条中的 1,240 条。原因：额度用完。
+- **部分完成时**：摘要条上方加提示条（深灰底、左侧 2px 琥珀色竖线）：The run stopped early, so these results cover 1,240 of 2,000 reviews. Reason: daily quota used up. / 分析中途停止，以下结果只包含 2,000 条中的 1,240 条。原因：额度用完。
 
 #### R2 先改什么（核心模块）
 
@@ -505,8 +507,8 @@ flowchart TD
 |---|---|---|---|
 | API key 无效（401/403） | M3 key 输入框下，红字 | This key was rejected. Check it and try again. / 这个 key 无效，请检查后重试 | 改 key 后重试 |
 | 模型名错误（404） | M3 模型框下，红字 | Model not found. Copy the exact name from your provider's console. / 找不到这个模型，请从服务商后台复制准确的模型名 | 改模型名 |
-| 额度用完或限流 | R1 上方黄色提示条 | The run stopped early, so these results cover {d} of {n} reviews. Reason: {原因} / 分析中途停止，以下结果只包含 {n} 条中的 {d} 条。原因：{原因} | 查看已有结果、稍后重新分析 |
-| 部分批次失败 | R1 上方黄色提示条 | {m} of {n} reviews could not be labeled. Try again for a full run. / {n} 条中有 {m} 条未能标注，可重试以获得完整结果 | 同上 |
+| 额度用完或限流 | R1 上方提示条（琥珀色竖线） | The run stopped early, so these results cover {d} of {n} reviews. Reason: {原因} / 分析中途停止，以下结果只包含 {n} 条中的 {d} 条。原因：{原因} | 查看已有结果、稍后重新分析 |
+| 部分批次失败 | R1 上方提示条（琥珀色竖线） | {m} of {n} reviews could not be labeled. Try again for a full run. / {n} 条中有 {m} 条未能标注，可重试以获得完整结果 | 同上 |
 | 简报生成失败 | R2 上方灰色提示 | Labels are ready, but the ops brief could not be generated. / 标注已完成，但运营简报生成失败 | R2 退化为按投诉数排序 |
 | 文件无法读取 | 上传区，红字 | Couldn't read this file. Save it as CSV (UTF-8 or GBK) or XLSX. / 无法读取这个文件，请另存为 CSV（UTF-8 或 GBK）或 XLSX | 换文件 |
 | 网络断开 | 页面顶部条 | Connection lost. Results so far are kept. / 连接中断，已有结果会保留 | 刷新 |
@@ -588,6 +590,8 @@ flowchart TD
 
 建议：申请截止前（CUHK FinTech 11/6）先按路线 A 上线，原型图按本 PRD 的完整效果画。路线 B 作为之后的升级。
 
+**实际实现（2026-10-05 上线）**：没有走 A 或 B，而是第三种做法：整页前端写成一个 Streamlit 自定义组件（`ui/`，与 Stitch 原型同样使用 Tailwind、Geist、JetBrains Mono、Material Symbols），分析仍由 Python 完成（`src/web_app.py`，后台线程运行，每秒把进度推给页面）。因此仍部署在 Streamlit Cloud，同时能还原原型：悬浮胶囊导航、停止按钮、滚动入场和数字计数动画、手机端底部固定按钮和卡片列表都已实现，下面列的降级项不再适用。
+
 Streamlit 下已知做不到或要降级的点：
 
 - 分析中途「停止」按钮：Streamlit 运行中难以响应按钮，先用右上角自带的 Stop。
@@ -664,7 +668,7 @@ each with a one-line gray description and dashed separators.
 
 ```
 Section intro centered: monospace eyebrow "ANALYZE", two-tone headline
-"Three steps." (white) "About two minutes." (gray).
+"Three steps." (white) "Results in minutes." (gray).
 Three stacked dark cards (#111111, thin border, 16px radius), each with a
 monospace step number at the top left.
 Card "01 · REVIEWS": input "Product category" (placeholder "e.g. fruit, desk,
