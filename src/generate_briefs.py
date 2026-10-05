@@ -22,12 +22,20 @@ from llm_client import LLMError, get_client
 from taxonomy import load_taxonomy
 
 SYSTEM = """You are a senior e-commerce operations analyst writing for a weekly ops meeting.
-You get AI-labeled review data for ONE product or product category. Use ONLY the numbers
-and quotes given; never invent facts. Write in English; keep customer quotes in their
+You get AI-labeled review data for ONE product or ONE product category; "group_type" says which.
+Use ONLY the numbers and quotes given; never invent facts. Write in English; keep customer quotes in their
 original language.
 
+Naming and scope:
+- group_type "category": the reviews cover a whole category and may mix several products, varieties or
+  brands. "name" is the category itself (the "category" field, translated if needed), e.g. "Fruit", never
+  one product inside it such as "Apples". Do not describe the category as if it were a single product.
+  When a problem or strength concerns only some products, say which ones (e.g. "apples arrive bruised").
+- group_type "product": "name" is the product, inferred from the reviews. If an Amazon 'tea' product is
+  not actually tea (e.g. a flavored water enhancer), say so.
+
 Return JSON:
-{"name": "short descriptive English name of the product/category, inferred from the reviews. If an Amazon 'tea' product is not actually tea (e.g. a flavored water enhancer), say so.",
+{"name": "short name, following the rules above",
  "summary": "2 sentences: what customers like and the main problem",
  "fix_first": [{"issue": "...", "owner": "team from the owner list", "evidence": "how many negative mentions + one short quote", "action": "one concrete next step"}],
  "keep_doing": ["1-2 strengths worth protecting in listings/ads"]}
@@ -49,18 +57,22 @@ def payload(gid, reviews: pd.DataFrame, aspects: pd.DataFrame, owners: list[str]
         .reindex(columns=["positive", "neutral", "negative"], fill_value=0)
     )
     neg = a[a.sentiment == "negative"]
+    # A random spread of snippets: exports and samples are often sorted, and the first rows can all be
+    # one product, which made the brief describe a whole category as that product.
+    picks = r.sample(min(12, len(r)), random_state=0)
     data = {
+        "group_type": "category" if str(gid) == str(r.category.iloc[0]) else "product",
         "category": str(r.category.iloc[0]),
         "reviews_analyzed": len(r),
         "avg_star_rating": round(r.rating.mean(), 2) if r.rating.notna().any() else None,
         "ai_negative_share": round(r.ai_negative.mean(), 3),
         "hidden_issues_in_satisfied_reviews": int(r.hidden_issue.sum()),
-        "sample_titles_or_snippets": (r.title.fillna("") + " " + r.text.astype(str).str[:60]).str.strip().head(12).tolist(),
+        "sample_titles_or_snippets": (picks.title.fillna("") + " " + picks.text.astype(str).str[:60]).str.strip().tolist(),
         "aspect_counts": counts.to_dict(orient="index"),
         "negative_quotes_by_aspect": {k: g.evidence.dropna().head(6).tolist() for k, g in neg.groupby("aspect_label")},
         "positive_quotes_by_aspect": a[a.sentiment == "positive"].groupby("aspect_label").evidence
         .apply(lambda s: s.head(3).tolist()).to_dict(),
-        "root_causes": r.root_cause.dropna().head(10).tolist(),
+        "root_causes": r.root_cause.dropna().sample(frac=1, random_state=0).head(10).tolist(),
         "owner_list": owners,
     }
     return json.dumps(data, ensure_ascii=False, default=str)
