@@ -107,7 +107,7 @@ def run(client, sample: pd.DataFrame, dataset: str, batch_size: int, rpm: float,
             time.sleep(wait)
         return client.complete_json(system, build_user_prompt(batch))
 
-    written, finished, total = 0, 0, len(todo)
+    written, finished, total, fails = 0, 0, len(todo), 0
     with open(out_path, "a") as out, ThreadPoolExecutor(max(1, workers)) as pool:
         futures = {pool.submit(call, job): job for job in jobs}
         for fut in as_completed(futures):
@@ -117,13 +117,19 @@ def run(client, sample: pd.DataFrame, dataset: str, batch_size: int, rpm: float,
                 resp = fut.result()
             except LLMError as e:
                 print(f"  [{cat}] batch failed: {e}")
-                if "HTTP 4" in str(e) and "429" not in str(e):
+                fails += 1
+                fatal = "HTTP 4" in str(e) and "429" not in str(e)  # key or model problem
+                if fatal or fails >= max(3, workers):  # or quota used up: stop instead of waiting forever
                     for f in futures:
                         f.cancel()
-                    raise  # key or model problem: stop and fix it
+                    if fatal:
+                        raise
+                    raise LLMError(f"Stopped after {fails} failed requests in a row "
+                                   f"(rate limit or daily quota?). Last error: {e}")
                 if progress:
                     progress(finished, total)
                 continue
+            fails = 0
             wanted = set(batch.review_id.astype(int))
             for raw in resp.get("results", []):
                 row = validate(raw, allowed)

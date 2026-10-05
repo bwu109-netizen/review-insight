@@ -23,7 +23,7 @@ Three ways to use it, for three kinds of users:
 
 | | Who it's for | Size per run | Needs |
 |---|---|---|---|
-| [Web app](https://boxiao-review-insight.streamlit.app) | Sellers who don't code | up to 2,000 reviews (larger files are sampled) | an API key |
+| [Web app](https://boxiao-review-insight.streamlit.app) | Sellers who don't code | 2,000 on Gemini's free tier, up to 10,000 with a paid API | an API key |
 | [Claude skill](#use-it-inside-claude-no-api-key) | People who already use Claude | a few hundred reviews | a Claude account |
 | [Command line](#run-it) | Full runs and reproducing the results | any size, resumable | Python + an API key |
 
@@ -31,10 +31,18 @@ Three ways to use it, for three kinds of users:
 
 1. Type the product category, e.g. `水果`, `desk`, `笔记本电脑`.
 2. Pick the platform the reviews came from (Taobao/Tmall, JD.com, Douyin, RedNote, WeChat Channels, TikTok Shop, Amazon...).
-3. Upload the review export from the seller back-end (CSV or Excel, then choose the text column), or paste reviews one per line.
-4. Choose an AI provider, paste your API key, and click **Analyze**. Up to 2,000 reviews per run, with a progress bar and a time estimate (a few minutes on Gemini's free tier).
+3. Upload the review export from the seller back-end (CSV or Excel; GBK exports work too). Choose the text column and, optionally, the star-rating and date columns. Or paste reviews one per line.
+4. Choose an AI provider, paste your API key, and click **Analyze**. A progress bar and a time estimate show while it runs.
 
-Popular listings have tens of thousands of reviews. Above 2,000 the app analyzes a random sample (not the first rows, since exports are usually sorted by date). A random sample of 2,000 estimates each issue's share within about ±2%, and an issue that shows up in 1% of reviews still appears around 20 times. To label every review, use the command-line pipeline below, which can be stopped and resumed.
+**How many reviews per run.** Popular listings have tens of thousands of reviews, so the app works in tiers:
+
+| Provider | Reviews per run | Time |
+|---|---|---|
+| Gemini free tier | random sample of up to 2,000 | about 4 min |
+| Paid API (DeepSeek, OpenAI, Claude, Qwen...) | your choice: a 2,000 sample, or everything up to 10,000 | about 2 min / 10 min |
+| More than 10,000 | use the command-line pipeline below (any size, can be stopped and resumed) | |
+
+Why 2,000 is the default: a random sample of 2,000 estimates each issue's share within about ±2% (10,000 gets that to about ±1%). Labeling everything pays off when you hunt for rare issues or split results by product or month. Samples are random, not the first rows, because exports are usually sorted by date. If you pick a star-rating or date column, the sample keeps each star level and month at its real share. If a run stops partway (for example the API's daily quota runs out), the reviews already labeled are still shown and downloadable.
 
 You get the aspects the AI chose for that category, a complaints-vs-praise chart, a "fix first" table with owner teams and real quotes, an ops brief, hidden issues inside satisfied reviews, and a CSV of every labeled review.
 

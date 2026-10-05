@@ -116,11 +116,48 @@ def test_custom_run_end_to_end():
 
     s = custom.to_sample(["很差不新鲜", "很好吃", "太差了", "不错", "x"], "水果", "小红书")
     assert len(s) == 4
-    tax, reviews, aspects, groups = custom.run_custom(C(), s, "水果", rpm=0)
-    assert len(reviews) == 3 and groups.reviews.sum() == 3
+    tax, reviews, aspects, groups, err = custom.run_custom(C(), s, "水果", rpm=0)
+    assert len(reviews) == 3 and groups.reviews.sum() == 3 and err.startswith("1 of 4 reviews")  # fake drops one
 
     class B(C):
         def complete_json(self, system, user):
             assert "Simplified Chinese" in system and "reviews_analyzed" in user
             return {"name": "水果", "summary": "x", "fix_first": [], "keep_doing": []}
     assert custom.make_brief(B(), reviews, aspects, tax, "zh")["name"] == "水果"
+
+
+def test_custom_sampling_tiers_and_strata():
+    import custom
+    texts = [f"第{i}条评论，内容足够长" for i in range(5000)] + ["好"] * 10 + ["第1条评论，内容足够长"]
+    stars = [1 if i % 10 == 0 else 5 for i in range(5000)] + [5] * 11
+    s = custom.to_sample(texts, "桌子", "JD", max_n=2000, ratings=stars, strata=[str(x) for x in stars])
+    assert len(s) == 2000 and s.attrs["n_total"] == 5000 and s.attrs["sampled"] and s.attrs["stratified"]
+    assert abs((s.rating == 1).mean() - 0.10) < 0.005  # 1-star share kept at its real 10%
+    assert custom.limit_for("gemini") == 2000 and custom.limit_for("default") == 10000
+    small = custom.to_sample(texts[:50], "桌子", "JD")
+    assert len(small) == 50 and not small.attrs["sampled"] and small.rating.isna().all()
+
+
+def test_custom_run_keeps_partial_results():
+    import custom
+    from llm_client import LLMError
+
+    class Flaky(FakeClient):
+        calls = 0
+
+        def complete_json(self, system, user):
+            if "review-analysis schemes" in system:
+                return {"category": "x", "aspects": [{"key": "freshness"}, {"key": "taste"}, {"key": "price"}]}
+            Flaky.calls += 1
+            if Flaky.calls > 1:
+                raise LLMError("HTTP 429: quota exceeded")
+            return super().complete_json(system, user)
+
+    s = custom.to_sample([f"评论{i}很差不新鲜" for i in range(100)], "水果", "JD")
+    tax, reviews, aspects, groups, err = custom.run_custom(Flaky(), s, "水果", batch_size=20, rpm=0, workers=1)
+    assert 0 < len(reviews) < 100 and "Stopped after 3" in err  # quota used up: stop, keep what we have
+
+    Flaky.calls = -1  # two good batches, then failures, but fewer than the stop threshold
+    s = custom.to_sample([f"评论{i}很差不新鲜" for i in range(80)], "水果", "JD")
+    *_, err = custom.run_custom(Flaky(), s, "水果", batch_size=20, rpm=0, workers=1)
+    assert "could not be labeled" in err
