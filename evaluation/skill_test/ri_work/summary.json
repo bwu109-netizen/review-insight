@@ -1,0 +1,237 @@
+{
+ "category": "JD.com mixed (laptops, tablets, phones, fruit, clothing, shampoo)",
+ "reviews_analyzed": 100,
+ "avg_star_rating": null,
+ "overall_sentiment": {
+  "positive": 48,
+  "neutral": 3,
+  "negative": 49
+ },
+ "negative_share": 0.49,
+ "hidden_issues_in_satisfied_reviews": 11,
+ "repurchase": {
+  "unclear": 86,
+  "yes": 7,
+  "no": 7
+ },
+ "aspects_ranked_by_complaints": [
+  {
+   "aspect": "delivery_service",
+   "label": "物流与服务",
+   "owner": "Logistics",
+   "complaints": 17,
+   "praise": 18,
+   "neutral": 0,
+   "complaint_quotes": [
+    "一点问题也没有解决",
+    "如今不能申请售后",
+    "明明要29的，为什么给我33的",
+    "结果今天才送到",
+    "周日中午11点多才送到。慢",
+    "过程虽然有点漫长"
+   ],
+   "praise_quotes": [
+    "早上下的单，下午就到了",
+    "苹果包装完好",
+    "包装很好"
+   ]
+  },
+  {
+   "aspect": "design_build",
+   "label": "外观与做工",
+   "owner": "Product",
+   "complaints": 17,
+   "praise": 16,
+   "neutral": 0,
+   "complaint_quotes": [
+    "才2个月就坏了",
+    "光驱装得和有点凹陷",
+    "重量再控制一下",
+    "手机很差",
+    "照相模糊不清",
+    "合上时的确有缝隙"
+   ],
+   "praise_quotes": [
+    "外观大气",
+    "铝合框架",
+    "看起来高档大气"
+   ]
+  },
+  {
+   "aspect": "performance_software",
+   "label": "性能与系统",
+   "owner": "Product",
+   "complaints": 15,
+   "praise": 14,
+   "neutral": 0,
+   "complaint_quotes": [
+    "内存显示16G是1OG的内存",
+    "最大的BUG",
+    "信号比较差",
+    "卡~且发热量大",
+    "不支持WIFI无线上网",
+    "自带的Vista运行实在太慢了"
+   ],
+   "praise_quotes": [
+    "3dmax2001跑了14000多分",
+    "主流配置",
+    "散热最好"
+   ]
+  },
+  {
+   "aspect": "freshness_taste",
+   "label": "新鲜度与口感",
+   "owner": "Supply chain / QC",
+   "complaints": 13,
+   "praise": 5,
+   "neutral": 0,
+   "complaint_quotes": [
+    "皮有点糙",
+    "苹果太小而且很脏",
+    "收到的火龙果就是这样的",
+    "看上去有点小",
+    "一点也不脆，很面",
+    "看到这样的火龙果，无语"
+   ],
+   "praise_quotes": [
+    "可以带皮吃，很好，没有打蜡",
+    "吃起来香甜可口",
+    "但很新鲜"
+   ]
+  },
+  {
+   "aspect": "authenticity",
+   "label": "正品保障",
+   "owner": "Supply chain / QC",
+   "complaints": 11,
+   "praise": 0,
+   "neutral": 0,
+   "complaint_quotes": [
+    "跟实际收到商品出入很大",
+    "和在京东买的有点不一样",
+    "配置标签上印的是“双核处理器",
+    "假货",
+    "洗发水是正品的吗",
+    "假的，没有赠品"
+   ],
+   "praise_quotes": []
+  },
+  {
+   "aspect": "screen",
+   "label": "屏幕",
+   "owner": "Product",
+   "complaints": 9,
+   "praise": 8,
+   "neutral": 0,
+   "complaint_quotes": [
+    "厚一点的塑料膜就是钢化玻璃膜吗",
+    "分辨率低",
+    "弹簧片’似的的颤动感",
+    "屏幕采用古怪的240*240像素分辨率",
+    "屏幕有点问题",
+    "屏幕比例看着有点不舒服"
+   ],
+   "praise_quotes": [
+    "平板很好很清晰",
+    "看影视画质清晰",
+    "显示屏颜色比我预想的好一些"
+   ]
+  },
+  {
+   "aspect": "usage_effect",
+   "label": "使用效果",
+   "owner": "Product",
+   "complaints": 6,
+   "praise": 2,
+   "neutral": 0,
+   "complaint_quotes": [
+    "刚洗过一堆头皮屑",
+    "洗了头发好痒",
+    "没有the body shop 家的生姜水洗发水好用",
+    "这种洗发水也拿出来卖",
+    "都比实体店差太多",
+    "洗完头很多头皮屑"
+   ],
+   "praise_quotes": [
+    "用起来可以",
+    "东西也很好用"
+   ]
+  },
+  {
+   "aspect": "fit_comfort",
+   "label": "尺码与舒适",
+   "owner": "Product",
+   "complaints": 5,
+   "praise": 7,
+   "neutral": 0,
+   "complaint_quotes": [
+    "一点弹力都没有",
+    "大两码了",
+    "掉颜色掉的那么厉害",
+    "到处是线头",
+    "号码小"
+   ],
+   "praise_quotes": [
+    "穿着舒服不错",
+    "穿着很舒服",
+    "非常好穿！好舒服"
+   ]
+  },
+  {
+   "aspect": "price_value",
+   "label": "价格与性价比",
+   "owner": "Pricing",
+   "complaints": 4,
+   "praise": 12,
+   "neutral": 0,
+   "complaint_quotes": [
+    "同等配置下比别的贵不少",
+    "一百五十的裤子！确实不值",
+    "也就3块钱一斤差不多",
+    "价格可以用离谱来形容"
+   ],
+   "praise_quotes": [
+    "性价比高的好产品",
+    "价钱合适",
+    "同级别的inter配置下来最少5500+"
+   ]
+  },
+  {
+   "aspect": "battery",
+   "label": "续航",
+   "owner": "Product",
+   "complaints": 2,
+   "praise": 4,
+   "neutral": 0,
+   "complaint_quotes": [
+    "原装电池充满一天就没电了",
+    "电池最多使用一天"
+   ],
+   "praise_quotes": [
+    "电池续航能力也可以",
+    "电池还算耐用",
+    "续航很满意"
+   ]
+  }
+ ],
+ "common_root_causes": [
+  "商品图片与实物不符",
+  "手机质量差，售后维修无法解决问题",
+  "收到的洗发水与门店正品包装不同，疑似非正品",
+  "宣传的钢化膜实际是塑料膜",
+  "宣传有弹力但面料没有弹性",
+  "发错尺码",
+  "苹果个头小且不干净，与图片不符",
+  "通话记录无法编辑号码后拨打，软件设计不便",
+  "手机信号差导致通话质量低",
+  "配送延误导致火龙果变质",
+  "承诺的一日两送未兑现，配送慢",
+  "手机质量差，且差评被平台拦截"
+ ],
+ "owner_teams": [
+  "Logistics",
+  "Pricing",
+  "Product",
+  "Supply chain / QC"
+ ]
+}

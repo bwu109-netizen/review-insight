@@ -1,0 +1,13 @@
+{"category": "JD.com mixed (laptops, tablets, phones, fruit, clothing, shampoo)", "source": "claude-skill",
+ "aspects": [
+  {"key": "performance_software", "label_en": "Performance & software", "label_zh": "性能与系统", "description": "speed, lag, heat, noise, OS, apps, input method, signal, memory", "owner": "Product"},
+  {"key": "screen", "label_en": "Screen", "label_zh": "屏幕", "description": "display quality, resolution, touch, screen protector", "owner": "Product"},
+  {"key": "battery", "label_en": "Battery life", "label_zh": "续航", "description": "battery life, charging", "owner": "Product"},
+  {"key": "design_build", "label_en": "Design & build", "label_zh": "外观与做工", "description": "looks, weight, materials, scratches, gaps, buttons, camera hardware", "owner": "Product"},
+  {"key": "freshness_taste", "label_en": "Freshness & taste", "label_zh": "新鲜度与口感", "description": "fruit rotten, bruised, size, sweetness, crispness", "owner": "Supply chain / QC"},
+  {"key": "fit_comfort", "label_en": "Fit & comfort", "label_zh": "尺码与舒适", "description": "clothing size, fit, comfort, fabric quality", "owner": "Product"},
+  {"key": "usage_effect", "label_en": "Effect in use", "label_zh": "使用效果", "description": "shampoo effect: dandruff, itch, scent, cleaning; how well the product works", "owner": "Product"},
+  {"key": "authenticity", "label_en": "Authenticity", "label_zh": "正品保障", "description": "suspected fake, differs from store version, missing gifts", "owner": "Supply chain / QC"},
+  {"key": "price_value", "label_en": "Price & value", "label_zh": "价格与性价比", "description": "price, value for money, price drops", "owner": "Pricing"},
+  {"key": "delivery_service", "label_en": "Delivery & service", "label_zh": "物流与服务", "description": "delivery speed, packaging damage, wrong size/item sent, customer service, after-sales, returns", "owner": "Logistics"}
+ ]}

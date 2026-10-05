@@ -17,6 +17,15 @@ I worked in e-commerce and content operations for tea brands on Chinese platform
 5. **Measures its own accuracy** against human labels.
 6. **Analyzes your own reviews**: upload a CSV/Excel export or paste comments (e.g. from RedNote), pick the platform, and get the same analysis plus an ops brief.
 7. **Bring your own model**: Google Gemini, DeepSeek, OpenAI, Anthropic Claude, Qwen, Kimi, GLM, or any OpenAI-compatible endpoint. Keys are used for the session only and never stored.
+8. **Runs inside Claude with no API key**: an open-source [Claude skill](skill/review-insight) does the same analysis in a normal Claude chat, and a [prompt](skill/prompt_for_other_ai.md) covers ChatGPT and other chat AIs.
+
+Three ways to use it, for three kinds of users:
+
+| | Who it's for | Size per run | Needs |
+|---|---|---|---|
+| [Web app](https://boxiao-review-insight.streamlit.app) | Sellers who don't code | up to 2,000 reviews (larger files are sampled) | an API key |
+| [Claude skill](#use-it-inside-claude-no-api-key) | People who already use Claude | a few hundred reviews | a Claude account |
+| [Command line](#run-it) | Full runs and reproducing the results | any size, resumable | Python + an API key |
 
 ## How to use the web app
 
@@ -71,6 +80,27 @@ Both are public research datasets. No platform was scraped.
 
 **What it surfaces** (examples from the dashboard): the top laptop issue is hardware defects on arrival (28 complaints, owner: Product); for fruit it is freshness and smaller-than-advertised size; on Amazon, 93 of the 4-5 star tea reviews still report a concrete problem, such as fewer tea bags than the box says.
 
+## Use it inside Claude (no API key)
+
+The [`skill/review-insight`](skill/review-insight) folder is a Claude skill. Claude reads and labels the reviews itself in the conversation. Two small Python scripts do the loading, checking (every quote must appear word for word in its review) and counting, so the numbers are exact.
+
+**Install**
+- Claude web or desktop app: download [`review-insight.zip`](skill/review-insight.zip) and upload it under Skills in Claude's settings (code execution needs to be on).
+- Claude Code: copy the `review-insight` folder into `~/.claude/skills/`.
+
+Then upload a review export (or paste comments) and ask something like "分析这些评论，告诉我该先改什么" / "What should we fix first based on these reviews?".
+
+**Accuracy test.** I ran the skill on 100 random JD.com reviews from the evaluation set. It only saw the review text; the human labels were kept in a separate file and joined afterwards. Same 100 reviews, same human labels:
+
+| | Agreement with human labels | When it commits to positive/negative | "Neutral" answers |
+|---|---|---|---|
+| Claude skill (in conversation) | **95%** | 97.9% | 3 |
+| API pipeline (Gemini Flash-Lite) | 91% | 100% | 9 |
+
+The skill commits more often and gets slightly more of those calls wrong. Of its two contradictions, one praises the laptop overall but lists three complaints ("瑕不掩瑜"), and one finds the shampoo "本身还行" but wants to use it up fast. With 100 reviews the difference between the two is within noise; the point is that the no-API route is in the same range as the tested pipeline. Inputs, labels and the scoring script are in [`evaluation/skill_test/`](evaluation/skill_test). Labeling was done by Claude Opus 5.5 following `SKILL.md`; results can differ with other models.
+
+**Other chat AIs.** ChatGPT, Gemini and DeepSeek can't install Claude skills. [`prompt_for_other_ai.md`](skill/prompt_for_other_ai.md) is a single copy-paste prompt with the same rules. It has not been accuracy-tested.
+
 ## Pipeline
 
 ```
@@ -112,3 +142,4 @@ Same steps with `--dataset amazon_tea` (use `src/prepare_amazon.py`). Tests run 
 - Some human labels in the JD data are noisy (for example, a review marked negative that only complains about the box). Disagreements are saved in `eval_errors.csv` so they can be read, not just counted.
 - The Amazon check against star ratings is not independent, because the model sees the stars.
 - Repurchase intent is only counted when a review states it explicitly.
+- The skill test is one run on 100 reviews. In a chat, output quality depends on the model the user has, so the skill runs its own checks and reports problems instead of hiding them.

@@ -1,0 +1,76 @@
+{
+ "category": "Tea",
+ "source": "hand-written",
+ "aspects": [
+  {
+   "key": "taste",
+   "label_en": "Taste",
+   "label_zh": "口感",
+   "owner": "Product / Sourcing",
+   "description": "flavor, strength, bitterness, sweetness"
+  },
+  {
+   "key": "aroma",
+   "label_en": "Aroma",
+   "label_zh": "香气",
+   "owner": "Product / Sourcing",
+   "description": "smell of dry leaves or brewed tea"
+  },
+  {
+   "key": "freshness_quality",
+   "label_en": "Freshness & quality",
+   "label_zh": "新鲜度与品质",
+   "owner": "Supply chain / QC",
+   "description": "freshness, stale, leaf quality, dust/fannings, consistency between batches"
+  },
+  {
+   "key": "packaging",
+   "label_en": "Packaging",
+   "label_zh": "包装",
+   "owner": "Packaging",
+   "description": "bags, tins, seals, individual wrapping, damaged packaging, eco concerns"
+  },
+  {
+   "key": "price_value",
+   "label_en": "Price & value",
+   "label_zh": "价格与性价比",
+   "owner": "Pricing",
+   "description": "price, value for money, cheaper elsewhere, subscribe & save"
+  },
+  {
+   "key": "brewing_convenience",
+   "label_en": "Brewing & convenience",
+   "label_zh": "冲泡与便利",
+   "owner": "Product / Content",
+   "description": "easy to brew, bag breaks, instructions, steeping time, iced tea use"
+  },
+  {
+   "key": "health_wellness",
+   "label_en": "Health & wellness",
+   "label_zh": "健康功效",
+   "owner": "Marketing claims",
+   "description": "health benefits, digestion, sleep, calming, sugar/calories, ingredients"
+  },
+  {
+   "key": "caffeine_energy",
+   "label_en": "Caffeine & energy",
+   "label_zh": "咖啡因与提神",
+   "owner": "Product / Content",
+   "description": "caffeine level, energy, jitters, decaf"
+  },
+  {
+   "key": "delivery",
+   "label_en": "Delivery",
+   "label_zh": "物流",
+   "owner": "Logistics",
+   "description": "shipping speed, arrived damaged, wrong item, quantity received"
+  },
+  {
+   "key": "listing_accuracy",
+   "label_en": "Listing accuracy",
+   "label_zh": "描述相符",
+   "owner": "Listing / Content",
+   "description": "matches description/photos, size or count different than expected, misleading claims"
+  }
+ ]
+}

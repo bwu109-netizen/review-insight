@@ -1,0 +1,15 @@
+{
+ "skill (Claude, in conversation)": {
+  "n": 100,
+  "agreement": 0.95,
+  "agreement_when_committed": 0.979,
+  "neutral": 3
+ },
+ "API pipeline (Gemini Flash-Lite)": {
+  "n": 100,
+  "agreement": 0.91,
+  "agreement_when_committed": 1.0,
+  "neutral": 9
+ },
+ "skill vs API, same answer": 0.94
+}

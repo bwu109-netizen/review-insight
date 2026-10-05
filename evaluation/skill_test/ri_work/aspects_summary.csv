@@ -1,0 +1,11 @@
+﻿aspect,label_en,label_zh,owner,positive,neutral,negative,mentions,complaint_share_of_reviews,example_complaints,example_praise
+delivery_service,Delivery & service,物流与服务,Logistics,18,0,17,35,0.17,一点问题也没有解决 | 如今不能申请售后 | 明明要29的，为什么给我33的,早上下的单，下午就到了 | 苹果包装完好
+design_build,Design & build,外观与做工,Product,16,0,17,33,0.17,才2个月就坏了 | 光驱装得和有点凹陷 | 重量再控制一下,外观大气 | 铝合框架
+performance_software,Performance & software,性能与系统,Product,14,0,15,29,0.15,内存显示16G是1OG的内存 | 最大的BUG | 信号比较差,3dmax2001跑了14000多分 | 主流配置
+freshness_taste,Freshness & taste,新鲜度与口感,Supply chain / QC,5,0,13,18,0.13,皮有点糙 | 苹果太小而且很脏 | 收到的火龙果就是这样的,可以带皮吃，很好，没有打蜡 | 吃起来香甜可口
+authenticity,Authenticity,正品保障,Supply chain / QC,0,0,11,11,0.11,跟实际收到商品出入很大 | 和在京东买的有点不一样 | 配置标签上印的是“双核处理器,
+screen,Screen,屏幕,Product,8,0,9,17,0.09,厚一点的塑料膜就是钢化玻璃膜吗 | 分辨率低 | 弹簧片’似的的颤动感,平板很好很清晰 | 看影视画质清晰
+usage_effect,Effect in use,使用效果,Product,2,0,6,8,0.06,刚洗过一堆头皮屑 | 洗了头发好痒 | 没有the body shop 家的生姜水洗发水好用,用起来可以 | 东西也很好用
+fit_comfort,Fit & comfort,尺码与舒适,Product,7,0,5,12,0.05,一点弹力都没有 | 大两码了 | 掉颜色掉的那么厉害,穿着舒服不错 | 穿着很舒服
+price_value,Price & value,价格与性价比,Pricing,12,0,4,16,0.04,同等配置下比别的贵不少 | 一百五十的裤子！确实不值 | 也就3块钱一斤差不多,性价比高的好产品 | 价钱合适
+battery,Battery life,续航,Product,4,0,2,6,0.02,原装电池充满一天就没电了 | 电池最多使用一天,电池续航能力也可以 | 电池还算耐用
