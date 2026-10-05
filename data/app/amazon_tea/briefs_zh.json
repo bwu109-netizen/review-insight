@@ -1,0 +1,402 @@
+{
+  "B007JFXWRC": {
+    "name": "Lipton Blackberry Vanilla Pyramid Herbal Tea",
+    "summary": "顾客非常喜欢这款茶独特的浆果风味和三角茶包设计，但主要抱怨某些口味描述与实际配料不符（如缺乏香草成分）以及冲泡时的酸涩口感。",
+    "fix_first": [
+      {
+        "issue": "宣传中提到的香草味与实际配料表不符，引起消费者误解",
+        "owner": "营销宣传",
+        "evidence": "5次否定提及 + \"there is no vanilla in it according to the ingredients list\"",
+        "action": "更新商品详情页面的风味描述，明确成分来源。"
+      },
+      {
+        "issue": "茶包材质及设计导致漏液、滴水且包装不够环保",
+        "owner": "包装",
+        "evidence": "7次否定提及 + \"pyramid shape... seemed messy... dripped\"",
+        "action": "优化三角茶包的材质与密封工艺，减少滴漏问题。"
+      },
+      {
+        "issue": "部分消费者反映热饮口感酸涩且味道偏淡",
+        "owner": "产品 / 采购",
+        "evidence": "14次否定提及 + \"it still wasn't very tasty\"",
+        "action": "调整茶叶配方，改善热饮时的口感与风味平衡。"
+      }
+    ],
+    "keep_doing": [
+      "天然无糖且带有果香的甜美口感",
+      "创意的三角茶包设计与良好的冰茶冲泡体验"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B000CQBZOW": {
+    "name": "Assorted Herbal and Flavored Tea",
+    "summary": "Customers love the delicious taste, soothing qualities, and refreshing flavors, but complain about hidden ingredients like licorice root causing health concerns and inaccurate product listings.",
+    "fix_first": [
+      {
+        "issue": "Hidden or unexpected licorice root causing blood pressure concerns",
+        "owner": "商品页",
+        "evidence": "5 negative mentions + \"Danger for anyone with HIGH Blood Pressure\"",
+        "action": "在商品详情页和成分表中显着标出甘草根成分及健康警示。"
+      },
+      {
+        "issue": "商品名称与实际口味描述不符",
+        "owner": "商品页",
+        "evidence": "6 negative mentions + \"not even a hint of passion fruit nor mango\"",
+        "action": "核对并更新产品名称及描述，确保口味信息准确。"
+      },
+      {
+        "issue": "茶包浓度不足且性价比低",
+        "owner": "产品",
+        "evidence": "5 negative mentions + \"used up almost the entire box... too weak overall\"",
+        "action": "评估茶包的原料配比以提升茶汤浓度与价值感。"
+      }
+    ],
+    "keep_doing": [
+      "保持美味、舒缓且不苦涩的绝佳口感",
+      "延续独立铝箔包装以确保产品新鲜度"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B004E4CCSQ": {
+    "name": "MiO Peach Tea Liquid Water Enhancer (Not Actual Tea)",
+    "summary": "顾客喜欢其便携的设计以及能够随心调控浓度的便利性，但主要不满集中在浓烈的人工甜味、化学后味以及缺乏真实的茶和桃子成分上。",
+    "fix_first": [
+      {
+        "issue": "味道过于甜腻且带有化学后味",
+        "owner": "产品 / 采购",
+        "evidence": "50次 Taste 差评，如：'taste like chemicals and has a horrible aftertaste'",
+        "action": "优化配方以减少人工甜味并消除化学后味。"
+      },
+      {
+        "issue": "商品页面未说明该产品不含真实的茶或桃子成分",
+        "owner": "商品页",
+        "evidence": "7次 Listing accuracy 差评，如：'NOT TEA.'",
+        "action": "更新商品详情页，明确标注产品成分及风味说明。"
+      },
+      {
+        "issue": "使用说明不清晰导致难以精准控制用量",
+        "owner": "包装",
+        "evidence": "6次 Brewing & convenience 差评，如：'comes with no instruction on how much'",
+        "action": "在瓶身包装上增加更清晰的使用说明和用量指南。"
+      }
+    ],
+    "keep_doing": [
+      "便携小巧的包装设计，方便随身携带",
+      "用户可以自由控制饮品浓度的便利性"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B000CQG8K8": {
+    "name": "Stash Tea Variety",
+    "summary": "Customers like the rich spice aromas, convenient brewing, and good everyday value of these teas, but complain about weak flavors, bitterness, and inconsistent taste profiles.",
+    "fix_first": [
+      {
+        "issue": "口感偏淡或过于苦涩",
+        "owner": "产品",
+        "evidence": "32条负面评价提及，“horrible BITTER tea taste”",
+        "action": "优化部分茶品的拼配比例，调整萃取风味以减少苦味并提升茶汤浓郁度。"
+      },
+      {
+        "issue": "气味与传统风味不符或带有药味",
+        "owner": "产品 / 采购",
+        "evidence": "7条负面评价提及，“Doesn't smell or taste like the real traditional Earl Gray”",
+        "action": "重新评估香柠檬及香料原料的供应商与配方，确保风味符合消费者对传统茶的预期。"
+      },
+      {
+        "issue": "描述误导与包装问题",
+        "owner": "商品页",
+        "evidence": "2条 Listing 准确度负面及1条包装负面，“thought it actually had organic ingredients- as the description stated”",
+        "action": "立即修正商品详情页中有机成分等描述信息，避免误导消费者。"
+      }
+    ],
+    "keep_doing": [
+      "保持浓郁且广受喜爱的香料气味与便携的茶包设计",
+      "维持具有竞争力的价格与高性价比的购买体验"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B005SPQENY": {
+    "name": "Chantea Aloe Vera Green Tea bottled drink",
+    "summary": "客户喜欢这款即饮绿茶的清新口感和天然风味，但主要问题是芦荟果肉带来的奇怪质感以及过高的糖分和热量。",
+    "fix_first": [
+      {
+        "issue": "芦荟果肉的质感引起部分消费者反感或恶心",
+        "owner": "产品",
+        "evidence": "18条关于新鲜度与品质的负面评价，以及21条健康相关负面评价，例如：\"hard to get past trying to drink the chunks\"",
+        "action": "评估是否推出无果肉（Smooth）版本的绿茶以满足不同口感偏好的消费者。"
+      },
+      {
+        "issue": "含糖量高、热量大且带有苦味后调",
+        "owner": "产品 / 采购",
+        "evidence": "30条口味负面评价，例如：\"It is VERY VERY sweet\" 以及 \"weird bitter aftertaste was very off putting\"",
+        "action": "优化配方，减少蔗糖添加量并改善后味。"
+      },
+      {
+        "issue": "售价偏高且每瓶分量标示不清",
+        "owner": "定价",
+        "evidence": "9条价格与价值负面评价，例如：\"incredibly expensive\" 和 \"the bottle isn't one serving - it's 1.4375 servings\"",
+        "action": "优化产品定价策略或调整促销组合，并在商品详情页清晰标示营养成分及分量。"
+      }
+    ],
+    "keep_doing": [
+      "保持冰镇饮用的清新口感与天然风味（许多客户称赞味道自然、解渴且带有好闻的花果香）。",
+      "延续独特且坚固的六角形塑料瓶包装设计。"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B004E4HUMY": {
+    "name": "MiO Liquid Water Enhancer (Sweet Tea flavor)",
+    "summary": "Customers love the portability, zero-calorie profile, and convenience of this liquid water enhancer. However, the main problems are leaky packaging during transit and a taste that many find too artificial, chemical-heavy, or lacking in authentic tea flavor.",
+    "fix_first": [
+      {
+        "issue": "产品包装密封不严导致运输途中发生泄漏",
+        "owner": "供应链 / 质检",
+        "evidence": "10次负面提及 + \"sweetener was already leaking from the seal\"",
+        "action": "加强瓶盖密封性测试并改进运输防护包装"
+      },
+      {
+        "issue": "茶味不足且带有明显的化学或苦涩后味",
+        "owner": "产品",
+        "evidence": "45次负面提及 + \"I can't taste tea. I just taste like sweet water\"",
+        "action": "评估并优化产品配方以提升真实茶香并减少人工后味"
+      },
+      {
+        "issue": "液体挤压嘴难以精确控制用量",
+        "owner": "产品",
+        "evidence": "6次负面提及 + \"does not drip out in small drops\"",
+        "action": "改进阀门或喷嘴设计以便于用户控制滴量"
+      }
+    ],
+    "keep_doing": [
+      "保持小巧便携的瓶身设计，方便用户随时随地旅行携带",
+      "强调零卡路里和无糖的健康卖点，吸引减脂人群"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B00412W76S": {
+    "name": "Herbal Tea Assortment",
+    "summary": "顾客高度认可该草本茶在健康与疗效方面的作用，但对部分品种难以接受的气味与口感以及较差的包装质量意见颇大。",
+    "fix_first": [
+      {
+        "issue": "气味与口感恶劣、有异味",
+        "owner": "产品",
+        "evidence": "24条负面评价提及口感问题，“This stuff taste the worse, no sweetner helps and it stinks”",
+        "action": "在商品详情页显著位置增加草本原材料天然风味和气味的温馨提示，引导客户心理预期。"
+      },
+      {
+        "issue": "茶包易破损且无提绳标签",
+        "owner": "供应链 / 质检",
+        "evidence": "6条负面评价提及包装及茶包质量，“bags themselves are not very thick and will break”",
+        "action": "优化茶包材质，增加韧性并补充提绳标签，防止冲泡时破损。"
+      },
+      {
+        "issue": "物流配送延迟及加急服务未能兑现",
+        "owner": "物流",
+        "evidence": "7条负面评价提及配送问题，“I paid over $13.00 for \"expedited\" delivery and the product”",
+        "action": "核查加急物流承运商的履约能力，对未能按时送达的订单提供运费退款或补偿。"
+      }
+    ],
+    "keep_doing": [
+      "维持产品在孕期保健、改善睡眠及女性调理等健康疗效方面的核心优势，在营销宣传中重点突出。",
+      "保持具有竞争力的价格与大包装性价比，持续吸引注重实惠的忠实顾客。"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B0061IUIDY": {
+    "name": "Higgins & Burke Tea Assortment",
+    "summary": "顾客喜欢这款茶的独立包装和宜人的香气，但主要问题是部分茶包风味过于寡淡甚至带有苦味。",
+    "fix_first": [
+      {
+        "issue": "茶汤口感寡淡无深度或带有轻微苦味",
+        "owner": "产品",
+        "evidence": "22个差评：“tastes very, very weak with no depth of flavor”",
+        "action": "评估茶包克重及拼配比例，优化黑茶与香料的浓度。"
+      },
+      {
+        "issue": "价格偏高且性价比感知较弱",
+        "owner": "定价",
+        "evidence": "5个差评：“At 18.4 cents/bag, this is a very expensive tea.”",
+        "action": "评估当前定价策略与大宗商品的市场竞争力。"
+      }
+    ],
+    "keep_doing": [
+      "保持独立铝箔包装的设计，有效保存茶叶新鲜度。",
+      "延续便捷易撕的包装与良好的开箱体验。"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B003D4F1QS": {
+    "name": "Assorted Stash Tea Bags",
+    "summary": "Customers appreciate the good price and value, but are disappointed by weak taste and poor packaging where tea bags are crushed.",
+    "fix_first": [
+      {
+        "issue": "包装简陋导致茶包破损压扁",
+        "owner": "包装",
+        "evidence": "16条负面评价 + \"Tea Bags are all thrown into a box and get crushed, otherwise a good deal.\"",
+        "action": "改进外包装设计，确保茶包在运输过程中不被挤压变形。"
+      },
+      {
+        "issue": "口感偏淡且风味与预期不符",
+        "owner": "产品 / 采购",
+        "evidence": "37条负面评价 + \"Disappointed with STASH PREMIUM TEA STASH PREMIUM TEA has little to no taste\"",
+        "action": "优化茶叶拼配比例，提升口感浓郁度与风味准确性。"
+      },
+      {
+        "issue": "商品页面信息与实际含咖啡因情况不符",
+        "owner": "营销宣传",
+        "evidence": "8条负面评价 + \"Tea advertised it had caffeine I purchased this tea on the recommendation from a friend\"",
+        "action": "核对并更新商品详情页的咖啡因及成分说明。"
+      }
+    ],
+    "keep_doing": [
+      "保持极具竞争力的价格与大包装性价比。",
+      "提供便捷好用的独立小包装与冲泡体验。"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B000FFIL92": {
+    "name": "Flowering Tea Gift Set",
+    "summary": "Customers love the beautiful presentation and the joy of watching the tea bloom, making it a popular gift item. However, many buyers complain about the unexpectedly tiny teapot size and poor flavor quality.",
+    "fix_first": [
+      {
+        "issue": "Teapot size and product dimensions do not match customer expectations from images.",
+        "owner": "商品页",
+        "evidence": "15 negative mentions + \"considerably smaller than it appears in the picture\"",
+        "action": "Update product images and description with exact dimensions and capacity details."
+      },
+      {
+        "issue": "Freshness and quality issues, including musty smells and tea that fails to flower.",
+        "owner": "供应链 / 质检",
+        "evidence": "15 negative mentions + \"smelled musty and teapot tooo tiny\"",
+        "action": "Conduct quality control inspections on storage conditions and batch freshness."
+      },
+      {
+        "issue": "Packaging defects such as cracked glass teapots and damaged boxes.",
+        "owner": "包装",
+        "evidence": "26 negative mentions + \"little glass pot that comes with the set it cracked\"",
+        "action": "Improve protective packaging and drop-test the glass teapot to prevent shipping damage."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the beautiful presentation and gift-giving appeal in marketing materials.",
+      "Promote the delightful visual experience of watching the tea flowers bloom."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B003CK2BQG": {
+    "name": "Tea",
+    "summary": "顾客非常喜欢茶的美味、口感和健康益处，但主要问题在于部分口味令人失望以及包装和宣传存在偏差。",
+    "fix_first": [
+      {
+        "issue": "产品风味与预期不符及宣传问题",
+        "owner": "营销宣传",
+        "evidence": "5条负面提及 + \"With Moroccan Mint clearly plastered on the box, I really expected more\"",
+        "action": "更新商品详情页和外包装上的风味说明，确保准确传达原料信息"
+      },
+      {
+        "issue": "口感不佳（如过甜或呈现药水味）",
+        "owner": "产品",
+        "evidence": "19条负面提及 + \"it tastes just like cough syrup\"",
+        "action": "评估并调整茶包的香料与风味配方"
+      },
+      {
+        "issue": "包装破损及质量问题",
+        "owner": "包装",
+        "evidence": "2条负面提及 + \"bags were fragile and leaked tea leaf\"",
+        "action": "改进茶包材质和外盒包装的耐用性"
+      }
+    ],
+    "keep_doing": [
+      "保持优质的茶品口感与丰富风味，满足顾客对好喝茶饮的喜爱",
+      "宣传其健康益处与便利的冲泡体验，持续吸引注重健康的消费者"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B0009F3POY": {
+    "name": "Mother's Milk Tea",
+    "summary": "许多顾客喜欢这款茶的味道并认为它有助于哺乳期的母乳分泌，但主要问题在于部分用户反映其完全没有催乳效果甚至口感不佳。",
+    "fix_first": [
+      {
+        "issue": "产品未能提供预期的催乳效果或引起婴儿不适",
+        "owner": "产品",
+        "evidence": "27条健康与保健相关差评，例如：“made no difference to my milk production”",
+        "action": "评估产品配方并优化相关功效说明"
+      },
+      {
+        "issue": "茶的口感和气味遭到部分消费者强烈吐槽",
+        "owner": "产品",
+        "evidence": "12条口味相关差评，例如：“The taste is so nasty”",
+        "action": "考虑推出改善口感的新口味或风味改良款"
+      },
+      {
+        "issue": "线上售价高于实体零售店且出现数量描述与实物不符",
+        "owner": "定价",
+        "evidence": "6条价格差评及Listing准确度问题，例如：“readily available at GNC for $5.49... Don't pay for it online”",
+        "action": "核查线上定价策略与商品页面包装数量描述"
+      }
+    ],
+    "keep_doing": [
+      "保持草本原料的有机、纯素与非转基因品质",
+      "维持便捷的冲泡方式及部分用户喜爱的茴香草本风味"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B007I7Z3Z0": {
+    "name": "Lipton To Go Green Tea Mix (Not Traditional Brewed Tea)",
+    "summary": "Customers appreciate the convenience and low-calorie nature of these individual powder packets, but strongly dislike the overly sweet taste dominated by artificial sweeteners and misleading natural ingredients claims.",
+    "fix_first": [
+      {
+        "issue": "Listing accuracy and artificial sweetener disclosure",
+        "owner": "营销宣传",
+        "evidence": "17 negative mentions + \"The description says \"Sweetened with honey\"... These ingredients are not disclosed in the description\"",
+        "action": "Update the product listing to fully disclose all artificial sweeteners and clarify the ingredient profile."
+      },
+      {
+        "issue": "Overly sweet taste and artificial aftertaste",
+        "owner": "产品",
+        "evidence": "41 negative mentions + \"artificial sweetener dominates the flavor\"",
+        "action": "Review the flavor formulation to reduce sweetness and minimize the artificial aftertaste."
+      },
+      {
+        "issue": "Packaging opening and packet design",
+        "owner": "包装",
+        "evidence": "4 negative mentions + \"starter cut that allows for easy opening of the package is too deep\"",
+        "action": "Adjust the packet scoring and tear-notch design for easier and more reliable opening."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the portable, individual packet convenience for on-the-go usage in listings and ads.",
+      "Promote the low-calorie benefit (5 calories per packet) for health-conscious consumers."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B000WB1YSE": {
+    "name": "Kirkland Signature Japanese Green Tea Bags",
+    "summary": "Customers love the great taste, excellent value, and health benefits of this green tea. However, the main problem is receiving old inventory close to its expiration date along with some complaints about weak taste.",
+    "fix_first": [
+      {
+        "issue": "库存商品临期发货",
+        "owner": "供应链 / 质检",
+        "evidence": "12条新鲜度与质量负面反馈 + \"Item arrived with 24 days till expiration.\"",
+        "action": "收紧仓库出货标准，严格监控批次有效期，禁止向客户发送即将过期的库存。"
+      },
+      {
+        "issue": "部分批次茶包口味偏淡或品质不稳定",
+        "owner": "产品 / 采购",
+        "evidence": "20条口感负面反馈 + \"This stuff tastes like pond water\"",
+        "action": "与供应商复查茶叶品质及拼配工艺，确保风味稳定。"
+      },
+      {
+        "issue": "茶包线过短及独立包装粉末飞扬",
+        "owner": "包装",
+        "evidence": "6条包装负面反馈 + \"matcha powder goes all over the place\"",
+        "action": "优化茶包设计，加长棉线并改善独立包装以防粉末外撒。"
+      }
+    ],
+    "keep_doing": [
+      "保持极具性价比的价格优势，吸引追求实惠的大容量购买者。",
+      "延续便捷易冲泡的茶包设计及良好的健康益处宣传。"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  }
+}

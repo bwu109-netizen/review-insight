@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.pytest_cache/
+_to_delete/
+data/raw/
+data/processed/tea_reviews.parquet
+data/**/*.v1.*
+*.part
+.claude/
+CLAUDE.md

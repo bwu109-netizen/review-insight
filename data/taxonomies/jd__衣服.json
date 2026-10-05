@@ -1,0 +1,57 @@
+{
+  "category": "Apparel",
+  "source": "llm-generated",
+  "category_original": "衣服",
+  "aspects": [
+    {
+      "key": "fabric_quality",
+      "label_en": "Fabric & Material",
+      "label_zh": "面料材质",
+      "description": "Reviews on fabric touch, thickness, material quality, pilling, fading, or lining issues like fleece missing.",
+      "owner": "Product"
+    },
+    {
+      "key": "sizing_and_fit",
+      "label_en": "Sizing & Fit",
+      "label_zh": "尺码与版型",
+      "description": "Feedback on whether items run true to size, fit well, or have correct dimensions (sleeves, length, waist).",
+      "owner": "Product"
+    },
+    {
+      "key": "craftsmanship_and_durability",
+      "label_en": "Craftsmanship & Durability",
+      "label_zh": "做工与耐用度",
+      "description": "Comments on loose threads, stitching durability, tearing, or overall garment construction quality.",
+      "owner": "Product"
+    },
+    {
+      "key": "listing_accuracy",
+      "label_en": "Listing Accuracy",
+      "label_zh": "商品描述准确性",
+      "description": "Issues regarding color discrepancy, wrong item shipped, or incorrect description (e.g. fleece vs thin version).",
+      "owner": "Listing"
+    },
+    {
+      "key": "price_and_value",
+      "label_en": "Price & Value",
+      "label_zh": "价格与性价比",
+      "description": "Opinions on whether the price is reasonable, affordable, or represents good value for money.",
+      "owner": "Pricing"
+    },
+    {
+      "key": "delivery_service",
+      "label_en": "Delivery Service",
+      "label_zh": "物流配送",
+      "description": "Feedback on shipping speed, courier attitude, and delivery notification handling.",
+      "owner": "Logistics"
+    },
+    {
+      "key": "customer_service_and_after_sales",
+      "label_en": "Customer Service & After-Sales",
+      "label_zh": "客服与售后",
+      "description": "Evaluations of seller responsiveness, customer support, and return/exchange processing time.",
+      "owner": "Customer service"
+    }
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

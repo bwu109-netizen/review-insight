@@ -1,0 +1,79 @@
+{
+  "category": "Phones",
+  "source": "llm-generated, human-edited",
+  "category_original": "手机",
+  "aspects": [
+    {
+      "key": "battery_life",
+      "label_en": "Battery Life",
+      "label_zh": "电池续航",
+      "description": "Battery endurance, standby time, and battery degradation over time.",
+      "owner": "Product"
+    },
+    {
+      "key": "appearance_and_build",
+      "label_en": "Appearance & Build",
+      "label_zh": "外观与做工",
+      "description": "Phone design, shape, weight, color options, material durability, casing scratches, and paint peeling.",
+      "owner": "Product"
+    },
+    {
+      "key": "screen_and_display",
+      "label_en": "Screen & Display",
+      "label_zh": "屏幕显示",
+      "description": "Screen size, resolution, color depth, brightness, and visual clarity.",
+      "owner": "Product"
+    },
+    {
+      "key": "camera_and_imaging",
+      "label_en": "Camera & Imaging",
+      "label_zh": "拍照与摄像",
+      "description": "Photo and video quality, camera resolution, low-light performance, and shooting features.",
+      "owner": "Product"
+    },
+    {
+      "key": "audio_and_sound",
+      "label_en": "Audio & Sound",
+      "label_zh": "音质与铃声",
+      "description": "Speaker volume, ringtone quality, sound distortion at high volumes, and call audio quality.",
+      "owner": "Product"
+    },
+    {
+      "key": "performance_and_system",
+      "label_en": "Performance & System",
+      "label_zh": "性能与系统",
+      "description": "Processing speed, lagging, freezing, system crashes, storage capacity, and software stability. Also built-in software: messaging, contacts, input method, media playback.",
+      "owner": "Product"
+    },
+    {
+      "key": "call_and_network",
+      "label_en": "Call & Network",
+      "label_zh": "通话与信号",
+      "description": "Signal strength, network connectivity, and dual-card switching capability.",
+      "owner": "Product"
+    },
+    {
+      "key": "buttons_and_controls",
+      "label_en": "Buttons & Controls",
+      "label_zh": "按键与操控",
+      "description": "Keypad design, tactile feedback, durability of physical buttons, sliding mechanism, and touch control usability.",
+      "owner": "Product"
+    },
+    {
+      "key": "price_and_value",
+      "label_en": "Price & Value",
+      "label_zh": "价格与性价比",
+      "description": "Overall cost-effectiveness and perceived value relative to the price.",
+      "owner": "Pricing"
+    },
+    {
+      "key": "after_sales",
+      "label_en": "After-Sales & Authenticity",
+      "label_zh": "售后与正品",
+      "owner": "Customer service",
+      "description": "Returns, repairs, warranty, invoices, refurbished or non-genuine units, customer support"
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "edits": "Added after-sales & authenticity (6 of 150 sampled phone reviews mention returns/repairs/invoices/refurbished units); folded software features into performance. Did not add delivery: 0 of 150 phone reviews mention it, so the LLM was right to leave it out."
+}

@@ -1,0 +1,1725 @@
+review_id,aspect,sentiment,evidence,group_id,category,rating,aspect_label,aspect_label_zh,owner
+51762,listing_and_authenticity,negative,外包装条码被撕 掉,计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+52637,logistics_and_delivery,negative,自提时电池插口塑料及金属片有变形,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+52637,hardware_quality,negative,触摸板上有小黑点,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50691,logistics_and_delivery,positive,发货速度快,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+50691,hardware_quality,positive,质量还是挺好的,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50691,value_for_money,positive,性价比不错,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50691,software_and_drivers,positive,xp下的驱动还是很好装的,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+50691,design_and_ergonomics,positive,外形也还可以,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51720,thermal_performance,negative,CPU散热不是铜片，偷工减料,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+49269,hardware_quality,positive,做工扎实,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49269,design_and_ergonomics,positive,外观也是比较适合商务人士,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49269,value_for_money,positive,很高性价比的,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50760,value_for_money,negative,会贵1000元左右,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50722,hardware_quality,neutral,屏幕是完美屏，但色彩稍差,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50722,design_and_ergonomics,neutral,方向键是缩小的,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50722,thermal_performance,positive,机器散热不错,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+51148,software_and_drivers,neutral,想玩其他的功能毫无疑问得换XP,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+51148,battery_and_peripherals,negative,该USB光驱无法引导系统光盘启动,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+51352,thermal_performance,negative,发热量还是挺大,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+51352,value_for_money,positive,同级别的inter配置下来最少5500+,计算机,计算机,,Price & Value for Money,性价比,Pricing
+52394,battery_and_peripherals,negative,内胆包发出的,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+51734,listing_and_authenticity,negative,z怎么发给我的又是白色的啊,计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+49127,design_and_ergonomics,positive,三星的外观做的很好,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49127,hardware_quality,positive,机器速度还不错,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49127,battery_and_peripherals,positive,电池很好,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+51564,value_for_money,negative,比别的贵不少,计算机,计算机,,Price & Value for Money,性价比,Pricing
+51564,hardware_quality,negative,光驱装得和有点凹陷,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+48812,after_sales_service,negative,收到一张发票号码...金额为：8591元,计算机,计算机,,After-Sales & Customer Service,售后与客服服务,Customer service
+52595,software_and_drivers,neutral,装XP有点麻烦,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+51196,hardware_quality,negative,屏幕分辨率小了点,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50457,value_for_money,positive,绝对超高的性价比,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50457,hardware_quality,positive,完美屏,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50457,design_and_ergonomics,positive,外观不错,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49899,design_and_ergonomics,positive,外形自己比较喜欢,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49899,hardware_quality,positive,LED屏幕很爽,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50210,hardware_quality,positive,屏幕很亮丽,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50210,design_and_ergonomics,positive,外观也秉承HP的传统机型,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50335,design_and_ergonomics,positive,金属质感拉丝外壳做工和手感一流,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50335,thermal_performance,positive,散热好，开得时间再长也不烫手,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+50335,battery_and_peripherals,positive,电池很耐用，可以维持六小时,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+51143,hardware_quality,negative,镜面很差，一不小心有划伤。,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+51143,battery_and_peripherals,negative,开机光驱响声大,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+51143,after_sales_service,negative,保修期只有1年，有点担心。,计算机,计算机,,After-Sales & Customer Service,售后与客服服务,Customer service
+51530,design_and_ergonomics,negative,键盘左上角稍微按下就严重下陷,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51530,hardware_quality,negative,做工不敢恭维,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+51698,thermal_performance,negative,散热不太好,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+51698,hardware_quality,negative,屏幕两边边漏光严重,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+51698,software_and_drivers,negative,重装XP不方便,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+51698,design_and_ergonomics,negative,镜面是指纹收集器,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51698,after_sales_service,negative,亮点不超过三个不包,计算机,计算机,,After-Sales & Customer Service,售后与客服服务,Customer service
+50844,hardware_quality,negative,送来就是坏的，点不亮,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50844,logistics_and_delivery,negative,先签字后验货,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+50844,after_sales_service,negative,自己去话说维修点检测,计算机,计算机,,After-Sales & Customer Service,售后与客服服务,Customer service
+50263,value_for_money,positive,看着这个价格不错,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49197,software_and_drivers,neutral,官网下的驱动 不是集成打包！,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+49197,value_for_money,positive,机器性价比还是很强的！,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49197,battery_and_peripherals,positive,这次的赠品很实用 散热垫+杀软,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+50528,value_for_money,positive,5.1便宜了200块买的 满实惠的,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50528,software_and_drivers,positive,自带XP正版很好！,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+51267,thermal_performance,negative,"散热不均,触摸板的右侧热量大",计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+51267,hardware_quality,negative,"无线网卡太奇怪了,就是不行.",计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+52368,design_and_ergonomics,negative,键盘有的键比较松散轻轻一碰有点哗啦儿哗啦儿的响声,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+52368,thermal_performance,neutral,仔细听能听到散热口有噪音但还可以忍受,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+52368,battery_and_peripherals,negative,鼠标太差。,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+49297,value_for_money,positive,在这个价格上来说，很不错了。,计算机,计算机,,Price & Value for Money,性价比,Pricing
+51705,logistics_and_delivery,negative,真服了快递了，开始发的圆通，后来又转到EMS,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+51705,listing_and_authenticity,negative,和参数上说的不符，没摄像头,计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+49999,design_and_ergonomics,positive,造型不错，很精巧,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49999,value_for_money,positive,价格非常便宜,计算机,计算机,,Price & Value for Money,性价比,Pricing
+52065,software_and_drivers,negative,装xp系统很麻烦，驱动难找，不全,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52065,hardware_quality,negative,屏幕亮度不好调节,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50082,thermal_performance,positive,散热不错,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+50082,design_and_ergonomics,positive,键盘使用起来比较顺手。,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50082,hardware_quality,positive,没有坏点和亮点。,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50849,hardware_quality,negative,硬件质量不行，老黑屏，现在硬盘都找不到了,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+51750,battery_and_peripherals,negative,电池待机时间太短了,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+51750,thermal_performance,negative,机身就发烫了,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+49709,value_for_money,positive,性价比很高,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49709,after_sales_service,negative,京东客服的态度和服务意识还有待加强,计算机,计算机,,After-Sales & Customer Service,售后与客服服务,Customer service
+52373,battery_and_peripherals,negative,鼠标太难用了，华硕这点不厚道。笔记本包比较粗糙。,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+49088,design_and_ergonomics,positive,喜欢新颖的键盘。,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49088,thermal_performance,positive,没有明显的发热感。,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+51569,design_and_ergonomics,negative,加装内存条太麻烦，须把键盘卸下,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51569,battery_and_peripherals,negative,光驱岗启动有异响,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+49632,design_and_ergonomics,positive,性能 外观 品牌完全满足,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49632,value_for_money,positive,价格也不比台式机贵,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49632,after_sales_service,positive,京东又给开发票,计算机,计算机,,After-Sales & Customer Service,售后与客服服务,Customer service
+49413,battery_and_peripherals,positive,电池续航能力也可以,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+50027,design_and_ergonomics,positive,外观时尚，机器性能还不错,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49782,value_for_money,positive,物有所值吧,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49782,software_and_drivers,neutral,在网上当的驱动程序,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52219,software_and_drivers,negative,装系统对新手来说太麻烦了,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+50054,value_for_money,negative,不过降的有点快啊,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49959,battery_and_peripherals,negative,答应当初买电脑送包,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+49959,after_sales_service,negative,准备退货了，不诚信,计算机,计算机,,After-Sales & Customer Service,售后与客服服务,Customer service
+51454,hardware_quality,negative,内存较小！,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+51454,software_and_drivers,negative,驱动不是很全！,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+49064,design_and_ergonomics,positive,做工真的很pp，键盘也不错,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51715,thermal_performance,negative,用一会，就很热了。电源也很容易发热,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+51715,software_and_drivers,negative,听说比较难装,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52345,hardware_quality,negative,触摸板一旦打开就会老右击,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+52345,logistics_and_delivery,negative,送货近10天！,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+49150,design_and_ergonomics,positive,做工不错,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49150,software_and_drivers,positive,正在研究三星自带软件的功能,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+50306,design_and_ergonomics,positive,外观漂亮,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50306,logistics_and_delivery,positive,发货很快，第一天下单，第二天就到了,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+51218,software_and_drivers,neutral,赠送的系统慢就改装XP算了,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+49344,thermal_performance,positive,红铜散热？我觉得是优点啊，效果不错,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+49344,design_and_ergonomics,positive,键盘及插口等操作界面很友好,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49344,value_for_money,positive,性价比高,计算机,计算机,,Price & Value for Money,性价比,Pricing
+52646,listing_and_authenticity,negative,明明装箱清单里有鼠标。抹镜布，打开箱子却没有,计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+52566,thermal_performance,negative,风扇夜深人静的确挺响,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+52566,hardware_quality,negative,屏幕有些失望，看久了头晕,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+52566,design_and_ergonomics,negative,分量还是重了些,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51289,value_for_money,negative,价格有点偏高,计算机,计算机,,Price & Value for Money,性价比,Pricing
+51289,software_and_drivers,negative,VISTA还是有点不方便,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+51149,hardware_quality,negative,屏幕不是镜面屏，亮度会差一点,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+51149,listing_and_authenticity,negative,音箱部分外观和网站图片有一定差别,计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+50232,design_and_ergonomics,positive,设计非常人性化话，用着挺舒服的,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50232,logistics_and_delivery,positive,送货特别快，一星期就到日喀则了！,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+52171,value_for_money,negative,价钱比移动给我价钱高了100元,计算机,计算机,,Price & Value for Money,性价比,Pricing
+52171,thermal_performance,negative,散热是有点问题,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+52171,hardware_quality,negative,CPU cache 是小了点,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+52166,software_and_drivers,negative,预装的是VISTA，换系统要折腾一番,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52166,design_and_ergonomics,negative,触摸板不好掌握,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+52024,hardware_quality,negative,硬盘声音太响了,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+52024,value_for_money,negative,"有点贵,相比同等配置的",计算机,计算机,,Price & Value for Money,性价比,Pricing
+50290,hardware_quality,positive,做工优秀，功能齐全,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50290,battery_and_peripherals,positive,包非常好用，送的鼠标也很不错,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+50290,software_and_drivers,negative,驱动盘没有xp驱动,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+50651,value_for_money,positive,性价比高，24号的时候还是两千七百六十六，现在降了近200,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49313,listing_and_authenticity,positive,包装了两个盒子，还是比较保险的,计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+49313,hardware_quality,positive,没有发现质量问题，坏点如期待的一样,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50212,value_for_money,positive,性价比非常不错,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50212,hardware_quality,positive,独立显卡也足够平时用了,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50554,thermal_performance,positive,散热最好,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+50554,design_and_ergonomics,positive,设计还是我最喜欢的铝合框架,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49364,thermal_performance,positive,散热做的相当好,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+49364,hardware_quality,positive,机器用料很到位，相当结实,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+51087,listing_and_authenticity,negative,这款无指纹识别，也无人脸识别，京东资料上要改改了,计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+51087,hardware_quality,negative,摄像头要光线很好、距离远的情况下才正常,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+51087,software_and_drivers,positive,运行VISTA超慢 改了XP就很棒了,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52712,software_and_drivers,negative,为了找驱动足足用了5个小时,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+50903,thermal_performance,negative,散热有待加强,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+50903,software_and_drivers,negative,vista的系统，用得很不习惯,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52311,software_and_drivers,negative,vista系统进不去,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52311,value_for_money,negative,价格还有些贵,计算机,计算机,,Price & Value for Money,性价比,Pricing
+51960,thermal_performance,negative,散热尚需改进，还是很热,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+51897,design_and_ergonomics,negative,合上时的确有缝隙,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51326,hardware_quality,negative,硬盘声音大,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49335,value_for_money,positive,性价比高,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49335,design_and_ergonomics,positive,模具很适合女性，选用酒红色,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49672,value_for_money,positive,便宜,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49672,hardware_quality,positive,配置不差,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49672,design_and_ergonomics,positive,外型8错,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+52404,design_and_ergonomics,negative,重量再控制一下,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+52404,logistics_and_delivery,negative,周五17点之后下单，周日中午11点多才送到。慢,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+49715,value_for_money,positive,性价比高,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49715,hardware_quality,positive,速度快 780的主板也很好,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49715,thermal_performance,positive,几乎感觉不到发热,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+49715,design_and_ergonomics,positive,外观很大方 也很耐磨,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50004,value_for_money,positive,性价比不错,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50004,logistics_and_delivery,positive,1天就到了,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+49733,design_and_ergonomics,positive,轻巧,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50991,thermal_performance,negative,风扇声音比较大,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+50991,design_and_ergonomics,negative,自己拆卸键盘添加内存、更换硬盘很不方便,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+48839,design_and_ergonomics,positive,很轻，做工很精细,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+48839,thermal_performance,positive,几乎没有噪音，cpu温度...只有39,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+49539,battery_and_peripherals,positive,电池续航不错,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+51603,logistics_and_delivery,negative,27号才到,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+51603,software_and_drivers,negative,自带的Vista运行实在太慢了,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+51603,listing_and_authenticity,negative,标签上印的是“双核处理器”,计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+49835,design_and_ergonomics,positive,外观很漂亮，音量和播放都是触摸式的,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49835,logistics_and_delivery,positive,京东包装也很扎实,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+52020,thermal_performance,negative,发热量大,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+52020,hardware_quality,negative,显示频触碰会有‘弹簧片’似的的颤动感,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+52020,software_and_drivers,negative,官方没有xp系统的驱动,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+50069,design_and_ergonomics,positive,喜欢亚光屏。键盘也用的挺顺溜,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50069,thermal_performance,positive,散热还可以。声音很小,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+51016,design_and_ergonomics,positive,外观可以,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51016,software_and_drivers,negative,"系统真难装,LINUX 系统根本不能装",计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+51016,value_for_money,negative,刚买就降100,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50377,value_for_money,positive,返现特价时买的这个配置算比较高的性价比,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50377,battery_and_peripherals,positive,电池可以用七个小时左右,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+50377,design_and_ergonomics,positive,键盘也比较漂亮,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+48882,design_and_ergonomics,positive,机子小...携带方便,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+48882,thermal_performance,positive,噪音很小，散热也不错,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+48894,thermal_performance,positive,散热还OK吧,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+48894,logistics_and_delivery,positive,厦门自提点的工作人员态度不错,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+52221,software_and_drivers,negative,产品介绍没有说明该怎么去装XP,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+49675,software_and_drivers,positive,驱动很好装的，在官网上都有,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+50835,design_and_ergonomics,negative,太重了，好像比其他品牌14寸的机子还重,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50835,listing_and_authenticity,negative,"怎么上面写着2.6kg,可是电脑包装上面写毛重3.6",计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+50835,hardware_quality,negative,本子到手还没有用，好像有点问题,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50835,after_sales_service,negative,又要去售后维修，太麻烦了！,计算机,计算机,,After-Sales & Customer Service,售后与客服服务,Customer service
+51539,software_and_drivers,negative,VISTA系统无法连无线网络，...原装软件有冲突,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+51658,listing_and_authenticity,negative,还以为有炫灯的，哪知道没有,计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+51658,after_sales_service,positive,kfmm还是挺有礼貌的,计算机,计算机,,After-Sales & Customer Service,售后与客服服务,Customer service
+50017,listing_and_authenticity,positive,是原装机器,计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+50017,hardware_quality,positive,东芝的做工简直一流,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50017,design_and_ergonomics,positive,设计很人性化...模具很漂亮,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50017,thermal_performance,positive,发出的热量控制得很低,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+49568,design_and_ergonomics,positive,外观很漂亮，16：9的宽屏看高清确实挺爽,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+52068,software_and_drivers,negative,安装XP系统非常困难,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52501,software_and_drivers,neutral,只分了两个区,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52501,logistics_and_delivery,negative,物流的态度超不好,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+51164,thermal_performance,negative,散热不是很好,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+51164,battery_and_peripherals,positive,送的散热器还可以将就用用,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+52058,software_and_drivers,negative,系统装得我比较麻烦！,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52019,hardware_quality,negative,第一次开机时按电源好几次，也等了很久,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+52019,battery_and_peripherals,negative,这个居然连鼠标也省了,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+48853,thermal_performance,positive,温度、屏幕亮点等等一一测试,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+48853,hardware_quality,positive,屏幕亮点等等一一测试后,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+48853,value_for_money,positive,性价比高,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50465,design_and_ergonomics,positive,外观漂亮，键盘很可爱,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50465,thermal_performance,positive,新机还是比较静音的,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+50465,value_for_money,positive,这个价钱买这么个机器还是很不错的,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50465,battery_and_peripherals,positive,电池续航能力不错,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+49263,value_for_money,positive,综合性价比绝对超过神舟的,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49263,battery_and_peripherals,positive,一年的意外全包,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+49263,design_and_ergonomics,positive,黑色永不掉色 耐看 大方美观,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50907,hardware_quality,neutral,送的三星内存不知道该怎么装,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+52071,thermal_performance,negative,散热不佳，底盘的热量较大,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+52071,software_and_drivers,negative,VISTA软件给的是家庭基础版,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52071,design_and_ergonomics,negative,比较重，便携性差,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+52071,listing_and_authenticity,negative,而不是介绍中说的家庭高级版,计算机,计算机,,Listing Accuracy & Packaging,页面描述与包装,Listing
+51917,design_and_ergonomics,negative,键盘键程短，反馈力度不足,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51917,hardware_quality,negative,整体做工比IBM低了一个档次,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49723,battery_and_peripherals,positive,里面还配了一个原装鼠标,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+49792,thermal_performance,positive,惠普的商用本散热还是很不错的,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+49792,design_and_ergonomics,positive,外观简洁，银灰色，很喜欢,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49792,hardware_quality,positive,做工很精致，屏完美,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+48848,hardware_quality,positive,行货就是质量有保证,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+48848,value_for_money,positive,价格的话，实惠,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50174,hardware_quality,positive,性能稳定，好用,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50174,software_and_drivers,negative,装系统比较麻烦了点,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+48911,value_for_money,positive,这个配置很对的起这个价格,计算机,计算机,,Price & Value for Money,性价比,Pricing
+48911,logistics_and_delivery,positive,送货还算OK,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+48911,hardware_quality,positive,电脑速度很快，开关机都很快,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49053,value_for_money,positive,性价比较高，毕竟这个价位买到这样的机器还可以了,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49698,hardware_quality,positive,led的屏幕效果还是不错的,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49233,design_and_ergonomics,positive,外观漂亮且是金属的,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49233,thermal_performance,positive,噪音也在可以接受的范围之内,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+50890,hardware_quality,negative,质量有问题。 25号收到本本，今天早上是第二次放电后，就开不了机了,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49177,value_for_money,positive,主要是价格合理,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49177,logistics_and_delivery,positive,效率之高是我最应该赞的！,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+52548,logistics_and_delivery,negative,第三方送货公司，态度恶劣,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+50141,hardware_quality,positive,thinkpad的品质还是有一贯保证的,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50141,value_for_money,positive,京东的价格还是比较实惠的,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50141,logistics_and_delivery,positive,物流速度也比较理想,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+51358,design_and_ergonomics,negative,"键盘有些松,触摸屏太难按了",计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51358,software_and_drivers,negative,光驱导致系统蓝屏,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52161,design_and_ergonomics,negative,外壳材质略粗糙；外壳厚度较薄,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+52161,value_for_money,positive,对这样的价格而言还算可以,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49089,hardware_quality,positive,屏幕比我另一部Y430还好,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49089,value_for_money,positive,性价比还可以,计算机,计算机,,Price & Value for Money,性价比,Pricing
+51608,software_and_drivers,negative,预装了一个没用的系统,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+51608,hardware_quality,negative,硬盘分1个区实在无法接受,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50073,hardware_quality,positive,硬件整体配置相当不错,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50073,design_and_ergonomics,positive,外观模具，也是一个亮点,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51601,design_and_ergonomics,negative,没盖板，难看。 做工马马虎虎,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49908,design_and_ergonomics,positive,外观漂亮，13寸黄金比例,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49908,thermal_performance,positive,噪音很低，非常安静,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+52113,software_and_drivers,neutral,无线网卡不容易找路由器搭配,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52113,logistics_and_delivery,negative,订单4天后才能够在ems网站上找到信息,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+51627,software_and_drivers,negative,无线容易断网,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+51627,thermal_performance,negative,启动的时候很响,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+52337,design_and_ergonomics,negative,钢琴漆面外壳容易划伤,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+52337,value_for_money,negative,刚买完一周就降了100,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50808,after_sales_service,negative,京东客服太差，一直打不通,计算机,计算机,,After-Sales & Customer Service,售后与客服服务,Customer service
+50808,software_and_drivers,negative,因为是装的DOS，还要自己重装,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+49309,logistics_and_delivery,positive,收货包装完好，配件齐全,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+49309,value_for_money,positive,性价比高,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49309,hardware_quality,positive,LED显示屏不错，未发现坏点,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49309,design_and_ergonomics,positive,造型看着很轻便简洁,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+52303,value_for_money,negative,买完就降价300大洋,计算机,计算机,,Price & Value for Money,性价比,Pricing
+52303,after_sales_service,negative,华硕的客服不太满意,计算机,计算机,,After-Sales & Customer Service,售后与客服服务,Customer service
+50111,design_and_ergonomics,positive,便携，干净好看,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50111,battery_and_peripherals,positive,电池续航能力相当优秀,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+50111,software_and_drivers,positive,预装了XPH SP2正版系统,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+52027,design_and_ergonomics,negative,USB接口太少...机身右下角位置,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+48907,value_for_money,positive,价格真的是没话说,计算机,计算机,,Price & Value for Money,性价比,Pricing
+48907,design_and_ergonomics,positive,键盘好靓，太漂亮了,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+52762,thermal_performance,negative,散热设计一般，左下部发热量较大,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+52762,hardware_quality,negative,屏幕一般，看久了有想吐的感觉,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+52762,design_and_ergonomics,negative,触控板的灵敏度比较差,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+51208,thermal_performance,negative,AMD的处理器发热偏大,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+51208,hardware_quality,negative,显卡好像不支持VISTA的半透明效果,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+51208,value_for_money,negative,本身性能也较低,计算机,计算机,,Price & Value for Money,性价比,Pricing
+52046,battery_and_peripherals,negative,在视频期间仅用1小时40分钟左右,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+50125,design_and_ergonomics,positive,既小巧又漂亮,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50125,battery_and_peripherals,positive,续航时间够长,计算机,计算机,,Battery & Included Peripherals,电池与配件,Product
+50125,hardware_quality,positive,运行速度也不错,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49133,design_and_ergonomics,positive,外观漂亮，做工精致，键盘用起来舒服,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49133,value_for_money,negative,不过价格也是最贵的,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50766,hardware_quality,positive,屏幕 做工 都可以,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50766,value_for_money,positive,价格公道,计算机,计算机,,Price & Value for Money,性价比,Pricing
+50766,software_and_drivers,neutral,重启时引导出了点问题,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+49090,design_and_ergonomics,positive,外观设置的漂亮，音质不错,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+49090,hardware_quality,positive,键盘不错,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49090,software_and_drivers,neutral,vista系统正在努力探索中,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+51760,hardware_quality,negative,LCD屏颜色发白，而且在点亮和全黑转换过程中，会出现大片横向的线,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50848,design_and_ergonomics,negative,不能装锁,计算机,计算机,,"Design, Build & Ergonomics",外观与做工,Product
+50848,hardware_quality,negative,光驱读盘能力不算太好,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+50848,logistics_and_delivery,negative,圆通快递太离谱，到货无通知,计算机,计算机,,Logistics & Delivery Experience,物流与配送,Logistics
+49960,value_for_money,positive,价格实惠，配置还行了,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49960,thermal_performance,positive,散热啊，比想象的好！一直45-49！,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+49315,value_for_money,positive,配置比较超值,计算机,计算机,,Price & Value for Money,性价比,Pricing
+49315,thermal_performance,positive,发热量比我用的联想E390小,计算机,计算机,,Thermal Performance & Noise,散热与噪音,Product
+49315,hardware_quality,positive,做工说不上精细但也还没什么发现什么缺陷,计算机,计算机,,Hardware Quality & Defects,硬件质量与缺陷,Product
+49315,software_and_drivers,positive,操作系统安装顺利，附带DVD中有全套XP、VISTA驱动,计算机,计算机,,"Software, OS & Drivers",系统与驱动,Product
+28980,authenticity,neutral,之前买洗头膏老是买不到正品,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+35803,listing_and_advertising_accuracy,negative,广告欺诈 吹风机为什么不送,洗发水,洗发水,,Listing & Advertising Accuracy,页面描述与广告相符度,Listing
+35803,gifts_and_bundles,negative,吹风机为什么不送,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+29011,logistics_and_delivery,positive,物流很快,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+29011,product_quality_and_formula,positive,头发柔软,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+31764,product_quality_and_formula,negative,用了有头皮屑,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+26880,logistics_and_delivery,negative,送到老家县城的配送员还要加强管理,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+28646,listing_and_advertising_accuracy,negative,为什么没有发膜呢,洗发水,洗发水,,Listing & Advertising Accuracy,页面描述与广告相符度,Listing
+28646,gifts_and_bundles,negative,为什么没有发膜呢,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+28646,logistics_and_delivery,negative,物流就不怎么给力呦,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+31043,logistics_and_delivery,positive,物流给力，昨天买的今天就收到了,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+33082,authenticity,negative,假货！！,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+33082,product_quality_and_formula,negative,用完之后头发非常不好,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+31508,product_quality_and_formula,negative,洗了头掉得更多,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+35790,logistics_and_delivery,negative,物流服务太差,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+33745,product_quality_and_formula,negative,其实比较失望,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+35859,product_quality_and_formula,negative,洗完头很多头皮屑,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+35859,authenticity,negative,怀疑买的假货,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+33761,authenticity,negative,洗发水是正品的吗,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+33761,product_quality_and_formula,negative,洗了头发好痒,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+26939,product_quality_and_formula,positive,东西很好,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+27209,scent_and_packaging,positive,包装很好,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+27209,product_quality_and_formula,positive,东西也很好用,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+32013,authenticity,negative,不是一般的垃圾 不仅是假货,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+32013,scent_and_packaging,negative,味道就跟汽油味一样难闻,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+35942,authenticity,negative,不太像真品,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+35942,product_quality_and_formula,negative,用过之后第二天头发很痒,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+27356,scent_and_packaging,positive,包装不错，一直觉得清扬的味道好闻,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+27356,gifts_and_bundles,positive,送的那两瓶小的出差也特别方便,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+31343,product_quality_and_formula,negative,用了护发素也是不够柔顺,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+28762,product_quality_and_formula,positive,洗了还挺顺的吧,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+28762,pricing_and_promotions,neutral,买就降价了，大约10元，客服给退了差价,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+28762,customer_service_and_after_sales,positive,客服给退了差价,洗发水,洗发水,,Customer Service & After-Sales,客服与售后服务,Customer service
+28783,product_quality_and_formula,positive,很舒服，去油,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+36041,authenticity,negative,可能是二手货吧,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+36041,scent_and_packaging,negative,这个商标都掉了,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+31100,product_quality_and_formula,positive,挺好的,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+31100,scent_and_packaging,positive,包装都是自己的 logo,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+33274,logistics_and_delivery,negative,商品没有收到,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+26204,pricing_and_promotions,neutral,价格虽然不知道和实体超市比怎么样,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+26204,logistics_and_delivery,positive,他送上门啊,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+28549,pricing_and_promotions,positive,价格很公道,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+28549,product_quality_and_formula,positive,去头屑效果非常好,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+28549,scent_and_packaging,positive,味道好闻,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+29229,gifts_and_bundles,positive,还有旅行装，方便不少,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+29229,pricing_and_promotions,positive,价格也不错,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+31661,product_quality_and_formula,negative,洗完头皮都痒的要命,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+30429,product_quality_and_formula,positive,滋源洗发水不错,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+28403,pricing_and_promotions,negative,货到付款还要付运费,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+35490,pricing_and_promotions,negative,买完就降价,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+35490,logistics_and_delivery,negative,快递寄了半个月,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+32919,pricing_and_promotions,negative,买贵了,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+32919,product_quality_and_formula,negative,洗了没什么顺滑和柔软的感觉,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+30503,pricing_and_promotions,positive,比超市便宜,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+30503,logistics_and_delivery,positive,送到家,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+30503,product_quality_and_formula,positive,很好用,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+33808,product_quality_and_formula,negative,头发洗完之后特别油,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+33808,authenticity,negative,应该不是正品,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+27694,gifts_and_bundles,positive,这次还有赠品,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+30986,product_quality_and_formula,positive,沙宣一直是我信赖的品牌,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+28444,logistics_and_delivery,positive,早上下的订单下午就到了,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+28444,scent_and_packaging,positive,包装精美,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+28444,pricing_and_promotions,positive,主要就是超值,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+28444,listing_and_advertising_accuracy,positive,我是看了广告才来买的,洗发水,洗发水,,Listing & Advertising Accuracy,页面描述与广告相符度,Listing
+31163,scent_and_packaging,positive,刚打开盒子就一股香味,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+31163,gifts_and_bundles,positive,赠的几瓶小的日期都是新的,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+30432,logistics_and_delivery,positive,早上下的单，下午就到了,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+30432,scent_and_packaging,positive,包装很严实,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+30432,pricing_and_promotions,positive,性价比高的好产品,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+33828,pricing_and_promotions,negative,实际是提高价格一倍,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+30534,authenticity,positive,闻气味和以前在实体店买的一样,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+30534,gifts_and_bundles,positive,多了一瓶80ml的洗发露,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+30534,logistics_and_delivery,positive,快递小哥也很给力,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+30534,scent_and_packaging,neutral,外包装口在收到时开了个大口子,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+35432,scent_and_packaging,negative,买回来就是开的，都露出来了,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+35432,product_quality_and_formula,negative,洗了头发打结，痒,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+32845,pricing_and_promotions,negative,别家活动价39,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+26985,scent_and_packaging,positive,包装很精致,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+26985,pricing_and_promotions,neutral,发现秒杀都多2毛钱,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+28662,product_quality_and_formula,positive,头发滋润顺滑,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+33626,scent_and_packaging,negative,包装盒子好像是二次包装的,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+26647,scent_and_packaging,positive,淡淡的香味,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+34021,product_quality_and_formula,negative,第二天头发很痒,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+34021,authenticity,negative,香味不对，明显不是真货,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+31471,scent_and_packaging,negative,洗发水漏出来大半,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+29898,gifts_and_bundles,positive,套装很划算,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+29898,logistics_and_delivery,positive,小哥送货到家，态度很好,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+30848,pricing_and_promotions,positive,618真的比我上次买的便宜呀,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+31240,scent_and_packaging,negative,压泵的嘴都压断了,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+35810,scent_and_packaging,negative,洗发水直接是打开的！箱子里流的哪都是,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+35810,authenticity,negative,都怀疑水货,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+28523,logistics_and_delivery,positive,上午下单，下午就到了,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+28523,gifts_and_bundles,positive,实惠套装,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+32176,gifts_and_bundles,neutral,洗发水太少，护发素太多,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+30139,gifts_and_bundles,positive,给的赠品也不少,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+27595,pricing_and_promotions,positive,618买的,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+33690,authenticity,negative,完全的假货，味道完全不一样,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+33690,product_quality_and_formula,negative,洗出来头发是很粗糙的还打结,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+33690,customer_service_and_after_sales,negative,要求退款但是用过的还要有检测报告,洗发水,洗发水,,Customer Service & After-Sales,客服与售后服务,Customer service
+30557,product_quality_and_formula,negative,看着质感不怎样,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+30557,pricing_and_promotions,negative,这大打折的东西以后还是少买,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+34774,product_quality_and_formula,negative,洗了一天头皮就开始痒了,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+34774,authenticity,negative,像是假的！,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+31817,scent_and_packaging,negative,打开快递就是这样,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+31817,logistics_and_delivery,negative,打开快递就是这样,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+32292,logistics_and_delivery,negative,发错货,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+32292,customer_service_and_after_sales,negative,客服态度差劲,洗发水,洗发水,,Customer Service & After-Sales,客服与售后服务,Customer service
+28853,product_quality_and_formula,positive,特别好用,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+28853,pricing_and_promotions,positive,现在有很大的活动,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+33834,product_quality_and_formula,negative,不好用,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+33834,scent_and_packaging,negative,一点点姜味道都没有,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+27701,gifts_and_bundles,positive,买个套装试试,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+27701,pricing_and_promotions,positive,挺划算的,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+27701,logistics_and_delivery,positive,送货员服务非常好,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+31204,product_quality_and_formula,negative,再次使用的感觉就不同了,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+31204,listing_and_advertising_accuracy,negative,和自家宣传的图片，有些不同,洗发水,洗发水,,Listing & Advertising Accuracy,页面描述与广告相符度,Listing
+31204,customer_service_and_after_sales,negative,如今不能申请售后,洗发水,洗发水,,Customer Service & After-Sales,客服与售后服务,Customer service
+26548,pricing_and_promotions,positive,超值,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+26548,logistics_and_delivery,positive,京东快递就是快呀,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+29870,product_quality_and_formula,positive,很好用，顺滑,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+29870,pricing_and_promotions,positive,很实惠,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+35037,product_quality_and_formula,negative,洗完头发一直痒,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+35037,authenticity,negative,买到假货,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+35037,scent_and_packaging,negative,送来还撒出来了,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+35037,logistics_and_delivery,negative,送来还撒出来了,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+32930,product_quality_and_formula,negative,感觉不太真,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+32930,authenticity,negative,感觉不太真,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+32930,scent_and_packaging,negative,运输过程有泄露,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+32930,logistics_and_delivery,negative,运输过程有泄露,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+34515,product_quality_and_formula,negative,太垃圾了,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+31568,pricing_and_promotions,negative,刚买完就便宜,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+26591,pricing_and_promotions,neutral,挺贵的,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+32676,logistics_and_delivery,negative,三天了还没出库,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+26198,product_quality_and_formula,positive,头发用了很柔顺，掉头发也少了,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+32278,product_quality_and_formula,negative,一堆头皮屑,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+32278,authenticity,negative,假货,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+34336,product_quality_and_formula,negative,头皮痒的慌,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+34336,authenticity,negative,不是正品,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+28044,pricing_and_promotions,positive,618活动购买真合适,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+28044,scent_and_packaging,positive,包装也不错,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+28044,logistics_and_delivery,positive,送货很快,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+30897,product_quality_and_formula,positive,感觉用着挺好的,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+30897,pricing_and_promotions,positive,挺合适的，买完就涨价了,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+30897,scent_and_packaging,neutral,没什么特别的味道,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+29789,product_quality_and_formula,neutral,期待效果,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+35570,scent_and_packaging,negative,闻着太臭了,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+31259,authenticity,negative,一用就不是真的,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+31259,product_quality_and_formula,negative,头皮痒,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+32101,listing_and_advertising_accuracy,negative,商家提供产品图片跟实际收到商品出入很大,洗发水,洗发水,,Listing & Advertising Accuracy,页面描述与广告相符度,Listing
+28856,scent_and_packaging,positive,挺好的,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+29715,product_quality_and_formula,positive,洗发水质量很好的,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+29715,logistics_and_delivery,negative,快递超级慢,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+30730,pricing_and_promotions,positive,价格便宜,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+31198,product_quality_and_formula,negative,起头皮屑起得太多,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+26281,pricing_and_promotions,positive,618搞活动买的,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+26281,product_quality_and_formula,positive,控油还是不错,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+31281,authenticity,negative,假货无疑,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+31281,product_quality_and_formula,negative,味道、质感、洗完头的效果，都比实体店差,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+27679,scent_and_packaging,positive,一个盒子里装的 挺满意的,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+31053,authenticity,positive,是正品,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+31053,product_quality_and_formula,positive,确实很好,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+27207,listing_and_advertising_accuracy,negative,和我想像的大小有差矩,洗发水,洗发水,,Listing & Advertising Accuracy,页面描述与广告相符度,Listing
+34196,pricing_and_promotions,positive,价格挺优惠,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+34196,logistics_and_delivery,negative,京准达没有按时送到,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+34196,customer_service_and_after_sales,negative,联系客服退运费几天了都没人理我,洗发水,洗发水,,Customer Service & After-Sales,客服与售后服务,Customer service
+32248,scent_and_packaging,negative,包装都烂完了,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+26259,authenticity,positive,东西是正品,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+26259,logistics_and_delivery,positive,物流真心赞一个,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+30929,pricing_and_promotions,positive,价钱合适,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+30929,product_quality_and_formula,positive,用起来可以，量很足,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+26672,logistics_and_delivery,positive,送货很快,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+26405,product_quality_and_formula,positive,对油性发质来说不错,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+26405,logistics_and_delivery,positive,快递速度你懂的,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+29178,listing_and_advertising_accuracy,negative,这个居然是国产的，我以为韩国的呢,洗发水,洗发水,,Listing & Advertising Accuracy,页面描述与广告相符度,Listing
+29178,product_quality_and_formula,neutral,本身还行,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+33588,product_quality_and_formula,negative,越洗越痒,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+33588,authenticity,negative,假货,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+28991,pricing_and_promotions,positive,比在超市里买便宜多了,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+28991,logistics_and_delivery,positive,谢谢配送员,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+32775,pricing_and_promotions,negative,不便宜,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+32775,scent_and_packaging,negative,从上面看空一段的,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+34948,product_quality_and_formula,negative,不好用,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+34948,scent_and_packaging,negative,有股异味,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+30838,logistics_and_delivery,positive,送货很及时,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+30838,product_quality_and_formula,positive,洗发水很好,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+34718,product_quality_and_formula,negative,效果差,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+34718,pricing_and_promotions,negative,不值这个价格,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+34718,scent_and_packaging,negative,没有一点点生姜味道,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+30245,product_quality_and_formula,positive,滋源洗发水很不错,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+30245,pricing_and_promotions,positive,用券买的很划算,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+35081,product_quality_and_formula,negative,不好用,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+35081,authenticity,negative,感觉不像是真的,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+33390,authenticity,negative,买假了,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+33390,scent_and_packaging,negative,外包装都被拆了,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+35899,pricing_and_promotions,negative,价格上并无优势,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+35899,gifts_and_bundles,negative,收到的却没有电吹风,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+35899,product_quality_and_formula,negative,洗发水用着一般,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+31402,logistics_and_delivery,negative,发货速度慢的有点惊人了,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+32230,gifts_and_bundles,negative,送了一把梳子上面全部都是灰,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+26240,product_quality_and_formula,positive,发质越来越好,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+31880,product_quality_and_formula,negative,和水一样，，没沫的,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+33137,product_quality_and_formula,negative,现在满头头皮徐,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+28883,gifts_and_bundles,negative,这次没有送的小瓶装的护发素,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+28883,product_quality_and_formula,positive,东西挺好的,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+33643,product_quality_and_formula,negative,洗头第二天就痒了,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+28333,authenticity,positive,和超市的一样,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+28333,pricing_and_promotions,positive,价格便宜很多,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+29424,authenticity,positive,应该是正品,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+29424,pricing_and_promotions,positive,说划算,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+26851,scent_and_packaging,positive,味道不错,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+26851,logistics_and_delivery,positive,快递小哥直接送到门口的,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+26851,gifts_and_bundles,positive,买套盒还多送了一小瓶,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+30353,product_quality_and_formula,positive,用起来挺好的,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+30353,pricing_and_promotions,neutral,没有上一次做活动的时候，买的实惠了,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+33552,logistics_and_delivery,negative,等了5天才拿到,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+33552,scent_and_packaging,negative,包装损坏漏液,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+34526,pricing_and_promotions,negative,还不如去实体店单买呢,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+33639,product_quality_and_formula,negative,洗发水太难用了,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+30387,product_quality_and_formula,positive,用起来也不错,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+30387,pricing_and_promotions,positive,活动时买的，很划算,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+28834,product_quality_and_formula,positive,头皮发痒！这个用了之后好多了,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+28834,scent_and_packaging,positive,味道还可以，能接受,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+31403,product_quality_and_formula,negative,为什么不去头皮屑，反而起头屑,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+26908,pricing_and_promotions,positive,觉得很实惠,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+26908,product_quality_and_formula,positive,质量也可以的,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+34760,authenticity,negative,假的不能再假了,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+34760,pricing_and_promotions,negative,还一百呢，十块差不多,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+32090,logistics_and_delivery,negative,比**速度慢10倍，经常要送一个多星期,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+32319,product_quality_and_formula,neutral,大瓶的还好，小瓶的不行,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+36141,authenticity,negative,假的吧，洗了头痒！,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+36141,product_quality_and_formula,negative,洗了头痒！正品不会这样的,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+29791,scent_and_packaging,negative,运输时有溢出，显然没有包装好给我,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+31969,scent_and_packaging,negative,太垃圾的包装了，还有东西都漏出来了,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+31969,logistics_and_delivery,negative,居然用邮政，也是慢慢的,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+35296,product_quality_and_formula,negative,头痒死了！头皮屑还比以前多了,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+27385,logistics_and_delivery,positive,快递哥服务质量很好,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+27385,authenticity,positive,看包装应该是正品,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+34224,scent_and_packaging,negative,都漏出来了。不知道客服给不给换,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+27013,scent_and_packaging,positive,包装的很好,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+27013,logistics_and_delivery,positive,京东送货就是快,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+31676,authenticity,negative,假的,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+31676,gifts_and_bundles,negative,没有赠品,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+35241,authenticity,negative,发票居然是假的，估计买的东西也是假的,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+26423,scent_and_packaging,positive,两层纸盒包装的快递，不错不错,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+30033,product_quality_and_formula,neutral,看着不错，还没使用,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+34857,scent_and_packaging,negative,因漏液申请了退货,洗发水,洗发水,,Scent & Packaging,气味与包装,Product
+34857,logistics_and_delivery,negative,又将退回的货发给了我,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+34857,customer_service_and_after_sales,negative,这次连票都没有,洗发水,洗发水,,Customer Service & After-Sales,客服与售后服务,Customer service
+29425,pricing_and_promotions,positive,赶上活动买的,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+29425,logistics_and_delivery,positive,送货很快,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+26332,product_quality_and_formula,positive,全家喜欢,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+26332,pricing_and_promotions,positive,家庭装合算,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+26332,logistics_and_delivery,positive,快递员很给力,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+36017,product_quality_and_formula,neutral,还不错，刚用了一次,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+26568,pricing_and_promotions,positive,活动时候买的，感觉挺合适的,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+26568,product_quality_and_formula,positive,挺好用的！,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+26568,gifts_and_bundles,positive,赠了几瓶小瓶特别适合出去玩带着用！,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+26568,customer_service_and_after_sales,positive,客服也很贴心！,洗发水,洗发水,,Customer Service & After-Sales,客服与售后服务,Customer service
+26568,logistics_and_delivery,positive,物流速度也可以！,洗发水,洗发水,,Logistics & Delivery,物流配送服务,Logistics
+34253,gifts_and_bundles,negative,说好的赠吹风机的，结果没收到,洗发水,洗发水,,Gifts & Bundles,赠品与套装组合,Product
+34253,customer_service_and_after_sales,negative,问客服也不回话,洗发水,洗发水,,Customer Service & After-Sales,客服与售后服务,Customer service
+32259,authenticity,negative,假的,洗发水,洗发水,,Authenticity,商品正品与真伪,Supply chain
+32259,product_quality_and_formula,negative,洗了第二天就头痒，而且痒得不行居然还有头屑了,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+31133,product_quality_and_formula,positive,还没用，感觉不错。,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+29440,product_quality_and_formula,positive,洗了头发很顺滑很水润，不掉发,洗发水,洗发水,,Product Quality & Formula,产品质量与配方,Product
+29440,pricing_and_promotions,positive,很划算,洗发水,洗发水,,Pricing & Promotions,价格与促销活动,Pricing
+6311,price_and_value,positive,价格,平板,平板,,Price & Value,价格与性价比,Pricing
+6311,sound_and_design,positive,外观，手感,平板,平板,,Sound & Design,音质与外观,Product
+6311,performance_and_speed,positive,配置,平板,平板,,Performance & Speed,性能与速度,Product
+7736,performance_and_speed,positive,速度快,平板,平板,,Performance & Speed,性能与速度,Product
+7736,sound_and_design,positive,大小合适,平板,平板,,Sound & Design,音质与外观,Product
+7736,price_and_value,positive,性价比高,平板,平板,,Price & Value,价格与性价比,Pricing
+13597,logistics_and_packaging,positive,京东自营给力,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+11483,performance_and_speed,negative,玩游戏卡得很,平板,平板,,Performance & Speed,性能与速度,Product
+4422,screen_and_display,positive,小平板看电视剧真不错,平板,平板,,Screen & Display,屏幕与显示,Product
+4422,sound_and_design,positive,声音够大,平板,平板,,Sound & Design,音质与外观,Product
+5390,sound_and_design,positive,看着质感不错,平板,平板,,Sound & Design,音质与外观,Product
+5390,performance_and_speed,positive,运行速度快,平板,平板,,Performance & Speed,性能与速度,Product
+5390,price_and_value,positive,价格比实体店便宜,平板,平板,,Price & Value,价格与性价比,Pricing
+13075,listing_accuracy,negative,拍的时候明明是在m3,平板,平板,,Listing Accuracy,页面宣传与描述,Listing
+5443,screen_and_display,positive,看电视很流畅,平板,平板,,Screen & Display,屏幕与显示,Product
+5443,battery_and_charging,positive,能看5.6个小时,平板,平板,,Battery & Charging,电池与续航,Product
+11456,promotions_and_gifts,negative,时而有赠品时而没有,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+11456,customer_service,negative,退货还无比麻烦,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+4565,logistics_and_packaging,negative,送来的时候包装都破了,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+4565,screen_and_display,negative,屏幕比例看着有点不舒服,平板,平板,,Screen & Display,屏幕与显示,Product
+4565,battery_and_charging,positive,续航很满意,平板,平板,,Battery & Charging,电池与续航,Product
+3860,price_and_value,positive,物美价廉，经济实惠,平板,平板,,Price & Value,价格与性价比,Pricing
+12471,storage_and_system,negative,总共才10GB存储,平板,平板,,Storage & System,内存与系统,Product
+12471,screen_and_display,negative,显示屏非常迷糊 暗,平板,平板,,Screen & Display,屏幕与显示,Product
+12355,performance_and_speed,negative,视频有卡顿,平板,平板,,Performance & Speed,性能与速度,Product
+12529,screen_and_display,negative,屏幕不清晰,平板,平板,,Screen & Display,屏幕与显示,Product
+12529,performance_and_speed,negative,按键反应慢,平板,平板,,Performance & Speed,性能与速度,Product
+13182,storage_and_system,negative,存储量只有11.27,平板,平板,,Storage & System,内存与系统,Product
+13182,customer_service,negative,客服竟然要我恢复出厂设置,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+12071,storage_and_system,negative,没下载几个软件，也没照几张照片，就特别卡,平板,平板,,Storage & System,内存与系统,Product
+12071,performance_and_speed,negative,特别卡,平板,平板,,Performance & Speed,性能与速度,Product
+10302,price_and_value,neutral,性价比不错,平板,平板,,Price & Value,价格与性价比,Pricing
+10302,listing_accuracy,negative,京东标错价格让我们消费者买单,平板,平板,,Listing Accuracy,页面宣传与描述,Listing
+10302,customer_service,negative,客服就只会在那重复几句话,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+10302,logistics_and_packaging,negative,不是当天到的,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+8097,logistics_and_packaging,positive,京东的产品信得过,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+13266,promotions_and_gifts,negative,赠品项一个都没有了，都消失掉了,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+13742,screen_and_display,negative,屏幕不是很清晰,平板,平板,,Screen & Display,屏幕与显示,Product
+13742,performance_and_speed,positive,触屏还可以,平板,平板,,Performance & Speed,性能与速度,Product
+13742,customer_service,negative,客服却说有的，纯属骗人嘛,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+7950,battery_and_charging,positive,玩了一晚上，现在仍然有十几,平板,平板,,Battery & Charging,电池与续航,Product
+7950,performance_and_speed,positive,网速太棒啦,平板,平板,,Performance & Speed,性能与速度,Product
+11452,sound_and_design,negative,质量太差,平板,平板,,Sound & Design,音质与外观,Product
+4453,performance_and_speed,positive,速度快,平板,平板,,Performance & Speed,性能与速度,Product
+4453,sound_and_design,positive,音质不错,平板,平板,,Sound & Design,音质与外观,Product
+6261,price_and_value,positive,值得拥有,平板,平板,,Price & Value,价格与性价比,Pricing
+7912,listing_accuracy,positive,是正品,平板,平板,,Listing Accuracy,页面宣传与描述,Listing
+8245,logistics_and_packaging,positive,给快递员10068个赞,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+8245,sound_and_design,positive,产品质量还不错,平板,平板,,Sound & Design,音质与外观,Product
+5524,performance_and_speed,positive,速度快,平板,平板,,Performance & Speed,性能与速度,Product
+5524,sound_and_design,positive,手感也好,平板,平板,,Sound & Design,音质与外观,Product
+9157,battery_and_charging,negative,充满电半天都用不到待机一晚上都要用一半电,平板,平板,,Battery & Charging,电池与续航,Product
+8701,sound_and_design,positive,音质好,平板,平板,,Sound & Design,音质与外观,Product
+8701,screen_and_display,positive,画面也无从挑剔,平板,平板,,Screen & Display,屏幕与显示,Product
+8701,price_and_value,positive,这次特价迫不及待就又买来送自己,平板,平板,,Price & Value,价格与性价比,Pricing
+6833,price_and_value,positive,一分价钱一分货,平板,平板,,Price & Value,价格与性价比,Pricing
+6833,battery_and_charging,negative,电池有点小，续航有点短,平板,平板,,Battery & Charging,电池与续航,Product
+7214,sound_and_design,positive,手机外观可以,平板,平板,,Sound & Design,音质与外观,Product
+7214,performance_and_speed,negative,玩游戏时候会稍微有些卡顿,平板,平板,,Performance & Speed,性能与速度,Product
+5167,sound_and_design,positive,大气美观上档次,平板,平板,,Sound & Design,音质与外观,Product
+10664,promotions_and_gifts,negative,屏保给错了,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+12077,promotions_and_gifts,negative,显示赠送钢化膜的，结果什么都没送,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+12077,customer_service,negative,客服电话那么难接通,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+7773,logistics_and_packaging,positive,发货速度很快,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+7773,performance_and_speed,positive,用起来不卡,平板,平板,,Performance & Speed,性能与速度,Product
+6675,logistics_and_packaging,positive,送货超级快,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+6675,sound_and_design,positive,平板外观漂亮、做工精细,平板,平板,,Sound & Design,音质与外观,Product
+6675,performance_and_speed,positive,系统运行快,平板,平板,,Performance & Speed,性能与速度,Product
+6675,screen_and_display,negative,屏幕太镜面感了发光严重,平板,平板,,Screen & Display,屏幕与显示,Product
+6675,price_and_value,positive,物有所值,平板,平板,,Price & Value,价格与性价比,Pricing
+12472,screen_and_display,negative,黑边太大,平板,平板,,Screen & Display,屏幕与显示,Product
+12472,performance_and_speed,negative,处理器不太好，有些卡顿,平板,平板,,Performance & Speed,性能与速度,Product
+12472,price_and_value,negative,觉得不值这个价啊,平板,平板,,Price & Value,价格与性价比,Pricing
+9562,logistics_and_packaging,negative,包装就放一纸箱子里，也不垫垫,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+9562,performance_and_speed,negative,刚买来看视频就卡顿,平板,平板,,Performance & Speed,性能与速度,Product
+7734,sound_and_design,positive,高端大气上档次,平板,平板,,Sound & Design,音质与外观,Product
+4824,price_and_value,positive,物有所值,平板,平板,,Price & Value,价格与性价比,Pricing
+3956,sound_and_design,positive,配套容易学会操作,平板,平板,,Sound & Design,音质与外观,Product
+13235,performance_and_speed,negative,慢慢慢,平板,平板,,Performance & Speed,性能与速度,Product
+13235,screen_and_display,negative,分辨率低,平板,平板,,Screen & Display,屏幕与显示,Product
+13018,promotions_and_gifts,negative,到货后发现没有,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+9710,logistics_and_packaging,negative,京东快递员不行，态度不好,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+8934,screen_and_display,negative,"分辨率真的不敢恭维,好模糊!",平板,平板,,Screen & Display,屏幕与显示,Product
+8934,price_and_value,neutral,*多块钱真的买不到什么好货,平板,平板,,Price & Value,价格与性价比,Pricing
+9086,screen_and_display,negative,屏幕很模糊,平板,平板,,Screen & Display,屏幕与显示,Product
+9086,price_and_value,negative,刚买完就降价,平板,平板,,Price & Value,价格与性价比,Pricing
+7527,promotions_and_gifts,negative,没耳塞和手机壳,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+13027,promotions_and_gifts,negative,什么都不送,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+13027,screen_and_display,negative,连个原装膜都不贴,平板,平板,,Screen & Display,屏幕与显示,Product
+10301,performance_and_speed,positive,买来玩游戏的，很喜欢,平板,平板,,Performance & Speed,性能与速度,Product
+10301,promotions_and_gifts,negative,赠的乐视的卡是假货,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+6631,logistics_and_packaging,positive,快递也可以,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+6631,sound_and_design,positive,机器还是挺漂亮的,平板,平板,,Sound & Design,音质与外观,Product
+6039,screen_and_display,positive,屏幕很大很好用,平板,平板,,Screen & Display,屏幕与显示,Product
+4251,logistics_and_packaging,positive,快递速度没得说,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+4251,screen_and_display,positive,平板看起来挺清楚,平板,平板,,Screen & Display,屏幕与显示,Product
+11641,sound_and_design,negative,后盖有细碎划痕,平板,平板,,Sound & Design,音质与外观,Product
+12366,screen_and_display,negative,分辨率极差,平板,平板,,Screen & Display,屏幕与显示,Product
+12366,customer_service,negative,才说明白要同换等型号的！,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+12497,price_and_value,negative,刚买就降价,平板,平板,,Price & Value,价格与性价比,Pricing
+11051,price_and_value,positive,价格可以,平板,平板,,Price & Value,价格与性价比,Pricing
+11051,logistics_and_packaging,negative,包装好的手机为什么会有那么大的缺口,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+11051,storage_and_system,negative,系统升级失败,平板,平板,,Storage & System,内存与系统,Product
+8094,customer_service,positive,企业京东服务很给力,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+13039,price_and_value,negative,第二天就降价了,平板,平板,,Price & Value,价格与性价比,Pricing
+13039,customer_service,negative,联系客服态度很不耐烦的态度,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+12824,battery_and_charging,negative,没有宣传的那样省电,平板,平板,,Battery & Charging,电池与续航,Product
+12332,customer_service,negative,服务不好,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+4663,screen_and_display,positive,平板很好很清晰,平板,平板,,Screen & Display,屏幕与显示,Product
+4663,performance_and_speed,positive,输入反应蛮快,平板,平板,,Performance & Speed,性能与速度,Product
+4663,battery_and_charging,positive,电池还算耐用,平板,平板,,Battery & Charging,电池与续航,Product
+4663,storage_and_system,negative,内存显示16G是1OG的内存,平板,平板,,Storage & System,内存与系统,Product
+8833,price_and_value,positive,超高性价比,平板,平板,,Price & Value,价格与性价比,Pricing
+12364,performance_and_speed,negative,连4g都带不动,平板,平板,,Performance & Speed,性能与速度,Product
+12364,logistics_and_packaging,negative,看看那个包装,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+7925,screen_and_display,positive,屏幕尺寸,平板,平板,,Screen & Display,屏幕与显示,Product
+7925,battery_and_charging,negative,充电接口太Low,平板,平板,,Battery & Charging,电池与续航,Product
+7925,sound_and_design,negative,不支持电信通话,平板,平板,,Sound & Design,音质与外观,Product
+12414,promotions_and_gifts,negative,腾讯视频会员卡呢??,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+9353,storage_and_system,negative,手机拍照存储不了,平板,平板,,Storage & System,内存与系统,Product
+9353,customer_service,negative,客服态度不好，不回复,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+7122,screen_and_display,positive,适合小孩老人看电影,平板,平板,,Screen & Display,屏幕与显示,Product
+7122,performance_and_speed,positive,玩小游戏,平板,平板,,Performance & Speed,性能与速度,Product
+5758,screen_and_display,positive,屏幕色彩好,平板,平板,,Screen & Display,屏幕与显示,Product
+5758,logistics_and_packaging,positive,京东快递给力,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+13432,sound_and_design,negative,垃圾华为,平板,平板,,Sound & Design,音质与外观,Product
+9923,logistics_and_packaging,negative,包装也太小了,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+4579,price_and_value,positive,很实惠，赚了！,平板,平板,,Price & Value,价格与性价比,Pricing
+9511,screen_and_display,negative,分辨率极低,平板,平板,,Screen & Display,屏幕与显示,Product
+4405,performance_and_speed,positive,玩游戏不卡顿,平板,平板,,Performance & Speed,性能与速度,Product
+4405,screen_and_display,positive,看影视画质清晰,平板,平板,,Screen & Display,屏幕与显示,Product
+4719,performance_and_speed,neutral,流畅度还是不错滴,平板,平板,,Performance & Speed,性能与速度,Product
+4719,screen_and_display,positive,屏幕不错看电影还行,平板,平板,,Screen & Display,屏幕与显示,Product
+8731,logistics_and_packaging,positive,物流超快,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+8731,performance_and_speed,positive,东西很好用,平板,平板,,Performance & Speed,性能与速度,Product
+5847,price_and_value,positive,商品很不错,平板,平板,,Price & Value,价格与性价比,Pricing
+5522,sound_and_design,negative,指纹识别不太灵敏啊,平板,平板,,Sound & Design,音质与外观,Product
+8619,performance_and_speed,positive,速度好快，好棒,平板,平板,,Performance & Speed,性能与速度,Product
+4908,performance_and_speed,positive,流畅性很好,平板,平板,,Performance & Speed,性能与速度,Product
+4908,storage_and_system,positive,运行内存是3的,平板,平板,,Storage & System,内存与系统,Product
+9037,price_and_value,negative,第三天就降价一百,平板,平板,,Price & Value,价格与性价比,Pricing
+7866,listing_accuracy,neutral,wifi版不能插卡,平板,平板,,Listing Accuracy,页面宣传与描述,Listing
+11975,customer_service,negative,京东服务太差，相互推诿,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+11975,logistics_and_packaging,negative,发货太慢,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+10467,screen_and_display,negative,屏幕有点问题,平板,平板,,Screen & Display,屏幕与显示,Product
+10844,performance_and_speed,negative,反应有些迟钝,平板,平板,,Performance & Speed,性能与速度,Product
+6877,price_and_value,positive,价格不贵,平板,平板,,Price & Value,价格与性价比,Pricing
+8860,listing_accuracy,negative,怎么和我看有点不符,平板,平板,,Listing Accuracy,页面宣传与描述,Listing
+8491,logistics_and_packaging,negative,包装干净点就好了,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+8491,price_and_value,positive,价钱实惠,平板,平板,,Price & Value,价格与性价比,Pricing
+8887,performance_and_speed,negative,用哈就很烫,平板,平板,,Performance & Speed,性能与速度,Product
+8887,promotions_and_gifts,negative,啥都没送的有,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+11030,screen_and_display,negative,分辨率低,平板,平板,,Screen & Display,屏幕与显示,Product
+11030,sound_and_design,negative,照相模糊不清,平板,平板,,Sound & Design,音质与外观,Product
+9113,performance_and_speed,negative,无信号，信号很不好,平板,平板,,Performance & Speed,性能与速度,Product
+13031,screen_and_display,negative,屏幕分辨率简直全成看视频在打马赛克,平板,平板,,Screen & Display,屏幕与显示,Product
+4400,screen_and_display,positive,看电影还行的,平板,平板,,Screen & Display,屏幕与显示,Product
+11757,promotions_and_gifts,negative,网页显示下单有送保护套和钢化膜的，结果毛都没有,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+10500,price_and_value,positive,毕竟就几百块钱的东西,平板,平板,,Price & Value,价格与性价比,Pricing
+10500,logistics_and_packaging,negative,京东的打包也太不负责任了,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+6472,screen_and_display,positive,屏还蛮大的,平板,平板,,Screen & Display,屏幕与显示,Product
+6472,sound_and_design,positive,设计人性化,平板,平板,,Sound & Design,音质与外观,Product
+6472,storage_and_system,positive,质量可以,平板,平板,,Storage & System,内存与系统,Product
+11902,screen_and_display,negative,分辨率不是很满意,平板,平板,,Screen & Display,屏幕与显示,Product
+13095,promotions_and_gifts,negative,连个膜都没有,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+13095,price_and_value,negative,便宜没好货,平板,平板,,Price & Value,价格与性价比,Pricing
+6408,sound_and_design,positive,大一点的手机的感觉,平板,平板,,Sound & Design,音质与外观,Product
+7812,logistics_and_packaging,positive,快递很快,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+6456,logistics_and_packaging,positive,京东的快递真心快,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+6456,sound_and_design,positive,包装全新未开封,平板,平板,,Sound & Design,音质与外观,Product
+10360,storage_and_system,negative,内存根本就不够,平板,平板,,Storage & System,内存与系统,Product
+10360,performance_and_speed,negative,性能也不怎么样,平板,平板,,Performance & Speed,性能与速度,Product
+8876,performance_and_speed,negative,看电影卡的死,平板,平板,,Performance & Speed,性能与速度,Product
+11666,customer_service,negative,京东竟然说有违心词语不能发表,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+8546,storage_and_system,positive,系统通用,平板,平板,,Storage & System,内存与系统,Product
+8546,promotions_and_gifts,neutral,要是送保护套就好了,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+7968,storage_and_system,negative,感觉内存买小了,平板,平板,,Storage & System,内存与系统,Product
+12183,promotions_and_gifts,negative,模都没有,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+12183,performance_and_speed,negative,点击不灵,平板,平板,,Performance & Speed,性能与速度,Product
+11556,sound_and_design,negative,产品做工很差,平板,平板,,Sound & Design,音质与外观,Product
+11556,screen_and_display,negative,屏幕边框起泡,平板,平板,,Screen & Display,屏幕与显示,Product
+6541,sound_and_design,positive,平板刚收到,平板,平板,,Sound & Design,音质与外观,Product
+12460,sound_and_design,negative,已经弯曲变成曲面,平板,平板,,Sound & Design,音质与外观,Product
+4807,sound_and_design,positive,漂亮,平板,平板,,Sound & Design,音质与外观,Product
+8248,logistics_and_packaging,positive,送货快,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+6659,price_and_value,positive,支持国货钟爱华为,平板,平板,,Price & Value,价格与性价比,Pricing
+6293,performance_and_speed,positive,一点不卡,平板,平板,,Performance & Speed,性能与速度,Product
+6293,screen_and_display,positive,清晰度也高,平板,平板,,Screen & Display,屏幕与显示,Product
+6293,sound_and_design,positive,拿着就有分量,平板,平板,,Sound & Design,音质与外观,Product
+6730,sound_and_design,positive,做工精细,平板,平板,,Sound & Design,音质与外观,Product
+6730,performance_and_speed,positive,反应还是蛮快的,平板,平板,,Performance & Speed,性能与速度,Product
+12123,screen_and_display,negative,屏显不清楚 很模糊,平板,平板,,Screen & Display,屏幕与显示,Product
+5716,logistics_and_packaging,positive,送货真快,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+13119,price_and_value,negative,双十一比平时还贵,平板,平板,,Price & Value,价格与性价比,Pricing
+13119,promotions_and_gifts,negative,不能用新人优惠券了，也没有保护壳了,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+11616,logistics_and_packaging,positive,物流，确实很快,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+11616,promotions_and_gifts,negative,送的外壳很垃圾,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+11616,customer_service,negative,服务很差,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+4337,performance_and_speed,positive,快,平板,平板,,Performance & Speed,性能与速度,Product
+4337,price_and_value,positive,便宜,平板,平板,,Price & Value,价格与性价比,Pricing
+13232,storage_and_system,negative,不到两个月就不能开机了,平板,平板,,Storage & System,内存与系统,Product
+13583,promotions_and_gifts,negative,没有配耳机线,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+13583,sound_and_design,neutral,手机还行,平板,平板,,Sound & Design,音质与外观,Product
+12705,price_and_value,negative,刚买后的第二天就开始送东地西了,平板,平板,,Price & Value,价格与性价比,Pricing
+5225,price_and_value,positive,还不错挺好的,平板,平板,,Price & Value,价格与性价比,Pricing
+5064,screen_and_display,positive,8.4寸的屏幕，不大不小,平板,平板,,Screen & Display,屏幕与显示,Product
+5064,performance_and_speed,positive,运行也挺快的,平板,平板,,Performance & Speed,性能与速度,Product
+13113,price_and_value,negative,买了之后我就后悔了！垃圾,平板,平板,,Price & Value,价格与性价比,Pricing
+10942,listing_accuracy,negative,机子上有划痕,平板,平板,,Listing Accuracy,页面宣传与描述,Listing
+10645,sound_and_design,positive,平板做工还可以,平板,平板,,Sound & Design,音质与外观,Product
+5161,logistics_and_packaging,positive,第二天早上就到了,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+5161,performance_and_speed,positive,新机还是挺流畅的,平板,平板,,Performance & Speed,性能与速度,Product
+5161,screen_and_display,positive,分辨率也是够用了,平板,平板,,Screen & Display,屏幕与显示,Product
+5161,price_and_value,positive,物美价廉,平板,平板,,Price & Value,价格与性价比,Pricing
+6834,storage_and_system,positive,很好用，质量不错,平板,平板,,Storage & System,内存与系统,Product
+3876,logistics_and_packaging,positive,物流快,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+3876,sound_and_design,positive,轻薄,平板,平板,,Sound & Design,音质与外观,Product
+3876,performance_and_speed,positive,速度快,平板,平板,,Performance & Speed,性能与速度,Product
+3876,price_and_value,positive,这个价格不错,平板,平板,,Price & Value,价格与性价比,Pricing
+13675,listing_accuracy,negative,无产品说明书，无保修卡,平板,平板,,Listing Accuracy,页面宣传与描述,Listing
+13675,logistics_and_packaging,negative,包装简陋,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+13394,screen_and_display,negative,一两个月就出现花屏,平板,平板,,Screen & Display,屏幕与显示,Product
+13394,customer_service,negative,客服爱理不理的,平板,平板,,Customer Service & Returns,客服与售后,Customer service
+9626,sound_and_design,negative,出现声音变小的症状,平板,平板,,Sound & Design,音质与外观,Product
+6701,price_and_value,positive,这价钱，符合预期,平板,平板,,Price & Value,价格与性价比,Pricing
+6701,screen_and_display,negative,屏幕反光比较严重,平板,平板,,Screen & Display,屏幕与显示,Product
+4147,performance_and_speed,neutral,手机速度不是很快,平板,平板,,Performance & Speed,性能与速度,Product
+4147,price_and_value,positive,不过这个价格已经可以了,平板,平板,,Price & Value,价格与性价比,Pricing
+4147,logistics_and_packaging,negative,京东快递服务不如以前了,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+11527,listing_accuracy,negative,厚一点的塑料膜就是钢化玻璃膜吗,平板,平板,,Listing Accuracy,页面宣传与描述,Listing
+4356,screen_and_display,positive,屏幕分辨率超级好,平板,平板,,Screen & Display,屏幕与显示,Product
+4356,sound_and_design,positive,音效特别棒,平板,平板,,Sound & Design,音质与外观,Product
+4356,performance_and_speed,negative,指纹识别有时候不太灵敏,平板,平板,,Performance & Speed,性能与速度,Product
+4356,storage_and_system,negative,32G内存实际只有20多点,平板,平板,,Storage & System,内存与系统,Product
+4356,battery_and_charging,negative,要3个多小时，特别慢,平板,平板,,Battery & Charging,电池与续航,Product
+11605,promotions_and_gifts,negative,促销的东西,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+11605,logistics_and_packaging,negative,快递速度真让人心累,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+4503,logistics_and_packaging,positive,物流很快，几小时就到货了,平板,平板,,Logistics & Packaging,物流与包装,Logistics
+11466,storage_and_system,negative,用了10多天就中病毒了,平板,平板,,Storage & System,内存与系统,Product
+4987,performance_and_speed,positive,比较流畅,平板,平板,,Performance & Speed,性能与速度,Product
+4987,storage_and_system,positive,正在熟悉系统,平板,平板,,Storage & System,内存与系统,Product
+11250,performance_and_speed,negative,游戏根本难以运行,平板,平板,,Performance & Speed,性能与速度,Product
+11250,sound_and_design,negative,外观也不好看。还有瑕疵,平板,平板,,Sound & Design,音质与外观,Product
+11250,promotions_and_gifts,negative,妈的什么也不送就一台机子,平板,平板,,Promotions & Freebies,促销与赠品,Operations
+9520,screen_and_display,negative,屏幕自己裂开,平板,平板,,Screen & Display,屏幕与显示,Product
+6314,sound_and_design,negative,声卡在下边关机键在侧边这两个位置很别扭,平板,平板,,Sound & Design,音质与外观,Product
+6314,performance_and_speed,negative,输入有点差,平板,平板,,Performance & Speed,性能与速度,Product
+20037,taste_and_flavor,neutral,有点酸,水果,水果,,Taste & Flavor,口感与味道,Product
+20037,fruit_freshness,positive,品质还是可以,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+18588,delivery_and_logistics,positive,平安夜当天送到,水果,水果,,Delivery & Logistics,物流配送,Logistics
+18588,size_and_weight,positive,很大,水果,水果,,Size & Net Weight,个头大小与分量,Product
+18588,fruit_freshness,positive,很脆很新鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+18808,taste_and_flavor,positive,可口多汁无渣,水果,水果,,Taste & Flavor,口感与味道,Product
+19526,fruit_freshness,positive,非常新鲜的水果,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+24292,fruit_freshness,negative,苹果很生，而且有三四个是烂的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+24292,listing_accuracy,negative,图片太骗人,水果,水果,,Listing Accuracy,图文相符度,Listing
+16764,fruit_freshness,positive,外表很好，无碰伤,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+16764,delivery_and_logistics,positive,京东小哥给力，一天就到了,水果,水果,,Delivery & Logistics,物流配送,Logistics
+16764,taste_and_flavor,positive,味道Ok,水果,水果,,Taste & Flavor,口感与味道,Product
+16198,size_and_weight,positive,足称,水果,水果,,Size & Net Weight,个头大小与分量,Product
+16198,packaging,positive,包装完美,水果,水果,,Packaging,包装防护,Supply chain
+16198,value_for_money,positive,物美价兼,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+23549,size_and_weight,negative,又小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+23549,taste_and_flavor,negative,又难吃,水果,水果,,Taste & Flavor,口感与味道,Product
+21405,listing_accuracy,negative,文字介绍和图片说的过了,水果,水果,,Listing Accuracy,图文相符度,Listing
+21405,fruit_freshness,negative,苹果基本都是次品一个个歪瓜裂枣样,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21405,delivery_and_logistics,negative,发货速度也很慢,水果,水果,,Delivery & Logistics,物流配送,Logistics
+21405,after_sales_service,positive,服务态度...不错,水果,水果,,After-Sales Service,售后服务,Customer service
+21405,packaging,positive,包装不错,水果,水果,,Packaging,包装防护,Supply chain
+26163,size_and_weight,negative,苹果好小，估计没有2kg吧,水果,水果,,Size & Net Weight,个头大小与分量,Product
+26163,taste_and_flavor,negative,不好吃,水果,水果,,Taste & Flavor,口感与味道,Product
+20942,value_for_money,negative,秒杀的时候千万不要买,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+17919,delivery_and_logistics,positive,快递也快,水果,水果,,Delivery & Logistics,物流配送,Logistics
+17919,fruit_freshness,positive,没有坏的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+23783,delivery_and_logistics,negative,20几天没寄到,水果,水果,,Delivery & Logistics,物流配送,Logistics
+23783,after_sales_service,negative,和卖家沟通完全就没回复,水果,水果,,After-Sales Service,售后服务,Customer service
+17845,listing_accuracy,negative,上图和送来的苹果有好大的差距,水果,水果,,Listing Accuracy,图文相符度,Listing
+17845,fruit_freshness,negative,送来的苹果是过季的，苹果颜色暗淡无光,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+22207,size_and_weight,negative,特别小，还没橙子大呢,水果,水果,,Size & Net Weight,个头大小与分量,Product
+22207,fruit_freshness,negative,皱皱巴巴的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+22207,delivery_and_logistics,negative,快递好几天才到,水果,水果,,Delivery & Logistics,物流配送,Logistics
+22207,taste_and_flavor,negative,几呼没有什么味道,水果,水果,,Taste & Flavor,口感与味道,Product
+17676,taste_and_flavor,positive,苹果好吃，没有异味,水果,水果,,Taste & Flavor,口感与味道,Product
+17676,delivery_and_logistics,positive,快r递给力,水果,水果,,Delivery & Logistics,物流配送,Logistics
+17676,packaging,positive,包装很好，没有压坏的,水果,水果,,Packaging,包装防护,Supply chain
+16403,delivery_and_logistics,positive,早下单寸下午到货！方便快递也好,水果,水果,,Delivery & Logistics,物流配送,Logistics
+24439,size_and_weight,negative,个头小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+20790,taste_and_flavor,positive,还不错,水果,水果,,Taste & Flavor,口感与味道,Product
+17101,fruit_freshness,positive,质量不错,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+20081,fruit_freshness,positive,非常新鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+20081,size_and_weight,positive,大小合适,水果,水果,,Size & Net Weight,个头大小与分量,Product
+21851,size_and_weight,negative,这苹果太小了吧,水果,水果,,Size & Net Weight,个头大小与分量,Product
+21851,fruit_freshness,negative,歪瓜裂枣的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21568,taste_and_flavor,negative,不好吃，一点味道都没有,水果,水果,,Taste & Flavor,口感与味道,Product
+21423,value_for_money,negative,也不便宜，真心不划算,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+21423,size_and_weight,negative,说好的1.1kg，还没有900g的白心的大,水果,水果,,Size & Net Weight,个头大小与分量,Product
+16343,size_and_weight,positive,个头不算大，但是我正好喜欢小一点的,水果,水果,,Size & Net Weight,个头大小与分量,Product
+16343,taste_and_flavor,positive,甜度可以了,水果,水果,,Taste & Flavor,口感与味道,Product
+16343,fruit_freshness,positive,脆度也不错,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+16343,value_for_money,positive,不算贵了,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+23662,fruit_freshness,negative,两箱总共6个，2个勉强能吃,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+23662,size_and_weight,negative,两箱总共6个,水果,水果,,Size & Net Weight,个头大小与分量,Product
+23523,fruit_freshness,negative,好坏看不到,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+23523,value_for_money,negative,贵很多比市场上,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+23523,size_and_weight,negative,很小很小的两个,水果,水果,,Size & Net Weight,个头大小与分量,Product
+23444,delivery_and_logistics,negative,预计送达时间是19号...结果今天才送到,水果,水果,,Delivery & Logistics,物流配送,Logistics
+23403,taste_and_flavor,negative,吃起来像嚼蜡,水果,水果,,Taste & Flavor,口感与味道,Product
+22013,value_for_money,negative,不值得,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+24010,size_and_weight,negative,苹果太小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+24010,value_for_money,negative,价格贵 非常不合算,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+20803,fruit_freshness,positive,爽，脆，甜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+20803,size_and_weight,negative,有点小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+20803,delivery_and_logistics,positive,快递小哥很给力！,水果,水果,,Delivery & Logistics,物流配送,Logistics
+19021,fruit_freshness,positive,没有坏的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+19021,delivery_and_logistics,positive,送货快,水果,水果,,Delivery & Logistics,物流配送,Logistics
+19515,delivery_and_logistics,positive,一天就到了,水果,水果,,Delivery & Logistics,物流配送,Logistics
+19515,fruit_freshness,positive,水果很新鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+17176,value_for_money,positive,东西实惠,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+17176,after_sales_service,positive,客服服务态度超级好,水果,水果,,After-Sales Service,售后服务,Customer service
+17013,value_for_money,positive,比超市的便宜,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+17013,size_and_weight,neutral,没有超市的大,水果,水果,,Size & Net Weight,个头大小与分量,Product
+17013,fruit_freshness,positive,挺新鲜的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+19196,delivery_and_logistics,positive,发货快，送货快,水果,水果,,Delivery & Logistics,物流配送,Logistics
+19196,taste_and_flavor,positive,很好吃,水果,水果,,Taste & Flavor,口感与味道,Product
+21198,size_and_weight,negative,大小不一，大的每箱就一两个,水果,水果,,Size & Net Weight,个头大小与分量,Product
+21198,value_for_money,negative,一点不便宜,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+21204,fruit_freshness,negative,外表光鲜去皮后原形毕露,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21204,after_sales_service,negative,换货申请两天没回复,水果,水果,,After-Sales Service,售后服务,Customer service
+25538,size_and_weight,negative,小！什么10斤，连包装都不一定有10斤,水果,水果,,Size & Net Weight,个头大小与分量,Product
+23646,fruit_freshness,negative,水果干瘪瘪的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+23646,packaging,negative,破烂箱子兜来的,水果,水果,,Packaging,包装防护,Supply chain
+17230,fruit_freshness,positive,这个苹果不错,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+17230,taste_and_flavor,positive,味道挺甜的,水果,水果,,Taste & Flavor,口感与味道,Product
+21281,fruit_freshness,negative,烂了,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+22209,fruit_freshness,negative,不太熟，不甜，个头小，放两天就都烂了,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+22385,fruit_freshness,negative,2个是烂的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+16204,delivery_and_logistics,positive,非常速度,水果,水果,,Delivery & Logistics,物流配送,Logistics
+16204,fruit_freshness,positive,很不错,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+18761,delivery_and_logistics,positive,今天就收到了,水果,水果,,Delivery & Logistics,物流配送,Logistics
+18761,taste_and_flavor,positive,口感好，爽口,水果,水果,,Taste & Flavor,口感与味道,Product
+18761,value_for_money,positive,对得起这价格,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+18552,delivery_and_logistics,positive,物流超快,水果,水果,,Delivery & Logistics,物流配送,Logistics
+18552,fruit_freshness,positive,没有烂的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+18552,size_and_weight,negative,个头有好多没达到75mm,水果,水果,,Size & Net Weight,个头大小与分量,Product
+20899,fruit_freshness,negative,里面坏掉的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+25386,size_and_weight,negative,苹果很小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+25386,taste_and_flavor,negative,一点也不脆，很面,水果,水果,,Taste & Flavor,口感与味道,Product
+25386,value_for_money,negative,3块钱一斤差不多,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+26043,packaging,negative,包装很垃圾，标签直接贴在商品上,水果,水果,,Packaging,包装防护,Supply chain
+16817,delivery_and_logistics,negative,派送不太满意,水果,水果,,Delivery & Logistics,物流配送,Logistics
+23883,size_and_weight,neutral,个头不大,水果,水果,,Size & Net Weight,个头大小与分量,Product
+23883,taste_and_flavor,neutral,味道凑合,水果,水果,,Taste & Flavor,口感与味道,Product
+23883,fruit_freshness,positive,质量没有问题,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+25431,delivery_and_logistics,negative,我就没有收到火龙果,水果,水果,,Delivery & Logistics,物流配送,Logistics
+16471,size_and_weight,positive,大小正好,水果,水果,,Size & Net Weight,个头大小与分量,Product
+16471,taste_and_flavor,positive,味道纯正，新鲜脆甜,水果,水果,,Taste & Flavor,口感与味道,Product
+22679,packaging,negative,包装差,水果,水果,,Packaging,包装防护,Supply chain
+22679,size_and_weight,negative,苹果小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+22679,taste_and_flavor,negative,不好吃很硬不脆,水果,水果,,Taste & Flavor,口感与味道,Product
+22679,value_for_money,negative,不值这个价钱和邮费,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+21240,fruit_freshness,negative,坏的离谱（发霉了）,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+17278,size_and_weight,negative,苹果小了点,水果,水果,,Size & Net Weight,个头大小与分量,Product
+17278,taste_and_flavor,positive,味道还不错，挺甜的,水果,水果,,Taste & Flavor,口感与味道,Product
+18745,taste_and_flavor,positive,香翠甜,水果,水果,,Taste & Flavor,口感与味道,Product
+18745,packaging,positive,包装很好,水果,水果,,Packaging,包装防护,Supply chain
+18745,fruit_freshness,positive,没有一个损坏,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+18745,size_and_weight,positive,大小基本相等,水果,水果,,Size & Net Weight,个头大小与分量,Product
+20241,after_sales_service,negative,说过赔偿损失的结果给忽悠了,水果,水果,,After-Sales Service,售后服务,Customer service
+24790,taste_and_flavor,negative,太软了。没一点口感,水果,水果,,Taste & Flavor,口感与味道,Product
+24790,listing_accuracy,negative,这哪是华圣苹果,水果,水果,,Listing Accuracy,图文相符度,Listing
+21041,fruit_freshness,positive,水果质量非常好,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21041,value_for_money,negative,就是太贵,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+25847,fruit_freshness,negative,外观特么给坏了一样,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+24775,taste_and_flavor,negative,很酸，太差,水果,水果,,Taste & Flavor,口感与味道,Product
+21259,size_and_weight,negative,很小个,水果,水果,,Size & Net Weight,个头大小与分量,Product
+21259,fruit_freshness,negative,有一箱苹果有三个烂了,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+17292,fruit_freshness,positive,比市场卖的要好、新鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+17292,taste_and_flavor,positive,水份及甜味可以啦,水果,水果,,Taste & Flavor,口感与味道,Product
+17292,delivery_and_logistics,positive,快捷,水果,水果,,Delivery & Logistics,物流配送,Logistics
+16508,taste_and_flavor,positive,贵的有道理,水果,水果,,Taste & Flavor,口感与味道,Product
+16508,value_for_money,neutral,贵的有道理,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+17248,taste_and_flavor,positive,还挺脆口的,水果,水果,,Taste & Flavor,口感与味道,Product
+17248,fruit_freshness,negative,苹果里面，有个别有，一些小斑点,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+20432,size_and_weight,negative,单果不大,水果,水果,,Size & Net Weight,个头大小与分量,Product
+20432,packaging,positive,但包装很好,水果,水果,,Packaging,包装防护,Supply chain
+16402,size_and_weight,negative,个头不太大,水果,水果,,Size & Net Weight,个头大小与分量,Product
+16402,fruit_freshness,positive,非常新鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21332,size_and_weight,negative,东西小的mini个,水果,水果,,Size & Net Weight,个头大小与分量,Product
+21332,after_sales_service,negative,退货时运费扣除不合理,水果,水果,,After-Sales Service,售后服务,Customer service
+25549,size_and_weight,negative,太小了，只有巴掌大,水果,水果,,Size & Net Weight,个头大小与分量,Product
+16880,taste_and_flavor,positive,吃起口感很好,水果,水果,,Taste & Flavor,口感与味道,Product
+16880,delivery_and_logistics,positive,快，早上下单下午就收到了,水果,水果,,Delivery & Logistics,物流配送,Logistics
+21880,packaging,negative,以为会一个箱子送过来，结果来了七个箱子,水果,水果,,Packaging,包装防护,Supply chain
+21880,delivery_and_logistics,negative,学校京东派只送到学校门口,水果,水果,,Delivery & Logistics,物流配送,Logistics
+17775,delivery_and_logistics,positive,京东快递就是快,水果,水果,,Delivery & Logistics,物流配送,Logistics
+17775,fruit_freshness,positive,很新鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+18643,taste_and_flavor,positive,水多，鲜艳，甜，好吃,水果,水果,,Taste & Flavor,口感与味道,Product
+22595,fruit_freshness,negative,这个都烂成这样了,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+22595,delivery_and_logistics,positive,送货员师傅真心负责,水果,水果,,Delivery & Logistics,物流配送,Logistics
+16969,packaging,negative,包装无封口,水果,水果,,Packaging,包装防护,Supply chain
+16661,fruit_freshness,positive,真的很新鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+16661,listing_accuracy,positive,和图片上一样的哦,水果,水果,,Listing Accuracy,图文相符度,Listing
+16240,taste_and_flavor,positive,很脆很好吃,水果,水果,,Taste & Flavor,口感与味道,Product
+17930,packaging,positive,包装完美,水果,水果,,Packaging,包装防护,Supply chain
+17930,fruit_freshness,positive,苹果一个都没坏,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+17930,taste_and_flavor,neutral,酸酸的,水果,水果,,Taste & Flavor,口感与味道,Product
+18639,delivery_and_logistics,positive,到货速度蛮快,水果,水果,,Delivery & Logistics,物流配送,Logistics
+18082,taste_and_flavor,positive,苹果很脆很甜,水果,水果,,Taste & Flavor,口感与味道,Product
+18082,delivery_and_logistics,positive,物流很快,水果,水果,,Delivery & Logistics,物流配送,Logistics
+18082,after_sales_service,positive,快递小哥服务超级好,水果,水果,,After-Sales Service,售后服务,Customer service
+24349,fruit_freshness,negative,十个严重内伤,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+19253,delivery_and_logistics,positive,今天上午就收到了,水果,水果,,Delivery & Logistics,物流配送,Logistics
+20810,size_and_weight,negative,看上去有点小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+20810,fruit_freshness,positive,很新鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+23856,fruit_freshness,negative,坏成这样的苹果也拿出来卖,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+25502,fruit_freshness,negative,里面就全部发霉烂掉了,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+17259,taste_and_flavor,positive,很甜很脆,水果,水果,,Taste & Flavor,口感与味道,Product
+16259,delivery_and_logistics,positive,物流一如既往的及时和快捷,水果,水果,,Delivery & Logistics,物流配送,Logistics
+16259,value_for_money,positive,价格有比较优惠,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+16259,taste_and_flavor,positive,爽脆啊,水果,水果,,Taste & Flavor,口感与味道,Product
+21017,fruit_freshness,positive,鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21017,taste_and_flavor,positive,甜,水果,水果,,Taste & Flavor,口感与味道,Product
+25032,size_and_weight,negative,太小个了,水果,水果,,Size & Net Weight,个头大小与分量,Product
+25032,taste_and_flavor,negative,味道偏酸,水果,水果,,Taste & Flavor,口感与味道,Product
+25032,delivery_and_logistics,negative,物流很慢,水果,水果,,Delivery & Logistics,物流配送,Logistics
+25032,fruit_freshness,negative,有两个有点坏,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21647,size_and_weight,negative,果子肉小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+21647,taste_and_flavor,negative,没有水分，酸，苦涩,水果,水果,,Taste & Flavor,口感与味道,Product
+21548,fruit_freshness,negative,都坏了,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+24869,fruit_freshness,negative,不新鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+24869,size_and_weight,negative,又小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+24869,taste_and_flavor,negative,很难吃,水果,水果,,Taste & Flavor,口感与味道,Product
+19857,packaging,positive,苹果包装完好,水果,水果,,Packaging,包装防护,Supply chain
+19857,taste_and_flavor,positive,吃起来香甜可口,水果,水果,,Taste & Flavor,口感与味道,Product
+24897,delivery_and_logistics,positive,6月27日上午送到家,水果,水果,,Delivery & Logistics,物流配送,Logistics
+24897,fruit_freshness,negative,火龙果均已坏成这样,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+24897,after_sales_service,negative,让我看切开坏才断定坏,水果,水果,,After-Sales Service,售后服务,Customer service
+22694,value_for_money,negative,降价到19.8，提交订单时涨价到20多,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+17319,size_and_weight,negative,小的真的很小个,水果,水果,,Size & Net Weight,个头大小与分量,Product
+17319,value_for_money,negative,不是很实惠,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+20570,taste_and_flavor,neutral,不是脆的那种，稍微带有一点点酸,水果,水果,,Taste & Flavor,口感与味道,Product
+20570,value_for_money,positive,苹果也很优惠,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+20570,delivery_and_logistics,positive,物流速度很快,水果,水果,,Delivery & Logistics,物流配送,Logistics
+23979,listing_accuracy,negative,切开是白心,水果,水果,,Listing Accuracy,图文相符度,Listing
+23979,after_sales_service,negative,已投诉,水果,水果,,After-Sales Service,售后服务,Customer service
+19948,value_for_money,positive,方便实惠,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+19948,delivery_and_logistics,positive,配送小哥辛苦,水果,水果,,Delivery & Logistics,物流配送,Logistics
+16676,value_for_money,positive,价格合适,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+16676,delivery_and_logistics,positive,全程冷链物流,水果,水果,,Delivery & Logistics,物流配送,Logistics
+25533,after_sales_service,negative,还不能退货了,水果,水果,,After-Sales Service,售后服务,Customer service
+24961,after_sales_service,negative,部分客服人员素质真的有问题,水果,水果,,After-Sales Service,售后服务,Customer service
+25729,listing_accuracy,negative,看图片挺好，实际真不咋地,水果,水果,,Listing Accuracy,图文相符度,Listing
+25729,taste_and_flavor,negative,也不甜，也不酸，没味,水果,水果,,Taste & Flavor,口感与味道,Product
+25729,value_for_money,negative,不值这个价格,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+26133,taste_and_flavor,negative,没啥味道,水果,水果,,Taste & Flavor,口感与味道,Product
+26133,size_and_weight,negative,特别小特别小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+26133,value_for_money,negative,特别不值,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+24177,taste_and_flavor,negative,这种是粉粉的那种,水果,水果,,Taste & Flavor,口感与味道,Product
+24177,listing_accuracy,negative,品种都被商家叫乱了,水果,水果,,Listing Accuracy,图文相符度,Listing
+24424,fruit_freshness,negative,收到的时候就是这样,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+24424,size_and_weight,negative,果大小不一,水果,水果,,Size & Net Weight,个头大小与分量,Product
+24424,listing_accuracy,negative,和描述完全不一样,水果,水果,,Listing Accuracy,图文相符度,Listing
+24424,after_sales_service,positive,京东全退款了,水果,水果,,After-Sales Service,售后服务,Customer service
+16568,after_sales_service,positive,索赔售后不错,水果,水果,,After-Sales Service,售后服务,Customer service
+18626,packaging,positive,包装很好,水果,水果,,Packaging,包装防护,Supply chain
+18626,fruit_freshness,positive,苹果个大脆甜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21591,delivery_and_logistics,negative,物流十分不诚信,水果,水果,,Delivery & Logistics,物流配送,Logistics
+19718,delivery_and_logistics,positive,昨晚下单今早到,水果,水果,,Delivery & Logistics,物流配送,Logistics
+19718,fruit_freshness,positive,宝贝还是一样新鲜、脆口,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21141,taste_and_flavor,positive,口感纯正,水果,水果,,Taste & Flavor,口感与味道,Product
+21141,fruit_freshness,positive,新鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+18834,fruit_freshness,neutral,有几个皮有点皱,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+25196,fruit_freshness,negative,买了一箱三个坏了两个,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+20859,taste_and_flavor,positive,发现味道相当好,水果,水果,,Taste & Flavor,口感与味道,Product
+19224,size_and_weight,positive,个大，均匀，尺寸达标,水果,水果,,Size & Net Weight,个头大小与分量,Product
+19224,taste_and_flavor,positive,口感香脆,水果,水果,,Taste & Flavor,口感与味道,Product
+23834,fruit_freshness,negative,有2个还有皱纹,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+23834,size_and_weight,negative,更贵的更小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+23834,value_for_money,negative,差在哪里,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+23834,packaging,positive,一样有间隔和泡沫保护袋的,水果,水果,,Packaging,包装防护,Supply chain
+21672,taste_and_flavor,negative,难吃，一点没有水果味，而且不甜,水果,水果,,Taste & Flavor,口感与味道,Product
+21672,fruit_freshness,negative,吃起来还有种放了很久的味道,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+18390,fruit_freshness,neutral,个别有黑点,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+18390,packaging,positive,苹果包装精美,水果,水果,,Packaging,包装防护,Supply chain
+23333,fruit_freshness,negative,有的有黑点,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+23333,taste_and_flavor,negative,苹果打了太大蜡,水果,水果,,Taste & Flavor,口感与味道,Product
+21908,value_for_money,negative,还不如之前23块钱三个的,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+21908,fruit_freshness,neutral,三个果有两个还行,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21939,taste_and_flavor,negative,难吃,水果,水果,,Taste & Flavor,口感与味道,Product
+21939,value_for_money,negative,价格贵,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+23044,fruit_freshness,negative,就有两个坏的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+23044,taste_and_flavor,negative,还不怎么甜,水果,水果,,Taste & Flavor,口感与味道,Product
+24572,taste_and_flavor,negative,不甜就算了，给点酸味也好,水果,水果,,Taste & Flavor,口感与味道,Product
+25896,fruit_freshness,negative,居然有坏的,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+18137,packaging,positive,包装的很好,水果,水果,,Packaging,包装防护,Supply chain
+18137,after_sales_service,positive,客服服务态度也很热情呢,水果,水果,,After-Sales Service,售后服务,Customer service
+18137,delivery_and_logistics,positive,物流速度和配送员送货速度都很快,水果,水果,,Delivery & Logistics,物流配送,Logistics
+24788,listing_accuracy,negative,就是图片的样子，感觉被骗了,水果,水果,,Listing Accuracy,图文相符度,Listing
+19760,value_for_money,positive,价格合理,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+19760,delivery_and_logistics,positive,送货上门,水果,水果,,Delivery & Logistics,物流配送,Logistics
+19760,packaging,positive,苹果包装以及果实都赏心悦目,水果,水果,,Packaging,包装防护,Supply chain
+23853,fruit_freshness,negative,都蔫了,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+23853,size_and_weight,negative,两个大小差太多,水果,水果,,Size & Net Weight,个头大小与分量,Product
+26100,delivery_and_logistics,negative,快递也不送货上门,水果,水果,,Delivery & Logistics,物流配送,Logistics
+26100,after_sales_service,negative,客服爱答不理,水果,水果,,After-Sales Service,售后服务,Customer service
+18274,value_for_money,positive,价格也便宜的,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+25244,taste_and_flavor,negative,比第一次难吃很多,水果,水果,,Taste & Flavor,口感与味道,Product
+22701,size_and_weight,negative,又小又丑,水果,水果,,Size & Net Weight,个头大小与分量,Product
+22701,value_for_money,negative,一点也不值,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+20296,size_and_weight,positive,又大又好,水果,水果,,Size & Net Weight,个头大小与分量,Product
+20296,fruit_freshness,positive,新鲜,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+20490,size_and_weight,negative,偏小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+20490,taste_and_flavor,neutral,甜度凑合凑合吧,水果,水果,,Taste & Flavor,口感与味道,Product
+25428,value_for_money,negative,一分价钱一分货,水果,水果,,Value for Money & Pricing,性价比与价格,Pricing
+25428,taste_and_flavor,negative,种好苹果你是骗人的,水果,水果,,Taste & Flavor,口感与味道,Product
+23762,taste_and_flavor,negative,一点都不甜,水果,水果,,Taste & Flavor,口感与味道,Product
+23762,size_and_weight,negative,又小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+25352,size_and_weight,negative,苹果太小,水果,水果,,Size & Net Weight,个头大小与分量,Product
+25352,fruit_freshness,negative,很脏,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+25352,listing_accuracy,negative,与图片不符,水果,水果,,Listing Accuracy,图文相符度,Listing
+18690,fruit_freshness,positive,可以带皮吃,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+22356,packaging,negative,怪味太重了,水果,水果,,Packaging,包装防护,Supply chain
+26053,fruit_freshness,negative,一个坏心,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+25837,taste_and_flavor,negative,居然是酸的,水果,水果,,Taste & Flavor,口感与味道,Product
+25837,fruit_freshness,negative,内部应该是烂了,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21985,fruit_freshness,negative,看到这样的火龙果，无语,水果,水果,,Freshness & Quality,新鲜度与品质,Supply chain
+21985,delivery_and_logistics,positive,快递员很不错,水果,水果,,Delivery & Logistics,物流配送,Logistics
+39886,fabric_quality,positive,短袖还蛮耐脏，舒适好洗,衣服,衣服,,Fabric & Material,面料材质,Product
+42368,sizing_and_fit,positive,很修身合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+42368,price_and_value,positive,价位方面也很合理的,衣服,衣服,,Price & Value,价格与性价比,Pricing
+42123,fabric_quality,positive,布料很好,衣服,衣服,,Fabric & Material,面料材质,Product
+42123,sizing_and_fit,positive,号码也很合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+42123,delivery_service,positive,物流也很快,衣服,衣服,,Delivery Service,物流配送,Logistics
+42123,craftsmanship_and_durability,positive,质量不错,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+39577,fabric_quality,positive,面料摸着感觉很不错,衣服,衣服,,Fabric & Material,面料材质,Product
+39577,delivery_service,positive,物流很快,衣服,衣服,,Delivery Service,物流配送,Logistics
+47307,craftsmanship_and_durability,negative,质量不行啊,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+47307,price_and_value,negative,不值得买,衣服,衣服,,Price & Value,价格与性价比,Pricing
+40284,price_and_value,positive,价格便宜,衣服,衣服,,Price & Value,价格与性价比,Pricing
+40284,craftsmanship_and_durability,neutral,做工一般,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+40284,sizing_and_fit,positive,版型可以,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+43507,fabric_quality,positive,面料也是不错的,衣服,衣服,,Fabric & Material,面料材质,Product
+43507,sizing_and_fit,positive,大小合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+43507,customer_service_and_after_sales,positive,卖家服务周到,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+44621,fabric_quality,negative,布质很差，粘毛的,衣服,衣服,,Fabric & Material,面料材质,Product
+47055,sizing_and_fit,negative,连码数都不对,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+38806,price_and_value,positive,物有所值了,衣服,衣服,,Price & Value,价格与性价比,Pricing
+44357,delivery_service,negative,快递真心慢,衣服,衣服,,Delivery Service,物流配送,Logistics
+44357,sizing_and_fit,negative,码子不对,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+46869,sizing_and_fit,negative,尺码与表上的尺码对不上号,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+48643,fabric_quality,negative,摸上去料子很粗,衣服,衣服,,Fabric & Material,面料材质,Product
+46462,listing_accuracy,negative,明明要29的，为什么给我33的,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+48545,craftsmanship_and_durability,negative,套牌跟市场差不多的,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+40690,craftsmanship_and_durability,positive,质量很好的,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+42465,price_and_value,positive,也便宜,衣服,衣服,,Price & Value,价格与性价比,Pricing
+44304,listing_accuracy,negative,货不对版,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+43973,craftsmanship_and_durability,negative,做工太差好多线头！,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+40538,listing_accuracy,positive,跟图片一样无色差,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+47787,craftsmanship_and_durability,negative,裤子第一次穿就绽开了,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+44591,craftsmanship_and_durability,negative,残次品,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+40527,sizing_and_fit,positive,尺码合适，修身款,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+40527,fabric_quality,positive,质量不错,衣服,衣服,,Fabric & Material,面料材质,Product
+40527,price_and_value,positive,价格更是比外面的价格实惠多了,衣服,衣服,,Price & Value,价格与性价比,Pricing
+41353,fabric_quality,positive,裤子穿着很舒服,衣服,衣服,,Fabric & Material,面料材质,Product
+39838,delivery_service,positive,物流速度也是一流,衣服,衣服,,Delivery Service,物流配送,Logistics
+39838,customer_service_and_after_sales,positive,店家态度棒棒哒,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+39838,fabric_quality,positive,料子很好,衣服,衣服,,Fabric & Material,面料材质,Product
+48223,listing_accuracy,negative,裤子上会有白点点 这是黑色吗,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+39900,delivery_service,positive,送货特别快,衣服,衣服,,Delivery Service,物流配送,Logistics
+40882,sizing_and_fit,neutral,一件30码、一件32码,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+38848,listing_accuracy,positive,感觉和图片上是一样的,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+38848,customer_service_and_after_sales,positive,服务也很好,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+41861,sizing_and_fit,positive,很合身,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+41861,customer_service_and_after_sales,positive,客服解答很热情,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+44956,listing_accuracy,negative,商品介绍是秋冬加绒的，发货是夏天的,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+45532,listing_accuracy,negative,我定的是加绒的，到回来是单的,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+44840,delivery_service,negative,百世快递真是烂到家,衣服,衣服,,Delivery Service,物流配送,Logistics
+44965,customer_service_and_after_sales,negative,换都一个月多了还没有记回来,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+47288,listing_accuracy,negative,说背心里面加绒，都没有加绒,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+47288,fabric_quality,negative,面料摸着太差了,衣服,衣服,,Fabric & Material,面料材质,Product
+39698,sizing_and_fit,positive,穿上特别合身,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+39698,fabric_quality,positive,很舒服,衣服,衣服,,Fabric & Material,面料材质,Product
+39698,customer_service_and_after_sales,positive,店主信誉没的说,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+40745,sizing_and_fit,positive,大小还可以没尺寸偏差,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+40745,delivery_service,positive,速度快京东小伙子给力,衣服,衣服,,Delivery Service,物流配送,Logistics
+41944,delivery_service,negative,快递不发短信不打电话,衣服,衣服,,Delivery Service,物流配送,Logistics
+47716,price_and_value,negative,一百五十的裤子！确实不值!,衣服,衣服,,Price & Value,价格与性价比,Pricing
+47716,fabric_quality,negative,掉颜色掉的那么厉害,衣服,衣服,,Fabric & Material,面料材质,Product
+45669,fabric_quality,negative,这衣服料子就跟外面地摊货没区别,衣服,衣服,,Fabric & Material,面料材质,Product
+45669,price_and_value,negative,我还以为捡到便宜了,衣服,衣服,,Price & Value,价格与性价比,Pricing
+40998,fabric_quality,positive,质量不错,衣服,衣服,,Fabric & Material,面料材质,Product
+48466,listing_accuracy,negative,货和图差别很大,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+42689,delivery_service,negative,外包破损，物流太慢，配送员态度恶劣,衣服,衣服,,Delivery Service,物流配送,Logistics
+42689,craftsmanship_and_durability,neutral,裤子还行,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+42134,fabric_quality,positive,衣服质量不错,衣服,衣服,,Fabric & Material,面料材质,Product
+42134,delivery_service,positive,物流快,衣服,衣服,,Delivery Service,物流配送,Logistics
+42134,customer_service_and_after_sales,positive,服务好,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+46918,craftsmanship_and_durability,negative,洗了5水 破了两条,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+43467,sizing_and_fit,positive,尺码按客服建议的，正好的,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+43467,listing_accuracy,positive,颜色很好看,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+43467,fabric_quality,positive,弹性很大，穿上很舒服,衣服,衣服,,Fabric & Material,面料材质,Product
+44949,craftsmanship_and_durability,negative,裤子穿第一天就出现了洞,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+46581,listing_accuracy,negative,跟我看的不一样,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+46581,fabric_quality,negative,还掉色,衣服,衣服,,Fabric & Material,面料材质,Product
+47534,listing_accuracy,negative,拍的是蓝色的裤子发来的是深蓝的,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+47534,customer_service_and_after_sales,negative,找客服却有很多理由搪塞我,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+47300,delivery_service,negative,劳资没有收到货！,衣服,衣服,,Delivery Service,物流配送,Logistics
+41416,fabric_quality,positive,衣服质量也不错,衣服,衣服,,Fabric & Material,面料材质,Product
+43418,fabric_quality,positive,质量挺好的,衣服,衣服,,Fabric & Material,面料材质,Product
+43418,sizing_and_fit,positive,客服推荐的尺码也很好,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+39709,fabric_quality,positive,质量不错,衣服,衣服,,Fabric & Material,面料材质,Product
+39709,sizing_and_fit,positive,很合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+42382,sizing_and_fit,positive,版型也挺好的,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+42382,fabric_quality,positive,面料微微带弹性，穿起来舒服！,衣服,衣服,,Fabric & Material,面料材质,Product
+38812,fabric_quality,neutral,还不错,衣服,衣服,,Fabric & Material,面料材质,Product
+45747,fabric_quality,negative,掉色严重,衣服,衣服,,Fabric & Material,面料材质,Product
+39784,sizing_and_fit,positive,大小非常合身,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+39784,fabric_quality,positive,厚度可以,衣服,衣服,,Fabric & Material,面料材质,Product
+41251,fabric_quality,positive,穿着舒服,衣服,衣服,,Fabric & Material,面料材质,Product
+41251,craftsmanship_and_durability,positive,质量还行,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+41160,sizing_and_fit,positive,没有太紧,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+41160,fabric_quality,positive,洗起来也不掉色,衣服,衣服,,Fabric & Material,面料材质,Product
+43809,sizing_and_fit,negative,穿起来竟然还长,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+43040,craftsmanship_and_durability,positive,质量好,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+43040,fabric_quality,positive,有弹性,衣服,衣服,,Fabric & Material,面料材质,Product
+46776,craftsmanship_and_durability,neutral,这条还可以,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+41832,fabric_quality,positive,穿着舒服不错,衣服,衣服,,Fabric & Material,面料材质,Product
+45220,sizing_and_fit,negative,该款偏小,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+45220,craftsmanship_and_durability,negative,露在外面线的颜色，与衣服的颜色不一样,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+44285,listing_accuracy,negative,我要的是加绒款，收到的不是,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+44285,sizing_and_fit,negative,买大了一码,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+43749,fabric_quality,positive,好舒服,衣服,衣服,,Fabric & Material,面料材质,Product
+43749,craftsmanship_and_durability,positive,质量也不错,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+44573,sizing_and_fit,negative,号码小,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+44573,customer_service_and_after_sales,negative,退换不让换,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+39856,craftsmanship_and_durability,positive,质量不错,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+39856,listing_accuracy,positive,裤子颜色也是我喜欢的,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+48607,fabric_quality,negative,没有任何弹性,衣服,衣服,,Fabric & Material,面料材质,Product
+43649,craftsmanship_and_durability,positive,裤子款式很好,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+43649,sizing_and_fit,positive,大小合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+43649,delivery_service,positive,物流很快,衣服,衣服,,Delivery Service,物流配送,Logistics
+43649,customer_service_and_after_sales,positive,店家的服务态度也很好,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+43098,delivery_service,positive,物流快,衣服,衣服,,Delivery Service,物流配送,Logistics
+43098,price_and_value,positive,价格实惠,衣服,衣服,,Price & Value,价格与性价比,Pricing
+43098,customer_service_and_after_sales,positive,店家服务很好,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+41629,delivery_service,positive,卖家发货速度快,衣服,衣服,,Delivery Service,物流配送,Logistics
+41629,craftsmanship_and_durability,positive,质量不错,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+41629,sizing_and_fit,positive,大小刚刚好,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+38867,craftsmanship_and_durability,positive,质量很好,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+38867,price_and_value,positive,价格也划算,衣服,衣服,,Price & Value,价格与性价比,Pricing
+46395,fabric_quality,negative,特别容易吸土,衣服,衣服,,Fabric & Material,面料材质,Product
+46395,sizing_and_fit,negative,裤子穿起来显得腿粗,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+39488,sizing_and_fit,positive,大小刚好,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+40383,fabric_quality,positive,布料特别好,衣服,衣服,,Fabric & Material,面料材质,Product
+40383,craftsmanship_and_durability,positive,裤子的弹性也很好,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+40383,sizing_and_fit,positive,适合我这个年龄段,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+40383,listing_accuracy,positive,裤子的样式设计也很好,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+46551,fabric_quality,negative,质量很差,衣服,衣服,,Fabric & Material,面料材质,Product
+46551,listing_accuracy,negative,与图片没发对比,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+38951,fabric_quality,positive,裤子质量特别好,衣服,衣服,,Fabric & Material,面料材质,Product
+38951,price_and_value,positive,物美价廉,衣服,衣服,,Price & Value,价格与性价比,Pricing
+44614,fabric_quality,negative,很一般,衣服,衣服,,Fabric & Material,面料材质,Product
+45357,fabric_quality,negative,垃圾玩意，跟地摊货一样,衣服,衣服,,Fabric & Material,面料材质,Product
+44625,fabric_quality,negative,质量不好,衣服,衣服,,Fabric & Material,面料材质,Product
+44625,price_and_value,negative,根本值不了这个价钱,衣服,衣服,,Price & Value,价格与性价比,Pricing
+39269,fabric_quality,positive,衣服摸着料子不错,衣服,衣服,,Fabric & Material,面料材质,Product
+39269,sizing_and_fit,positive,穿上也很合身,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+39269,delivery_service,positive,物流也快,衣服,衣服,,Delivery Service,物流配送,Logistics
+45308,fabric_quality,negative,质量差,衣服,衣服,,Fabric & Material,面料材质,Product
+45308,craftsmanship_and_durability,negative,后袋修补手工很差,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+45308,delivery_service,negative,发货速度也慢,衣服,衣服,,Delivery Service,物流配送,Logistics
+46261,sizing_and_fit,negative,裤子也大了,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+46261,fabric_quality,negative,穿着不太舒服,衣服,衣服,,Fabric & Material,面料材质,Product
+46370,customer_service_and_after_sales,negative,售后服务要审核到哪时候去了,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+46370,sizing_and_fit,negative,太大了才要求换的,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+48609,price_and_value,negative,刚刚收到货就降价,衣服,衣服,,Price & Value,价格与性价比,Pricing
+38889,fabric_quality,positive,质量很好的,衣服,衣服,,Fabric & Material,面料材质,Product
+38889,customer_service_and_after_sales,positive,卖家服务还好,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+44887,sizing_and_fit,negative,我还不能穿,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+44887,customer_service_and_after_sales,negative,要我们自己付运费退货,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+46603,craftsmanship_and_durability,negative,皮带扣没穿两次就断了,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+47224,delivery_service,negative,韵达就要自提,衣服,衣服,,Delivery Service,物流配送,Logistics
+41804,fabric_quality,positive,面料柔软,衣服,衣服,,Fabric & Material,面料材质,Product
+41804,price_and_value,positive,这个价位值,衣服,衣服,,Price & Value,价格与性价比,Pricing
+46995,sizing_and_fit,negative,大小不标准,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+44177,listing_accuracy,negative,色差好像不是原配,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+41298,fabric_quality,positive,质量不错,衣服,衣服,,Fabric & Material,面料材质,Product
+41298,delivery_service,positive,发货快,衣服,衣服,,Delivery Service,物流配送,Logistics
+46088,listing_accuracy,negative,说是加绒的狗屁比纸还薄,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+46088,fabric_quality,negative,比纸还薄,衣服,衣服,,Fabric & Material,面料材质,Product
+44096,listing_accuracy,negative,写的修身裤，结果是有弹性的紧身裤,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+44096,price_and_value,negative,买的时候139！没多久就99！,衣服,衣服,,Price & Value,价格与性价比,Pricing
+46096,listing_accuracy,negative,跟图片上不一样,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+48580,fabric_quality,negative,褪色非常严重,衣服,衣服,,Fabric & Material,面料材质,Product
+48580,delivery_service,positive,一星是给快递的,衣服,衣服,,Delivery Service,物流配送,Logistics
+45645,listing_accuracy,negative,裤子颜色都搞错,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+45645,fabric_quality,negative,裤子质量很是一般,衣服,衣服,,Fabric & Material,面料材质,Product
+45645,price_and_value,negative,根本不值这个价,衣服,衣服,,Price & Value,价格与性价比,Pricing
+39176,fabric_quality,positive,质量超级好,衣服,衣服,,Fabric & Material,面料材质,Product
+39176,price_and_value,positive,物有所值,衣服,衣服,,Price & Value,价格与性价比,Pricing
+39867,sizing_and_fit,positive,大小合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+39867,customer_service_and_after_sales,positive,店家服务很好,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+39867,listing_accuracy,positive,描述与货物没有差别,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+39867,delivery_service,positive,快递也很给力,衣服,衣服,,Delivery Service,物流配送,Logistics
+47110,sizing_and_fit,positive,尺码合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+47110,craftsmanship_and_durability,positive,做工也不错,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+41436,fabric_quality,positive,质量不错,衣服,衣服,,Fabric & Material,面料材质,Product
+41436,sizing_and_fit,positive,穿着很合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+44669,fabric_quality,negative,质量太差了,衣服,衣服,,Fabric & Material,面料材质,Product
+41247,fabric_quality,positive,裤子质量很好,衣服,衣服,,Fabric & Material,面料材质,Product
+41247,delivery_service,positive,物流速度快,衣服,衣服,,Delivery Service,物流配送,Logistics
+41247,sizing_and_fit,positive,上身版型也很好,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+41247,price_and_value,positive,值得购买,衣服,衣服,,Price & Value,价格与性价比,Pricing
+45720,sizing_and_fit,negative,太小太紧了,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+45720,delivery_service,negative,花费了整整7天,衣服,衣服,,Delivery Service,物流配送,Logistics
+45558,sizing_and_fit,negative,裤子太长而且裤脚有点大,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+43625,price_and_value,positive,这个价位算可以的了,衣服,衣服,,Price & Value,价格与性价比,Pricing
+43625,fabric_quality,positive,质量不算次,衣服,衣服,,Fabric & Material,面料材质,Product
+43625,delivery_service,positive,物流也快,衣服,衣服,,Delivery Service,物流配送,Logistics
+41369,delivery_service,positive,物流速度快,衣服,衣服,,Delivery Service,物流配送,Logistics
+41369,sizing_and_fit,neutral,码数扁大一点，衣服也带长一点,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+41369,craftsmanship_and_durability,positive,车工整洁,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+47793,fabric_quality,negative,起毛了,衣服,衣服,,Fabric & Material,面料材质,Product
+47793,sizing_and_fit,negative,大小也不合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+46898,price_and_value,negative,不值那个价,衣服,衣服,,Price & Value,价格与性价比,Pricing
+46898,fabric_quality,negative,料不好,衣服,衣服,,Fabric & Material,面料材质,Product
+46898,craftsmanship_and_durability,negative,线头多,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+46697,fabric_quality,negative,差，差，差,衣服,衣服,,Fabric & Material,面料材质,Product
+43178,listing_accuracy,positive,和卖家描述的一致,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+43178,customer_service_and_after_sales,positive,卖家服务态度非常赞,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+43178,delivery_service,positive,发货速度也很快,衣服,衣服,,Delivery Service,物流配送,Logistics
+43820,fabric_quality,negative,洗几次就掉色了,衣服,衣服,,Fabric & Material,面料材质,Product
+45993,fabric_quality,neutral,一般般啦,衣服,衣服,,Fabric & Material,面料材质,Product
+43995,listing_accuracy,negative,明明拍的是黑色的 给我发了个蓝色的,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+43995,fabric_quality,negative,质量也就那样,衣服,衣服,,Fabric & Material,面料材质,Product
+39425,fabric_quality,positive,衣服穿在身上挺舒适的,衣服,衣服,,Fabric & Material,面料材质,Product
+44583,sizing_and_fit,negative,有些偏大,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+40453,craftsmanship_and_durability,positive,做工相当棒,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+40453,fabric_quality,positive,弹力挺大的,衣服,衣服,,Fabric & Material,面料材质,Product
+40453,delivery_service,positive,送货速度快,衣服,衣服,,Delivery Service,物流配送,Logistics
+42326,fabric_quality,positive,裤子不起球,衣服,衣服,,Fabric & Material,面料材质,Product
+46978,delivery_service,negative,物流慢,衣服,衣服,,Delivery Service,物流配送,Logistics
+46978,listing_accuracy,negative,衣服也没上面的好,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+45365,customer_service_and_after_sales,negative,换个衣服半个月了没见音讯，找客服也不见回复,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+42645,sizing_and_fit,positive,穿上很合身舒服,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+42645,customer_service_and_after_sales,positive,店家的服务态度也很好,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+43398,craftsmanship_and_durability,positive,细节处理的很好,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+41196,fabric_quality,positive,质量很好,衣服,衣服,,Fabric & Material,面料材质,Product
+41196,price_and_value,negative,双十一还少了将近*,衣服,衣服,,Price & Value,价格与性价比,Pricing
+41234,sizing_and_fit,positive,很合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+41234,fabric_quality,positive,穿着舒服,衣服,衣服,,Fabric & Material,面料材质,Product
+44236,craftsmanship_and_durability,negative,到处是线头,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+48592,sizing_and_fit,negative,裤脚太大，一点都不修身,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+39079,fabric_quality,positive,质量不错,衣服,衣服,,Fabric & Material,面料材质,Product
+39079,listing_accuracy,positive,和图片一样,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+39621,fabric_quality,positive,质量很不错,衣服,衣服,,Fabric & Material,面料材质,Product
+39621,listing_accuracy,positive,和图片一样,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+42849,sizing_and_fit,positive,穿着挺合身,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+42849,fabric_quality,positive,质量不错,衣服,衣服,,Fabric & Material,面料材质,Product
+43411,fabric_quality,positive,很有弹性,衣服,衣服,,Fabric & Material,面料材质,Product
+39116,fabric_quality,positive,质量非常不错,衣服,衣服,,Fabric & Material,面料材质,Product
+46970,craftsmanship_and_durability,negative,裤缝不对称,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+46970,listing_accuracy,negative,寄来两件不一样的质量的衣服,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+47610,listing_accuracy,negative,图片和实物换是有差异的,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+39011,sizing_and_fit,positive,大小刚合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+39011,fabric_quality,positive,面料很舒服,衣服,衣服,,Fabric & Material,面料材质,Product
+43550,sizing_and_fit,positive,裤子很合适,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+43550,fabric_quality,positive,面料舒服暗斜纹,衣服,衣服,,Fabric & Material,面料材质,Product
+43550,craftsmanship_and_durability,positive,笔直有型不易起皱,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+39372,listing_accuracy,positive,和图中的一样的,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+39010,craftsmanship_and_durability,positive,做工扎实,衣服,衣服,,Craftsmanship & Durability,做工与耐用度,Product
+39010,fabric_quality,positive,面料厚实，防风防水,衣服,衣服,,Fabric & Material,面料材质,Product
+45661,sizing_and_fit,negative,裤脚 太大,衣服,衣服,,Sizing & Fit,尺码与版型,Product
+45661,customer_service_and_after_sales,negative,不给换,衣服,衣服,,Customer Service & After-Sales,客服与售后,Customer service
+45236,fabric_quality,negative,一点弹力都没有,衣服,衣服,,Fabric & Material,面料材质,Product
+45236,listing_accuracy,negative,说好的弹力，你来告诉我弹力在那,衣服,衣服,,Listing Accuracy,商品描述准确性,Listing
+39284,fabric_quality,positive,质量非常好,衣服,衣服,,Fabric & Material,面料材质,Product
+39284,delivery_service,positive,发货速度非常快,衣服,衣服,,Delivery Service,物流配送,Logistics
+14932,appearance_and_build,positive,黑色显的比较高档点一些哟,手机,手机,,Appearance & Build,外观与做工,Product
+14932,performance_and_system,positive,可以手写的，发短信速度很快,手机,手机,,Performance & System,性能与系统,Product
+14932,camera_and_imaging,neutral,拍的录象效果还不错,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15624,battery_life,negative,现在电池只用得到半天了,手机,手机,,Battery Life,电池续航,Product
+15578,appearance_and_build,negative,外观不够时尚,手机,手机,,Appearance & Build,外观与做工,Product
+15578,audio_and_sound,negative,铃声偏小，在热闹的地方经常听不到,手机,手机,,Audio & Sound,音质与铃声,Product
+15578,camera_and_imaging,negative,拍出的照片有些模糊,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15578,performance_and_system,negative,机身无短信内存！,手机,手机,,Performance & System,性能与系统,Product
+13956,buttons_and_controls,positive,滑盖十分流畅,手机,手机,,Buttons & Controls,按键与操控,Product
+13956,screen_and_display,positive,显示屏够大！,手机,手机,,Screen & Display,屏幕显示,Product
+13956,camera_and_imaging,positive,有自拍镜功能！,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15576,appearance_and_build,negative,外壳容易划损,手机,手机,,Appearance & Build,外观与做工,Product
+15576,battery_life,negative,电池两天就没有电,手机,手机,,Battery Life,电池续航,Product
+15576,performance_and_system,negative,偶尔伴随有死机现象,手机,手机,,Performance & System,性能与系统,Product
+16123,battery_life,negative,打2小时就关机拉,手机,手机,,Battery Life,电池续航,Product
+14068,performance_and_system,positive,功能齐全！,手机,手机,,Performance & System,性能与系统,Product
+14068,camera_and_imaging,positive,拍照功能好！,手机,手机,,Camera & Imaging,拍照与摄像,Product
+16169,performance_and_system,negative,短信息储存量太小,手机,手机,,Performance & System,性能与系统,Product
+16169,camera_and_imaging,negative,摄像头易磨损,手机,手机,,Camera & Imaging,拍照与摄像,Product
+16169,appearance_and_build,negative,机身容易弄脏,手机,手机,,Appearance & Build,外观与做工,Product
+16169,screen_and_display,negative,屏幕文本显示效果一般,手机,手机,,Screen & Display,屏幕显示,Product
+16169,buttons_and_controls,negative,手机的按键最不经用了,手机,手机,,Buttons & Controls,按键与操控,Product
+16169,after_sales,negative,更换了三次手机了,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+14910,call_and_network,positive,可自由切换于CDMA和GSM两个网络,手机,手机,,Call & Network,通话与信号,Product
+14910,screen_and_display,positive,26万色的TFT显示屏幕,手机,手机,,Screen & Display,屏幕显示,Product
+14910,camera_and_imaging,positive,内置30万像素CCD摄像头,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14910,audio_and_sound,positive,应用由LG独家研发的72和弦铃声,手机,手机,,Audio & Sound,音质与铃声,Product
+14910,appearance_and_build,positive,显得更加轻薄、小巧,手机,手机,,Appearance & Build,外观与做工,Product
+14506,appearance_and_build,positive,外观大气,手机,手机,,Appearance & Build,外观与做工,Product
+14506,camera_and_imaging,positive,拍照可关闭快门音,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14506,performance_and_system,positive,内存大7M,手机,手机,,Performance & System,性能与系统,Product
+15128,appearance_and_build,negative,还不如CX65来的好看,手机,手机,,Appearance & Build,外观与做工,Product
+14712,screen_and_display,positive,内外双彩屏，表现力很强,手机,手机,,Screen & Display,屏幕显示,Product
+14712,audio_and_sound,positive,铃声质量很好，很有穿透力,手机,手机,,Audio & Sound,音质与铃声,Product
+14712,camera_and_imaging,positive,支持MJPEG格式的录像,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15087,appearance_and_build,negative,外盒太软，一掉地上就变形,手机,手机,,Appearance & Build,外观与做工,Product
+15087,buttons_and_controls,negative,按键反应太慢,手机,手机,,Buttons & Controls,按键与操控,Product
+15497,battery_life,negative,带机仅两三天，与他们宣称的250小时相差甚远,手机,手机,,Battery Life,电池续航,Product
+14152,battery_life,positive,待机时间长,手机,手机,,Battery Life,电池续航,Product
+14152,appearance_and_build,positive,机身超薄,手机,手机,,Appearance & Build,外观与做工,Product
+14152,camera_and_imaging,positive,能拍照,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15326,performance_and_system,negative,不支持短信群发！无摄像头！不支持MP3播放！,手机,手机,,Performance & System,性能与系统,Product
+15326,after_sales,negative,原装配件中既无USB数据线，也无耳机！,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+13923,screen_and_display,positive,屏幕面积很大,手机,手机,,Screen & Display,屏幕显示,Product
+13923,performance_and_system,positive,MP3功能出色，并且支持后台播放,手机,手机,,Performance & System,性能与系统,Product
+14216,price_and_value,positive,性价比很高,手机,手机,,Price & Value,价格与性价比,Pricing
+14216,screen_and_display,positive,双26万色屏，颜色清晰,手机,手机,,Screen & Display,屏幕显示,Product
+14216,performance_and_system,positive,支持SD扩展,手机,手机,,Performance & System,性能与系统,Product
+14216,audio_and_sound,positive,64和弦音质不错,手机,手机,,Audio & Sound,音质与铃声,Product
+15361,call_and_network,negative,通话质量太差,手机,手机,,Call & Network,通话与信号,Product
+15314,screen_and_display,negative,屏幕不怎么清楚,手机,手机,,Screen & Display,屏幕显示,Product
+15314,camera_and_imaging,negative,摄像头不支持夜拍,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15314,performance_and_system,negative,不支持红外和蓝牙,手机,手机,,Performance & System,性能与系统,Product
+13964,buttons_and_controls,positive,按键设计人性化,手机,手机,,Buttons & Controls,按键与操控,Product
+13964,audio_and_sound,positive,声音无比伦比,手机,手机,,Audio & Sound,音质与铃声,Product
+13964,screen_and_display,neutral,虽然屏幕的亮度是不强,手机,手机,,Screen & Display,屏幕显示,Product
+14821,appearance_and_build,positive,外壳采用银纳米涂层,手机,手机,,Appearance & Build,外观与做工,Product
+14821,battery_life,positive,电池待机时间比较理想,手机,手机,,Battery Life,电池续航,Product
+14821,screen_and_display,positive,显示效果不错,手机,手机,,Screen & Display,屏幕显示,Product
+14821,camera_and_imaging,positive,拍照功能较强,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15246,battery_life,negative,待机的时候 如果选择待机画面，就不会有时间的显示,手机,手机,,Battery Life,电池续航,Product
+15246,performance_and_system,negative,编辑短消息还要在重新选T9拼音,手机,手机,,Performance & System,性能与系统,Product
+15867,performance_and_system,negative,不支持蓝牙功能,手机,手机,,Performance & System,性能与系统,Product
+15867,camera_and_imaging,negative,像素也偏低,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15867,screen_and_display,negative,4096色的屏幕，看上去太难看了,手机,手机,,Screen & Display,屏幕显示,Product
+13941,camera_and_imaging,positive,出色的影像效果,手机,手机,,Camera & Imaging,拍照与摄像,Product
+13941,screen_and_display,positive,无懈可击的视觉享受,手机,手机,,Screen & Display,屏幕显示,Product
+13941,performance_and_system,positive,超卓的媒体播放效果,手机,手机,,Performance & System,性能与系统,Product
+14349,audio_and_sound,positive,音质也还行,手机,手机,,Audio & Sound,音质与铃声,Product
+14349,appearance_and_build,positive,后壳没有松动的感觉,手机,手机,,Appearance & Build,外观与做工,Product
+14641,appearance_and_build,positive,外形精美,手机,手机,,Appearance & Build,外观与做工,Product
+14641,performance_and_system,positive,功能实用,手机,手机,,Performance & System,性能与系统,Product
+15713,buttons_and_controls,negative,插笔的地方用不到百年就松动,手机,手机,,Buttons & Controls,按键与操控,Product
+15713,performance_and_system,negative,运行速度慢，经常假死,手机,手机,,Performance & System,性能与系统,Product
+15713,appearance_and_build,negative,电池盖不久不久就变形,手机,手机,,Appearance & Build,外观与做工,Product
+15380,audio_and_sound,negative,出现失真，而且比较明显,手机,手机,,Audio & Sound,音质与铃声,Product
+15380,performance_and_system,negative,不支持蓝牙,手机,手机,,Performance & System,性能与系统,Product
+15068,performance_and_system,negative,反应速度超慢的哦,手机,手机,,Performance & System,性能与系统,Product
+15068,audio_and_sound,negative,自带铃声也不好听,手机,手机,,Audio & Sound,音质与铃声,Product
+15068,appearance_and_build,positive,样子挺独特,手机,手机,,Appearance & Build,外观与做工,Product
+15481,performance_and_system,negative,短信没有彩信功能！无法群发短信！,手机,手机,,Performance & System,性能与系统,Product
+16062,performance_and_system,negative,性能太一般,手机,手机,,Performance & System,性能与系统,Product
+16062,price_and_value,negative,价格太高,手机,手机,,Price & Value,价格与性价比,Pricing
+14178,screen_and_display,positive,视觉与手感都好,手机,手机,,Screen & Display,屏幕显示,Product
+14178,appearance_and_build,positive,视觉与手感都好,手机,手机,,Appearance & Build,外观与做工,Product
+15753,call_and_network,negative,信号差得要命,手机,手机,,Call & Network,通话与信号,Product
+15753,performance_and_system,negative,软件容易出问题。动不动就死,手机,手机,,Performance & System,性能与系统,Product
+15753,battery_life,negative,电池不好,手机,手机,,Battery Life,电池续航,Product
+15852,battery_life,negative,电池不耐用,手机,手机,,Battery Life,电池续航,Product
+15852,performance_and_system,negative,经常死机,手机,手机,,Performance & System,性能与系统,Product
+15219,audio_and_sound,negative,铃音太少了,手机,手机,,Audio & Sound,音质与铃声,Product
+15219,battery_life,negative,电池不耐用,手机,手机,,Battery Life,电池续航,Product
+15219,buttons_and_controls,negative,导航键和电池都不行,手机,手机,,Buttons & Controls,按键与操控,Product
+14919,appearance_and_build,positive,外形不错,手机,手机,,Appearance & Build,外观与做工,Product
+14919,performance_and_system,positive,配置很全,手机,手机,,Performance & System,性能与系统,Product
+14919,buttons_and_controls,positive,按键设计比较合理,手机,手机,,Buttons & Controls,按键与操控,Product
+14919,camera_and_imaging,positive,130万像素摄像头,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14919,audio_and_sound,positive,声音大，免提声音更大,手机,手机,,Audio & Sound,音质与铃声,Product
+14919,screen_and_display,positive,屏幕亮，显示细腻,手机,手机,,Screen & Display,屏幕显示,Product
+15106,appearance_and_build,neutral,体积较大,手机,手机,,Appearance & Build,外观与做工,Product
+15106,performance_and_system,negative,不支持外部影音文件的播放,手机,手机,,Performance & System,性能与系统,Product
+15106,battery_life,neutral,电池待机时间一般,手机,手机,,Battery Life,电池续航,Product
+14366,appearance_and_build,positive,高硬度的塑料翻盖不仅具备较佳的耐磨性,手机,手机,,Appearance & Build,外观与做工,Product
+15966,price_and_value,negative,贵了点,手机,手机,,Price & Value,价格与性价比,Pricing
+15966,performance_and_system,negative,支持下载图片和铃声下载,手机,手机,,Performance & System,性能与系统,Product
+14669,battery_life,positive,待机时间还不错,手机,手机,,Battery Life,电池续航,Product
+14669,audio_and_sound,positive,64和弦的铃音,手机,手机,,Audio & Sound,音质与铃声,Product
+15199,after_sales,neutral,可以在正规的维修点维修,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+15199,battery_life,negative,原装的电池看起就不正宗,手机,手机,,Battery Life,电池续航,Product
+15199,buttons_and_controls,negative,移动定制的那些键,手机,手机,,Buttons & Controls,按键与操控,Product
+15199,audio_and_sound,negative,铃声还是从手机里发出来的,手机,手机,,Audio & Sound,音质与铃声,Product
+15199,performance_and_system,negative,收音机作为闹钟,手机,手机,,Performance & System,性能与系统,Product
+14112,screen_and_display,positive,色彩,手机,手机,,Screen & Display,屏幕显示,Product
+14112,appearance_and_build,positive,形状,手机,手机,,Appearance & Build,外观与做工,Product
+16045,performance_and_system,negative,没有红外和蓝牙,手机,手机,,Performance & System,性能与系统,Product
+14751,price_and_value,positive,价格实在,手机,手机,,Price & Value,价格与性价比,Pricing
+14751,performance_and_system,positive,功能不少,手机,手机,,Performance & System,性能与系统,Product
+14719,appearance_and_build,positive,不对称的键盘设计让人惊叹,手机,手机,,Appearance & Build,外观与做工,Product
+14719,buttons_and_controls,positive,围绕五向导行键的不对称分布,手机,手机,,Buttons & Controls,按键与操控,Product
+15781,appearance_and_build,negative,掉漆速度快的惊人,手机,手机,,Appearance & Build,外观与做工,Product
+15781,performance_and_system,negative,反映速度慢的惊人,手机,手机,,Performance & System,性能与系统,Product
+15781,audio_and_sound,negative,铃声通话声小的惊人,手机,手机,,Audio & Sound,音质与铃声,Product
+14945,appearance_and_build,positive,外边的透明窗设计的不错,手机,手机,,Appearance & Build,外观与做工,Product
+14945,battery_life,positive,省电不少,手机,手机,,Battery Life,电池续航,Product
+14945,screen_and_display,positive,触摸屏感觉不错,手机,手机,,Screen & Display,屏幕显示,Product
+14945,audio_and_sound,neutral,铃声一般,手机,手机,,Audio & Sound,音质与铃声,Product
+14945,performance_and_system,negative,内存小了点,手机,手机,,Performance & System,性能与系统,Product
+15362,buttons_and_controls,negative,触摸键太敏感,手机,手机,,Buttons & Controls,按键与操控,Product
+15828,battery_life,negative,坏了一个电池,手机,手机,,Battery Life,电池续航,Product
+15828,performance_and_system,negative,经常死机,手机,手机,,Performance & System,性能与系统,Product
+14507,camera_and_imaging,positive,130万像素的摄像头,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14507,screen_and_display,positive,内置的触摸屏技术,手机,手机,,Screen & Display,屏幕显示,Product
+14507,performance_and_system,positive,使用舒适度一流,手机,手机,,Performance & System,性能与系统,Product
+15355,performance_and_system,negative,TF卡槽位置设计不合理,手机,手机,,Performance & System,性能与系统,Product
+15355,appearance_and_build,negative,外盖黑色部分比较容易沾染指纹,手机,手机,,Appearance & Build,外观与做工,Product
+15355,after_sales,negative,在网站上根本找不到相关驱动,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+13883,screen_and_display,positive,色彩较好,手机,手机,,Screen & Display,屏幕显示,Product
+13883,battery_life,positive,待机尚可,手机,手机,,Battery Life,电池续航,Product
+13883,price_and_value,positive,与同价格机器比，优势明显,手机,手机,,Price & Value,价格与性价比,Pricing
+13903,screen_and_display,positive,26万色的TFT材质的屏幕,手机,手机,,Screen & Display,屏幕显示,Product
+13903,camera_and_imaging,positive,摄像头也是他的一个比较好的方面,手机,手机,,Camera & Imaging,拍照与摄像,Product
+13903,performance_and_system,positive,处理速度很快,手机,手机,,Performance & System,性能与系统,Product
+13903,buttons_and_controls,positive,键盘输入、鼠标操作,手机,手机,,Buttons & Controls,按键与操控,Product
+15581,performance_and_system,negative,不到一年就坏了,手机,手机,,Performance & System,性能与系统,Product
+14318,audio_and_sound,negative,音质怎么在放有些歌的时候发出滋滋振的声音呀,手机,手机,,Audio & Sound,音质与铃声,Product
+14318,after_sales,negative,串码在网上查询的时候能查到注册吗,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+15797,performance_and_system,negative,不能下载铃声,手机,手机,,Performance & System,性能与系统,Product
+15797,call_and_network,negative,发回来的短信全是乱码,手机,手机,,Call & Network,通话与信号,Product
+13943,appearance_and_build,positive,外观精美,手机,手机,,Appearance & Build,外观与做工,Product
+13943,screen_and_display,positive,屏幕显示效果出色,手机,手机,,Screen & Display,屏幕显示,Product
+13943,camera_and_imaging,positive,拍摄效果出色,手机,手机,,Camera & Imaging,拍照与摄像,Product
+16146,performance_and_system,negative,反应速度太慢,手机,手机,,Performance & System,性能与系统,Product
+16146,screen_and_display,negative,色彩不好,手机,手机,,Screen & Display,屏幕显示,Product
+16146,audio_and_sound,negative,声音太吵,手机,手机,,Audio & Sound,音质与铃声,Product
+15061,call_and_network,negative,信号不好,手机,手机,,Call & Network,通话与信号,Product
+15061,performance_and_system,negative,死机和自动重启现象,手机,手机,,Performance & System,性能与系统,Product
+15061,audio_and_sound,negative,音质也不好,手机,手机,,Audio & Sound,音质与铃声,Product
+15061,screen_and_display,negative,内屏为单色,手机,手机,,Screen & Display,屏幕显示,Product
+14521,appearance_and_build,positive,"外观很漂亮,手感也不错",手机,手机,,Appearance & Build,外观与做工,Product
+14521,performance_and_system,positive,功能齐全,手机,手机,,Performance & System,性能与系统,Product
+16095,battery_life,negative,电池总是莫名其妙的,手机,手机,,Battery Life,电池续航,Product
+16095,buttons_and_controls,negative,触摸屏非常容易坏,手机,手机,,Buttons & Controls,按键与操控,Product
+16095,after_sales,negative,售后就说修不了,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+14429,appearance_and_build,positive,外形简单干净,手机,手机,,Appearance & Build,外观与做工,Product
+14429,performance_and_system,positive,功能方面也比较实用,手机,手机,,Performance & System,性能与系统,Product
+14429,price_and_value,positive,价格定的比较合理,手机,手机,,Price & Value,价格与性价比,Pricing
+14101,performance_and_system,positive,短信功能方便、输入法好用,手机,手机,,Performance & System,性能与系统,Product
+14101,camera_and_imaging,positive,拍摄效果清晰,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14101,screen_and_display,positive,显示图片清晰、色彩饱满,手机,手机,,Screen & Display,屏幕显示,Product
+14101,audio_and_sound,positive,清晰的通话音质,手机,手机,,Audio & Sound,音质与铃声,Product
+14101,appearance_and_build,positive,整机做工优秀,手机,手机,,Appearance & Build,外观与做工,Product
+14823,performance_and_system,positive,palm系统的稳定性,手机,手机,,Performance & System,性能与系统,Product
+15766,audio_and_sound,negative,内置的铃声不好听,手机,手机,,Audio & Sound,音质与铃声,Product
+15766,call_and_network,negative,没有红外线功能,手机,手机,,Call & Network,通话与信号,Product
+15766,buttons_and_controls,negative,内置游戏在键盘上不好操作,手机,手机,,Buttons & Controls,按键与操控,Product
+15766,appearance_and_build,negative,外壳比较粗糙,手机,手机,,Appearance & Build,外观与做工,Product
+15766,screen_and_display,negative,在日光下彩屏比较难看,手机,手机,,Screen & Display,屏幕显示,Product
+15898,performance_and_system,negative,不支持关机闹钟,手机,手机,,Performance & System,性能与系统,Product
+15898,audio_and_sound,negative,铃声不好听,手机,手机,,Audio & Sound,音质与铃声,Product
+15238,camera_and_imaging,negative,实际效果让人失望,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14487,appearance_and_build,positive,外观比较冷峻,手机,手机,,Appearance & Build,外观与做工,Product
+14487,performance_and_system,positive,功能也比较齐全,手机,手机,,Performance & System,性能与系统,Product
+14927,screen_and_display,positive,屏幕效果好,手机,手机,,Screen & Display,屏幕显示,Product
+14927,audio_and_sound,positive,音质不错,手机,手机,,Audio & Sound,音质与铃声,Product
+14927,camera_and_imaging,positive,200万像素拍摄能力比较强,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14033,screen_and_display,positive,26万色的大屏幕更是有不同凡响的显示效果,手机,手机,,Screen & Display,屏幕显示,Product
+14033,camera_and_imaging,positive,专业级的数码相机功能,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15702,audio_and_sound,negative,"铃声开到最大,顺风耳还是听不到",手机,手机,,Audio & Sound,音质与铃声,Product
+15759,performance_and_system,negative,几乎没有什么功能,手机,手机,,Performance & System,性能与系统,Product
+15008,performance_and_system,positive,行动遥控”也是明基P50的一大卖点,手机,手机,,Performance & System,性能与系统,Product
+14472,appearance_and_build,positive,样子帅气，线条硬朗,手机,手机,,Appearance & Build,外观与做工,Product
+14472,screen_and_display,neutral,显示效果一般,手机,手机,,Screen & Display,屏幕显示,Product
+14472,battery_life,positive,待机很出色,手机,手机,,Battery Life,电池续航,Product
+15203,performance_and_system,negative,数据线是摆设连接就充电,手机,手机,,Performance & System,性能与系统,Product
+14578,appearance_and_build,positive,此款手机很漂亮,手机,手机,,Appearance & Build,外观与做工,Product
+14578,audio_and_sound,positive,通话时的音质很好，没有杂音呀,手机,手机,,Audio & Sound,音质与铃声,Product
+14578,price_and_value,positive,适合低收入人群使用,手机,手机,,Price & Value,价格与性价比,Pricing
+13962,performance_and_system,positive,存储电话本1000组,手机,手机,,Performance & System,性能与系统,Product
+13962,camera_and_imaging,positive,照相效果好,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15756,performance_and_system,negative,操作系统设计的实在是小儿科,手机,手机,,Performance & System,性能与系统,Product
+15647,camera_and_imaging,negative,130万像素的摄像头，愣说准400万像素,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15647,price_and_value,negative,价格太高,手机,手机,,Price & Value,价格与性价比,Pricing
+15660,call_and_network,negative,信号弱,手机,手机,,Call & Network,通话与信号,Product
+15660,performance_and_system,negative,"短信存储量太少,有时出现白屏现象",手机,手机,,Performance & System,性能与系统,Product
+15660,battery_life,negative,通话时间好像没有宣传的长,手机,手机,,Battery Life,电池续航,Product
+14305,camera_and_imaging,positive,可以拍照。可以把照片当彩信发给朋友,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14305,screen_and_display,positive,显示屏都是26万色的,手机,手机,,Screen & Display,屏幕显示,Product
+14608,appearance_and_build,positive,外观漂亮、手感好,手机,手机,,Appearance & Build,外观与做工,Product
+14608,screen_and_display,positive,屏幕大、亮度高、色彩艳丽,手机,手机,,Screen & Display,屏幕显示,Product
+14608,audio_and_sound,positive,铃声大、曲目经典,手机,手机,,Audio & Sound,音质与铃声,Product
+14608,call_and_network,positive,通话质量还行,手机,手机,,Call & Network,通话与信号,Product
+13896,screen_and_display,positive,屏幕显示色彩鲜艳，显示效果很好,手机,手机,,Screen & Display,屏幕显示,Product
+13896,audio_and_sound,positive,铃声比较动听，声音也比较大,手机,手机,,Audio & Sound,音质与铃声,Product
+13896,buttons_and_controls,positive,键盘布局合理，很耐用,手机,手机,,Buttons & Controls,按键与操控,Product
+13896,battery_life,positive,待机时间较长，有三天之多,手机,手机,,Battery Life,电池续航,Product
+13896,performance_and_system,neutral,发短信是比较慢,手机,手机,,Performance & System,性能与系统,Product
+15696,buttons_and_controls,negative,划屏实在惹人讨厌,手机,手机,,Buttons & Controls,按键与操控,Product
+15696,battery_life,negative,待机时间干不过师兄九A九++,手机,手机,,Battery Life,电池续航,Product
+15518,performance_and_system,negative,感觉内存小,手机,手机,,Performance & System,性能与系统,Product
+15518,camera_and_imaging,negative,摄像头颜色不正,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15518,battery_life,negative,待机时间太短，原装电池充满一天就没电了,手机,手机,,Battery Life,电池续航,Product
+15837,after_sales,negative,"送去2次维修,一点问题也没有解决",手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+14320,camera_and_imaging,positive,照出来的效果还是可以的,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14320,audio_and_sound,positive,播放音乐音质确实不错,手机,手机,,Audio & Sound,音质与铃声,Product
+15526,battery_life,negative,电池最多使用一天,手机,手机,,Battery Life,电池续航,Product
+15526,performance_and_system,negative,内存太小,手机,手机,,Performance & System,性能与系统,Product
+15526,appearance_and_build,negative,翻盖不容易打开,手机,手机,,Appearance & Build,外观与做工,Product
+15847,performance_and_system,negative,不能有GPRS 这就不能接受彩信,手机,手机,,Performance & System,性能与系统,Product
+15847,audio_and_sound,negative,铃声是能下的，不过只有少数的几首歌曲的格式支持,手机,手机,,Audio & Sound,音质与铃声,Product
+16051,performance_and_system,negative,下午就死机了,手机,手机,,Performance & System,性能与系统,Product
+16051,audio_and_sound,negative,通话声音比较小，还有杂音,手机,手机,,Audio & Sound,音质与铃声,Product
+16051,after_sales,negative,拿去KF被告之，这个不算质量问题，不能换也不管修,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+15148,performance_and_system,negative,机子出现过自动关机然后开机慢的现象,手机,手机,,Performance & System,性能与系统,Product
+15148,buttons_and_controls,negative,按键手感也不佳,手机,手机,,Buttons & Controls,按键与操控,Product
+14291,battery_life,positive,待机最高可达7-9天,手机,手机,,Battery Life,电池续航,Product
+14291,performance_and_system,positive,多媒体功能十分强大,手机,手机,,Performance & System,性能与系统,Product
+15587,buttons_and_controls,negative,机子按键不好用,手机,手机,,Buttons & Controls,按键与操控,Product
+15587,performance_and_system,negative,运行速度慢,手机,手机,,Performance & System,性能与系统,Product
+15587,appearance_and_build,negative,翻盖转轴处有明显缝隙，容易进灰尘！还有就是它的外壳...掉漆,手机,手机,,Appearance & Build,外观与做工,Product
+16072,performance_and_system,negative,在呼叫记录理拨打电话，是没有任何菜单可以让大家对所要拨的号码进行修改,手机,手机,,Performance & System,性能与系统,Product
+15180,performance_and_system,negative,不行老是自动关机,手机,手机,,Performance & System,性能与系统,Product
+14059,battery_life,positive,电池很耐用,手机,手机,,Battery Life,电池续航,Product
+14059,camera_and_imaging,positive,摄相功能：200W的像素自然比...好,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14059,performance_and_system,positive,内存大 随机512M简直有硬盘的感觉,手机,手机,,Performance & System,性能与系统,Product
+16007,screen_and_display,negative,屏幕采用古怪的240*240像素分辨率...图象变形,手机,手机,,Screen & Display,屏幕显示,Product
+16007,performance_and_system,negative,不支持WIFI无线上网,手机,手机,,Performance & System,性能与系统,Product
+16007,camera_and_imaging,negative,130万像素摄像头没有拍照快捷键...画质很糟糕,手机,手机,,Camera & Imaging,拍照与摄像,Product
+16007,price_and_value,negative,价格可以用离谱来形容,手机,手机,,Price & Value,价格与性价比,Pricing
+14694,price_and_value,positive,价格适中的手机产品,手机,手机,,Price & Value,价格与性价比,Pricing
+14694,screen_and_display,positive,屏幕面积大，看上去比较舒服,手机,手机,,Screen & Display,屏幕显示,Product
+14694,performance_and_system,positive,支持多重文件格式,手机,手机,,Performance & System,性能与系统,Product
+16105,audio_and_sound,negative,开关机声音不能取消，且自带声音巨难听,手机,手机,,Audio & Sound,音质与铃声,Product
+16105,battery_life,negative,电池太一般了,手机,手机,,Battery Life,电池续航,Product
+16105,camera_and_imaging,negative,摄像头绝对的骗人,手机,手机,,Camera & Imaging,拍照与摄像,Product
+16053,appearance_and_build,negative,外观设计一般化，缺失时尚元素,手机,手机,,Appearance & Build,外观与做工,Product
+16053,audio_and_sound,negative,铃声音量偏小，易漏接来电,手机,手机,,Audio & Sound,音质与铃声,Product
+16053,performance_and_system,negative,不支持Java，下载不太方便,手机,手机,,Performance & System,性能与系统,Product
+16053,battery_life,negative,待机时间实际只有一两天,手机,手机,,Battery Life,电池续航,Product
+14982,screen_and_display,positive,屏幕效果特别好,手机,手机,,Screen & Display,屏幕显示,Product
+14982,audio_and_sound,positive,"免提通话功能也试过了,效果值得表扬",手机,手机,,Audio & Sound,音质与铃声,Product
+15382,performance_and_system,negative,输入法使用要自己摸索,手机,手机,,Performance & System,性能与系统,Product
+15382,audio_and_sound,negative,铃声只认固定文件夹中的,手机,手机,,Audio & Sound,音质与铃声,Product
+15382,camera_and_imaging,negative,模糊不清，还在1280*960时无能力变焦,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15382,after_sales,negative,客服010-88210766长期没人接电话,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+15558,appearance_and_build,negative,机身漆面质量不高，整机塑料感非常明显,手机,手机,,Appearance & Build,外观与做工,Product
+15558,buttons_and_controls,negative,手感生硬，导航键采用了拨杆设计,手机,手机,,Buttons & Controls,按键与操控,Product
+14801,performance_and_system,positive,电话薄项目多！支持群组定义！,手机,手机,,Performance & System,性能与系统,Product
+14627,audio_and_sound,positive,通话质量不错,手机,手机,,Audio & Sound,音质与铃声,Product
+14627,screen_and_display,positive,屏幕显示效果比较出色,手机,手机,,Screen & Display,屏幕显示,Product
+14627,call_and_network,positive,信号稳定，画面流畅,手机,手机,,Call & Network,通话与信号,Product
+14627,battery_life,positive,电池待机时间还算比较理想,手机,手机,,Battery Life,电池续航,Product
+13951,appearance_and_build,positive,机身采用了优质磨砂材料,手机,手机,,Appearance & Build,外观与做工,Product
+13951,screen_and_display,positive,屏幕表现力出色,手机,手机,,Screen & Display,屏幕显示,Product
+13951,audio_and_sound,positive,铃声音量较大,手机,手机,,Audio & Sound,音质与铃声,Product
+13951,camera_and_imaging,positive,拍摄效果清晰度高,手机,手机,,Camera & Imaging,拍照与摄像,Product
+13951,performance_and_system,positive,支持红外、JAVA、WAP和GPRS,手机,手机,,Performance & System,性能与系统,Product
+15161,performance_and_system,negative,昨天正常使用时，自己黑屏了,手机,手机,,Performance & System,性能与系统,Product
+14857,appearance_and_build,positive,全银色的机身搭配纯黑色的背景，很有气派,手机,手机,,Appearance & Build,外观与做工,Product
+14857,screen_and_display,positive,"屏幕大,还有翻页,看东西很方便",手机,手机,,Screen & Display,屏幕显示,Product
+14857,buttons_and_controls,positive,"手写功能也不错,手感好，反应快",手机,手机,,Buttons & Controls,按键与操控,Product
+14857,camera_and_imaging,positive,"拍摄没有过多花哨功能,重要得是清晰度",手机,手机,,Camera & Imaging,拍照与摄像,Product
+15073,appearance_and_build,negative,机身稍厚,手机,手机,,Appearance & Build,外观与做工,Product
+15073,performance_and_system,negative,机身仅能存储200个电话号码和十几首铃声,手机,手机,,Performance & System,性能与系统,Product
+15301,audio_and_sound,negative,声音效果不行，用免提接电话，有杂音,手机,手机,,Audio & Sound,音质与铃声,Product
+15301,performance_and_system,negative,本身没有内存，只能靠SIM卡仅有的内存,手机,手机,,Performance & System,性能与系统,Product
+14614,price_and_value,positive,现在它的价格很低不到1000元,手机,手机,,Price & Value,价格与性价比,Pricing
+14614,appearance_and_build,positive,红色的很可爱,手机,手机,,Appearance & Build,外观与做工,Product
+14776,appearance_and_build,positive,外型还可以，从大小、做工以及手感来说的话,手机,手机,,Appearance & Build,外观与做工,Product
+14776,screen_and_display,positive,屏幕灯光没有采用对眼睛比较刺激的蓝色,手机,手机,,Screen & Display,屏幕显示,Product
+14776,performance_and_system,positive,短消息功能比较强大,手机,手机,,Performance & System,性能与系统,Product
+14776,buttons_and_controls,positive,四方向导航键还不错,手机,手机,,Buttons & Controls,按键与操控,Product
+13909,appearance_and_build,positive,外观很有特色，特别是弹出式屏幕,手机,手机,,Appearance & Build,外观与做工,Product
+14265,appearance_and_build,positive,外型很适合男士用,手机,手机,,Appearance & Build,外观与做工,Product
+14710,screen_and_display,positive,26万色屏幕显示效果很棒,手机,手机,,Screen & Display,屏幕显示,Product
+14710,camera_and_imaging,positive,支持动态拍摄，拍摄质量出色,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14488,appearance_and_build,positive,贝壳式设计时尚,手机,手机,,Appearance & Build,外观与做工,Product
+14488,performance_and_system,positive,短信防火墙很好,手机,手机,,Performance & System,性能与系统,Product
+15965,performance_and_system,negative,换图片换不了，换铃声换不了,手机,手机,,Performance & System,性能与系统,Product
+15965,appearance_and_build,negative,掉漆又特难看,手机,手机,,Appearance & Build,外观与做工,Product
+15559,performance_and_system,negative,速度极慢,手机,手机,,Performance & System,性能与系统,Product
+15559,appearance_and_build,negative,傻大,手机,手机,,Appearance & Build,外观与做工,Product
+15559,after_sales,negative,售后差,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+14941,appearance_and_build,positive,对角对称的设计挺有意思,手机,手机,,Appearance & Build,外观与做工,Product
+15777,battery_life,negative,续电时间短,手机,手机,,Battery Life,电池续航,Product
+13996,performance_and_system,positive,目前一切正常,手机,手机,,Performance & System,性能与系统,Product
+14732,appearance_and_build,positive,小巧、圆润，握在手中也很有质感,手机,手机,,Appearance & Build,外观与做工,Product
+15320,battery_life,negative,待机时间短,手机,手机,,Battery Life,电池续航,Product
+15320,price_and_value,negative,天价，就一个隐形功能就敢卖这个价,手机,手机,,Price & Value,价格与性价比,Pricing
+14404,appearance_and_build,positive,做工考究，手感不错,手机,手机,,Appearance & Build,外观与做工,Product
+14404,screen_and_display,positive,屏幕显示效果不错,手机,手机,,Screen & Display,屏幕显示,Product
+14404,audio_and_sound,positive,铃声清脆、嘹亮,手机,手机,,Audio & Sound,音质与铃声,Product
+14404,camera_and_imaging,positive,拍摄功能强大,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14015,appearance_and_build,positive,外观时尚，设计另类极具特色,手机,手机,,Appearance & Build,外观与做工,Product
+14015,performance_and_system,positive,性能卓越,手机,手机,,Performance & System,性能与系统,Product
+14015,audio_and_sound,positive,音乐功能出色媲美iPOD,手机,手机,,Audio & Sound,音质与铃声,Product
+14588,price_and_value,positive,价钱又经济,手机,手机,,Price & Value,价格与性价比,Pricing
+14588,appearance_and_build,positive,外观又不会落伍,手机,手机,,Appearance & Build,外观与做工,Product
+14588,screen_and_display,positive,画面又清晰,手机,手机,,Screen & Display,屏幕显示,Product
+14753,battery_life,positive,待机时间比较长！,手机,手机,,Battery Life,电池续航,Product
+14753,audio_and_sound,positive,铃声虽为单声...比较满意,手机,手机,,Audio & Sound,音质与铃声,Product
+14758,screen_and_display,positive,显示效果尚好,手机,手机,,Screen & Display,屏幕显示,Product
+14758,buttons_and_controls,positive,按键灵敏，手感较好,手机,手机,,Buttons & Controls,按键与操控,Product
+14758,audio_and_sound,positive,64和弦铃声效果不错,手机,手机,,Audio & Sound,音质与铃声,Product
+14758,call_and_network,negative,信号接收感觉不是很好,手机,手机,,Call & Network,通话与信号,Product
+14758,performance_and_system,negative,反应速度稍慢,手机,手机,,Performance & System,性能与系统,Product
+14298,appearance_and_build,positive,感觉外观还可以,手机,手机,,Appearance & Build,外观与做工,Product
+14298,buttons_and_controls,positive,键盘很漂亮，按键键盘面是平的,手机,手机,,Buttons & Controls,按键与操控,Product
+14634,audio_and_sound,positive,铃声大,手机,手机,,Audio & Sound,音质与铃声,Product
+14634,buttons_and_controls,positive,键盘手感好,手机,手机,,Buttons & Controls,按键与操控,Product
+15133,buttons_and_controls,positive,键盘方面：布局较为合理,手机,手机,,Buttons & Controls,按键与操控,Product
+15133,audio_and_sound,negative,铃音方面...高音部分沙哑感仍明显,手机,手机,,Audio & Sound,音质与铃声,Product
+15133,appearance_and_build,negative,包装有些粗糙,手机,手机,,Appearance & Build,外观与做工,Product
+15133,performance_and_system,positive,性能方面：：感觉不错,手机,手机,,Performance & System,性能与系统,Product
+14454,camera_and_imaging,positive,内置数码相机,手机,手机,,Camera & Imaging,拍照与摄像,Product
+14194,screen_and_display,positive,屏幕大且细腻,手机,手机,,Screen & Display,屏幕显示,Product
+14194,audio_and_sound,positive,32和旋果然不负众望,手机,手机,,Audio & Sound,音质与铃声,Product
+14194,performance_and_system,positive,平衡全面的功能,手机,手机,,Performance & System,性能与系统,Product
+15912,audio_and_sound,negative,变成哑巴，只有震动，没有铃声,手机,手机,,Audio & Sound,音质与铃声,Product
+15912,camera_and_imaging,negative,照片无法储存,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15912,after_sales,negative,每次都返厂修理,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+15104,after_sales,negative,售后服务差得很,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+15948,battery_life,negative,没有座充的...要在手机上充电,手机,手机,,Battery Life,电池续航,Product
+15948,audio_and_sound,negative,通话声音也不好，太小了,手机,手机,,Audio & Sound,音质与铃声,Product
+15948,appearance_and_build,positive,样子做的还是很讨喜的,手机,手机,,Appearance & Build,外观与做工,Product
+16091,audio_and_sound,negative,有回音而且回音很大,手机,手机,,Audio & Sound,音质与铃声,Product
+16091,after_sales,negative,售后服务态度极其恶劣,手机,手机,,After-Sales & Authenticity,售后与正品,Customer service
+14743,screen_and_display,positive,屏幕比较清析,手机,手机,,Screen & Display,屏幕显示,Product
+14743,performance_and_system,positive,功能较齐全,手机,手机,,Performance & System,性能与系统,Product
+16097,buttons_and_controls,negative,根本找不到键盘了,手机,手机,,Buttons & Controls,按键与操控,Product
+16097,performance_and_system,negative,无法根据语音进行操作,手机,手机,,Performance & System,性能与系统,Product
+14836,appearance_and_build,positive,外观设计简约，凝练。2.做工细致,手机,手机,,Appearance & Build,外观与做工,Product
+14836,buttons_and_controls,positive,大按键设计手感还不错,手机,手机,,Buttons & Controls,按键与操控,Product
+14158,price_and_value,positive,"价格2000出头,很值",手机,手机,,Price & Value,价格与性价比,Pricing
+14158,screen_and_display,positive,"X828的屏幕相当夺目,色彩艳丽",手机,手机,,Screen & Display,屏幕显示,Product
+14158,audio_and_sound,positive,播放MP3音色饱满.层次清晰,手机,手机,,Audio & Sound,音质与铃声,Product
+14158,performance_and_system,positive,"中文词组输入,很方便",手机,手机,,Performance & System,性能与系统,Product
+14158,camera_and_imaging,positive,拍照片功能强大,手机,手机,,Camera & Imaging,拍照与摄像,Product
+16163,battery_life,negative,待机时间短,手机,手机,,Battery Life,电池续航,Product
+16163,performance_and_system,negative,又常死关机,手机,手机,,Performance & System,性能与系统,Product
+16167,performance_and_system,negative,软件的反应速度偏慢,手机,手机,,Performance & System,性能与系统,Product
+16167,buttons_and_controls,negative,不能自定义,手机,手机,,Buttons & Controls,按键与操控,Product
+15379,performance_and_system,negative,"输入法太慢,拍照反应慢",手机,手机,,Performance & System,性能与系统,Product
+15379,camera_and_imaging,negative,拍照反应慢,手机,手机,,Camera & Imaging,拍照与摄像,Product
+15379,audio_and_sound,negative,有许多MP3不能播放,手机,手机,,Audio & Sound,音质与铃声,Product
+16025,call_and_network,negative,信号比较差,手机,手机,,Call & Network,通话与信号,Product
+16025,audio_and_sound,negative,通话质量不高,手机,手机,,Audio & Sound,音质与铃声,Product
+14135,appearance_and_build,positive,比网络上的图片要漂亮一些,手机,手机,,Appearance & Build,外观与做工,Product
+14135,screen_and_display,positive,显示屏颜色比我预想的好一些,手机,手机,,Screen & Display,屏幕显示,Product
+14135,performance_and_system,positive,输入法也还满方便,手机,手机,,Performance & System,性能与系统,Product

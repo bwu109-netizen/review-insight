@@ -1,0 +1,32 @@
+{
+  "dataset": "amazon_tea",
+  "reference": "star rating proxy (1-2 = negative, 4-5 = positive, 3 excluded). Not an independent test: the model can see the stars.",
+  "overall": {
+    "n": 1265,
+    "accuracy": 0.9542,
+    "accuracy_excl_neutral": 0.9992,
+    "neutral_share": 0.0451,
+    "negative_precision": 0.9972,
+    "negative_recall": 0.9627,
+    "negative_f1": 0.9796,
+    "confusion": {
+      "negative": {
+        "negative": 361,
+        "positive": 1
+      },
+      "neutral": {
+        "negative": 14,
+        "positive": 43
+      },
+      "positive": {
+        "negative": 0,
+        "positive": 846
+      }
+    }
+  },
+  "by_category": {},
+  "models": {
+    "gemini-3.5-flash-lite": 1169,
+    "gemini-flash-lite-latest": 330
+  }
+}

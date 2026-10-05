@@ -1,0 +1,7 @@
+group_id,category,reviews,avg_rating,ai_negative_share,hidden_issues,top_negative_aspect
+平板,平板,150,,0.47333333333333333,4,Screen & Display
+手机,手机,150,,0.49333333333333335,1,Performance & System
+水果,水果,150,,0.5333333333333333,4,Freshness & Quality
+洗发水,洗发水,150,,0.4866666666666667,2,Product Quality & Formula
+衣服,衣服,150,,0.47333333333333333,1,Fabric & Material
+计算机,计算机,150,,0.35333333333333333,2,Hardware Quality & Defects

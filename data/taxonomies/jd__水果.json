@@ -1,0 +1,64 @@
+{
+  "category": "Fruit",
+  "source": "llm-generated",
+  "category_original": "水果",
+  "aspects": [
+    {
+      "key": "fruit_freshness",
+      "label_en": "Freshness & Quality",
+      "label_zh": "新鲜度与品质",
+      "description": "Crispness, ripeness, rotting, bruising, and overall fruit condition upon arrival",
+      "owner": "Supply chain"
+    },
+    {
+      "key": "taste_and_flavor",
+      "label_en": "Taste & Flavor",
+      "label_zh": "口感与味道",
+      "description": "Sweetness, acidity, juiciness, texture, and flavor profile",
+      "owner": "Product"
+    },
+    {
+      "key": "size_and_weight",
+      "label_en": "Size & Net Weight",
+      "label_zh": "个头大小与分量",
+      "description": "Fruit size consistency, being too small or 'shriveled', and meeting the advertised net weight",
+      "owner": "Product"
+    },
+    {
+      "key": "value_for_money",
+      "label_en": "Value for Money & Pricing",
+      "label_zh": "性价比与价格",
+      "description": "Price fairness, discount/promotion value, and comparison with local markets",
+      "owner": "Pricing"
+    },
+    {
+      "key": "delivery_and_logistics",
+      "label_en": "Delivery & Logistics",
+      "label_zh": "物流配送",
+      "description": "Shipping speed, courier service, delivery timing, and transit delays",
+      "owner": "Logistics"
+    },
+    {
+      "key": "packaging",
+      "label_en": "Packaging",
+      "label_zh": "包装防护",
+      "description": "Packaging condition, protection against damage during transit",
+      "owner": "Supply chain"
+    },
+    {
+      "key": "listing_accuracy",
+      "label_en": "Listing Accuracy",
+      "label_zh": "图文相符度",
+      "description": "Accuracy of product pictures, descriptions, and expectations vs reality",
+      "owner": "Listing"
+    },
+    {
+      "key": "after_sales_service",
+      "label_en": "After-Sales Service",
+      "label_zh": "售后服务",
+      "description": "Customer support response time, handling of complaints, returns, and exchanges",
+      "owner": "Customer service"
+    }
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

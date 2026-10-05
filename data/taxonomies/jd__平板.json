@@ -1,0 +1,78 @@
+{
+  "category": "Tablet",
+  "source": "llm-generated",
+  "category_original": "平板",
+  "aspects": [
+    {
+      "key": "performance_and_speed",
+      "label_en": "Performance & Speed",
+      "label_zh": "性能与速度",
+      "description": "Processing speed, running smoothness, gaming performance, and lagging issues",
+      "owner": "Product"
+    },
+    {
+      "key": "screen_and_display",
+      "label_en": "Screen & Display",
+      "label_zh": "屏幕与显示",
+      "description": "Screen clarity, resolution, display size, bezels, and glare issues",
+      "owner": "Product"
+    },
+    {
+      "key": "battery_and_charging",
+      "label_en": "Battery & Charging",
+      "label_zh": "电池与续航",
+      "description": "Battery life, capacity, standby time, and charging performance",
+      "owner": "Product"
+    },
+    {
+      "key": "sound_and_design",
+      "label_en": "Sound & Design",
+      "label_zh": "音质与外观",
+      "description": "Audio quality, speakers, build quality, physical size, and appearance",
+      "owner": "Product"
+    },
+    {
+      "key": "storage_and_system",
+      "label_en": "Storage & System",
+      "label_zh": "内存与系统",
+      "description": "Actual available storage space compared to advertised memory, and system stability",
+      "owner": "Product"
+    },
+    {
+      "key": "price_and_value",
+      "label_en": "Price & Value",
+      "label_zh": "价格与性价比",
+      "description": "Product pricing, cost-performance ratio, and price fairness",
+      "owner": "Pricing"
+    },
+    {
+      "key": "promotions_and_gifts",
+      "label_en": "Promotions & Freebies",
+      "label_zh": "促销与赠品",
+      "description": "Missing promotional items, incorrect accessories, and marketing discrepancies",
+      "owner": "Operations"
+    },
+    {
+      "key": "listing_accuracy",
+      "label_en": "Listing Accuracy",
+      "label_zh": "页面宣传与描述",
+      "description": "Accuracy of product specifications, model details, and promotional page info",
+      "owner": "Listing"
+    },
+    {
+      "key": "logistics_and_packaging",
+      "label_en": "Logistics & Packaging",
+      "label_zh": "物流与包装",
+      "description": "Delivery speed, courier service, and outer packaging condition",
+      "owner": "Logistics"
+    },
+    {
+      "key": "customer_service",
+      "label_en": "Customer Service & Returns",
+      "label_zh": "客服与售后",
+      "description": "Customer support responsiveness, return/refund handling, and problem resolution",
+      "owner": "Customer service"
+    }
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

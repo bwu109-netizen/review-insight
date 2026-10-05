@@ -1,0 +1,16 @@
+group_id,category,reviews,avg_rating,ai_negative_share,hidden_issues,top_negative_aspect
+B0009F3POY,Tea,100,3.5,0.29,3,Health & wellness
+B000CQBZOW,Tea,100,4.18,0.14,5,Taste
+B000CQG8K8,Tea,100,3.66,0.27,2,Taste
+B000FFIL92,Tea,100,3.32,0.3,8,Packaging
+B000WB1YSE,Tea,99,3.878787878787879,0.24242424242424243,10,Taste
+B001EQ5JLE,Tea,100,4.48,0.06,6,Packaging
+B003CK2BQG,Tea,100,3.92,0.18,3,Taste
+B003D4F1QS,Tea,100,3.32,0.37,9,Taste
+B00412W76S,Tea,100,3.75,0.26,12,Taste
+B004E4CCSQ,Tea,100,3.0,0.45,9,Taste
+B004E4HUMY,Tea,100,3.0,0.43,3,Taste
+B005SPQENY,Tea,100,3.16,0.34,8,Taste
+B0061IUIDY,Tea,100,3.82,0.16,1,Taste
+B007I7Z3Z0,Tea,100,3.0,0.4,11,Taste
+B007JFXWRC,Tea,100,3.96,0.08,3,Taste

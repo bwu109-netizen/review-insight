@@ -1,0 +1,175 @@
+{
+  "计算机": {
+    "name": "laptops and notebooks",
+    "summary": "Customers appreciate the high cost-performance ratio, solid build, and fast delivery, but complain about severe overheating, software/driver installation hurdles, and incorrect listing details or packaging issues.",
+    "fix_first": [
+      {
+        "issue": "散热性能差与用料问题",
+        "owner": "供应链 / 质检",
+        "evidence": "17 negative mentions + \"CPU散热不是铜片，偷工减料用的别的金属\"",
+        "action": "评估并改进散热模组的材质，增加铜片面积以降低CPU高热问题"
+      },
+      {
+        "issue": "商品页信息与实际发货不符",
+        "owner": "商品页",
+        "evidence": "10 negative mentions + \"z怎么发给我的又是白色的啊。不是说都是黑色的了么。\"",
+        "action": "全面核对并修正商品详情页的颜色、配置及配件参数，避免误导消费者"
+      },
+      {
+        "issue": "系统驱动及软件安装困难",
+        "owner": "产品",
+        "evidence": "24 negative mentions + \"装xp系统很麻烦，驱动难找，不全\"",
+        "action": "提供更完善的官方一键驱动安装包或预装稳定系统以简化新手操作"
+      }
+    ],
+    "keep_doing": [
+      "保持极高的性价比优势，在同配置产品中具备价格竞争力",
+      "维持较快的发货速度与坚固的外包装设计"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "洗发水": {
+    "name": "Shampoo",
+    "summary": "客户喜欢部分产品的温和效果、快捷物流和价格，但主要抱怨产品质量、头皮屑问题、疑似假货以及赠品未按约定发放。",
+    "fix_first": [
+      {
+        "issue": "产品使用后出现头皮屑、掉发、发痒以及消费者对正品的强烈质疑",
+        "owner": "供应链 / 质检",
+        "evidence": "25个负面提及 + “假货！！”",
+        "action": "立即核查该批次洗发水的供应链溯源与正品资质，并针对头皮屑与过敏反馈优化产品配方。"
+      },
+      {
+        "issue": "赠品（如吹风机、发膜等）未按宣传送达或缺失",
+        "owner": "营销宣传",
+        "evidence": "7个负面提及 + “吹风机为什么不送”",
+        "action": "核对广告宣传与库存绑定规则，确保下单赠品准确随货发出，避免虚假宣传投诉。"
+      },
+      {
+        "issue": "物流服务差、配送员态度及包裹破损/漏液",
+        "owner": "物流",
+        "evidence": "17个负面提及 + “物流服务太差”",
+        "action": "加强对合作快递公司及末端配送员的管理与服务考核，改进液体洗发水的防漏包装。"
+      }
+    ],
+    "keep_doing": [
+      "保持快速的物流配送效率，多位用户反馈次日达体验良好。",
+      "延续目前高性价比的促销价格与实用的旅行装赠品搭配。"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "平板": {
+    "name": "Huawei Tablet PC",
+    "summary": "客户喜欢这款平板电脑的性价比、外观设计以及流畅的影音体验，但主要问题在于商品页面信息与实物不符、赠品缺失以及售后退货流程繁琐。",
+    "fix_first": [
+      {
+        "issue": "促销赠品时有时无且页面信息存在误导",
+        "owner": "营销宣传",
+        "evidence": "18次负面提及 + \"时而有赠品时而没有。退货还无比麻烦\"",
+        "action": "核对后台赠品库存策略与前端页面展示，确保促销信息准确一致"
+      },
+      {
+        "issue": "客服与退换货流程繁琐且态度不佳",
+        "owner": "客服",
+        "evidence": "13次负面提及 + \"退货还无比麻烦，算了没有就没有\"",
+        "action": "优化售后退换货指引并对客服团队进行服务标准培训"
+      },
+      {
+        "issue": "存储容量与宣传不符及系统显示问题",
+        "owner": "产品 / 采购",
+        "evidence": "11次负面提及 + \"总共才10GB存储，有图有真相\"",
+        "action": "核实内存系统占用说明并在商品详情页明确标注实际可用存储空间"
+      }
+    ],
+    "keep_doing": [
+      "保持高性价比与实惠的价格优势，吸引追求实用性的消费者",
+      "维持外观手感及声音表现方面的良好体验，契合用户看剧和娱乐的需求"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "水果": {
+    "name": "Fresh Fruit Assortment",
+    "summary": "Customers appreciate the freshness, crispness, and prompt delivery of some batches, but suffer from significant issues with undersized, rotting fruit and misleading product listings.",
+    "fix_first": [
+      {
+        "issue": "商品大小不符合标准且分量不足",
+        "owner": "产品 / 采购",
+        "evidence": "34 negative mentions + \"苹果好小，估计没有2kg吧\"",
+        "action": "收紧果径分级标准，并在出库前增加称重校验环节。"
+      },
+      {
+        "issue": "水果不新鲜并出现腐烂坏果",
+        "owner": "供应链 / 质检",
+        "evidence": "37 negative mentions + \"苹果很生，而且有三四个是烂的\"",
+        "action": "加强源头质检与冷链温控，淘汰不合格的供应商。"
+      },
+      {
+        "issue": "页面图文与实际收到商品差距大",
+        "owner": "商品页",
+        "evidence": "10 negative mentions + \"图片太骗人\"",
+        "action": "更新实物拍摄素材，如实描述果径和外观，避免过度美化。"
+      }
+    ],
+    "keep_doing": [
+      "保持部分批次的高新鲜度与爽脆口感，并在广告中重点突出快速配送的优势。"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "衣服": {
+    "name": "Apparel and Clothing",
+    "summary": "客户喜欢这款服装的舒适面料、修身版型以及合理的性价比。主要问题在于尺码混乱、Listing描述不符以及面料质量较差容易粘毛和掉色。",
+    "fix_first": [
+      {
+        "issue": "尺码与版型严重不符",
+        "owner": "产品 / 采购",
+        "evidence": "18个负面提及 + \"无语，衣服连码数都不对，买个L号的比XXL的还大\"",
+        "action": "核对工厂尺码表并收紧生产公差，确保尺码准确。"
+      },
+      {
+        "issue": "商品信息与实物不符",
+        "owner": "商品页",
+        "evidence": "21个负面提及 + \"商品介绍是秋冬加绒的，发货是夏天的\"",
+        "action": "核对并更新线上商品的详细描述与材质说明。"
+      },
+      {
+        "issue": "面料质量差易粘毛且掉色",
+        "owner": "供应链 / 质检",
+        "evidence": "25个负面提及 + \"布质很差，粘毛的。不会再买\"",
+        "action": "加强出厂前的布料质检，排查掉色与粘毛问题。"
+      }
+    ],
+    "keep_doing": [
+      "保持面料舒适易洗的特点并在广告中进行宣传",
+      "突出高性价比和修身合适的版型优势"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "手机": {
+    "name": "slide-cover mobile phone",
+    "summary": "Customers like the smooth sliding mechanism, large display screen, and convenient photography features. However, the main problems are extremely poor battery life, frequent system crashes, and low call ringtones.",
+    "fix_first": [
+      {
+        "issue": "电池续航差与质量问题",
+        "owner": "供应链 / 质检",
+        "evidence": "21 negative mentions + \"现在电池只用得到半天了\"",
+        "action": "排查电池供应商质量并优化续航表现"
+      },
+      {
+        "issue": "系统性能与死机现象",
+        "owner": "产品",
+        "evidence": "52 negative mentions + \"偶尔伴随有死机现象\"",
+        "action": "排查系统软件稳定性并推送固件更新"
+      },
+      {
+        "issue": "铃声音量偏小",
+        "owner": "产品",
+        "evidence": "24 negative mentions + \"铃声偏小，在热闹的地方经常听不到来电声音\"",
+        "action": "在后续产品中优化扬声器硬件和音量调校"
+      }
+    ],
+    "keep_doing": [
+      "保持滑盖设计的流畅度与手感",
+      "继续维持显示屏尺寸和清晰度的优势"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  }
+}

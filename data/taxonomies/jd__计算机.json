@@ -1,0 +1,72 @@
+{
+  "category": "Computers",
+  "source": "llm-generated, human-edited",
+  "category_original": "计算机",
+  "aspects": [
+    {
+      "key": "thermal_performance",
+      "label_en": "Thermal Performance & Noise",
+      "label_zh": "散热与噪音",
+      "description": "CPU temperature, heat dissipation, fan noise, and casing warmth during use",
+      "owner": "Product"
+    },
+    {
+      "key": "hardware_quality",
+      "label_en": "Hardware Quality & Defects",
+      "label_zh": "硬件质量与缺陷",
+      "description": "Screen defects, dead pixels, component durability, hardware failure, and assembly issues",
+      "owner": "Product"
+    },
+    {
+      "key": "value_for_money",
+      "label_en": "Price & Value for Money",
+      "label_zh": "性价比",
+      "description": "Overall price, promotional discounts, pricing compared to competitors, and configuration value",
+      "owner": "Pricing"
+    },
+    {
+      "key": "design_and_ergonomics",
+      "label_en": "Design, Build & Ergonomics",
+      "label_zh": "外观与做工",
+      "description": "Appearance, keyboard typing feel, trackpad, materials, size, weight, and port layout",
+      "owner": "Product"
+    },
+    {
+      "key": "software_and_drivers",
+      "label_en": "Software, OS & Drivers",
+      "label_zh": "系统与驱动",
+      "description": "Pre-installed operating system, driver availability, installation difficulty, and software compatibility",
+      "owner": "Product"
+    },
+    {
+      "key": "battery_and_peripherals",
+      "label_en": "Battery & Included Peripherals",
+      "label_zh": "电池与配件",
+      "description": "Battery life, bundled mouse, laptop bags, optical drives, and free gifts",
+      "owner": "Product"
+    },
+    {
+      "key": "listing_and_authenticity",
+      "label_en": "Listing Accuracy & Packaging",
+      "label_zh": "页面描述与包装",
+      "description": "Discrepancies between specs/color and actual product, barcode tampering, and factory packaging condition",
+      "owner": "Listing"
+    },
+    {
+      "key": "logistics_and_delivery",
+      "label_en": "Logistics & Delivery Experience",
+      "label_zh": "物流与配送",
+      "description": "Shipping speed, self-pickup process, and courier inspection policies",
+      "owner": "Logistics"
+    },
+    {
+      "key": "after_sales_service",
+      "label_en": "After-Sales & Customer Service",
+      "label_zh": "售后与客服服务",
+      "description": "Return/exchange process, quality inspection upon receipt, invoice accuracy, and customer support attitude",
+      "owner": "Customer service"
+    }
+  ],
+  "model": "gemini-3.5-flash-lite",
+  "edits": "Battery & peripherals owner: Supply chain -> Product."
+}

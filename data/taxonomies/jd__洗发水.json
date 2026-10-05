@@ -1,0 +1,64 @@
+{
+  "category": "Shampoo",
+  "source": "llm-generated",
+  "category_original": "洗发水",
+  "aspects": [
+    {
+      "key": "product_quality_and_formula",
+      "label_en": "Product Quality & Formula",
+      "label_zh": "产品质量与配方",
+      "description": "Effectiveness, scalp health (itching, dandruff), hair texture after use, and overall formula performance",
+      "owner": "Product"
+    },
+    {
+      "key": "authenticity",
+      "label_en": "Authenticity",
+      "label_zh": "商品正品与真伪",
+      "description": "Customer suspicions or confirmations regarding genuine vs counterfeit goods",
+      "owner": "Supply chain"
+    },
+    {
+      "key": "scent_and_packaging",
+      "label_en": "Scent & Packaging",
+      "label_zh": "气味与包装",
+      "description": "Fragrance experience, bottle/box condition, and leak-proof packaging",
+      "owner": "Product"
+    },
+    {
+      "key": "gifts_and_bundles",
+      "label_en": "Gifts & Bundles",
+      "label_zh": "赠品与套装组合",
+      "description": "Inclusion, completeness, and usefulness of trial sizes, travel items, or promised gifts",
+      "owner": "Product"
+    },
+    {
+      "key": "pricing_and_promotions",
+      "label_en": "Pricing & Promotions",
+      "label_zh": "价格与促销活动",
+      "description": "Value for money, price competitiveness, discounts, price matching, and price manipulation complaints",
+      "owner": "Pricing"
+    },
+    {
+      "key": "logistics_and_delivery",
+      "label_en": "Logistics & Delivery",
+      "label_zh": "物流配送服务",
+      "description": "Delivery speed, courier service quality, delivery mistakes, and door-to-door drop-off",
+      "owner": "Logistics"
+    },
+    {
+      "key": "listing_and_advertising_accuracy",
+      "label_en": "Listing & Advertising Accuracy",
+      "label_zh": "页面描述与广告相符度",
+      "description": "Accuracy of product descriptions, promotional claims, and missing items shown in ads",
+      "owner": "Listing"
+    },
+    {
+      "key": "customer_service_and_after_sales",
+      "label_en": "Customer Service & After-Sales",
+      "label_zh": "客服与售后服务",
+      "description": "Responsiveness of customer support, handling of price refunds, and complaint resolution",
+      "owner": "Customer service"
+    }
+  ],
+  "model": "gemini-3.5-flash-lite"
+}

@@ -1,0 +1,398 @@
+{
+  "B007JFXWRC": {
+    "name": "Lipton Blackberry Vanilla Herbal Tea",
+    "summary": "Customers generally enjoy the sweet berry flavor, appealing aroma, and convenient pyramid bags. However, the main problem is dissatisfaction with flavor accuracy, particularly the lack of promised vanilla and the prominence of a sour, harsh taste.",
+    "fix_first": [
+      {
+        "issue": "Listing accuracy and missing flavor notes",
+        "owner": "Listing / Content",
+        "evidence": "5 negative mentions + \"there is no vanilla in it according to the ingredients list\"",
+        "action": "Update product descriptions to clearly reflect the actual ingredient profile and flavor distribution."
+      },
+      {
+        "issue": "Taste profile perceived as harsh or sour",
+        "owner": "Product / Content",
+        "evidence": "14 negative mentions + \"I found the tea harsh, astringent, and really on the sour side\"",
+        "action": "Review the herbal blend formulation to reduce acidity and balance fruit notes."
+      },
+      {
+        "issue": "Packaging mess and bag design issues",
+        "owner": "Packaging",
+        "evidence": "7 negative mentions + \"pyramid shape... seemed messy... dripped\"",
+        "action": "Evaluate pyramid bag material and string attachment to minimize dripping and messes."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the naturally sweet taste that requires no added sugar in marketing ads.",
+      "Promote the appealing aroma and the convenience of the pyramid tea bags in listings."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B000CQBZOW": {
+    "name": "Assorted Herbal and Flavored Tea",
+    "summary": "Customers enjoy the delicious taste, soothing qualities, and refreshing flavors of the tea. However, the main problems are hidden ingredients like licorice root affecting blood pressure and inaccuracies in the product listings and taste profiles.",
+    "fix_first": [
+      {
+        "issue": "Hidden licorice ingredients and blood pressure safety risks",
+        "owner": "Product / Content",
+        "evidence": "5 negative mentions + \"Danger for anyone with HIGH Blood Pressure\"",
+        "action": "Update product descriptions to clearly highlight licorice root content and associated health warnings."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the delicious taste and refreshing flavor profiles in listings and ads",
+      "Promote the soothing and gentle health benefits of the tea"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B004E4CCSQ": {
+    "name": "MiO Peach Tea Water Flavor Enhancer (Not Actual Tea)",
+    "summary": "Customers like the convenient, portable liquid format and the ability to easily control flavor strength. However, the main problem is the overwhelming artificial sweetness, chemical taste, and bad aftertaste.",
+    "fix_first": [
+      {
+        "issue": "Poor taste and chemical aftertaste",
+        "owner": "Product / Sourcing",
+        "evidence": "50 negative mentions + \"taste like chemicals and has a horrible aftertaste\"",
+        "action": "Review the artificial sweetener formulation to reduce cloying sweetness and chemical off-notes."
+      },
+      {
+        "issue": "Listing accuracy regarding tea and fruit content",
+        "owner": "Listing / Content",
+        "evidence": "7 negative mentions + \"NOT TEA.\"",
+        "action": "Update listing copy to clearly clarify that the product is a water enhancer and does not contain real tea or peach juice."
+      },
+      {
+        "issue": "Ambiguous usage instructions and hard-to-measure dispensing",
+        "owner": "Packaging",
+        "evidence": "6 negative mentions + \"comes with no instruction on how much to ad\"",
+        "action": "Add clear, precise squeeze-to-serving ratio instructions on the bottle label."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the highly portable, compact bottle design that easily fits in purses and pockets in listings and ads.",
+      "Emphasize the convenience of being able to fully control flavor strength and drink customization."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B000CQG8K8": {
+    "name": "Stash Tea Assortment",
+    "summary": "Customers like the bold spice aromas, daily convenience, and good value of these teas, but main problems involve weak or unappealing taste profiles and inconsistent flavor accuracy.",
+    "fix_first": [
+      {
+        "issue": "Weak or unappealing taste and bitterness",
+        "owner": "Product / Sourcing",
+        "evidence": "32 negative mentions + \"horrible BITTER tea taste\"",
+        "action": "Review batch-to-batch flavor consistency and bitter notes with the supplier."
+      },
+      {
+        "issue": "Misleading listing descriptions regarding ingredients",
+        "owner": "Listing / Content",
+        "evidence": "2 negative mentions + \"thought it actually had organic ingredients- as the description stated\"",
+        "action": "Audit and update product listing copy to ensure ingredients match actual specifications."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the great value and competitive price-per-bag in marketing and ads.",
+      "Promote the popular spice aromas and daily drinkability as key strengths."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B005SPQENY": {
+    "name": "Chantea Aloe Vera Green Tea",
+    "summary": "Customers like the refreshing taste and natural green tea flavor of the beverage. However, the main problem is the unappealing texture of the floating aloe vera chunks and high sugar content.",
+    "fix_first": [
+      {
+        "issue": "Unpleasant texture from aloe chunks and bad taste",
+        "owner": "Product / Sourcing",
+        "evidence": "30 negative taste mentions + \"bits of aloe, while healthy, made me gag\"",
+        "action": "Review product formulation to refine or remove the aloe vera pulp texture."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the refreshing and delicious flavor profile in listings and ads.",
+      "Emphasize the ready-to-drink convenience and natural ingredients."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B004E4HUMY": {
+    "name": "MiO Sweet Tea Liquid Water Enhancer",
+    "summary": "Customers appreciate the ultra-convenient, portable format and zero-calorie sweet tea taste. However, the main problems are leaking bottles upon arrival and an artificial, chemical taste with a bitter aftertaste.",
+    "fix_first": [
+      {
+        "issue": "Bottles leaking and arriving messy due to seal failure during transit",
+        "owner": "Packaging",
+        "evidence": "10 negative mentions + \"sweetener was already leaking from the seal\"",
+        "action": "Improve bottle seal integrity and transit packaging protection"
+      },
+      {
+        "issue": "Unpleasant chemical taste, artificial flavor, and bitter aftertaste",
+        "owner": "Product / Sourcing",
+        "evidence": "45 negative mentions + \"very distinct chemical flavor that lets you know that you're drinking something artificial\"",
+        "action": "Review the flavoring formulation to reduce chemical notes and bitter aftertaste"
+      },
+      {
+        "issue": "Difficulty in dispensing drops accurately from the bottle",
+        "owner": "Product / Content",
+        "evidence": "6 negative mentions + \"does not drip out in small drops\"",
+        "action": "Redesign the dispenser tip for more precise, controlled liquid flow"
+      }
+    ],
+    "keep_doing": [
+      "Highlight the ultra-convenient, pocket-sized bottle design perfect for travel and portability in listings and ads.",
+      "Promote the zero-calorie, sugar-free benefit that appeals to health-conscious consumers."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B00412W76S": {
+    "name": "Herbal Tea",
+    "summary": "Customers like the health and wellness benefits and soothing taste of these herbal teas, but complain about unappealing natural flavors, bad aromas, and delivery delays. Customers like the health and wellness benefits and soothing taste of these herbal teas, but complain about unappealing natural flavors, bad aromas, and delivery delays.",
+    "fix_first": [
+      {
+        "issue": "Taste and aroma are frequently disliked, with complaints of bad smells and weed-like tastes.",
+        "owner": "Product / Sourcing",
+        "issue_count": 24,
+        "evidence": "24 negative mentions + \"This stuff taste the worse, no sweetner helps and it stinks\"",
+        "action": "Update product descriptions and listings to better set expectations regarding the strong, earthy natural herbal flavor profile."
+      },
+      {
+        "issue": "Delivery delays and high shipping costs for expedited services.",
+        "owner": "Logistics",
+        "issue_count": 7,
+        "evidence": "7 negative mentions + \"I paid over $13.00 for \"expedited\" delivery and the product still took FIVE days to arrive\"",
+        "action": "Review carrier performance and ensure shipping tier timelines are accurately represented at checkout."
+      },
+      {
+        "issue": "Packaging issues including crushed items, torn bags, and lack of strings/tags.",
+        "owner": "Packaging",
+        "issue_count": 6,
+        "evidence": "6 negative mentions + \"tea sacks were broken and the tea emptied out\"",
+        "action": "Improve outer packaging protection and evaluate tea bag manufacturing quality to prevent breakage."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the positive health and wellness benefits (such as aiding sleep, pregnancy, and PMS) in listings and ads.",
+      "Promote the great price and value offered relative to the quantity."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B0061IUIDY": {
+    "name": "Higgins & Burke Tea Assortment",
+    "summary": "Customers like the pleasant aroma, convenience, and individually wrapped packaging of these teas. The main problem is that many find the flavor to be too weak, thin, or slightly bitter.",
+    "fix_first": [
+      {
+        "issue": "Weak flavor and lack of strength",
+        "owner": "Product / Sourcing",
+        "evidence": "22 negative mentions + \"tastes very, very weak with no depth of flavor\"",
+        "action": "Review the leaf-to-bag ratio or blend formulation to improve body and taste strength."
+      },
+      {
+        "issue": "Perceived high price and poor value relative to bag count",
+        "owner": "Pricing",
+        "evidence": "5 negative mentions + \"At 18.4 cents/bag, this is a very expensive tea.\"",
+        "action": "Evaluate pack sizes and bulk pricing to align better with customer expectations."
+      }
+    ],
+    "keep_doing": [
+      "Maintain individual foil packet wrapping which preserves freshness and convenience.",
+      "Highlight pleasant aroma and quick-brewing properties in product listings and ads."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B003D4F1QS": {
+    "name": "Stash Tea",
+    "summary": "Customers like the great value, convenience, and comforting taste of the tea. However, the main problems are poor bulk packaging that crushes bags and weak flavor profiles that do not match listing descriptions.",
+    "fix_first": [
+      {
+        "issue": "Packaging causing crushed and damaged tea bags",
+        "owner": "Packaging",
+        "evidence": "16 negative mentions + \"Tea Bags are all thrown into a box and get crushed, otherwise a good deal.\"",
+        "action": "Switch to a properly sized, sturdy master carton to prevent bags from being smashed during transit."
+      },
+      {
+        "issue": "Taste inconsistencies and weak flavor profiles",
+        "owner": "Product / Sourcing",
+        "evidence": "37 negative mentions + \"STASH PREMIUM TEA has little to no taste, depending on the f\"",
+        "action": "Review quality control and batch consistency to ensure stronger, more accurate flavor delivery."
+      },
+      {
+        "issue": "Listing and caffeine accuracy discrepancies",
+        "owner": "Listing / Content",
+        "evidence": "8 negative mentions + \"Tea advertised it had caffeine\"",
+        "action": "Audit all product detail pages to ensure accurate caffeine and flavor descriptions."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the excellent price and value of the 100-count bulk options in listings and ads.",
+      "Promote the convenience, relaxing qualities, and variety of flavors for everyday tea drinkers."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B001EQ5JLE": {
+    "name": "PG Tips Black Tea",
+    "summary": "Customers love the strong flavor, smooth taste, and great value of this tea. The main problem is damaged, crushed packaging and occasional stale or defective tea bags.",
+    "fix_first": [
+      {
+        "issue": "Damaged and crushed packaging with spilled tea",
+        "owner": "Packaging",
+        "evidence": "7 negative mentions + \"the 2 packs i received both had tea spilled outside the boxes.\"",
+        "action": "Improve outer and inner box protection to prevent crushed corners and torn teabags."
+      },
+      {
+        "issue": "Stale product and lack of flavor freshness",
+        "owner": "Product / Sourcing",
+        "evidence": "3 negative mentions + \"The tea arrived somewhat stale\"",
+        "action": "Review warehouse storage and expiration rotation to ensure freshness."
+      },
+      {
+        "issue": "Inconsistent taste and weak flavor complaints",
+        "owner": "Product / Content",
+        "evidence": "5 negative mentions + \"the tea is simply horrible... far from strong and it has no flavor\"",
+        "action": "Audit supplier batches to ensure consistent black tea strength."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the strong, flavorful taste and smooth finish in listings and ads",
+      "Emphasize the value and eco-friendly pyramid bag design without strings"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B000FFIL92": {
+    "name": "Flowering Tea Gift Set",
+    "summary": "Customers love the beautiful presentation, giftability, and the fascinating experience of watching the tea bloom. However, many are disappointed by the very small teapot size, poor taste, and items arriving damaged or musty.",
+    "fix_first": [
+      {
+        "issue": "Listing accuracy and teapot size expectations",
+        "owner": "Listing / Content",
+        "evidence": "15 negative mentions + \"considerably smaller than it appears in the picture\"",
+        "action": "Update product images and descriptions to clearly state the exact ounce capacity and dimensions of the small teapot."
+      },
+      {
+        "issue": "Freshness, musty smell, and poor quality control",
+        "owner": "Product / Sourcing",
+        "evidence": "15 negative mentions + \"smelled musty and teapot tooo tiny\"",
+        "action": "Audit warehouse storage conditions to prevent moisture exposure and review supplier quality standards for the tea and packaging."
+      },
+      {
+        "issue": "Taste and flowering performance complaints",
+        "owner": "Product / Content",
+        "evidence": "21 negative mentions + \"tastes \"weedy\" rather than like real tea\"",
+        "action": "Collaborate with the supplier to improve tea flavor profiles and ensure consistency in the blooming effect."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the excellent presentation and gift-appeal in marketing and ad copy.",
+      "Promote the fun, interactive experience of watching the flowers bloom."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B003CK2BQG": {
+    "name": "Assorted Green and Herbal Teas",
+    "summary": "Customers love the great taste, health benefits, and convenience of the tea, but struggle with taste profile issues and listing expectations. The main problem is dissatisfaction with specific flavor notes and discrepancies in what flavors are highlighted on the packaging.",
+    "fix_first": [
+      {
+        "issue": "Listing accuracy and flavor expectations",
+        "owner": "Listing / Content",
+        "evidence": "5 negative mentions + \"name is pomegranate raspberry and I therefore expected those\"",
+        "action": "Update product titles and front packaging to clearly state all blended ingredients so customers know what to expect."
+      },
+      {
+        "issue": "Taste profile complaints (astringent, medicinal, or bland)",
+        "owner": "Product / Content",
+        "evidence": "19 negative mentions + \"it tastes just like cough syrup\"",
+        "action": "Review formulation feedback regarding sweetness, astringency, and specific flavor notes like mint or fruit."
+      },
+      {
+        "issue": "Pricing and bulk value concerns",
+        "owner": "Pricing",
+        "evidence": "4 negative mentions + \"The biggest negative for me is the price... at the supermarket they usually have sales on tea that would make this a lot cheaper\"",
+        "action": "Evaluate online bundle pricing to ensure competitive value compared to local supermarket sales."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the delicious taste and health benefits in listings and ads",
+      "Maintain the convenient brewing experience and reliable delivery"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B0009F3POY": {
+    "name": "Mother's Milk Nursing Tea",
+    "summary": "Customers appreciate the pleasant taste and overall health benefits of the tea for breastfeeding support. However, the main problem is that it frequently fails to increase milk supply for many users, alongside complaints about poor taste and high online pricing.",
+    "fix_first": [
+      {
+        "issue": "Health & wellness efficacy and side effects",
+        "owner": "Product / Content",
+        "evidence": "27 negative mentions + \"made no difference to my milk production\"",
+        "action": "Review and clarify product effectiveness expectations in the description to manage customer outcomes."
+      },
+      {
+        "issue": "Taste and aroma",
+        "owner": "Product / Sourcing",
+        "evidence": "12 negative mentions + \"it was so disgusting that I could only stomach it\"",
+        "action": "Highlight flavor profiles and recommended mixing tips in the listing to prepare buyers for the strong herbal taste."
+      },
+      {
+        "issue": "Listing accuracy regarding pack size",
+        "owner": "Listing / Content",
+        "evidence": "2 negative mentions + \"saw 'pack of 6' in the product description\"",
+        "action": "Audit bundle descriptions immediately to ensure pack quantities match customer expectations."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the organic, vegan, non-GMO ingredients in advertising.",
+      "Emphasize brewing versatility such as making great iced tea."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B007I7Z3Z0": {
+    "name": "Lipton To Go Green Tea Mix (Flavored Powder Drink)",
+    "summary": "Customers like the convenience and low-calorie nature of the powdered drink packets, but many complain about an overpowering artificial sweetness and misleading natural ingredients claims.",
+    "fix_first": [
+      {
+        "issue": "Listing accuracy and undisclosed artificial sweeteners",
+        "owner": "Marketing claims",
+        "evidence": "17 negative mentions + \"They keep saying 'naturally sweetened with honey', but it is like sweetener overkill\"",
+        "action": "Update product descriptions to clearly disclose all artificial sweeteners and remove misleading 'natural' marketing claims."
+      },
+      {
+        "issue": "Excessive sweetness and unpleasant aftertaste",
+        "owner": "Product / Content",
+        "evidence": "41 negative mentions + \"artificial sweetener dominates the flavor\"",
+        "action": "Reformulate the flavor profile to reduce sweetness and eliminate the lingering artificial aftertaste."
+      },
+      {
+        "issue": "Packaging and difficult-to-open packets",
+        "owner": "Packaging",
+        "evidence": "4 negative mentions + \"starter cut that allows for easy opening of the package is too deep\"",
+        "action": "Redesign the packet tear-notch to allow for easier and cleaner opening."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the high brewing convenience and portability of the individual packets in listings.",
+      "Promote the low-calorie benefit (only 5 calories per packet) for health-conscious buyers."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "B000WB1YSE": {
+    "name": "Kirkland Signature Green Tea",
+    "summary": "Customers love the great price, convenience, and balanced taste of these green tea bags, but many complain about receiving expired or stale stock and inconsistent flavor. The main problem is the poor inventory management leading to short expiration dates upon delivery, alongside some bland taste complaints.",
+    "fix_first": [
+      {
+        "issue": "Expired or close-to-expiration stock being shipped to customers",
+        "owner": "Logistics",
+        "evidence": "12 negative mentions + \"Item arrived with 24 days till expiration. I can't use 100 b\"",
+        "action": "Implement a strict FIFO warehouse check to prevent shipping items expiring within 30 days."
+      },
+      {
+        "issue": "Subpar taste and weak flavor profile reported by some buyers",
+        "owner": "Product / Sourcing",
+        "evidence": "20 negative mentions + \"This stuff tastes like pond water\"",
+        "action": "Audit supplier batch quality to ensure consistent taste and freshness across shipments."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the great value and high count of 100 tea bags for the price in listings and ads.",
+      "Promote the ease of brewing and convenience for daily use."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  }
+}

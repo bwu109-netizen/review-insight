@@ -1,0 +1,176 @@
+{
+  "计算机": {
+    "name": "Computers and Laptops",
+    "summary": "Customers appreciate the strong performance, high cost-performance ratio, and sleek design of the laptops. However, the main problems are hardware defects, poor thermal performance, and inaccurate product listings or packaging issues.",
+    "fix_first": [
+      {
+        "issue": "Hardware quality defects and damaged components upon arrival",
+        "owner": "Product",
+        "evidence": "28 negative mentions + '自提时电池插口塑料及金属片有变形（外包完好）估计出厂时就是这样'",
+        "action": "Coordinate with manufacturers to tighten pre-shipment quality control and inspect internal components."
+      },
+      {
+        "issue": "Thermal performance and overheating issues",
+        "owner": "Product",
+        "evidence": "17 negative mentions + '本机最大的缺点就是 “CPU散热不是铜片，偷工减料用的别的金属”'",
+        "action": "Review thermal design and materials with suppliers to reduce high CPU temperatures and body heat."
+      },
+      {
+        "issue": "Listing inaccuracies regarding color, specifications, and missing items",
+        "owner": "Listing",
+        "evidence": "10 negative mentions + 'z怎么发给我的又是白色的啊。不是说都是黑色的了么。郁闷。有点欺诈啊。。'",
+        "action": "Audit and update product page descriptions, specifications, and color variants to match actual stock."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the high cost-performance ratio and competitive pricing in marketing materials.",
+      "Promote the stylish exterior design suitable for business professionals and good battery life."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "洗发水": {
+    "name": "Shampoo",
+    "summary": "Customers like the fast logistics, attractive pricing, and leave hair soft and manageable. The main problem is widespread accusations of fake products accompanied by poor quality, dandruff, and missing promotional gifts.",
+    "fix_first": [
+      {
+        "issue": "Authenticity and Quality Issues",
+        "owner": "Supply chain",
+        "evidence": "25 negative mentions + \"假货！！用完之后头发非常不好！！\"",
+        "action": "Audit supplier authenticity and investigate product batch quality to eliminate counterfeit claims."
+      }
+    ],
+    "keep_doing": [
+      "Maintain fast logistics and reliable delivery times",
+      "Offer competitive pricing and convenient travel-size bundles"
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "平板": {
+    "name": "Huawei Tablet",
+    "summary": "Customers appreciate the good price, performance, and screen size for media consumption, but face significant issues with customer service, return hassles, and misleading promotional freebies. The main problem is poor customer support and inconsistent promotions combined with listing discrepancies.",
+    "fix_first": [
+      {
+        "issue": "Customer Service & Returns",
+        "owner": "Customer service",
+        "evidence": "13 negative mentions + \"退货还无比麻烦\"",
+        "action": "Streamline the return process and improve agent response times and training."
+      },
+      {
+        "issue": "Promotions & Freebies",
+        "owner": "Operations",
+        "evidence": "18 negative mentions + \"时而有赠品时而没有\"",
+        "action": "Audit inventory systems to ensure promised freebies consistently match listing details."
+      },
+      {
+        "issue": "Listing Accuracy",
+        "owner": "Listing",
+        "evidence": "6 negative mentions + \"拍的时候明明是在m3\"",
+        "action": "Review and update product titles and specifications to prevent model confusion."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the strong price-to-value ratio and affordable pricing in marketing ads.",
+      "Emphasize sound quality, portability, and display performance for watching videos."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "水果": {
+    "name": "Fresh Apples",
+    "summary": "Customers like the crisp texture, juicy taste, and fast delivery of the fresh apples, but complain about receiving small, rotten, or poor-quality fruit that does not match the product images.",
+    "fix_first": [
+      {
+        "issue": "Freshness & Quality",
+        "owner": "Product",
+        "evidence": "37 negative mentions + \"苹果很生，而且有三四个是烂的\"",
+        "action": "Tighten quality control during sorting and picking to prevent rotten and unripe fruit from shipping."
+      },
+      {
+        "issue": "Size & Net Weight",
+        "owner": "Supply chain",
+        "evidence": "34 negative mentions + \"苹果好小，估计没有2kg吧\"",
+        "action": "Enforce strict sizing standards and accurate weight checks before packaging."
+      },
+      {
+        "issue": "Listing Accuracy",
+        "owner": "Listing",
+        "evidence": "10 negative mentions + \"图片太骗人\"",
+        "action": "Update product descriptions and images to accurately reflect the actual size and appearance of the fruit."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the crisp texture, juiciness, and great taste in listings and ads.",
+      "Maintain fast delivery and good logistics performance."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "衣服": {
+    "name": "Apparel",
+    "summary": "Customers like the comfortable fabrics, reasonable pricing, and good overall fit of the clothing. The main problem is widespread issues with incorrect sizing, poor fabric quality, and inconsistent product specifications.",
+    "fix_first": [
+      {
+        "issue": "Incorrect sizing and flawed listing accuracy",
+        "owner": "Listing",
+        "use_quotes": [
+          "连码数都不对",
+          "货不对版"
+        ],
+        "evidence": "21 negative mentions for Listing Accuracy + 18 for Sizing & Fit",
+        "action": "Audit current size charts and product descriptions to ensure accurate labeling and fulfillment."
+      },
+      {
+        "issue": "Subpar fabric quality and material defects",
+        "owner": "Product",
+        "use_quotes": [
+          "布质很差，粘毛的",
+          "面料摸着太差了"
+        ],
+        "evidence": "25 negative mentions for Fabric & Material",
+        "action": "Review material suppliers and implement stricter quality control checks for fabric durability and texture."
+      },
+      {
+        "issue": "Poor customer service and delayed after-sales resolution",
+        "owner": "Customer service",
+        "use_quotes": [
+          "换都一个月多了还没有记回来",
+          "退换不让换"
+        ],
+        "evidence": "7 negative mentions for Customer Service & After-Sales",
+        "action": "Streamline return/exchange procedures and improve support response times."
+      }
+    ],
+    "keep_doing": [
+      "Maintain comfortable and easy-to-wash fabric choices that customers appreciate.",
+      "Continue offering competitive pricing and well-liked slim-fit styles."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  },
+  "手机": {
+    "name": "Mobile Phone",
+    "summary": "Customers appreciate the smooth slider, display, and camera features, but struggle heavily with poor performance, system bugs, and short battery life.",
+    "fix_first": [
+      {
+        "issue": "Performance & System",
+        "owner": "Product",
+        "evidence": "52 negative mentions + \"偶尔伴随有死机现象\"",
+        "action": "Investigate software stability and resolve random freezing issues."
+      },
+      {
+        "issue": "Battery Life",
+        "owner": "Product",
+        "evidence": "21 negative mentions + \"现在电池只用得到半天了\"",
+        "action": "Review battery quality and address severe battery degradation."
+      },
+      {
+        "issue": "Audio & Sound",
+        "owner": "Product",
+        "evidence": "24 negative mentions + \"铃声偏小，在热闹的地方经常听不到\"",
+        "action": "Improve speaker volume and output clarity for noisy environments."
+      }
+    ],
+    "keep_doing": [
+      "Highlight the smooth slider and large display in listings and ads.",
+      "Promote the camera features and photo quality in marketing."
+    ],
+    "model": "gemini-3.5-flash-lite"
+  }
+}

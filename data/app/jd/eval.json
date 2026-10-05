@@ -1,0 +1,176 @@
+{
+  "dataset": "jd",
+  "reference": "human label (dataset authors)",
+  "overall": {
+    "n": 900,
+    "accuracy": 0.8933,
+    "accuracy_excl_neutral": 0.9817,
+    "neutral_share": 0.09,
+    "negative_precision": 0.9692,
+    "negative_recall": 0.9089,
+    "negative_f1": 0.9381,
+    "confusion": {
+      "negative": {
+        "negative": 409,
+        "positive": 13
+      },
+      "neutral": {
+        "negative": 39,
+        "positive": 42
+      },
+      "positive": {
+        "negative": 2,
+        "positive": 395
+      }
+    }
+  },
+  "by_category": {
+    "平板": {
+      "n": 150,
+      "accuracy": 0.88,
+      "accuracy_excl_neutral": 0.9925,
+      "neutral_share": 0.1133,
+      "negative_precision": 0.9859,
+      "negative_recall": 0.9333,
+      "negative_f1": 0.9589,
+      "confusion": {
+        "negative": {
+          "negative": 70,
+          "positive": 1
+        },
+        "neutral": {
+          "negative": 5,
+          "positive": 12
+        },
+        "positive": {
+          "negative": 0,
+          "positive": 62
+        }
+      }
+    },
+    "手机": {
+      "n": 150,
+      "accuracy": 0.9667,
+      "accuracy_excl_neutral": 0.9932,
+      "neutral_share": 0.0267,
+      "negative_precision": 0.9865,
+      "negative_recall": 0.9733,
+      "negative_f1": 0.9799,
+      "confusion": {
+        "negative": {
+          "negative": 73,
+          "positive": 1
+        },
+        "neutral": {
+          "negative": 2,
+          "positive": 2
+        },
+        "positive": {
+          "negative": 0,
+          "positive": 72
+        }
+      }
+    },
+    "水果": {
+      "n": 150,
+      "accuracy": 0.8867,
+      "accuracy_excl_neutral": 0.9568,
+      "neutral_share": 0.0733,
+      "negative_precision": 0.925,
+      "negative_recall": 0.9867,
+      "negative_f1": 0.9548,
+      "confusion": {
+        "negative": {
+          "negative": 74,
+          "positive": 6
+        },
+        "neutral": {
+          "negative": 1,
+          "positive": 10
+        },
+        "positive": {
+          "negative": 0,
+          "positive": 59
+        }
+      }
+    },
+    "洗发水": {
+      "n": 150,
+      "accuracy": 0.9,
+      "accuracy_excl_neutral": 0.9926,
+      "neutral_share": 0.0933,
+      "negative_precision": 0.9863,
+      "negative_recall": 0.96,
+      "negative_f1": 0.973,
+      "confusion": {
+        "negative": {
+          "negative": 72,
+          "positive": 1
+        },
+        "neutral": {
+          "negative": 3,
+          "positive": 11
+        },
+        "positive": {
+          "negative": 0,
+          "positive": 63
+        }
+      }
+    },
+    "衣服": {
+      "n": 150,
+      "accuracy": 0.9333,
+      "accuracy_excl_neutral": 0.9722,
+      "neutral_share": 0.04,
+      "negative_precision": 0.9718,
+      "negative_recall": 0.92,
+      "negative_f1": 0.9452,
+      "confusion": {
+        "negative": {
+          "negative": 69,
+          "positive": 2
+        },
+        "neutral": {
+          "negative": 4,
+          "positive": 2
+        },
+        "positive": {
+          "negative": 2,
+          "positive": 71
+        }
+      }
+    },
+    "计算机": {
+      "n": 150,
+      "accuracy": 0.7933,
+      "accuracy_excl_neutral": 0.9835,
+      "neutral_share": 0.1933,
+      "negative_precision": 0.9623,
+      "negative_recall": 0.68,
+      "negative_f1": 0.7969,
+      "confusion": {
+        "negative": {
+          "negative": 51,
+          "positive": 2
+        },
+        "neutral": {
+          "negative": 24,
+          "positive": 5
+        },
+        "positive": {
+          "negative": 0,
+          "positive": 68
+        }
+      }
+    }
+  },
+  "models": {
+    "gemini-3.5-flash-lite": 900
+  },
+  "manual_review": {
+    "reviewed": 15,
+    "ai_right": 15,
+    "label_right": 0,
+    "unclear": 0
+  }
+}
