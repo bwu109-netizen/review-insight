@@ -34,12 +34,20 @@ Naming and scope:
 - group_type "product": "name" is the product, inferred from the reviews. If an Amazon 'tea' product is
   not actually tea (e.g. a flavored water enhancer), say so.
 
+Fix-first items:
+- Each item is exactly ONE aspect from the "aspects" list; put its "key" in "aspect". Never merge two
+  aspects or two different problems into one item, and never use the same aspect twice.
+- "evidence" uses that aspect's own "negative_reviews" number and one quote from that aspect's
+  "negative_quotes". Do not add up numbers across aspects.
+- "owner" is that aspect's owner team.
+- At most 3 items, most impactful first (more complaints, or a safety/health risk). Only aspects with
+  negative_reviews > 0. If there are almost no complaints, return fewer.
+
 Return JSON:
 {"name": "short name, following the rules above",
  "summary": "2 sentences: what customers like and the main problem",
- "fix_first": [{"issue": "...", "owner": "team from the owner list", "evidence": "how many negative mentions + one short quote", "action": "one concrete next step"}],
- "keep_doing": ["1-2 strengths worth protecting in listings/ads"]}
-fix_first: at most 3 items, most impactful first. If there are almost no complaints, return fewer."""
+ "fix_first": [{"aspect": "aspect key", "issue": "the problem in a few words", "owner": "team", "evidence": "N negative reviews + one short quote", "action": "one concrete next step"}],
+ "keep_doing": ["1-2 strengths worth protecting in listings/ads"]}"""
 
 
 LANG_RULE = {
@@ -49,14 +57,51 @@ LANG_RULE = {
 }
 
 
+def aspect_table(a: pd.DataFrame, counts: pd.DataFrame) -> list[dict]:
+    """One entry per aspect: key, label, owner, review counts by sentiment, and quotes."""
+    out = []
+    for key, g in a.groupby("aspect"):
+        c = counts.loc[key] if key in counts.index else {}
+        out.append({
+            "key": key,
+            "label": str(g.aspect_label.dropna().iloc[0]) if g.aspect_label.notna().any() else key,
+            "owner": str(g.owner.dropna().iloc[0]) if "owner" in g and g.owner.notna().any() else "",
+            "negative_reviews": int(c.get("negative", 0)), "positive_reviews": int(c.get("positive", 0)),
+            "neutral_reviews": int(c.get("neutral", 0)),
+            "negative_quotes": g[g.sentiment == "negative"].evidence.dropna().head(6).tolist(),
+            "positive_quotes": g[g.sentiment == "positive"].evidence.dropna().head(3).tolist(),
+        })
+    return sorted(out, key=lambda x: -x["negative_reviews"])
+
+
+def clean_fix_first(brief: dict, aspects: pd.DataFrame) -> dict:
+    """Keep fix-first items that name one real aspect with complaints, once each, and attach that
+    aspect's true complaint count so the page never shows a number the model made up or summed."""
+    neg = aspects[aspects.sentiment == "negative"].groupby("aspect").review_id.nunique()
+    by_label = {}
+    for col in ("aspect_label", "aspect_label_zh"):
+        if col in aspects:
+            by_label.update({str(l).strip().lower(): k for k, l in zip(aspects.aspect, aspects[col]) if isinstance(l, str)})
+    kept, seen = [], set()
+    for item in brief.get("fix_first") or []:
+        key = str(item.get("aspect", "")).strip()
+        key = key if key in neg.index else by_label.get(key.lower(), "")
+        if not key or key in seen or key not in neg.index:
+            continue
+        seen.add(key)
+        kept.append(dict(item, aspect=key, negative_reviews=int(neg[key])))
+    brief["fix_first"] = kept[:3]
+    return brief
+
+
 def payload(gid, reviews: pd.DataFrame, aspects: pd.DataFrame, owners: list[str]) -> str:
     r = reviews[reviews.group_id == gid]
     a = aspects[aspects.group_id == gid]
+    # counts are reviews, not mentions, so they match what the web page shows for each aspect
     counts = (
-        a.groupby(["aspect_label", "sentiment"]).size().unstack(fill_value=0)
+        a.groupby(["aspect", "sentiment"]).review_id.nunique().unstack(fill_value=0)
         .reindex(columns=["positive", "neutral", "negative"], fill_value=0)
     )
-    neg = a[a.sentiment == "negative"]
     # A random spread of snippets: exports and samples are often sorted, and the first rows can all be
     # one product, which made the brief describe a whole category as that product.
     picks = r.sample(min(12, len(r)), random_state=0)
@@ -68,10 +113,7 @@ def payload(gid, reviews: pd.DataFrame, aspects: pd.DataFrame, owners: list[str]
         "ai_negative_share": round(r.ai_negative.mean(), 3),
         "hidden_issues_in_satisfied_reviews": int(r.hidden_issue.sum()),
         "sample_titles_or_snippets": (picks.title.fillna("") + " " + picks.text.astype(str).str[:60]).str.strip().tolist(),
-        "aspect_counts": counts.to_dict(orient="index"),
-        "negative_quotes_by_aspect": {k: g.evidence.dropna().head(6).tolist() for k, g in neg.groupby("aspect_label")},
-        "positive_quotes_by_aspect": a[a.sentiment == "positive"].groupby("aspect_label").evidence
-        .apply(lambda s: s.head(3).tolist()).to_dict(),
+        "aspects": aspect_table(a, counts),
         "root_causes": r.root_cause.dropna().sample(frac=1, random_state=0).head(10).tolist(),
         "owner_list": owners,
     }
@@ -104,6 +146,7 @@ def main() -> None:
         except LLMError as e:
             print(f"{gid}: failed ({e})")
             continue
+        res = clean_fix_first(res, aspects[aspects.group_id == gid])
         res["model"] = getattr(client, "model", "")
         briefs[gid] = res
         out.write_text(json.dumps(briefs, indent=2, ensure_ascii=False))

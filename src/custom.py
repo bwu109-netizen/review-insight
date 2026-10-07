@@ -141,10 +141,10 @@ def run_custom(client, sample: pd.DataFrame, category: str, batch_size: int | No
 
 def make_brief(client, reviews: pd.DataFrame, aspects: pd.DataFrame, tax: dict, lang: str = "en") -> dict:
     """One extra LLM call: the same ops brief the built-in examples get."""
-    from generate_briefs import LANG_RULE, SYSTEM, payload
+    from generate_briefs import LANG_RULE, SYSTEM, clean_fix_first, payload
     system = SYSTEM.replace("Write in English; keep customer quotes in their\noriginal language.", LANG_RULE[lang])
     owners = sorted({a["owner"] for a in tax["aspects"]})
     gid = reviews.group_id.iloc[0]
-    out = client.complete_json(system, payload(gid, reviews, aspects, owners))
+    out = clean_fix_first(client.complete_json(system, payload(gid, reviews, aspects, owners)), aspects)
     out["model"] = getattr(client, "model", "")
     return out

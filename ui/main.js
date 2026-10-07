@@ -157,6 +157,11 @@
     partial: ["The run stopped early, so these results cover {d} of {n} reviews.", "分析中途停止，以下结果只包含 {n} 条中的 {d} 条。"],
     reason: ["Reason: {r}", "原因：{r}"], r_quota: ["daily quota used up or rate limited", "额度用完或被限流"],
     r_stop: ["you stopped the run", "你手动停止了分析"], partial_new: ["Run a new analysis", "重新分析"],
+    safety_title: ["Food safety alert", "食品安全警示"],
+    safety_n: ["{n} reviews", "{n} 条评论"],
+    safety_desc: ["Reviews that mention insects, foreign objects, hair, mold or spoilage. Shown however few there are: check each one and the batch it came from.",
+      "提到虫、异物、头发、发霉、变质等的评论。不论条数多少都单独列出：请逐条核实，并追查对应批次。"],
+    safety_more: ["Show all {n}", "查看全部 {n} 条"],
     fix_title: ["Fix first", "先改什么"], fix_rank: ["Ranked by impact", "按影响排序"], team: ["TEAM", "团队"],
     complaints: ["{n} complaints · {p}% of reviews", "{n} 条投诉 · 占 {p}%"], next: ["Next step:", "下一步："],
     see_all: ["See all {n} quotes", "查看全部 {n} 条原话"], hide_quotes: ["Hide quotes", "收起原话"],
@@ -279,7 +284,7 @@
     if (resId !== S.resultId) {
       S.resultId = resId;
       S.ui.editTool = false;
-      S.ui.fixOpen = {}; S.ui.hidAll = false; S.ui.hidOpen = {};
+      S.ui.fixOpen = {}; S.ui.hidAll = false; S.ui.hidOpen = {}; S.ui.safetyAll = false;
       S.ui.r6 = { q: "", sent: "negative", aspect: "", page: 0, open: {} };
       renderTool();
       renderResults();
@@ -888,14 +893,19 @@
   // ------------------------------------------------------------------ S5/S6: results
   function aspectIndex(res) {
     var idx = {};
-    res.aspects.forEach(function (a, i) { idx[a.key] = { a: a, i: i, neg: 0, pos: 0, neu: 0, quotes: [], reviews: {}, negRev: {} }; });
+    // Counts are reviews, not mentions (a review can mention one aspect twice), matching the brief payload.
+    res.aspects.forEach(function (a, i) { idx[a.key] = { a: a, i: i, neg: 0, pos: 0, neu: 0, quotes: [], reviews: {}, negRev: {}, seen: {} }; });
     res.mentions.forEach(function (m) {
       var x = idx[m.a];
       if (!x) return;
-      if (m.s === "negative") { x.neg += 1; x.negRev[m.i] = true; if (m.e) x.quotes.push(m.e); }
+      x.reviews[m.i] = true;
+      var k = m.s + "|" + m.i;
+      if (m.s === "negative" && m.e) x.quotes.push(m.e);
+      if (x.seen[k]) return;
+      x.seen[k] = true;
+      if (m.s === "negative") { x.neg += 1; x.negRev[m.i] = true; }
       else if (m.s === "positive") x.pos += 1;
       else x.neu += 1;
-      x.reviews[m.i] = true;
     });
     return idx;
   }
@@ -932,15 +942,77 @@
     var brief = res.brief;
     var used = {};
     if (brief && brief.fix_first && brief.fix_first.length) {
-      return brief.fix_first.slice(0, 3).map(function (it) {
-        var k = matchAspect(it, idx, used);
+      // New briefs name exactly one aspect per item; older ones (no "aspect") fall back to text matching.
+      var items = [];
+      brief.fix_first.forEach(function (it) {
+        var k = it.aspect ? (idx[it.aspect] && !used[it.aspect] ? it.aspect : null) : matchAspect(it, idx, used);
+        if (it.aspect && !k) return;
         if (k) used[k] = true;
-        return { issue: it.issue, owner: it.owner, evidence: it.evidence, action: it.action, key: k };
+        if (items.length < 3) items.push({ issue: it.issue, owner: it.owner, evidence: it.evidence, action: it.action, key: k });
       });
+      if (items.length) return items;
     }
     return Object.keys(idx).filter(function (k) { return idx[k].neg > 0; })
       .sort(function (a, b) { return idx[b].neg - idx[a].neg; }).slice(0, 3)
       .map(function (k) { return { issue: aspectLabel(idx[k].a), owner: ownerLabel(idx[k].a.owner), evidence: "", action: "", key: k }; });
+  }
+
+  // Food safety words. A single mention matters, so these are scanned in every review text, not left
+  // to the aspect labels. Negated uses ("没有虫子", "无杂质", "no bugs") are skipped.
+  var SAFETY_ZH = ["食物中毒", "拉肚子", "腹泻", "呕吐", "虫子", "有虫", "生虫", "长虫", "虫卵", "虫眼", "活虫", "死虫",
+    "小虫", "飞虫", "蛀虫", "虫", "异物", "杂物", "头发", "毛发", "发霉", "霉变", "霉味", "霉点", "长霉", "长毛", "霉",
+    "变质", "过期", "腐烂", "石子", "沙子", "玻璃渣", "碎玻璃", "玻璃碴", "塑料片", "铁丝", "苍蝇", "蟑螂"];
+  var SAFETY_EN = ["food poisoning", "foreign object", "cockroach", "maggot", "insects?", "bugs?", "worms?", "hairs?",
+    "mou?ldy?", "rotten", "spoiled", "expired", "broken glass", "glass shards?", "diarrh?o?ea", "vomit(?:ed|ing)?"];
+  var SAFETY_NOT = /冬虫夏草|虫草/g; // product names, not insects
+  var SAFETY_RE = new RegExp(SAFETY_ZH.join("|") + "|\\b(?:" + SAFETY_EN.join("|") + ")\\b", "gi");
+  function safetyHits(text) {
+    var hits = [], m, s2 = String(text || "").replace(SAFETY_NOT, function (x) { return "\u25a1".repeat(x.length); });
+    SAFETY_RE.lastIndex = 0;
+    while ((m = SAFETY_RE.exec(s2))) {
+      var start = m.index, word = m[0];
+      // negated only when the negation sits right before the word: 没有虫子, 没有发现虫, 无霉点, 不发霉
+      var negated = /[\u4e00-\u9fff]/.test(word)
+        ? /(没有|没|无|不|未|零|防|免)(发现|看到|见到|见|有|任何|一点|一只)?$/.test(s2.slice(Math.max(0, start - 6), start))
+        : /\b(no|not|without|zero|free of)\s*(any\s*)?$/.test(s2.slice(Math.max(0, start - 16), start).toLowerCase());
+      if (negated) continue;
+      hits.push({ start: start, end: start + word.length, word: word });
+    }
+    return hits;
+  }
+  function safetyRows(res) {
+    return res.reviews.map(function (r) { return { r: r, hits: safetyHits(r.t) }; }).filter(function (x) { return x.hits.length; });
+  }
+  function markHits(text, hits) {
+    var out = "", pos = 0;
+    hits.forEach(function (h) {
+      out += esc(text.slice(pos, h.start)) + '<span class="text-data-negative font-medium">' + esc(text.slice(h.start, h.end)) + "</span>";
+      pos = h.end;
+    });
+    return out + esc(text.slice(pos));
+  }
+  function safetyHtml(res) {
+    var rows = safetyRows(res);
+    if (!rows.length) return "";
+    var shown = S.ui.safetyAll ? rows : rows.slice(0, 5);
+    var words = {};
+    rows.forEach(function (x) { x.hits.forEach(function (h) { words[h.word.toLowerCase()] = (words[h.word.toLowerCase()] || 0) + 1; }); });
+    return '<section class="mb-space-xl bg-surface-card border border-border-hairline border-l-2 border-l-data-negative rounded-r-xl p-5" id="safety">' +
+      '<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">' +
+      '<h3 class="font-eyebrow-mono text-eyebrow-mono uppercase tracking-wider text-data-negative flex items-center gap-2">' + icon("warning", "text-[16px]") + t("safety_title") + "</h3>" +
+      '<span class="font-eyebrow-mono text-eyebrow-mono text-data-negative bg-data-negative/10 px-2 py-0.5 rounded uppercase">' + t("safety_n", { n: fmt(rows.length) }) + "</span></div>" +
+      '<p class="font-body-sm text-body-sm text-on-surface-variant">' + t("safety_desc") + "</p>" +
+      '<div class="mt-3 flex flex-wrap gap-1.5">' + Object.keys(words).map(function (w) {
+        return '<span class="font-eyebrow-mono text-[11px] px-2 py-0.5 rounded-full border border-data-negative/25 bg-data-negative/5 text-data-negative">' + esc(w) + " ×" + words[w] + "</span>";
+      }).join("") + "</div>" +
+      '<ul class="mt-4 divide-y divide-white/[0.05] border-t border-white/[0.05]">' + shown.map(function (x) {
+        var stars = x.r.r ? " · " + "★".repeat(Math.round(x.r.r)) : "";
+        return '<li class="py-3 flex flex-col gap-1"><p class="font-body-md text-body-md text-on-surface leading-relaxed">' + markHits(x.r.t, x.hits) + "</p>" +
+          '<span class="font-eyebrow-mono text-[10px] text-text-tertiary">#' + x.r.i + stars + "</span></li>";
+      }).join("") + "</ul>" +
+      (rows.length > 5 ? '<button class="mt-2 font-eyebrow-mono text-eyebrow-mono text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" data-act="safety-all" type="button">' +
+        (S.ui.safetyAll ? t("show_less") : t("safety_more", { n: fmt(rows.length) })) + icon(S.ui.safetyAll ? "expand_less" : "expand_more", "text-[14px]") + "</button>" : "") +
+      "</section>";
   }
 
   function renderResults() {
@@ -952,11 +1024,12 @@
     var nPos = R.filter(function (r) { return r.s === "positive"; }).length;
     var nHid = R.filter(function (r) { return r.h; }).length;
     var html = '<div class="max-w-[960px] w-full mx-auto pt-4 pb-12 px-4 scroll-mt-24" id="results-top">';
+    html += safetyHtml(res);
 
     // S6 banner
     if (m.run_err) {
       var reason = m.reason_kind === "stop" ? t("r_stop") : m.reason_kind === "quota" ? t("r_quota") : m.run_err;
-      html += '<div class="bg-surface-card border-l-2 border-data-warning border-y border-r border-border-hairline rounded-r-xl p-4 mb-space-xl flex flex-col md:flex-row md:items-center md:justify-between gap-4 shadow-sm">' +
+      html += '<div class="bg-surface-card border border-border-hairline border-l-2 border-l-data-warning rounded-r-xl p-4 mb-space-xl flex flex-col md:flex-row md:items-center md:justify-between gap-4 shadow-sm">' +
         '<div class="flex flex-wrap items-center gap-3"><span class="w-2 h-2 rounded-full bg-data-warning animate-pulse shrink-0"></span>' +
         '<span class="font-code-md text-code-md text-primary">' + t("partial", { d: fmt(m.n_labeled), n: fmt(m.n_sample) }) + "</span>" +
         '<span class="font-eyebrow-mono text-eyebrow-mono text-data-warning bg-data-warning/10 px-2 py-0.5 rounded tracking-wider">' + esc(t("reason", { r: reason })) + "</span></div>" +
@@ -1049,18 +1122,14 @@
 
   function fixCard(it, i, idx, nReviews) {
     var x = it.key ? idx[it.key] : null;
-    // the most complete quote up to 60 characters reads best as the card's evidence
-    var quote = x && x.quotes.length ? x.quotes.slice().sort(function (p, q) {
-      var sp = p.length <= 60 ? p.length : -p.length, sq = q.length <= 60 ? q.length : -q.length;
-      return sq - sp;
-    })[0] : "";
+    var quote = x && x.quotes.length ? cardQuote(it, x) : "";
     var open = !!S.ui.fixOpen[i];
     var owner = it.owner || (x ? ownerLabel(x.a.owner) : "");
     return '<article class="bg-surface-card border border-border-hairline rounded-xl p-6 hover:border-border-focus transition-all group">' +
       '<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-white/[0.05]">' +
       '<div class="flex flex-wrap items-center gap-3"><span class="font-headline-sm text-headline-sm text-primary font-normal">' + (i + 1) + " · " + esc(it.issue) + "</span>" +
       (owner ? '<span class="bg-surface-interactive border border-border-hairline text-[11px] font-eyebrow-mono px-2.5 py-0.5 rounded-full text-on-surface-variant">' + t("team") + (S.lang === "zh" ? "：" : ": ") + esc(owner) + "</span>" : "") + "</div>" +
-      (x ? '<span class="font-eyebrow-mono text-eyebrow-mono text-data-negative tracking-wide font-medium bg-data-negative/10 px-2 py-0.5 rounded uppercase shrink-0 self-start sm:self-auto">' + t("complaints", { n: fmt(x.neg), p: pct(Object.keys(x.negRev).length, nReviews) }) + "</span>" : "") +
+      (x ? '<span class="font-eyebrow-mono text-eyebrow-mono text-data-negative tracking-wide font-medium bg-data-negative/10 px-2 py-0.5 rounded uppercase shrink-0 self-start sm:self-auto">' + t("complaints", { n: fmt(x.neg), p: pct(x.neg, nReviews) }) + "</span>" : "") +
       "</div>" +
       (quote ? '<blockquote class="border-l-2 border-primary/40 pl-4 py-1.5 text-body-md text-on-surface italic my-4 bg-surface-container-lowest/50 rounded-r line-clamp-3 sm:line-clamp-none">' + quoteMarks(quote) + "</blockquote>"
         : it.evidence ? '<p class="my-4 font-body-sm text-body-sm text-on-surface-variant">' + esc(it.evidence) + "</p>" : '<div class="h-4"></div>') +
@@ -1076,6 +1145,21 @@
         : "") +
       "</article>";
   }
+  // the most complete quote up to 60 characters reads best as evidence
+  function bestQuote(quotes) {
+    return quotes.slice().sort(function (p, q) {
+      var sp = p.length <= 60 ? p.length : -p.length, sq = q.length <= 60 ? q.length : -q.length;
+      return sq - sp;
+    })[0];
+  }
+  // Prefer the quote the brief itself cites, if it really is one of this aspect's complaints.
+  function cardQuote(it, x) {
+    var ev = String(it.evidence || "");
+    var cited = x.quotes.filter(function (q) { return q && q.length >= 2 && ev.indexOf(q) >= 0; })
+      .sort(function (a, b) { return b.length - a.length; })[0];
+    return cited || bestQuote(x.quotes);
+  }
+  function quotePlain(q) { return /[\u4e00-\u9fff]/.test(q) ? "「" + q + "」" : "\u201c" + q + "\u201d"; }
   function quoteMarks(q) {
     var zh = /[一-鿿]/.test(q);
     return zh ? "「" + esc(q) + "」" : "“" + esc(q) + "”";
@@ -1269,15 +1353,22 @@
   function briefText(res) {
     var idx = aspectIndex(res), items = fixItems(res, idx), b = res.brief || {}, out = [];
     out.push(t("res_a", { c: res.meta.category, n: fmt(res.meta.n_labeled) }) + t("res_b"));
+    var safe = safetyRows(res);
+    if (safe.length) {
+      out.push("", t("safety_title") + " (" + t("safety_n", { n: safe.length }) + "):");
+      safe.forEach(function (x) { out.push("- #" + x.r.i + " " + quotePlain(x.r.t)); });
+    }
     if (b.summary) out.push("", b.summary);
     if (items.length) {
       out.push("", t("fix_title") + ":");
       items.forEach(function (it, i) {
         var x = it.key ? idx[it.key] : null;
         var line = (i + 1) + ". " + it.issue + (it.owner ? " (" + it.owner + ")" : "");
-        if (x) line += " · " + t("complaints", { n: x.neg, p: pct(Object.keys(x.negRev).length, res.reviews.length) });
+        if (x) line += " · " + t("complaints", { n: x.neg, p: pct(x.neg, res.reviews.length) });
         out.push(line);
-        if (it.evidence) out.push("   " + it.evidence);
+        // the count and the quote come from the labeled data, not from the model's evidence sentence
+        if (x && x.quotes.length) out.push("   " + quotePlain(cardQuote(it, x)));
+        else if (it.evidence) out.push("   " + it.evidence);
         if (it.action) out.push("   " + t("next") + " " + it.action);
       });
     }
@@ -1314,13 +1405,14 @@
   function downloadCsv(res) {
     var idx = aspectIndex(res), by = {};
     res.mentions.forEach(function (m) { (by[m.i] = by[m.i] || []).push(m); });
-    var head = ["review_id", "text", "rating", "overall_sentiment", "negative_aspects", "positive_aspects", "neutral_aspects", "evidence", "root_cause", "repurchase", "hidden_issue"];
+    var head = ["review_id", "text", "rating", "overall_sentiment", "negative_aspects", "positive_aspects", "neutral_aspects", "evidence", "root_cause", "repurchase", "hidden_issue", "food_safety_terms"];
     var lines = [head.join(",")];
     res.reviews.forEach(function (r) {
       var ms = by[r.i] || [];
       var list = function (s) { return ms.filter(function (m) { return m.s === s && idx[m.a]; }).map(function (m) { return aspectLabel(idx[m.a].a); }).join("; "); };
       lines.push([r.i, r.t, r.r == null ? "" : r.r, r.s, list("negative"), list("positive"), list("neutral"),
-        ms.map(function (m) { return m.e; }).filter(Boolean).join(" | "), r.rc || "", r.rp || "", r.h ? "yes" : "no"].map(csvCell).join(","));
+        ms.map(function (m) { return m.e; }).filter(Boolean).join(" | "), r.rc || "", r.rp || "", r.h ? "yes" : "no",
+        safetyHits(r.t).map(function (h) { return h.word; }).join("; ")].map(csvCell).join(","));
     });
     var blob = new Blob(["﻿" + lines.join("\r\n")], { type: "text/csv;charset=utf-8" });
     var d = new Date(), stamp = d.getFullYear() + String(d.getMonth() + 1).padStart(2, "0") + String(d.getDate()).padStart(2, "0");
@@ -1507,6 +1599,7 @@
       case "download": if (res) downloadCsv(res); break;
       case "fix-quotes": var i = +el.getAttribute("data-i"); S.ui.fixOpen[i] = !S.ui.fixOpen[i]; renderResults(); break;
       case "hid-all": S.ui.hidAll = !S.ui.hidAll; renderResults(); break;
+      case "safety-all": S.ui.safetyAll = !S.ui.safetyAll; renderResults(); break;
       case "hid-row": var hi = el.getAttribute("data-i"); S.ui.hidOpen[hi] = !S.ui.hidOpen[hi]; renderResults(); break;
       case "aspect":
         S.ui.r6.aspect = el.getAttribute("data-k"); S.ui.r6.sent = "all"; S.ui.r6.page = 0;
