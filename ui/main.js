@@ -15,8 +15,17 @@
     claude: GITHUB + "#use-it-inside-claude-no-api-key",
     github: GITHUB,
   };
-  var RATING_HINTS = ["评分", "星级", "打分", "rating", "score", "star"];
-  var DATE_HINTS = ["时间", "日期", "date", "time"];
+  // Column detection by name, most specific first. Seller exports (Douyin, Taobao, JD) also carry the
+  // shop's reply and a follow-up review, which are often longer than the review itself, so length alone
+  // picks the wrong column.
+  var TEXT_NAMES = ["评价内容", "评论内容", "买家评价", "评价正文", "评论正文", "初评内容", "review text", "review content",
+    "review body", "comment", "评价", "评论", "review", "content", "text", "内容"];
+  var NOT_TEXT = ["回复", "reply", "追评", "follow", "商品名称", "商品规格", "规格", "昵称", "标题", "title", "name", "id"];
+  var RATING_NAMES = ["评价得分", "商品评分", "评分", "得分", "星级", "打分", "rating", "score", "stars", "star"];
+  var DATE_NAMES = ["评价日期", "评价时间", "评论时间", "评论日期", "日期", "时间", "date", "time"];
+  var FOLLOW_NAMES = ["追评内容", "追加评论", "追评", "follow-up", "followup", "additional review"];
+  var NOT_DATE = ["追评", "回复", "reply", "follow"];
+  var NOT_FOLLOW = ["时间", "日期", "time", "date"];
   var OWNER_ZH = {
     "Product": "产品", "Product / Sourcing": "产品 / 采购", "Supply chain": "供应链",
     "Supply chain / QC": "供应链 / 质检", "Packaging": "包装", "Pricing": "定价",
@@ -79,6 +88,9 @@
     change: ["Change", "修改"], done_map: ["Done", "完成"], none: ["(none)", "（无）"],
     map_text: ["Review text column", "评论内容列"], map_rating: ["Star rating column (optional)", "评分列（可选）"],
     map_date: ["Date column (optional)", "日期列（可选）"],
+    map_follow: ["Follow-up review column (optional)", "追评列（可选）"], d_follow: ["follow-up", "追评"],
+    preview: ["Preview · first 3 reviews", "预览 · 前 3 条评论"], pv_text: ["Review text sent to AI", "发给 AI 的评论"],
+    pv_rating: ["Rating", "评分"], pv_date: ["Date", "日期"],
     map_note: ["Rating and date are used to keep each star level and month at its real share when sampling, and to spot problems inside satisfied reviews.",
       "评分列和日期列用于按星级和月份分层抽样，并识别「5 星但有问题」的隐藏问题。"],
     ready_n: ["{n} reviews ready", "已读入 {n} 条"], removed: ["({m} empty or duplicate removed)", "（已去掉 {m} 条空白或重复）"],
@@ -319,8 +331,8 @@
     var f = S.form;
     if (f.source === "paste") return pasteLines();
     if (!f.file) return [];
-    var c = f.file.textCol;
-    return f.file.rows.map(function (r) { return r[c]; });
+    var fl = f.file;
+    return fl.rows.map(function (r) { return reviewText(fl, r); });
   }
   function counts() {
     var texts = sourceTexts();
@@ -626,18 +638,47 @@
       '<span class="text-text-tertiary font-eyebrow-mono text-eyebrow-mono uppercase">' + t("detected") + "</span>" +
       '<span class="text-on-surface">' + t("d_text") + " = " + col(file.textCol) + "</span>" +
       '<span class="text-text-tertiary">·</span><span class="text-on-surface">' + t("d_rating") + " = " + col(file.ratingCol) + "</span>" +
-      '<span class="text-text-tertiary">·</span><span class="text-on-surface">' + t("d_date") + " = " + col(file.dateCol) + "</span></div>" +
+      '<span class="text-text-tertiary">·</span><span class="text-on-surface">' + t("d_date") + " = " + col(file.dateCol) + "</span>" +
+      (file.followCol >= 0 ? '<span class="text-text-tertiary">·</span><span class="text-on-surface">' + t("d_follow") + " = " + col(file.followCol) + "</span>" : "") +
+      "</div>" +
       '<button class="font-eyebrow-mono text-eyebrow-mono text-primary underline underline-offset-4 hover:text-on-surface-variant transition-colors self-start sm:self-auto cursor-pointer shrink-0" data-act="toggle-map" type="button">' + (f.showMap ? t("done_map") : t("change")) + "</button></div>" +
       (f.showMap
-        ? '<div class="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4">' +
+        ? '<div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">' +
           '<div><label class="' + LABEL + '">' + t("map_text") + '</label><div class="relative"><select class="' + SELECT + '" data-in="textCol">' + opts(file.textCol, false) + "</select>" + CHEVRON + "</div></div>" +
           '<div><label class="' + LABEL + '">' + t("map_rating") + '</label><div class="relative"><select class="' + SELECT + '" data-in="ratingCol">' + opts(file.ratingCol, true) + "</select>" + CHEVRON + "</div></div>" +
           '<div><label class="' + LABEL + '">' + t("map_date") + '</label><div class="relative"><select class="' + SELECT + '" data-in="dateCol">' + opts(file.dateCol, true) + "</select>" + CHEVRON + "</div></div>" +
-          '<p class="sm:col-span-3 font-eyebrow-mono text-eyebrow-mono text-text-tertiary leading-relaxed">' + t("map_note") + "</p></div>"
+          '<div><label class="' + LABEL + '">' + t("map_follow") + '</label><div class="relative"><select class="' + SELECT + '" data-in="followCol">' + opts(file.followCol, true) + "</select>" + CHEVRON + "</div></div>" +
+          '<p class="sm:col-span-2 font-eyebrow-mono text-eyebrow-mono text-text-tertiary leading-relaxed">' + t("map_note") + "</p></div>"
         : "") +
       '<div class="mt-3 flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full ' + (bad ? "bg-data-negative" : "bg-tertiary-fixed") + '"></span>' +
       '<span class="font-eyebrow-mono text-eyebrow-mono text-text-tertiary">' + t("ready_n", { n: fmt(c.valid) }) +
-      (c.removed ? ' <span class="text-outline-variant font-code-md">' + t("removed", { m: fmt(c.removed) }) + "</span>" : "") + "</span></div>";
+      (c.removed ? ' <span class="text-outline-variant font-code-md">' + t("removed", { m: fmt(c.removed) }) + "</span>" : "") + "</span></div>" +
+      previewHtml(file);
+  }
+
+  // First 3 rows that have review text, exactly as they will be sent, so a wrong column is obvious at a glance.
+  function previewHtml(file) {
+    var rows = [];
+    for (var k = 0; k < file.rows.length && rows.length < 3; k++) {
+      var txt = reviewText(file, file.rows[k]);
+      if (txt.length >= 2) rows.push({ t: txt, r: file.ratingCol >= 0 ? file.rows[k][file.ratingCol] : null, d: file.dateCol >= 0 ? normDate(file.rows[k][file.dateCol]) : null });
+    }
+    if (!rows.length) return "";
+    var hasR = file.ratingCol >= 0, hasD = file.dateCol >= 0;
+    return '<div class="mt-4 rounded-xl border border-border-hairline bg-surface-container-lowest/60 overflow-hidden">' +
+      '<div class="px-4 py-2.5 border-b border-border-hairline font-eyebrow-mono text-eyebrow-mono text-text-tertiary uppercase tracking-wider flex items-center gap-1.5">' +
+      icon("visibility", "text-[14px]") + t("preview") + "</div>" +
+      '<table class="w-full text-left border-collapse"><thead><tr class="font-eyebrow-mono text-[10px] uppercase tracking-wider text-text-tertiary">' +
+      '<th class="py-2 px-4 font-medium">' + t("pv_text") + "</th>" +
+      (hasR ? '<th class="py-2 px-3 font-medium w-16">' + t("pv_rating") + "</th>" : "") +
+      (hasD ? '<th class="py-2 px-4 font-medium w-28 hidden sm:table-cell">' + t("pv_date") + "</th>" : "") +
+      '</tr></thead><tbody class="divide-y divide-white/[0.05] font-body-sm text-body-sm text-on-surface">' +
+      rows.map(function (x) {
+        return '<tr class="align-top"><td class="py-2.5 px-4"><span class="line-clamp-2">' + esc(x.t) + "</span></td>" +
+          (hasR ? '<td class="py-2.5 px-3 font-eyebrow-mono text-[11px] text-data-warning whitespace-nowrap">' + (x.r == null ? "" : "★ " + esc(x.r)) + "</td>" : "") +
+          (hasD ? '<td class="py-2.5 px-4 font-eyebrow-mono text-[11px] text-text-tertiary whitespace-nowrap hidden sm:table-cell">' + esc(x.d || "") + "</td>" : "") +
+          "</tr>";
+      }).join("") + "</tbody></table></div>";
   }
 
   function pasteCountHtml() {
@@ -765,9 +806,9 @@
         icon("insights", "text-[18px] opacity-40") + "<span>" + t("analyze") + "</span></button></div>" +
         '<div class="text-center mt-3.5 font-eyebrow-mono text-eyebrow-mono text-text-tertiary flex items-center justify-center gap-2">' +
         '<span class="w-1.5 h-1.5 rounded-full bg-text-tertiary/60"></span><span>' + (emptyAll ? t("start_hint") : t("still", { x: need.join(", ") })) + "</span></div>" +
-        '<div class="mt-12 pt-8 border-t border-border-hairline/60 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">' +
+        '<div class="mt-12 pt-8 border-t border-white/[0.05] grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">' +
         [["schema", "feat1t", "feat1d"], ["fact_check", "feat2t", "feat2d"], ["visibility", "feat3t", "feat3d"]].map(function (x) {
-          return '<div class="p-3.5 rounded-xl bg-surface-card/40 border border-border-hairline/50"><div class="flex items-center gap-2 text-primary font-body-sm text-body-sm mb-1">' +
+          return '<div class="p-3.5 rounded-xl bg-surface-card/40 border border-white/[0.04]"><div class="flex items-center gap-2 text-primary font-body-sm text-body-sm mb-1">' +
             icon(x[0], "text-[16px] text-on-surface-variant") + t(x[1]) + '</div><p class="font-body-sm text-body-sm text-text-tertiary text-xs leading-relaxed">' + t(x[2]) + "</p></div>";
         }).join("") + "</div></div>";
     }
@@ -1016,7 +1057,7 @@
     var open = !!S.ui.fixOpen[i];
     var owner = it.owner || (x ? ownerLabel(x.a.owner) : "");
     return '<article class="bg-surface-card border border-border-hairline rounded-xl p-6 hover:border-border-focus transition-all group">' +
-      '<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-border-hairline/60">' +
+      '<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-white/[0.05]">' +
       '<div class="flex flex-wrap items-center gap-3"><span class="font-headline-sm text-headline-sm text-primary font-normal">' + (i + 1) + " · " + esc(it.issue) + "</span>" +
       (owner ? '<span class="bg-surface-interactive border border-border-hairline text-[11px] font-eyebrow-mono px-2.5 py-0.5 rounded-full text-on-surface-variant">' + t("team") + (S.lang === "zh" ? "：" : ": ") + esc(owner) + "</span>" : "") + "</div>" +
       (x ? '<span class="font-eyebrow-mono text-eyebrow-mono text-data-negative tracking-wide font-medium bg-data-negative/10 px-2 py-0.5 rounded uppercase shrink-0 self-start sm:self-auto">' + t("complaints", { n: fmt(x.neg), p: pct(Object.keys(x.negRev).length, nReviews) }) + "</span>" : "") +
@@ -1029,7 +1070,7 @@
         ? '<button class="shrink-0 font-eyebrow-mono text-eyebrow-mono text-on-surface-variant group-hover:text-primary transition-colors flex items-center gap-1 hover:underline" data-act="fix-quotes" data-i="' + i + '" type="button"><span>' + (open ? t("hide_quotes") : t("see_all", { n: fmt(x.quotes.length) })) + "</span>" + icon(open ? "expand_less" : "arrow_forward", "text-[13px]") + "</button>"
         : "") + "</div>" +
       (open && x
-        ? '<ul class="mt-4 max-h-72 overflow-y-auto space-y-2 pr-1 border-t border-border-hairline/60 pt-4">' + x.quotes.slice(0, 20).map(function (q) {
+        ? '<ul class="mt-4 max-h-72 overflow-y-auto space-y-2 pr-1 border-t border-white/[0.05] pt-4">' + x.quotes.slice(0, 20).map(function (q) {
             return '<li class="border-l-2 border-primary/20 pl-3 font-body-sm text-body-sm text-on-surface">' + quoteMarks(q) + "</li>";
           }).join("") + "</ul>"
         : "") +
@@ -1172,7 +1213,7 @@
       '<th class="py-3 px-4 w-4/12 font-medium">' + t("th_review") + '</th><th class="py-3 px-4 w-1/12 font-medium">' + t("th_sent") + "</th>" +
       '<th class="py-3 px-4 w-3/12 font-medium">' + t("th_aspects") + '</th><th class="py-3 px-4 w-2/12 font-medium">' + t("th_root") + "</th>" +
       '<th class="py-3 px-4 w-2/12 font-medium text-right">' + t("th_rep") + "</th></tr></thead>" +
-      '<tbody class="divide-y divide-border-hairline/60 font-body-sm text-body-sm text-on-surface">' +
+      '<tbody class="divide-y divide-white/[0.05] font-body-sm text-body-sm text-on-surface">' +
       view.map(function (r) {
         var open = !!f.open[r.i];
         return '<tr class="hover:bg-surface-interactive/40 transition-colors cursor-pointer align-top" data-act="r6-row" data-i="' + r.i + '">' +
@@ -1184,7 +1225,7 @@
           '<td class="py-3.5 px-4 text-right">' + repBadge(r.rp) + "</td></tr>";
       }).join("") + "</tbody></table></div>";
     // card list (< 640px, PRD section 9)
-    html += '<div class="sm:hidden divide-y divide-border-hairline/60">' + view.map(function (r) {
+    html += '<div class="sm:hidden divide-y divide-white/[0.05]">' + view.map(function (r) {
       var open = !!f.open[r.i];
       return '<div class="p-4 flex flex-col gap-2" data-act="r6-row" data-i="' + r.i + '">' +
         '<div class="flex items-center justify-between">' + sentBadge(r.s) + '<span class="font-eyebrow-mono text-[10px] text-text-tertiary">' + meta(r) + "</span></div>" +
@@ -1291,22 +1332,74 @@
   }
 
   // ------------------------------------------------------------------ file reading (in the browser, so the file is sent once)
-  function guessCol(cols, hints) {
-    for (var i = 0; i < cols.length; i++) {
-      var c = String(cols[i]).toLowerCase();
-      if (hints.some(function (h) { return c.indexOf(h) >= 0; })) return i;
+  function colName(c) { return String(c).toLowerCase().replace(/\s+/g, " ").trim(); }
+  function colValues(rows, i) {
+    var out = [];
+    for (var k = 0; k < rows.length && out.length < 300; k++) { var v = rows[k][i]; if (v != null && String(v).trim() !== "") out.push(v); }
+    return out;
+  }
+  function isTextLike(rows, i) {
+    var vals = colValues(rows, i);
+    if (!vals.length) return false;
+    var numeric = vals.filter(function (v) { return isFinite(parseFloat(v)) && String(v).trim().length <= 20 && /^[\d.\-]+$/.test(String(v).trim()); }).length;
+    var avg = vals.reduce(function (t, v) { return t + String(v).length; }, 0) / vals.length;
+    return numeric / vals.length < 0.5 && avg >= 4;
+  }
+  function isRatingLike(rows, i) {
+    var vals = colValues(rows, i);
+    if (!vals.length) return false;
+    var ok = vals.filter(function (v) { var x = parseFloat(v); return isFinite(x) && x >= 1 && x <= 5; }).length;
+    return ok / vals.length >= 0.8;
+  }
+  function isDateLike(rows, i) {
+    var vals = colValues(rows, i);
+    if (!vals.length) return false;
+    var ok = vals.filter(function (v) { return !!normDate(v); }).length;
+    return ok / vals.length >= 0.8;
+  }
+  // "2026年10月07日 15:02:33", "2026/10/7", "2026-10-07 15:02" -> "2026-10-07" (pandas can't read the first form)
+  function normDate(v) {
+    if (v == null) return null;
+    if (v instanceof Date) return isNaN(v) ? null : v.toISOString().slice(0, 10);
+    var m = String(v).match(/(\d{4})\s*[年\/\-.]\s*(\d{1,2})\s*[月\/\-.]\s*(\d{1,2})/);
+    if (!m) return null;
+    return m[1] + "-" + ("0" + m[2]).slice(-2) + "-" + ("0" + m[3]).slice(-2);
+  }
+  function pickByName(cols, names, exclude, accept, taken) {
+    for (var n = 0; n < names.length; n++) {
+      for (var i = 0; i < cols.length; i++) {
+        var c = colName(cols[i]);
+        if (taken.indexOf(i) >= 0) continue;
+        if (exclude.some(function (x) { return c.indexOf(x) >= 0; })) continue;
+        if (c.indexOf(names[n]) >= 0 && accept(i)) return i;
+      }
     }
     return -1;
   }
-  function guessText(cols, rows) {
-    var best = 0, bestLen = -1, sample = rows.slice(0, 500);
-    cols.forEach(function (_, i) {
-      var tot = 0;
-      sample.forEach(function (r) { tot += r[i] == null ? 0 : String(r[i]).length; });
-      var avg = sample.length ? tot / sample.length : 0;
-      if (avg > bestLen) { bestLen = avg; best = i; }
-    });
-    return best;
+  function detectColumns(cols, rows) {
+    var text = pickByName(cols, TEXT_NAMES, NOT_TEXT, function (i) { return isTextLike(rows, i); }, []);
+    if (text < 0) { // no telling name: the longest text column that isn't a reply or follow-up
+      var bestLen = -1;
+      cols.forEach(function (c, i) {
+        var n = colName(c);
+        if (NOT_TEXT.slice(0, 4).some(function (x) { return n.indexOf(x) >= 0; }) || !isTextLike(rows, i)) return;
+        var vals = colValues(rows, i), avg = vals.reduce(function (t, v) { return t + String(v).length; }, 0) / vals.length;
+        if (avg > bestLen) { bestLen = avg; text = i; }
+      });
+      if (text < 0) text = 0;
+    }
+    var rating = pickByName(cols, RATING_NAMES, [], function (i) { return isRatingLike(rows, i); }, [text]);
+    var date = pickByName(cols, DATE_NAMES, NOT_DATE, function (i) { return isDateLike(rows, i); }, [text, rating]);
+    var follow = pickByName(cols, FOLLOW_NAMES, NOT_FOLLOW, function () { return true; }, [text, rating, date]);
+    return { textCol: text, ratingCol: rating, dateCol: date, followCol: follow };
+  }
+  // The text sent to the model: the review, plus the follow-up review when the export has one.
+  function reviewText(fl, r) {
+    var main = r[fl.textCol] == null ? "" : String(r[fl.textCol]).trim();
+    var fu = fl.followCol >= 0 && r[fl.followCol] != null ? String(r[fl.followCol]).trim() : "";
+    if (!fu) return main;
+    var label = /[\u4e00-\u9fff]/.test(main + fu) ? "追评：" : "Follow-up: ";
+    return main ? main + " " + label + fu : fu;
   }
   function decodeText(buf) {
     try { return new TextDecoder("utf-8", { fatal: true }).decode(buf).replace(/^﻿/, ""); }
@@ -1340,10 +1433,7 @@
       var rows = table.slice(1).map(function (r) {
         return cols.map(function (_, i) { var v = r[i]; return v instanceof Date ? v.toISOString().slice(0, 10) : v; });
       });
-      f.file = { name: file.name, size: file.size, columns: cols, rows: rows,
-        textCol: guessText(cols, rows), ratingCol: guessCol(cols, RATING_HINTS), dateCol: guessCol(cols, DATE_HINTS) };
-      if (f.file.ratingCol === f.file.textCol) f.file.ratingCol = -1;
-      if (f.file.dateCol === f.file.textCol) f.file.dateCol = -1;
+      f.file = Object.assign({ name: file.name, size: file.size, columns: cols, rows: rows }, detectColumns(cols, rows));
       f.fileLoading = false;
       renderTool();
     }).catch(function () {
@@ -1359,9 +1449,9 @@
       texts = pasteLines();
     } else {
       var fl = f.file;
-      texts = fl.rows.map(function (r) { var v = r[fl.textCol]; return v == null ? "" : String(v); });
+      texts = fl.rows.map(function (r) { return reviewText(fl, r); });
       if (fl.ratingCol >= 0) ratings = fl.rows.map(function (r) { var v = parseFloat(r[fl.ratingCol]); return isFinite(v) ? v : null; });
-      if (fl.dateCol >= 0) dates = fl.rows.map(function (r) { var v = r[fl.dateCol]; return v == null ? null : String(v); });
+      if (fl.dateCol >= 0) dates = fl.rows.map(function (r) { return normDate(r[fl.dateCol]); });
       fileName = fl.name;
     }
     var c = counts();
@@ -1456,7 +1546,7 @@
     var v = e.target.value, f = S.form;
     if (k === "platform") f.platform = +v;
     else if (k === "provider") { f.provider = v; renderTool(); }
-    else if (k === "textCol" || k === "ratingCol" || k === "dateCol") { f.file[k] = +v; renderTool(); }
+    else if (k === "textCol" || k === "ratingCol" || k === "dateCol" || k === "followCol") { f.file[k] = +v; renderTool(); }
     else if (k === "r6-aspect") { S.ui.r6.aspect = v; S.ui.r6.page = 0; renderTable(); }
   });
   // drag and drop onto the drop zone
