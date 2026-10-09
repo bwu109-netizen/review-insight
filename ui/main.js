@@ -211,6 +211,7 @@
     ui: { menu: false, editTool: false, fixOpen: {}, hidAll: false, hidOpen: {}, stopping: false,
       r6: { q: "", sent: "negative", aspect: "", page: 0, open: {} } },
     evt: 0, ackFor: 0, jobSig: "", resultId: null, rendered: false,
+    tr: {}, trSig: "", trSent: {},
   };
 
   function lang() { return S.lang === "zh" ? 1 : 0; }
@@ -281,6 +282,10 @@
     } else if (job.status === "running") {
       renderProgress();
     }
+    var tr = args.translations || {}, trSig = (resId || "") + "|" + Object.keys(tr).length + "|" + (args.tr_status || "");
+    var trChanged = trSig !== S.trSig;
+    S.tr = tr; S.trSig = trSig;
+    if (resId === S.resultId && trChanged && resId) renderResults();
     if (resId !== S.resultId) {
       S.resultId = resId;
       S.ui.editTool = false;
@@ -289,6 +294,7 @@
       renderTool();
       renderResults();
       if (resId) setTimeout(function () { scrollToEl($("results"), 96); }, 60);
+      if (resId) setTimeout(maybeTranslate, 300);
     }
   }
 
@@ -971,9 +977,9 @@
     SAFETY_RE.lastIndex = 0;
     while ((m = SAFETY_RE.exec(s2))) {
       var start = m.index, word = m[0];
-      // negated only when the negation sits right before the word: 没有虫子, 没有发现虫, 无霉点, 不发霉
+      // negated only when the negation sits right before the word: 没有虫子, 没有发现虫, 无霉点, 不发霉, 不会有霉味
       var negated = /[\u4e00-\u9fff]/.test(word)
-        ? /(没有|没|无|不|未|零|防|免)(发现|看到|见到|见|有|任何|一点|一只)?$/.test(s2.slice(Math.max(0, start - 6), start))
+        ? /(没有|没|无|不|未|零|防|免)(会|曾|再)?(发现|看到|见到|见|有|任何|一点|一只)?$/.test(s2.slice(Math.max(0, start - 6), start))
         : /\b(no|not|without|zero|free of)\s*(any\s*)?$/.test(s2.slice(Math.max(0, start - 16), start).toLowerCase());
       if (negated) continue;
       hits.push({ start: start, end: start + word.length, word: word });
@@ -1007,12 +1013,49 @@
       }).join("") + "</div>" +
       '<ul class="mt-4 divide-y divide-white/[0.05] border-t border-white/[0.05]">' + shown.map(function (x) {
         var stars = x.r.r ? " · " + "★".repeat(Math.round(x.r.r)) : "";
-        return '<li class="py-3 flex flex-col gap-1"><p class="font-body-md text-body-md text-on-surface leading-relaxed">' + markHits(x.r.t, x.hits) + "</p>" +
+        return '<li class="py-3 flex flex-col gap-1"><p class="font-body-md text-body-md text-on-surface leading-relaxed">' + markHits(x.r.t, x.hits) + trLine(x.r.t) + "</p>" +
           '<span class="font-eyebrow-mono text-[10px] text-text-tertiary">#' + x.r.i + stars + "</span></li>";
       }).join("") + "</ul>" +
       (rows.length > 5 ? '<button class="mt-2 font-eyebrow-mono text-eyebrow-mono text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" data-act="safety-all" type="button">' +
         (S.ui.safetyAll ? t("show_less") : t("safety_more", { n: fmt(rows.length) })) + icon(S.ui.safetyAll ? "expand_less" : "expand_more", "text-[14px]") + "</button>" : "") +
       "</section>";
+  }
+
+  // English mode: the Chinese quotes stay, a translation goes under each one in small gray text.
+  // Only quotes the page shows are sent, once per result, in one request.
+  function shownQuotes(res) {
+    var idx = aspectIndex(res), out = [];
+    fixItems(res, idx).forEach(function (it) {
+      var x = it.key ? idx[it.key] : null;
+      if (!x || !x.quotes.length) return;
+      out.push(cardQuote(it, x));
+      x.quotes.slice(0, 20).forEach(function (q) { out.push(q); });
+    });
+    var firstNeg = {};
+    res.mentions.forEach(function (m) { if (m.s === "negative" && !firstNeg[m.i]) firstNeg[m.i] = m; });
+    res.reviews.forEach(function (r) {
+      if (!r.h) return;
+      if (firstNeg[r.i] && firstNeg[r.i].e) out.push(firstNeg[r.i].e);
+      out.push(r.t);
+    });
+    safetyRows(res).forEach(function (x) { out.push(x.r.t); });
+    var seen = {};
+    return out.map(function (q) { return String(q || "").trim(); }).filter(function (q) {
+      if (!q || !/[\u4e00-\u9fff]/.test(q) || seen[q]) return false;
+      seen[q] = true; return true;
+    });
+  }
+  function maybeTranslate() {
+    var res = result();
+    if (!res || S.lang !== "en" || S.trSent[res.id]) return;
+    S.trSent[res.id] = true;
+    var texts = shownQuotes(res);
+    if (texts.length) send("translate", { rid: res.id, texts: texts });
+  }
+  function trLine(text) {
+    if (S.lang !== "en") return "";
+    var en = S.tr[String(text || "").trim()];
+    return en ? '<span class="ri-tr block mt-1 not-italic font-body-sm text-[12px] leading-5 text-text-tertiary">' + esc(en) + "</span>" : "";
   }
 
   function renderResults() {
@@ -1131,7 +1174,7 @@
       (owner ? '<span class="bg-surface-interactive border border-border-hairline text-[11px] font-eyebrow-mono px-2.5 py-0.5 rounded-full text-on-surface-variant">' + t("team") + (S.lang === "zh" ? "：" : ": ") + esc(owner) + "</span>" : "") + "</div>" +
       (x ? '<span class="font-eyebrow-mono text-eyebrow-mono text-data-negative tracking-wide font-medium bg-data-negative/10 px-2 py-0.5 rounded uppercase shrink-0 self-start sm:self-auto">' + t("complaints", { n: fmt(x.neg), p: pct(x.neg, nReviews) }) + "</span>" : "") +
       "</div>" +
-      (quote ? '<blockquote class="border-l-2 border-primary/40 pl-4 py-1.5 text-body-md text-on-surface italic my-4 bg-surface-container-lowest/50 rounded-r line-clamp-3 sm:line-clamp-none">' + quoteMarks(quote) + "</blockquote>"
+      (quote ? '<blockquote class="border-l-2 border-primary/40 pl-4 py-1.5 text-body-md text-on-surface italic my-4 bg-surface-container-lowest/50 rounded-r"><span class="line-clamp-3 sm:line-clamp-none">' + quoteMarks(quote) + "</span>" + trLine(quote) + "</blockquote>"
         : it.evidence ? '<p class="my-4 font-body-sm text-body-sm text-on-surface-variant">' + esc(it.evidence) + "</p>" : '<div class="h-4"></div>') +
       '<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">' +
       '<p class="font-body-sm text-body-sm text-on-surface-variant">' + (it.action ? '<span class="text-primary font-medium">' + t("next") + "</span> " + esc(it.action) : "") + "</p>" +
@@ -1140,7 +1183,7 @@
         : "") + "</div>" +
       (open && x
         ? '<ul class="mt-4 max-h-72 overflow-y-auto space-y-2 pr-1 border-t border-white/[0.05] pt-4">' + x.quotes.slice(0, 20).map(function (q) {
-            return '<li class="border-l-2 border-primary/20 pl-3 font-body-sm text-body-sm text-on-surface">' + quoteMarks(q) + "</li>";
+            return '<li class="border-l-2 border-primary/20 pl-3 font-body-sm text-body-sm text-on-surface">' + quoteMarks(q) + trLine(q) + "</li>";
           }).join("") + "</ul>"
         : "") +
       "</article>";
@@ -1212,9 +1255,9 @@
       return '<div class="p-4 flex flex-col gap-2 hover:bg-surface-interactive/60 transition-colors cursor-pointer" data-act="hid-row" data-i="' + r.i + '">' +
         '<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3"><div class="flex items-center gap-3 min-w-0">' +
         (x ? '<span class="bg-surface-container border border-border-hairline text-[11px] font-eyebrow-mono text-outline px-2 py-0.5 rounded-full shrink-0">' + esc(aspectLabel(x.a)) + "</span>" : "") +
-        '<span class="font-body-sm text-body-sm text-on-surface font-medium">' + (m && m.e ? quoteMarks(m.e) : "") + "</span></div>" +
+        '<span class="font-body-sm text-body-sm text-on-surface font-medium">' + (m && m.e ? quoteMarks(m.e) + trLine(m.e) : "") + "</span></div>" +
         '<div class="flex items-center gap-3 shrink-0 self-end sm:self-auto">' + stars + "</div></div>" +
-        '<p class="font-body-sm text-body-sm text-text-tertiary ' + (open ? "" : "line-clamp-1") + '">' + esc(r.t) + "</p></div>";
+        '<div><p class="font-body-sm text-body-sm text-text-tertiary ' + (open ? "" : "line-clamp-1") + '">' + esc(r.t) + "</p>" + trLine(r.t) + "</div></div>";
     }).join("");
     return '<section class="my-12 reveal">' + head +
       '<div class="bg-surface-card border border-border-hairline rounded-xl divide-y divide-border-hairline">' + list + "</div>" +
@@ -1569,6 +1612,7 @@
         document.documentElement.lang = S.lang === "zh" ? "zh-CN" : "en";
         renderAll(true);
         send("lang", { lang: S.lang });
+        setTimeout(maybeTranslate, 800);
         break;
       case "menu": S.ui.menu = !S.ui.menu; renderNav(); break;
       case "top": e.preventDefault(); scroller().scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" }); break;

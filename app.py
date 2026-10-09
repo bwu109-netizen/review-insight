@@ -74,6 +74,7 @@ T = {
     "col_problem": {"en": "Problem area", "zh": "问题领域"},
     "col_complaints": {"en": "Complaints", "zh": "差评数"},
     "col_example": {"en": "Example quote", "zh": "原句示例"},
+    "col_example_en": {"en": "In English", "zh": "英文"},
     "col_share": {"en": "Share of reviews", "zh": "占评论比例"},
     "h_brief": {"en": "AI ops brief", "zh": "AI 运营简报"},
     "evidence": {"en": "Evidence", "zh": "依据"},
@@ -210,6 +211,8 @@ def load(dataset: str):
         "briefs_zh": j("briefs_zh.json"),
         "eval": j("eval.json") or None,
         "errors": pd.read_csv(d / "eval_errors.csv") if (d / "eval_errors.csv").exists() else None,
+        # English for Chinese quotes, made offline by src/translate.py (English mode only)
+        "quotes_en": j("quotes_en.json"),
     }
 
 
@@ -280,7 +283,7 @@ def aspect_chart(A, by="aspect_show", title_key="aspect"):
     st.altair_chart(chart, use_container_width=True)
 
 
-def fix_first(A, R):
+def fix_first(A, R, quotes_en=None):
     neg = A[A.sentiment == "negative"]
     if neg.empty:
         st.info(t("no_complaints"))
@@ -289,17 +292,33 @@ def fix_first(A, R):
            .agg(complaints=("review_id", "size"), example=("evidence", "first"))
            .reset_index().sort_values("complaints", ascending=False))
     fix["share"] = (fix.complaints / len(R)).map("{:.0%}".format)
+    if not zh() and quotes_en:
+        fix.insert(fix.columns.get_loc("example") + 1, "example_en", fix.example.map(lambda q: quotes_en.get(str(q).strip(), "")))
     st.dataframe(fix.rename(columns={"aspect_show": t("col_problem"), "owner_show": t("owner_team"),
                                      "complaints": t("col_complaints"), "example": t("col_example"),
+                                     "example_en": t("col_example_en"),
                                      "share": t("col_share")}),
-                 hide_index=True, width="stretch")
+                 hide_index=True, width="stretch",
+                 # narrow numbers, room for the quote and its translation
+                 column_config={t("col_problem"): st.column_config.TextColumn(width="medium"),
+                                t("owner_team"): st.column_config.TextColumn(width="small"),
+                                t("col_complaints"): st.column_config.NumberColumn(width="small"),
+                                t("col_example"): st.column_config.TextColumn(width="medium"),
+                                t("col_example_en"): st.column_config.TextColumn(width="large"),
+                                t("col_share"): st.column_config.TextColumn(width="small")})
 
 
-def brief_view(b):
+def brief_view(b, quotes_en=None):
     st.write(b.get("summary", ""))
+    from translate import quotes_in
     for item in b.get("fix_first", []):
+        ev = item.get("evidence", "")
+        # English mode: the Chinese quote stays, its translation goes underneath in small gray text
+        en = [quotes_en[q] for q in quotes_in(ev) if quotes_en and q in quotes_en] if not zh() else []
+        en_line = (f"  \n<span style='color:#8a8a8a;font-size:0.85em'>{'; '.join(en)}</span>") if en else ""
         st.markdown(f"**{item.get('issue', '')}** ({item.get('owner', '')})  \n"
-                    f"{t('evidence')}: {item.get('evidence', '')}  \n{t('next_step')}: {item.get('action', '')}")
+                    f"{t('evidence')}: {ev}{en_line}  \n{t('next_step')}: {item.get('action', '')}",
+                    unsafe_allow_html=True)
     if b.get("keep_doing"):
         st.markdown(f"**{t('keep')}:** " + "; ".join(b["keep_doing"]))
     st.caption(t("brief_caption", m=b.get("model") or "LLM"))
@@ -354,11 +373,11 @@ def insights_tab(dataset, data):
         st.caption(t("c_aspects"))
 
     st.subheader(t("h_fix"))
-    fix_first(A, R)
+    fix_first(A, R, data.get("quotes_en"))
 
     if choice != "__all__" and choice in briefs:
         st.subheader(f"{t('h_brief')}: {briefs[choice].get('name', choice)}")
-        brief_view(briefs[choice])
+        brief_view(briefs[choice], data.get("quotes_en"))
     elif choice == "__all__":
         st.subheader(t("h_score"))
         board = G.copy()

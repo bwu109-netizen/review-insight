@@ -31,7 +31,7 @@ Three ways to use it, for three kinds of users:
 
 ## How to use the web app
 
-1. Type the product category, e.g. `水果`, `desk`, `笔记本电脑`.
+1. Type the product category, e.g. `fruit`, `desk`, `laptop`. Chinese works too (`水果`, `桌子`, `笔记本电脑`).
 2. Pick the platform the reviews came from (Taobao/Tmall, JD.com, Douyin, RedNote, WeChat Channels, TikTok Shop, Amazon...).
 3. Upload the review export from the seller back-end (CSV or Excel; GBK exports work too). The review text, star-rating and date columns are detected automatically and can be changed. Or paste reviews one per line.
 4. Choose an AI provider, paste your API key, and click **Analyze**. The page shows each stage (choosing aspects, labeling, writing the brief) with a progress bar and the time left. **Stop and show results so far** ends the run early and keeps what is already labeled.
@@ -48,7 +48,7 @@ Why 2,000 is the default: a random sample of 2,000 estimates each issue's share 
 
 ![Results for 80 JD.com fruit reviews](docs/img/web_results.png)
 
-You get the result first: the three things to fix first, each with its owner team, complaint count, real quotes and a next step. Below that are a short summary, what to keep doing, a complaints-vs-praise chart by aspect (click an aspect to filter the reviews), hidden issues inside satisfied reviews, a searchable table of every labeled review, and the aspects the AI chose. **Copy brief** copies the summary as plain text for a team chat; **Download CSV** saves every labeled review (UTF-8, opens in Excel).
+You get the result first: the three things to fix first, each with its owner team, complaint count, real quotes and a next step. Below that are a short summary, what to keep doing, a complaints-vs-praise chart by aspect (click an aspect to filter the reviews), hidden issues inside satisfied reviews, a searchable table of every labeled review, and the aspects the AI chose. **Copy brief** copies the summary as plain text for a team chat; **Download CSV** saves every labeled review (UTF-8, opens in Excel). In English mode, Chinese quotes stay as written with an English translation underneath (one extra batched call to the same model after the analysis; if it fails, the quotes simply show untranslated). Reviews that mention insects, foreign objects, hair, mold or spoilage are listed at the very top as a food safety alert, however few there are.
 
 The page design was prototyped in Google Stitch from a written spec ([docs/PRD.md](docs/PRD.md), prototypes in [docs/stitch/](docs/stitch)) and built as a Streamlit custom component ([ui/](ui)), so the analysis code stays in Python.
 
@@ -111,7 +111,7 @@ Then upload a review export (or paste comments) and ask something like "分析�
 | Claude skill (in conversation) | **95%** | 97.9% | 3 |
 | API pipeline (Gemini Flash-Lite) | 91% | 100% | 9 |
 
-The skill commits more often and gets slightly more of those calls wrong. Of its two contradictions, one praises the laptop overall but lists three complaints ("瑕不掩瑜"), and one finds the shampoo "本身还行" but wants to use it up fast. With 100 reviews the difference between the two is within noise; the point is that the no-API route is in the same range as the tested pipeline. Inputs, labels and the scoring script are in [`evaluation/skill_test/`](evaluation/skill_test). Labeling was done by Claude Opus 5.5 following `SKILL.md`; results can differ with other models.
+The skill commits more often and gets slightly more of those calls wrong. Of its two contradictions, one praises the laptop overall but lists three complaints ("瑕不掩瑜", "the flaws don't outweigh the good points"), and one finds the shampoo "本身还行" ("it's okay in itself") but wants to use it up fast. With 100 reviews the difference between the two is within noise; the point is that the no-API route is in the same range as the tested pipeline. Inputs, labels and the scoring script are in [`evaluation/skill_test/`](evaluation/skill_test). Labeling was done by Claude Opus 5.5 following `SKILL.md`; results can differ with other models.
 
 **Other chat AIs.** ChatGPT, Gemini and DeepSeek can't install Claude skills. [`prompt_for_other_ai.md`](skill/prompt_for_other_ai.md) is a single copy-paste prompt with the same rules. It has not been accuracy-tested.
 

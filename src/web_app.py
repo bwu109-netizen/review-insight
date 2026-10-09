@@ -17,6 +17,7 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 import custom
+import translate
 from generate_taxonomy import SYSTEM as TAXONOMY_SYSTEM
 from llm_client import PROVIDERS, LLMError, make_client
 
@@ -130,8 +131,18 @@ def _run(job, client, sample, category, lang, model):
     job["status"] = "done"
 
 
+def _translate(tr, client, texts, category=""):
+    """English for the Chinese quotes the page shows. Any failure just leaves them untranslated."""
+    try:
+        tr["map"] = translate.translate_texts(client, texts, category=category)
+    except Exception as e:  # noqa: BLE001  (the page works without translations)
+        print(f"translation failed: {e}")
+    tr["status"] = "done"
+
+
 def _start(ev):
     st.session_state.result = None
+    st.session_state.tr = {}
     provider = ev.get("provider", "gemini")
     key = ev.get("key") or (server_gemini_key() if provider == "gemini" else "")
     jid = st.session_state.get("job", {}).get("id", 0) + 1
@@ -161,6 +172,7 @@ def _start(ev):
         job.update(status="error", error=str(e), error_kind=kind_, error_code=code)
         return
     job.update(total=len(sample), n_rows=sample.attrs.get("n_total", len(sample)))
+    st.session_state.llm_client = client  # kept for this session only, to translate quotes afterwards
     threading.Thread(target=_run, daemon=True,
                      args=(job, client, sample, ev.get("category", ""), ev.get("lang", "en"),
                            getattr(client, "model", ""))).start()
@@ -176,7 +188,17 @@ def _handle(ev) -> bool:
         _start(ev)
     elif typ == "stop" and st.session_state.get("job"):
         st.session_state.job["stop"] = True
+    elif typ == "translate":
+        res, client = st.session_state.get("result"), st.session_state.get("llm_client")
+        texts = [t for t in (ev.get("texts") or []) if isinstance(t, str)][:400]
+        if res and res.get("id") == ev.get("rid") and st.session_state.get("tr", {}).get("rid") != ev.get("rid"):
+            tr = {"rid": ev.get("rid"), "status": "running" if client and texts else "done", "map": {}}
+            st.session_state.tr = tr
+            if client and texts:
+                category = (res.get("meta") or {}).get("category", "")
+                threading.Thread(target=_translate, args=(tr, client, texts, category), daemon=True).start()
     elif typ == "reset":
+        st.session_state.tr = {}
         st.session_state.result = None
         st.session_state.job = {"id": st.session_state.get("job", {}).get("id", 0), "status": "idle"}
     elif typ == "lang":
@@ -191,7 +213,12 @@ def main():
     ss.setdefault("job", {"id": 0, "status": "idle"})
     ss.setdefault("result", None)
     ss.setdefault("lang", "en")
-    running = ss.job.get("status") == "running"
+    ss.setdefault("tr", {})
+
+    def busy():
+        return ss.job.get("status") == "running" or ss.tr.get("status") == "running"
+
+    running = busy()
     cfg = {"providers": {k: {"model": v.get("model", ""), "key_url": v.get("key_url", "")} for k, v in PROVIDERS.items()},
            "speed": {"gemini": list(custom.SPEED["gemini"]), "default": list(custom.SPEED["default"])},
            "sample": custom.SAMPLE_SIZE, "limits": custom.LIMITS, "server_gemini_key": bool(server_gemini_key())}
@@ -201,9 +228,11 @@ def main():
         if job.get("status") == "done" and job.get("result") is not None:
             ss.result, job["result"] = job["result"], None
         public = {k: v for k, v in job.items() if k not in ("result", "t0", "t3")}
+        tr = ss.tr if ss.result and ss.tr.get("rid") == ss.result.get("id") else {}
         ev = _component(cfg=cfg, job=public, result=ss.result, handled=ss.handled, lang=ss.lang,
+                        translations=tr.get("map", {}), tr_status=tr.get("status", ""),
                         key="review_insight", default=None)
-        if _handle(ev) or (running and job.get("status") != "running"):
+        if _handle(ev) or running != busy():
             st.rerun()
 
     st.fragment(run_every=1.0 if running else None)(ui_body)()
